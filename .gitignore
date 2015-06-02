@@ -1,0 +1,15 @@
+Library
+Build
+Temp
+*.pidb
+Assets/StreamingAssets/db-0.3.db
+Assets/StreamingAssets/db-0.3.db.meta
+VansBuilder.sublime-workspace
+[MBMEX]VansBuilder-csharp.sln
+[MBMEX]VansBuilder.sln
+[MBMEX]VansBuilder.userprefs
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
+Assets/Scenes/Plantilla.unity.meta
