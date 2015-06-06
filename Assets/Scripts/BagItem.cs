@@ -9,6 +9,8 @@ public class BagItem : MonoBehaviour {
     private int[,] _shape;
     private float _rotation;
 
+    // Numer of times, if consumable
+
 	// Use this for initialization
 	void Start () {
 	
