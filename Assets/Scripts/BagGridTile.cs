@@ -1,12 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public class Bag : MonoBehaviour {
-    private int[,] _grid;
-    
+public class BagGridTile : MonoBehaviour {
 
-    private List<BagItem> _items;
 	// Use this for initialization
 	void Start () {
 	
@@ -16,4 +12,9 @@ public class Bag : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public void Activate()
+    {
+
+    }
 }

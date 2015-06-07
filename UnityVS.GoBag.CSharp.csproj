@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bag.cs" />
+    <Compile Include="Assets\Scripts\BagGridTile.cs" />
     <Compile Include="Assets\Scripts\BagItem.cs" />
     <Compile Include="Assets\Scripts\BagPrepController.cs" />
     <Compile Include="Assets\Scripts\ExploreController.cs" />
