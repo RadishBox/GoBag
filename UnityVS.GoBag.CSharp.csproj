@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\BagGridTile.cs" />
     <Compile Include="Assets\Scripts\BagItem.cs" />
     <Compile Include="Assets\Scripts\BagPrepController.cs" />
+    <Compile Include="Assets\Scripts\DragHandler.cs" />
     <Compile Include="Assets\Scripts\ExploreController.cs" />
     <Compile Include="Assets\Scripts\GridController.cs" />
     <Compile Include="Assets\Scripts\GridMove.cs" />
