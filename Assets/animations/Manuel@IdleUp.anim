@@ -5,7 +5,11 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/animations/Manuel@IdleUp.anim
   m_Name: Manuel@IdleUp
+=======
+  m_Name: Stand
+>>>>>>> origin/master:Assets/animations/Stand.anim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
