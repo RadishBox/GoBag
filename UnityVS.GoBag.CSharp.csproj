@@ -71,6 +71,13 @@
     <Compile Include="Assets\Scripts\ExploreController.cs" />
     <Compile Include="Assets\Scripts\GridController.cs" />
     <Compile Include="Assets\Scripts\GridMove.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemLibrary.cs" />
+    <Compile Include="Assets\Scripts\ItemListDragHandler.cs" />
+    <Compile Include="Assets\Scripts\Items\RainBoots.cs" />
+    <Compile Include="Assets\Scripts\Items\WaterBottle.cs" />
+    <Compile Include="Assets\Scripts\ScrollElement.cs" />
+    <Compile Include="Assets\Scripts\ScrollRectEx.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

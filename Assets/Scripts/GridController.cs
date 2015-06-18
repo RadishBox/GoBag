@@ -4,7 +4,10 @@ using System.Collections;
 public class GridController : MonoBehaviour {
 
     public GameObject GridTilePrefab;
+
+    [SerializeField]
     private float tileWidth;
+    [SerializeField]
     private float tileHeight;
 
     [SerializeField]
@@ -18,8 +21,6 @@ public class GridController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        tileWidth = GridTilePrefab.transform.localScale.x;
-        tileHeight = GridTilePrefab.transform.localScale.y;
         GenerateBaseGrid();
 	}
 	
@@ -35,14 +36,18 @@ public class GridController : MonoBehaviour {
         {
             for (int j = 0; j < BaseHeight; j++)
             {
-                SpawnGridSquare(new Vector3(i,j));
+                GameObject tile = SpawnGridSquare(new Vector3(i*TileWidth,j*TileHeight));
+                tile.transform.SetParent(this.transform);
+                tile.transform.localScale = Vector3.one;
+                tile.GetComponent<RectTransform>().anchoredPosition = new Vector3(i * TileWidth, j * TileHeight);
             }
         }
     }
 
-    private void SpawnGridSquare(Vector3 position)
+    private GameObject SpawnGridSquare(Vector3 position)
     {
-        GameObject.Instantiate(GridTilePrefab, position, Quaternion.identity);
+        GameObject tile = GameObject.Instantiate(GridTilePrefab, position, Quaternion.identity) as GameObject;
+        return tile;
     }
 
 
@@ -68,5 +73,17 @@ public class GridController : MonoBehaviour {
     {
         get { return _maximumWidth; }
         set { _maximumWidth = value; }
+    }
+
+    public float TileWidth
+    {
+        get { return tileWidth; }
+        set { tileWidth = value; }
+    }
+
+    public float TileHeight
+    {
+        get { return tileHeight; }
+        set { tileHeight = value; }
     }
 }
