@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 6a3b55b83b19d5e44a23f9583c62fb14
-timeCreated: 1433729702
+guid: ffe6f4d762736a1419996f74cbc0dd79
+timeCreated: 1434306797
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: TestSheet_0
-    21300002: TestSheet_1
-    21300004: TestSheet_2
-    21300006: TestSheet_3
+    21300000: RainOnly1
+    21300002: RainOnly2
+    21300004: RainOnly3
+    21300006: RainOnly4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,7 +31,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 1024
+  maxTextureSize: 128
   textureSettings:
     filterMode: 0
     aniso: 16
@@ -53,45 +53,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: TestSheet_0
+    - name: RainOnly1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestSheet_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestSheet_2
+    - name: RainOnly2
       rect:
         serializedVersion: 2
-        x: 512
+        x: 32
         y: 0
-        width: 256
-        height: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: TestSheet_3
+    - name: RainOnly3
       rect:
         serializedVersion: 2
-        x: 768
+        x: 64
         y: 0
-        width: 256
-        height: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RainOnly4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
