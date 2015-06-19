@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1434649509
+timeCreated: 1434677945
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -114,7 +114,7 @@ TextureImporter:
     21300214: BootsDown2
     21300216: BootsDown1
     21300218: BootsDownStand
-    21300220: Atlas1_132
+    21300220: Beans
     21300222: MaskUp3
     21300224: MaskUp2
     21300226: MaskUp1
@@ -125,7 +125,7 @@ TextureImporter:
     21300236: Boots
     21300238: Umbrella
     21300240: Tuna
-    21300242: Atlas1_144
+    21300242: BootsUp6
     21300244: BootsUp5
     21300246: BootsUp4
     21300248: BootsUp3
@@ -1329,7 +1329,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Atlas1_132
+    - name: Beans
       rect:
         serializedVersion: 2
         x: 192
@@ -1439,7 +1439,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Atlas1_144
+    - name: BootsUp6
       rect:
         serializedVersion: 2
         x: 576
@@ -1506,16 +1506,6 @@ TextureImporter:
         y: 320
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Atlas1_152
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 0
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

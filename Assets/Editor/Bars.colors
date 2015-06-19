@@ -11,4 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 12323, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Bars
   m_EditorClassIdentifier: 
-  m_Presets: []
+  m_Presets:
+  - m_Name: 
+    m_Color: {r: .290196121, g: .826882958, b: .933333337, a: 1}
+  - m_Name: 
+    m_Color: {r: .933333337, g: .290196121, b: .290196121, a: 1}
+  - m_Name: 
+    m_Color: {r: .337254912, g: .933333337, b: .290196091, a: 1}
+  - m_Name: 
+    m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -42,3 +42,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background0
+    uniqueID: 2017293489
+    locked: 0
+  - name: Background1
+    uniqueID: 1033570177
+    locked: 0
+  - name: Incidents
+    uniqueID: 2194554721
+    locked: 0
+  - name: Player
+    uniqueID: 271415401
+    locked: 0
+  - name: Equipment
+    uniqueID: 1394583171
+    locked: 0
+  - name: Events+ForeIncidents
+    uniqueID: 144848053
+    locked: 0
+  - name: GUI
+    uniqueID: 1621891335
+    locked: 0
