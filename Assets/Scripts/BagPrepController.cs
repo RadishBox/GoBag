@@ -3,12 +3,14 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class BagPrepController : MonoBehaviour {
+    public static BagPrepController Instance;
 
     public GameObject SelectedItemGO;
+    public Item SelectedItem;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+        Instance = this;
 	}
 	
 	// Update is called once per frame
@@ -30,11 +32,19 @@ public class BagPrepController : MonoBehaviour {
         if (SelectedItem.gameObject.GetComponent<Toggle>().isOn)
         {
             GameObject item = Instantiate(SelectedItem.gameObject);
-            item.GetComponent<Toggle>().isOn = false;
-            //Destroy(item.GetComponent<Toggle>());
+            Destroy(item.GetComponent<Toggle>());
+            Destroy(item.transform.FindChild("Selected").gameObject);
             //Destroy(item.GetComponent<LayoutElement>());
             item.transform.SetParent(SelectedItemGO.transform);
             item.transform.localScale = Vector3.one;
+            item.AddComponent<DragHandler>();
         }
+    }
+
+    public void SpawnNewSelectedItem()
+    {
+        GameObject item = Instantiate(SelectedItem.gameObject);
+        item.transform.SetParent(SelectedItemGO.transform, false);
+        item.GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
