@@ -59,6 +59,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   umbrella: {fileID: 0}
+  mask: {fileID: 0}
+  boots: {fileID: 0}
+  runningShoes: {fileID: 0}
 --- !u!212 &21204616
 SpriteRenderer:
   m_ObjectHideFlags: 1
