@@ -77,7 +77,6 @@
   <ItemGroup>
     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-    <Compile Include="Assets\PabloControllerTest.cs" />
     <Compile Include="Assets\Scripts\Bag.cs" />
     <Compile Include="Assets\Scripts\BagGrid.cs" />
     <Compile Include="Assets\Scripts\BagGridTile.cs" />
@@ -106,6 +105,7 @@
     <Compile Include="Assets\Scripts\Items\Umbrella.cs" />
     <Compile Include="Assets\Scripts\Items\WaterBottle.cs" />
     <Compile Include="Assets\Scripts\Items\WetTowels.cs" />
+    <Compile Include="Assets\Scripts\PabloControllerTest.cs" />
     <Compile Include="Assets\Scripts\ScrollElement.cs" />
     <Compile Include="Assets\Scripts\ScrollRectEx.cs" />
     <Compile Include="Assets\Scripts\Util\Collider2DRaycastFilter.cs" />
