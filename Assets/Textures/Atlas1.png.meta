@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1435897697
+timeCreated: 1435175626
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -1012,8 +1012,8 @@ TextureImporter:
     - name: MaskSide3
       rect:
         serializedVersion: 2
-        x: 576
-        y: 576
+        x: 583
+        y: 577
         width: 64
         height: 64
       alignment: 0
@@ -1022,20 +1022,20 @@ TextureImporter:
     - name: MaskSide2
       rect:
         serializedVersion: 2
-        x: 640
+        x: 645
         y: 576
         width: 64
-        height: 64
+        height: 62
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: MaskSide1
       rect:
         serializedVersion: 2
-        x: 704
-        y: 576
+        x: 712
+        y: 578
         width: 64
-        height: 64
+        height: 57
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1072,7 +1072,7 @@ TextureImporter:
     - name: ManuelSideStand
       rect:
         serializedVersion: 2
-        x: 959
+        x: 960
         y: 576
         width: 64
         height: 64
