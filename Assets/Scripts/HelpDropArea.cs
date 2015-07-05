@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class HelpDropArea : DropArea {
     public override void OnDrop(PointerEventData eventData)
     {
-        if (BagPrepController.Instance.SelectedItem)
+        if (BagPrepController.Instance.DraggedItem)
         {
             // TO DO: Display help message
-            print(BagPrepController.Instance.SelectedItem.gameObject.name);
+            print(BagPrepController.Instance.DraggedItem.gameObject.name);
         }
     }
 }

@@ -5,8 +5,13 @@ using UnityEngine.UI;
 public class BagPrepController : MonoBehaviour {
     public static BagPrepController Instance;
 
-    public GameObject SelectedItemGO;
+    public GameObject GridItemsParentGO;
+    public GameObject SelectedItemParentGO;
     public Item SelectedItem;
+
+    public Item DraggedItem;
+
+    private bool _isInDropArea = false;
 
 	// Use this for initialization
 	void Awake () {
@@ -18,16 +23,22 @@ public class BagPrepController : MonoBehaviour {
 	
 	}
 
-    public void DetectGrid()
+    public void ItemSelect(Item selectedItem)
     {
-        print(Input.mousePosition);
+        this.SelectedItem = selectedItem;
+        SpawnNewSelectedItem();
     }
 
-    public void ItemSelect(Item SelectedItem)
+    public void SpawnNewSelectedItem()
     {
+        //DraggedItem.SetSize(false);
+        //GameObject item = Instantiate(DraggedItem.gameObject);
+        //item.transform.SetParent(SelectedItemParentGO.transform, false);
+        //item.GetComponent<CanvasGroup>().blocksRaycasts = true;
+
         // Detatch selected object children
-        if(SelectedItemGO.transform.childCount > 0)
-            Destroy(SelectedItemGO.transform.GetChild(0).gameObject);
+        if (SelectedItemParentGO.transform.childCount > 0)
+            Destroy(SelectedItemParentGO.transform.GetChild(0).gameObject);
 
         if (SelectedItem.gameObject.GetComponent<Toggle>().isOn)
         {
@@ -35,16 +46,21 @@ public class BagPrepController : MonoBehaviour {
             Destroy(item.GetComponent<Toggle>());
             Destroy(item.transform.FindChild("Selected").gameObject);
             //Destroy(item.GetComponent<LayoutElement>());
-            item.transform.SetParent(SelectedItemGO.transform);
-            item.transform.localScale = Vector3.one;
+            item.transform.SetParent(SelectedItemParentGO.transform, false);
             item.AddComponent<DragHandler>();
+            item.GetComponent<CanvasGroup>().blocksRaycasts = true;
         }
     }
 
-    public void SpawnNewSelectedItem()
+    /* Getters and Setters */
+    public bool IsInDropArea
     {
-        GameObject item = Instantiate(SelectedItem.gameObject);
-        item.transform.SetParent(SelectedItemGO.transform, false);
-        item.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        get { return _isInDropArea; }
+        set { _isInDropArea = value; }
+    }
+
+    public bool HasSelectedItem
+    {
+        get { return SelectedItemParentGO.transform.childCount > 0; }
     }
 }

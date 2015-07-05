@@ -85,6 +85,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "Toallas h\xFAmedas"
   _itemSprite: {fileID: 21300258, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  _stringTiles:
+  - 1
+  _dragPivot: {x: .5, y: .5}
 --- !u!114 &11440778
 MonoBehaviour:
   m_ObjectHideFlags: 1

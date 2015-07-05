@@ -10,6 +10,7 @@ GameObject:
   - 224: {fileID: 22442382}
   - 222: {fileID: 22258044}
   - 114: {fileID: 11463736}
+  - 114: {fileID: 11432924}
   m_Layer: 5
   m_Name: Tile
   m_TagString: Untagged
@@ -17,6 +18,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11432924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b097bbcd07d254988c183af3ec99c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 11463736}
 --- !u!114 &11463736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -56,11 +69,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

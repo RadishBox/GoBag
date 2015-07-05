@@ -2,18 +2,22 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
     private Vector3 startPosition;
 
+    void Start()
+    {
+        startPosition = transform.position;
+    }    
+
     public void OnBeginDrag(PointerEventData eventData)
     {
+        
+        BagPrepController.Instance.DraggedItem = this.GetComponent<Item>();
         // Set correct size
-        this.GetComponentInChildren<Image>().SetNativeSize();
-        this.transform.GetChild(0).GetComponent<RectTransform>().anchorMin = new Vector2(0.5f, 0.5f);
-        this.transform.GetChild(0).GetComponent<RectTransform>().anchorMax = new Vector2(0.5f, 0.5f);
-
-        BagPrepController.Instance.SelectedItem = this.GetComponent<Item>();
+        BagPrepController.Instance.DraggedItem.SetSize(true);
         startPosition = transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
@@ -25,9 +29,19 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        print("ïts onenddrag");
-        BagPrepController.Instance.SelectedItem = null;
-        transform.position = Input.mousePosition;
-        GetComponent<CanvasGroup>().blocksRaycasts = true;        
+        if (!BagPrepController.Instance.IsInDropArea) // valid drop area
+        {             
+            // Let drop handler handle it
+            transform.DOMove(startPosition, 0.5f, false);
+            //transform.position = startPosition;
+            //this.transform.GetChild(0).GetComponent<RectTransform>().
+            if (!BagPrepController.Instance.DraggedItem.InBag)
+            {
+                BagPrepController.Instance.DraggedItem.SetSize(false);
+            }
+        }
+        BagPrepController.Instance.DraggedItem = null;
+        GetComponent<CanvasGroup>().blocksRaycasts = true; 
+        print("its onenddrag");
     }
 }

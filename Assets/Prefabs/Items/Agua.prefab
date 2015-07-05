@@ -144,7 +144,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Agua
-  _itemSprite: {fileID: 21300000, guid: 621b42eb0172ced4daaf0d3414069770, type: 3}
+  _itemSprite: {fileID: 21300274, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  _stringTiles:
+  - 1
+  - 1
+  _dragPivot: {x: .5, y: .25}
 --- !u!114 &11475648
 MonoBehaviour:
   m_ObjectHideFlags: 1
