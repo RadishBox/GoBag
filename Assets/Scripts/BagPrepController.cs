@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class BagPrepController : MonoBehaviour {
     public static BagPrepController Instance;
@@ -13,10 +14,20 @@ public class BagPrepController : MonoBehaviour {
 
     private bool _isInDropArea = false;
 
+    // Civil Guy Group
+    public CivilGuyController civilGuyController;
+
+
 	// Use this for initialization
 	void Awake () {
         Instance = this;
+        Input.multiTouchEnabled = false;
 	}
+
+    void Start()
+    {
+        civilGuyController.ShowCivilGuyGroup();
+    }
 	
 	// Update is called once per frame
 	void Update () {

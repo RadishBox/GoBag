@@ -67,6 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Tenis
   _itemSprite: {fileID: 21300296, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  _description: 
   _stringTiles:
   - 11
   _dragPivot: {x: .75, y: .5}
@@ -156,8 +157,7 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11416588}
-          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
+          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

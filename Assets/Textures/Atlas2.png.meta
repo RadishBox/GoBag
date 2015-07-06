@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2b323cee6587ff54eadccef5d39713c7
-timeCreated: 1434735304
+timeCreated: 1436143510
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -91,8 +91,8 @@ TextureImporter:
         y: 419
         width: 511
         height: 323
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CivilInstructing
       rect:
@@ -101,8 +101,8 @@ TextureImporter:
         y: 0
         width: 511
         height: 419
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 4
+      pivot: {x: 0, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

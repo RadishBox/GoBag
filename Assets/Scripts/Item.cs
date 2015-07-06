@@ -10,6 +10,8 @@ public abstract class Item : MonoBehaviour {
     protected string _name;
     [SerializeField]
     protected Sprite _itemSprite;
+    [SerializeField]
+    protected string _description;
     
     [SerializeField]
     protected string[] _stringTiles;
@@ -19,7 +21,6 @@ public abstract class Item : MonoBehaviour {
 
     protected RectTransform _rectTrans;
 
-    //protected int[,] _tiles
 
     protected bool _isInBag = false;
 
@@ -106,6 +107,12 @@ public abstract class Item : MonoBehaviour {
     {
         get { return _itemSprite; }
         set { _itemSprite = value; }
+    }
+
+    public string Description
+    {
+        get { return _description; }
+        set { _description = value; }
     }
 
     public bool InBag

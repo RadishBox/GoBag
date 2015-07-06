@@ -4,12 +4,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class HelpDropArea : DropArea {
+    public ItemInfoController itemInfoController;
+
     public override void OnDrop(PointerEventData eventData)
     {
         if (BagPrepController.Instance.DraggedItem)
         {
-            // TO DO: Display help message
-            print(BagPrepController.Instance.DraggedItem.gameObject.name);
+            itemInfoController.ShowItemInfoGroup(BagPrepController.Instance.DraggedItem);
         }
     }
 }
