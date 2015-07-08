@@ -67,7 +67,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Cepillo de dientes
   _itemSprite: {fileID: 21300204, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Puedes lavarte los dientes 3 veces con esta pasta y cepillo para subir
+    tu barra roja (salud).
   _stringTiles:
   - 1
   _dragPivot: {x: .5, y: .5}

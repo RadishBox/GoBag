@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Paraguas
   _itemSprite: {fileID: 21300238, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Cuando usas este paraguas puedes caminar bajo la lluvia sin resfriarte.
   _stringTiles:
   - 1
   - 1

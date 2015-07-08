@@ -183,7 +183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "M\xE1scara"
   _itemSprite: {fileID: 21300280, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Cuando te pones este cubrebocas no te da tos cuando caminas por el
+    humo.
   _stringTiles:
   - 1
   _dragPivot: {x: .5, y: .5}

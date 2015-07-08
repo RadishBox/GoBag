@@ -88,7 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Frijoles
   _itemSprite: {fileID: 21300220, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "Cuando comes estos frijoles, sube tu barra verde (fuerza). Como est\xE1n
+    enlatados, siguen comestibles por varios meses."
   _stringTiles:
   - 1
   _dragPivot: {x: .5, y: .5}

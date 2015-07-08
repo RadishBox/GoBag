@@ -67,7 +67,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Tenis
   _itemSprite: {fileID: 21300296, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "Estos tenis te permiten correr m\xE1s r\xE1pido, pero no protegen
+    contra el agua."
   _stringTiles:
   - 11
   _dragPivot: {x: .75, y: .5}

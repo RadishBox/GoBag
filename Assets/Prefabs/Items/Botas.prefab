@@ -195,7 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Botas
   _itemSprite: {fileID: 21300236, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Ponte las botas para poder caminar sobre charcos poco profundos sin
+    enfermarte.
   _stringTiles:
   - 01
   - 11

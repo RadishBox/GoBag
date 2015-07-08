@@ -109,7 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Sanitizador
   _itemSprite: {fileID: 21300200, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Usa este desinfectante para limpiar tu cuerpo y quitar la suciedad
+    y las infecciones.
   _stringTiles:
   - 1
   _dragPivot: {x: .5, y: .5}
