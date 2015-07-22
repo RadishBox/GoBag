@@ -48,7 +48,6 @@ GameObject:
   - 114: {fileID: 11403320}
   - 114: {fileID: 11426144}
   - 60: {fileID: 6001514}
-  - 114: {fileID: 11417352}
   m_Layer: 5
   m_Name: Botas
   m_TagString: Untagged
@@ -66,16 +65,16 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -36, y: 36}
+  m_Offset: {x: -38, y: 38}
   m_Points:
     m_Paths:
-    - - {x: -2.8626709, y: 75.2433777}
-      - {x: 74.1986084, y: 74.3522644}
-      - {x: 74.4155884, y: -15.2724609}
-      - {x: 75.5697021, y: -74.3904419}
-      - {x: -73.5679932, y: -74.7897339}
-      - {x: -72.9246826, y: -15.7788086}
-      - {x: -1.13226318, y: -15.4359131}
+    - - {x: -20.5135803, y: 139.058365}
+      - {x: 94.6186523, y: 139.848465}
+      - {x: 94.782074, y: 21.3872375}
+      - {x: 93.2205811, y: -96.1146851}
+      - {x: -138.740814, y: -96.5139771}
+      - {x: -139.455231, y: 20.8808899}
+      - {x: -20.1409912, y: 21.2238159}
 --- !u!114 &11403320
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,17 +149,6 @@ MonoBehaviour:
   m_PreferredHeight: 150
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
---- !u!114 &11417352
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 197298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 540a271fd95be3a4b8bb4b19ea45e835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11421924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -200,7 +188,7 @@ MonoBehaviour:
   _stringTiles:
   - 01
   - 11
-  _dragPivot: {x: 1, y: 0}
+  _dragPivotCoords: {x: 1, y: 1}
 --- !u!114 &11433366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,7 +246,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: .75, y: .25}
 --- !u!224 &22425906
 RectTransform:
   m_ObjectHideFlags: 1

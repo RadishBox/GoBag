@@ -113,6 +113,7 @@ MonoBehaviour:
     y las infecciones.
   _stringTiles:
   - 1
+  _dragPivotCoords: {x: 0, y: 0}
   _dragPivot: {x: .5, y: .5}
 --- !u!114 &11464154
 MonoBehaviour:

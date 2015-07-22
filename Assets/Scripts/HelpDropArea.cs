@@ -10,6 +10,7 @@ public class HelpDropArea : DropArea {
     {
         if (BagPrepController.Instance.DraggedItem)
         {
+            BagPrepController.Instance.DraggedItem.GetComponent<CanvasGroup>().blocksRaycasts = true; 
             itemInfoController.ShowItemInfoGroup(BagPrepController.Instance.DraggedItem);
         }
     }

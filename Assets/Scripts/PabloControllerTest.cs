@@ -53,11 +53,10 @@ public class PabloControllerTest : MonoBehaviour {
 		} 
 		else if (Input.GetAxis ("Vertical") ==0f){
 			playerAnimator.SetBool ("playerIsUp", false);
-			umbrellaAnimator.SetBool ("umbrellaIsUp", false);
-			maskAnimator.SetBool ("maskIsUp", false);
-			bootsAnimator.SetBool ("bootsIsUp", false);
-			runningShoesAnimator.SetBool ("runningShoesIsUp", false);
-
+            umbrellaAnimator.SetBool("umbrellaIsUp", false);
+            maskAnimator.SetBool("maskIsUp", false);
+            bootsAnimator.SetBool("bootsIsUp", false);
+            runningShoesAnimator.SetBool("runningShoesIsUp", false);
 		}
 
 		//Right
@@ -70,11 +69,11 @@ public class PabloControllerTest : MonoBehaviour {
 			runningShoesAnimator.SetBool ("runningShoesIsRight", true);
 		} 
 		else if (Input.GetAxis ("Horizontal") == 0f) {
-			playerAnimator.SetBool ("playerIsRight", false);
-			umbrellaAnimator.SetBool ("umbrellaIsRight", false);
-			maskAnimator.SetBool ("maskIsRight", false);
-			bootsAnimator.SetBool ("bootsIsRight", false);
-			runningShoesAnimator.SetBool ("runningShoesIsRight", false);
+            playerAnimator.SetBool("playerIsRight", false);
+            umbrellaAnimator.SetBool("umbrellaIsRight", false);
+            maskAnimator.SetBool("maskIsRight", false);
+            bootsAnimator.SetBool("bootsIsRight", false);
+            runningShoesAnimator.SetBool("runningShoesIsRight", false);
 		}
 
 		//Down
@@ -86,11 +85,11 @@ public class PabloControllerTest : MonoBehaviour {
 			runningShoesAnimator.SetBool ("runningShoesIsDown", true);
 		} 
 		else if (Input.GetAxis ("Vertical") == 0f) {
-			playerAnimator.SetBool ("playerIsDown", false);
-			umbrellaAnimator.SetBool ("umbrellaIsDown", false);
-			maskAnimator.SetBool ("maskIsDown", false);
-			bootsAnimator.SetBool ("bootsIsDown", false);
-			runningShoesAnimator.SetBool ("runningShoesIsDown", false);
+            playerAnimator.SetBool("playerIsDown", false);
+            umbrellaAnimator.SetBool("umbrellaIsDown", false);
+            maskAnimator.SetBool("maskIsDown", false);
+            bootsAnimator.SetBool("bootsIsDown", false);
+            runningShoesAnimator.SetBool("runningShoesIsDown", false);
 		}
 
 		//Left
@@ -109,11 +108,11 @@ public class PabloControllerTest : MonoBehaviour {
 			runningShoesAnimator.SetBool ("runningShoesIsLeft", true);
 		} 
 		else if (Input.GetAxis ("Horizontal") == 0f) {
-			playerAnimator.SetBool ("playerIsLeft", false);
-			umbrellaAnimator.SetBool ("umbrellaIsLeft", false);
-			maskAnimator.SetBool ("maskIsLeft", false);
-			bootsAnimator.SetBool ("bootsIsLeft", false);
-			runningShoesAnimator.SetBool ("runningShoesIsLeft", false);
+            playerAnimator.SetBool("playerIsLeft", false);
+            umbrellaAnimator.SetBool("umbrellaIsLeft", false);
+            maskAnimator.SetBool("maskIsLeft", false);
+            bootsAnimator.SetBool("bootsIsLeft", false);
+            runningShoesAnimator.SetBool("runningShoesIsLeft", false);
 		}
 	}
 }

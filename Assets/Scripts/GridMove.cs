@@ -3,14 +3,14 @@ using UnityEngine;
 
 class GridMove : MonoBehaviour
 {
-    private float moveSpeed = 3f;
-    private float gridSize = 1f;
+    public float moveSpeed = 3f;
+    public float gridSize = 1f;
     private enum Orientation
     {
         Horizontal,
         Vertical
     };
-    private Orientation gridOrientation = Orientation.Horizontal;
+    private Orientation gridOrientation = Orientation.Vertical;
     private bool allowDiagonals = false;
     private bool correctDiagonalSpeed = true;
     private Vector2 input;
