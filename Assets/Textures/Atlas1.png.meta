@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1435175626
+timeCreated: 1437411234
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -184,6 +184,16 @@ TextureImporter:
     21300354: GrassSemi3
     21300356: GrassSemi2
     21300358: GrassSemi1
+    21300360: IconTutorial
+    21300362: iconBlue
+    21300364: iconRed
+    21300366: Arrow
+    21300368: StomachMedicine
+    21300370: cables
+    21300372: Car2Crashed
+    21300374: Car1Crashed
+    21300376: Goal
+    21300378: ColdMedicine
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -533,18 +543,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 834
-        width: 60
-        height: 62
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Tree2
       rect:
         serializedVersion: 2
-        x: 838
+        x: 832
         y: 832
-        width: 51
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -644,7 +654,7 @@ TextureImporter:
         serializedVersion: 2
         x: 832
         y: 768
-        width: 63
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -2014,6 +2024,106 @@ TextureImporter:
         serializedVersion: 2
         x: 704
         y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IconTutorial
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: iconBlue
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: iconRed
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: StomachMedicine
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cables
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Car2Crashed
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Car1Crashed
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Goal
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ColdMedicine
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
         width: 64
         height: 64
       alignment: 0
