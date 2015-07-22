@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1437411234
+timeCreated: 1437517901
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -194,6 +194,11 @@ TextureImporter:
     21300374: Car1Crashed
     21300376: Goal
     21300378: ColdMedicine
+    21300380: Calculator
+    21300382: Plush
+    21300384: VideoGameConsole
+    21300386: Book
+    21300388: Guitar
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -2126,6 +2131,56 @@ TextureImporter:
         y: 256
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Calculator
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plush
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: VideoGameConsole
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Book
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Guitar
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 128
+        height: 192
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
