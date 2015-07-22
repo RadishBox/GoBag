@@ -71,7 +71,7 @@ MonoBehaviour:
     contra el agua."
   _stringTiles:
   - 11
-  _dragPivot: {x: .75, y: .5}
+  _dragPivotCoords: {x: 1, y: 0}
 --- !u!114 &11423470
 MonoBehaviour:
   m_ObjectHideFlags: 1

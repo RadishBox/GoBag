@@ -6,24 +6,50 @@ using UnityEngine.UI;
 public class BagGridTile : DropArea
 {
     private bool _isAvailable = true;
-    private bool _isUnavailable = false;
+    private bool _isActive = true;
+
+    private Vector2 _gridCoords;
 
     public override void OnDrop(PointerEventData eventData)
     {
         if (isInArea)
         {
-            print("Its ondrop tile");
-            BagPrepController.Instance.DraggedItem.InBag = true;
-            // Snap to grid
-            print(CenterPoint);
-            BagPrepController.Instance.DraggedItem.RectTrans.anchoredPosition = CenterPoint;
+            Item draggedItem = BagPrepController.Instance.DraggedItem;
 
-            BagPrepController.Instance.DraggedItem.transform.SetParent(BagPrepController.Instance.GridItemsParentGO.transform, false);
-
-            if(!BagPrepController.Instance.HasSelectedItem)
+            if (draggedItem.InBag)
             {
-                // Spawn new selected item
-                BagPrepController.Instance.SpawnNewSelectedItem();
+                BagPrepController.Instance.BagGrid.ClearItem(draggedItem);
+            }
+            // Check if it fits in space
+            if(BagPrepController.Instance.BagGrid.CheckIfFits(draggedItem, this.GridCoords))
+            {
+                
+                draggedItem.InBag = true;
+
+                draggedItem.GetComponent<CanvasGroup>().blocksRaycasts = true; 
+                // Snap to grid
+                draggedItem.RectTrans.anchoredPosition = CenterPoint;
+
+                draggedItem.transform.SetParent(BagPrepController.Instance.GridItemsParentGO.transform, false);
+
+                // Add special collider if needed (irregular form)
+                if (draggedItem.GetType() == typeof(RainBoots))
+                {
+                    if (draggedItem.GetComponent<Collider2DRaycastFilter>() == null)
+                    {
+                        draggedItem.gameObject.AddComponent<Collider2DRaycastFilter>();
+                    }
+                }
+
+                if (!BagPrepController.Instance.HasSelectedItem)
+                {
+                    // Spawn new selected item
+                    BagPrepController.Instance.SpawnNewSelectedItem();
+                }
+            }
+            else
+            {
+                draggedItem.GetComponent<DragHandler>().AnimateBackToStartPosition();  
             }
             
         }        
@@ -31,11 +57,11 @@ public class BagGridTile : DropArea
 
     public override void OnPointerEnter(PointerEventData eventData)
     {
-        if (!Unavailable)
+        if (Active)
         {
             isInArea = true;
             BagPrepController.Instance.IsInDropArea = true;
-            if (BagPrepController.Instance.DraggedItem && !Unavailable)
+            if (BagPrepController.Instance.DraggedItem && !Active)
             {
                 //Color target = image.color / 2;
                 //image.CrossFadeColor(target, 0.5f, true, true);
@@ -54,24 +80,22 @@ public class BagGridTile : DropArea
         }
     }
 
-    void Update()
-    {
-        if ((BagPrepController.Instance.DraggedItem != null) && (isInArea))
-        {
-            print(GetComponent<RectTransform>().InverseTransformPoint(Input.mousePosition));
-        }
-    }
-
     public bool Available
     {
         get { return _isAvailable; }
         set { _isAvailable = value; }
     }
 
-    public bool Unavailable
+    public bool Active
     {
-        get { return _isUnavailable; }
-        set { _isUnavailable = value; }
+        get { return _isActive; }
+        set { _isActive = value; }
+    }
+
+    public Vector2 GridCoords
+    {
+        get { return _gridCoords; }
+        set { _gridCoords = value; }
     }
 }
 

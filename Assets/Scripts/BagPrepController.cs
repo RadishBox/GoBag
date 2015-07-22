@@ -14,6 +14,9 @@ public class BagPrepController : MonoBehaviour {
 
     private bool _isInDropArea = false;
 
+    // Bag grid
+    public GridController BagGrid;
+
     // Civil Guy Group
     public CivilGuyController civilGuyController;
 

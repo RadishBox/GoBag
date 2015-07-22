@@ -13,7 +13,14 @@ public class DeleteDropArea : DropArea {
             // TO DO: Delete item
             DeselectArea();
             BagPrepController.Instance.SpawnNewSelectedItem();
-            Destroy(BagPrepController.Instance.DraggedItem.gameObject);
+            // Free space in grid
+            Item draggedItem = BagPrepController.Instance.DraggedItem;
+
+            if (draggedItem.InBag)
+            {
+                BagPrepController.Instance.BagGrid.ClearItem(draggedItem);
+            }
+            Destroy(draggedItem.gameObject);
         }
     }
 }
