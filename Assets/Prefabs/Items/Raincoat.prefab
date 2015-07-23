@@ -31,7 +31,7 @@ GameObject:
   - 114: {fileID: 11462724}
   - 114: {fileID: 11455192}
   m_Layer: 5
-  m_Name: Umbrella
+  m_Name: Raincoat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,14 +125,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4322bf13b18ba4349a135e2e2cd747b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Paraguas
+  _id: 0
+  _name: 5061726167756173
   _itemSprite: {fileID: 21300238, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: Cuando usas este paraguas puedes caminar bajo la lluvia sin resfriarte.
+  _description: 4375616e646f20757361732065737465207061726167756173207075656465732063616d696e61722062616a6f206c61206c6c757669612073696e20726573667269617274652e
   _stringTiles:
-  - 1
-  - 1
+  - 31
+  - 31
   _dragPivotCoords: {x: 0, y: 1}
-  _dragPivot: {x: .5, y: .25}
+  _dragPivot: {x: 0, y: 0}
+  _rectTrans: {fileID: 0}
+  _isInBag: 0
+  nativeSizeFactor: 1.20000005
 --- !u!114 &11462724
 MonoBehaviour:
   m_ObjectHideFlags: 1

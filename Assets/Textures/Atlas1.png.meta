@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1437517901
+timeCreated: 1437664629
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,18 +32,18 @@ TextureImporter:
     21300050: House3
     21300052: House4
     21300054: House5
-    21300056: House_HorLong1
-    21300058: House_HorLong2
+    21300056: House_HorLongA1
+    21300058: House_HorLongB1
     21300060: Tree1
     21300062: Tree2
     21300064: Car1Side
     21300066: Car2Side
-    21300068: House_VerLong1
-    21300070: House_VerLong2
+    21300068: House_VerLongA2
+    21300070: House_VerLongB1
     21300072: Palmtree1
     21300074: Palmtree2
     21300076: Palmtree3
-    21300078: PalmtreeFalling
+    21300078: RaincoatDownS
     21300080: PalmtreeFell
     21300082: Tree3
     21300084: Car1Down
@@ -68,9 +68,9 @@ TextureImporter:
     21300122: Fire2
     21300124: Fire3
     21300126: Fire4
-    21300128: UmbrellaTop1
-    21300130: UmbrellaTop2
-    21300132: UmbrellaTop3
+    21300128: RaincoatDown1
+    21300130: RaincoatSide1
+    21300132: RaincoatUp1
     21300134: Rain3
     21300136: ManuelDown6
     21300138: ManuelDown5
@@ -79,9 +79,9 @@ TextureImporter:
     21300144: ManuelDown2
     21300146: ManuelDown1
     21300148: ManuelDownStand
-    21300150: UmbrellaSide1
-    21300152: UmbrellaSide2
-    21300154: UmbrellaSide3
+    21300150: RaincoatDown2
+    21300152: RaincoatSide2
+    21300154: RaincoatUp2
     21300156: MaskSide3
     21300158: MaskSide2
     21300160: MaskSide1
@@ -93,9 +93,9 @@ TextureImporter:
     21300172: FireBig2
     21300174: FireBig3
     21300176: FireBig4
-    21300178: UmbrellaDown1
-    21300180: UmbrellaDown2
-    21300182: UmbrellaDown3
+    21300178: RaincoatDown3
+    21300180: RaincoatSide3
+    21300182: RaincoatUp3
     21300184: ManuelUp6
     21300186: ManuelUp5
     21300188: ManuelUp4
@@ -123,7 +123,7 @@ TextureImporter:
     21300232: BootsSide1
     21300234: BootsSideStand
     21300236: Boots
-    21300238: Umbrella
+    21300238: Raincoat
     21300240: Tuna
     21300242: BootsUp6
     21300244: BootsUp5
@@ -199,6 +199,12 @@ TextureImporter:
     21300384: VideoGameConsole
     21300386: Book
     21300388: Guitar
+    21300390: House_HorLongA2
+    21300392: House_HorLongB2
+    21300394: House_VerLongB2
+    21300396: House_VerLongA1
+    21300398: RaincoatSideS
+    21300400: RaincoatUpS
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -408,9 +414,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 944
-        width: 17
-        height: 16
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,9 +424,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 937
-        width: 17
-        height: 23
+        y: 896
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,7 +446,7 @@ TextureImporter:
         x: 192
         y: 896
         width: 64
-        height: 17
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -524,22 +530,22 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: House_HorLong1
+    - name: House_HorLongA1
       rect:
         serializedVersion: 2
         x: 768
         y: 896
-        width: 128
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: House_HorLong2
+    - name: House_HorLongB1
       rect:
         serializedVersion: 2
         x: 896
         y: 896
-        width: 128
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
@@ -584,23 +590,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: House_VerLong1
+    - name: House_VerLongA2
       rect:
         serializedVersion: 2
         x: 0
         y: 768
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: House_VerLong2
+    - name: House_VerLongB1
       rect:
         serializedVersion: 2
         x: 64
-        y: 768
+        y: 832
         width: 64
-        height: 128
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -634,13 +640,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PalmtreeFalling
+    - name: RaincoatDownS
       rect:
         serializedVersion: 2
         x: 512
-        y: 768
-        width: 128
-        height: 128
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -884,7 +890,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaTop1
+    - name: RaincoatDown1
       rect:
         serializedVersion: 2
         x: 256
@@ -894,7 +900,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaTop2
+    - name: RaincoatSide1
       rect:
         serializedVersion: 2
         x: 320
@@ -904,7 +910,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaTop3
+    - name: RaincoatUp1
       rect:
         serializedVersion: 2
         x: 384
@@ -994,7 +1000,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaSide1
+    - name: RaincoatDown2
       rect:
         serializedVersion: 2
         x: 256
@@ -1004,7 +1010,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaSide2
+    - name: RaincoatSide2
       rect:
         serializedVersion: 2
         x: 320
@@ -1014,7 +1020,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaSide3
+    - name: RaincoatUp2
       rect:
         serializedVersion: 2
         x: 384
@@ -1134,7 +1140,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaDown1
+    - name: RaincoatDown3
       rect:
         serializedVersion: 2
         x: 256
@@ -1144,7 +1150,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaDown2
+    - name: RaincoatSide3
       rect:
         serializedVersion: 2
         x: 320
@@ -1154,7 +1160,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: UmbrellaDown3
+    - name: RaincoatUp3
       rect:
         serializedVersion: 2
         x: 384
@@ -1434,7 +1440,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Umbrella
+    - name: Raincoat
       rect:
         serializedVersion: 2
         x: 128
@@ -2181,6 +2187,66 @@ TextureImporter:
         y: 384
         width: 128
         height: 192
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: House_HorLongA2
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: House_HorLongB2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: House_VerLongB2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: House_VerLongA1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RaincoatSideS
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RaincoatUpS
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
