@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - EventSystem
+  - StartTile
+  - Map
   layers:
   - Default
   - TransparentFX

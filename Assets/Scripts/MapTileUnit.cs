@@ -1,9 +1,36 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class MapTileUnit : MonoBehaviour {
+    private SpriteRenderer spriteRenderer;
+
     private int _layer;
-    private bool[] _cardinalFlags;
+    [SerializeField]
+    private bool _passable;
+
+    public bool UpPass = true;
+    public bool RightPass = true;
+    public bool DownPass = true;
+    public bool LeftPass = true;
+
+    void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Start()
+    {
+    }
+
+    /// <summary>
+    /// Formats the tile from design format to game format
+    /// </summary>
+    public void FormatToGameTile()
+    {
+        Destroy(GetComponent<Image>());
+        Destroy(GetComponent<CanvasRenderer>());
+    }
 
     public int Layer
     {
@@ -11,9 +38,9 @@ public class MapTileUnit : MonoBehaviour {
         set { _layer = value; }
     }
 
-    public bool[] CardinalFlags
+    public bool Passable
     {
-        get { return _cardinalFlags; }
-        set { _cardinalFlags = value; }
+        get { return _passable; }
+        set { _passable = value; }
     }
 }

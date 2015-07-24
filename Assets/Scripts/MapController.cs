@@ -12,4 +12,8 @@ public class MapController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public virtual void GenerateMap()
+    {
+    }
 }
