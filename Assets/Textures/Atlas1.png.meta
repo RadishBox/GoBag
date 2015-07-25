@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1437664629
+timeCreated: 1437777814
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -40,11 +40,11 @@ TextureImporter:
     21300066: Car2Side
     21300068: House_VerLongA2
     21300070: House_VerLongB1
-    21300072: Palmtree1
-    21300074: Palmtree2
-    21300076: Palmtree3
+    21300072: PalmtreeA1
+    21300074: PalmtreeB1
+    21300076: PalmtreeC1
     21300078: RaincoatDownS
-    21300080: PalmtreeFell
+    21300080: PalmtreeFell1
     21300082: Tree3
     21300084: Car1Down
     21300086: Car2Down
@@ -192,7 +192,7 @@ TextureImporter:
     21300370: cables
     21300372: Car2Crashed
     21300374: Car1Crashed
-    21300376: Goal
+    21300376: Goal1
     21300378: ColdMedicine
     21300380: Calculator
     21300382: Plush
@@ -205,6 +205,13 @@ TextureImporter:
     21300396: House_VerLongA1
     21300398: RaincoatSideS
     21300400: RaincoatUpS
+    21300402: Goal2
+    21300404: Goal3
+    21300406: Goal4
+    21300408: PalmtreeA2
+    21300410: PalmtreeB2
+    21300412: PalmtreeC2
+    21300414: PalmtreeFell2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -610,33 +617,33 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Palmtree1
+    - name: PalmtreeA1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 768
-        width: 128
-        height: 128
+        x: 192
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Palmtree2
+    - name: PalmtreeB1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 768
-        width: 128
-        height: 128
+        x: 320
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Palmtree3
+    - name: PalmtreeC1
       rect:
         serializedVersion: 2
-        x: 384
-        y: 768
-        width: 128
-        height: 128
+        x: 448
+        y: 832
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -650,13 +657,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: PalmtreeFell
+    - name: PalmtreeFell1
       rect:
         serializedVersion: 2
         x: 640
         y: 768
-        width: 128
-        height: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2120,13 +2127,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Goal
+    - name: Goal1
       rect:
         serializedVersion: 2
         x: 448
-        y: 256
-        width: 128
-        height: 128
+        y: 320
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2244,6 +2251,76 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Goal2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Goal3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Goal4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PalmtreeA2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PalmtreeB2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PalmtreeC2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PalmtreeFell2
+      rect:
+        serializedVersion: 2
+        x: 704
         y: 768
         width: 64
         height: 64
