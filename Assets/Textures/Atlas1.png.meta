@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1437777814
+timeCreated: 1438013901
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -212,6 +212,9 @@ TextureImporter:
     21300410: PalmtreeB2
     21300412: PalmtreeC2
     21300414: PalmtreeFell2
+    21300416: iconEnergy
+    21300418: iconWater
+    21300420: iconHealth
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -2324,6 +2327,36 @@ TextureImporter:
         y: 768
         width: 64
         height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: iconEnergy
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: iconWater
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 800
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: iconHealth
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 768
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
