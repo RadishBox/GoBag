@@ -9,42 +9,93 @@ public class MapTile : MonoBehaviour {
         return true;
     }
      * */
-
+    private Vector2 _canvasDisplacement;
     private Vector2 posInCanvasGrid;
 
     void Awake()
     {
-        posInCanvasGrid = GetComponent<RectTransform>().anchoredPosition;
+        
     }
 
     void Start()
     {
-        FormatToGameTile();
+        //FormatToGameTile();
     }
 
     public void FormatToGameTile()
     {
+        posInCanvasGrid = GetComponent<RectTransform>().anchoredPosition;
         Vector2 targetPosition = posInCanvasGrid;
-        print(targetPosition);
+
+        GameObject Tile = new GameObject();
 
         foreach (Transform child in transform)
         {
-            child.GetComponent<MapTileUnit>().FormatToGameTile();
+            GameObject childGO = new GameObject();
+            childGO.transform.SetParent(Tile.transform, true); // Add child to tile
+            childGO.transform.localScale = Vector3.one;
+
+            // Copy components
+            childGO.AddComponent<MapTileUnit>(child.GetComponent<MapTileUnit>());
+            SpriteRenderer originalSpriteRenderer = child.GetComponent<SpriteRenderer>();
+            SpriteRenderer spriteRenderer = childGO.AddComponent<SpriteRenderer>(originalSpriteRenderer);
+            spriteRenderer.sortingLayerID = originalSpriteRenderer.sortingLayerID;
+            spriteRenderer.sortingLayerName = originalSpriteRenderer.sortingLayerName;
+            spriteRenderer.sortingOrder = originalSpriteRenderer.sortingOrder;
+
+            childGO.transform.localRotation = child.transform.localRotation;
+
+            childGO.name = child.gameObject.name;
+            //childGO.GetComponent<MapTileUnit>().FormatToGameTile();
         }
 
         // Detatch from canvas
-        transform.SetParent(GameObject.FindGameObjectWithTag("Map").transform,true);
-        transform.localScale = Vector3.one;
-        GetComponent<RectTransform>().sizeDelta = Vector2.one;
+        Tile.transform.SetParent(GameObject.FindGameObjectWithTag("Map").transform.FindChild("Tiles"),true);
+        Tile.transform.localScale = Vector3.one;
 
         // Set position
         targetPosition = new Vector2((targetPosition.x/45)-1, (targetPosition.y/45)-1);
-        transform.localPosition = targetPosition;
+        Tile.transform.localPosition = targetPosition;
 
         // Apply displacement
-        transform.localPosition = new Vector2(targetPosition.x - 3.5f, targetPosition.y + 18f);
+        string[] pos = Name.Split(',');
+        int xPos = int.Parse(pos[0]);
+        int yPos = int.Parse(pos[1]);
+        Tile.transform.localPosition = new Vector2(xPos, yPos);
+        //Tile.transform.localPosition = new Vector2(targetPosition.x - 3.5f, targetPosition.y + 28.92222f + 0.5f);
+
+        // Add Tile Component
+        Tile.gameObject.AddComponent<MapTile>(this);
+
+        // Set GameObject Name
+        Tile.gameObject.name = Name;
     }
 
+    public Vector2 CanvasDisplacement
+    {
+        get { return _canvasDisplacement; }
+        set { _canvasDisplacement = value; }
+    }
 
+    public string Name
+    {
+        get { return gameObject.name; }
+        set { gameObject.name = value; }
+    }
 
+    public bool Passable
+    {
+        get
+        {
+            foreach (Transform child in transform)
+            {
+                MapTileUnit tileUnit = child.GetComponent<MapTileUnit>();
+                if (!tileUnit.Passable)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
 }

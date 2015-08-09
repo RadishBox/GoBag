@@ -19,10 +19,6 @@ public class MapTileUnit : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Start()
-    {
-    }
-
     /// <summary>
     /// Formats the tile from design format to game format
     /// </summary>

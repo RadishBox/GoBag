@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
+using System;
 
-class GridMove : MonoBehaviour
+public class GridMove : MonoBehaviour
 {
     public float moveSpeed = 3f;
     public float gridSize = 1f;
@@ -20,11 +21,14 @@ class GridMove : MonoBehaviour
     private float t;
     private float factor;
 
-    public void Update()
+    public EntityAnimationController animatorController;
+    public MapEntity entity;
+
+
+    public void Move(Vector2 input)
     {
         if (!isMoving)
         {
-            input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             if (!allowDiagonals)
             {
                 if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
@@ -39,16 +43,19 @@ class GridMove : MonoBehaviour
 
             if (input != Vector2.zero)
             {
-                StartCoroutine(move(transform));
+                StartCoroutine(move(transform,input));
             }
         }
     }
 
-    public IEnumerator move(Transform transform)
+    public IEnumerator move(Transform transform, Vector2 input)
     {
         isMoving = true;
         startPosition = transform.position;
         t = 0;
+
+        animatorController.inputDir = input;
+        animatorController.AnimateMovement();
 
         if (gridOrientation == Orientation.Horizontal)
         {
@@ -78,6 +85,16 @@ class GridMove : MonoBehaviour
         }
 
         isMoving = false;
+        animatorController.inputDir = Vector2.zero;
+        animatorController.AnimateMovement();
+
+        if(entity is IMovable)
+        {
+            (entity as IMovable).Move(input);
+        }
+
+        entity.turnStatus = TurnStatus.Idle;
+
         yield return 0;
     }
 }

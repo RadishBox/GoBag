@@ -66,6 +66,11 @@ public class BagPrepController : MonoBehaviour {
         }
     }
 
+    public void LoadExploreScene()
+    {
+        Application.LoadLevel("Explore");
+    }
+
     /* Getters and Setters */
     public bool IsInDropArea
     {

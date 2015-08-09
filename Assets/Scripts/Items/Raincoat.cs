@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Umbrella : Item {
+public class Raincoat : Item {
 
     protected override void Start()
     {
