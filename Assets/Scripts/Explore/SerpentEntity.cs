@@ -12,29 +12,18 @@ public class SerpentEntity : MapEntity, IMovable
     protected override IEnumerator PlayTurnRoutine()
     {
         InTurn = true;
-        // Item usage
-        //while (turnStatus == TurnStatus.WaitingBagUse)
-        //{
-        //   yield return null;
-        //}
 
         // Move
-        // Turn off directional buttons
-
-        UpdateMoveButtons();
-        turnStatus = TurnStatus.WaitingMove;
-        while (turnStatus == TurnStatus.WaitingMove)
+        while (turnStatus == TurnStatus.Idle)
         {
             yield return null;
         }
 
-        //Move();
+        Move(CalculateMovementDirection());
         while (turnStatus == TurnStatus.Moving)
         {
             yield return null;
         }
-
-        // Check winning condition
 
         // Check for effects movement and ambient
 
@@ -46,13 +35,14 @@ public class SerpentEntity : MapEntity, IMovable
         // Update position
         Position += movement;
 
-        ExploreGUI.Instance.AlterHealthbar(-1, PlayerBars.Energy);
-        turnStatus = TurnStatus.Moving;
+        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Energy);
+        turnStatus = TurnStatus.Moving; // Lock, is released by animator
     }
 
-    public void UpdateMoveButtons()
+    public Vector2 CalculateMovementDirection()
     {
-        print(Position);
+        Vector2 targetDirection = Vector2.zero;
+
         MapTile tile;
 
         // Up
@@ -90,5 +80,7 @@ public class SerpentEntity : MapEntity, IMovable
         else
         {
         }
+
+        return targetDirection;
     }
 }

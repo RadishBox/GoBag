@@ -10,6 +10,7 @@ public abstract class MapEntity : MonoBehaviour {
     private Vector2 _position;
     private State _state;
     private bool _inTurn;
+    public ScenarioLibrary.ScenarioType Scenario;
 
 
     public TurnStatus turnStatus;

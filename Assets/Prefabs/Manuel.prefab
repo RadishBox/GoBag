@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 449478}
   - 114: {fileID: 11472594}
   - 114: {fileID: 11434702}
-  - 114: {fileID: 11467364}
+  - 114: {fileID: 11493622}
   m_Layer: 0
   m_Name: Manuel
   m_TagString: Player
@@ -509,27 +509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 0
   playerMovementController: {fileID: 11472594}
---- !u!114 &11467364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4da7f11ed87e5cf45aa3230f0d4c49d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 9520640}
-  raincoat: {fileID: 155390}
-  mask: {fileID: 184864}
-  boots: {fileID: 194316}
-  runningShoes: {fileID: 112742}
-  raincoatAnimator: {fileID: 9532294}
-  maskAnimator: {fileID: 9578946}
-  bootsAnimator: {fileID: 9546540}
-  runningShoesAnimator: {fileID: 9523328}
-  inputDir: {x: 0, y: 0}
 --- !u!114 &11472594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -543,8 +522,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   gridSize: 1
-  animatorController: {fileID: 11467364}
+  animatorController: {fileID: 11493622}
   entity: {fileID: 11434702}
+--- !u!114 &11493622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 811b5f18d27144bd1824699994de75e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 9520640}
+  inputDir: {x: 0, y: 0}
+  raincoat: {fileID: 155390}
+  mask: {fileID: 184864}
+  boots: {fileID: 194316}
+  runningShoes: {fileID: 112742}
+  raincoatAnimator: {fileID: 9532294}
+  maskAnimator: {fileID: 9578946}
+  bootsAnimator: {fileID: 9546540}
+  runningShoesAnimator: {fileID: 9523328}
 --- !u!212 &21212878
 SpriteRenderer:
   m_ObjectHideFlags: 1

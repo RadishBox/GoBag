@@ -54,7 +54,7 @@ public class GridMove : MonoBehaviour
         startPosition = transform.position;
         t = 0;
 
-        animatorController.inputDir = input;
+        animatorController.InputDir = input;
         animatorController.AnimateMovement();
 
         if (gridOrientation == Orientation.Horizontal)
@@ -85,7 +85,7 @@ public class GridMove : MonoBehaviour
         }
 
         isMoving = false;
-        animatorController.inputDir = Vector2.zero;
+        animatorController.InputDir = Vector2.zero;
         animatorController.AnimateMovement();
 
         if(entity is IMovable)

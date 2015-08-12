@@ -33,7 +33,8 @@ public class ExploreGameController : MonoBehaviour {
 
         // Place objective
 
-        // Place events
+        // Place entities
+        PlaceEntities();
 
         StartCoroutine(AdvanceTurn());
     }
@@ -70,31 +71,50 @@ public class ExploreGameController : MonoBehaviour {
     // Turn loop for all entities
     private IEnumerator ProcessTurn()
     {        
-        //while (true)
-        //{
         _isTurnProcessing = true;
-            print("Turn started");
-            Turn++;
-            // Process Player turn
-            PlayerEntity player = Player.GetComponent<PlayerEntity>();
-            player.PlayTurn();
+        print("Turn started");
+        Turn++;
+        // Process Player turn
+        PlayerEntity player = Player.GetComponent<PlayerEntity>();
+        player.PlayTurn();
 
-            while (player.InTurn)
-                yield return null;
+        while (player.InTurn)
+            yield return null;
 
-            print("Turn ended");
-            _isTurnProcessing = false;
-            // Process Enemy turn
-        //}
+        print("Turn ended");
+        _isTurnProcessing = false;
+    }
+
+    /// <summary>Places entities in the map.</summary>
+    private void PlaceEntities()
+    {
+        // Get entities for this scenario
+        GameObject[] entities = MapEntityLibrary.Instance.Entities;
+
+        foreach (GameObject entity in entities)
+        {
+            // Decide number of said entity
+            int numberToSpawn = Random.Range(5, 8);
+
+            for(int i = 0; i < numberToSpawn; i++)
+            {                
+                Vector2 targetPosition = Map.GetComponent<MapController>().GetRandomTile();                
+
+                GameObject entityGO = Instantiate(entity);
+                entityGO.transform.SetParent(Map.transform);
+                entityGO.GetComponent<MapEntity>().Position = entityGO.transform.localPosition;
+            }
+
+        }
     }
 
 
-    #region Properties
+#region Properties
     public int Turn
     {
         get { return _turn; }
         set { _turn = value; }
     }
 
-    #endregion
+#endregion
 }

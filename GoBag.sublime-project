@@ -1,0 +1,17 @@
+
+{
+	 "folders": [
+		{
+		 "folder_exclude_patterns": [
+			"wp-includes",
+			"wp-admin",
+			"wp-content/plugins",
+			"wp-content/uploads"
+		 ],
+		 "path": "Assets/Scripts",
+		 "file_exclude_patterns": [
+			"*.meta",
+		 ]
+		}
+	 ]
+	}

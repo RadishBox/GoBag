@@ -3,24 +3,9 @@ using System.Collections;
 
 public class MapTile : MonoBehaviour {
 
-    /*
-    public bool[] GetCardinalBlockage
-    {
-        return true;
-    }
-     * */
     private Vector2 _canvasDisplacement;
     private Vector2 posInCanvasGrid;
-
-    void Awake()
-    {
-        
-    }
-
-    void Start()
-    {
-        //FormatToGameTile();
-    }
+    private MapEntity _entityInTile;
 
     public void FormatToGameTile()
     {
@@ -97,5 +82,16 @@ public class MapTile : MonoBehaviour {
             }
             return true;
         }
+    }
+
+    public MapEntity EntityInTile
+    {
+        get { return _entityInTile; }
+        set { _entityInTile = value; }
+    }
+
+    public bool Occupied
+    {
+        get { return EntityInTile != null; }
     }
 }

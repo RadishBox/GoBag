@@ -1,31 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EntityAnimationController : MonoBehaviour
-{
+/// <summary>Controls the animation in the player</summary>
+/// <para>Attached to:</para>
+/// <list type="table">
+/// <listheader>
+/// <term>Scene</term>
+/// <description>GameObject</description>
+/// </listheader>
+/// <item><term>Multiple</term><description>Player</description></item>
+/// </list>
+public class PlayerAnimationController : EntityAnimationController {
 
-    public Animator playerAnimator;
-    public GameObject raincoat;
+	public GameObject raincoat;
     public GameObject mask;
     public GameObject boots;
     public GameObject runningShoes;
-
 
     public Animator raincoatAnimator;
     public Animator maskAnimator;
     public Animator bootsAnimator;
     public Animator runningShoesAnimator;
 
-    private Vector3 invertedX = new Vector3(-1f, 1f, 1f);
-    private Vector3 normalX = new Vector3(1f, 1f, 1f);
-
-    public Vector2 inputDir = Vector2.zero;
-
-    // Update is called once per frame
-    public void AnimateMovement()
+	public override void AnimateMovement()
     {
         //normal scale when anything but left
-        if ((inputDir.y != 0) || (inputDir.x > 0))
+        if ((InputDir.y != 0) || (InputDir.x > 0))
         {
             playerAnimator.gameObject.transform.localScale = normalX;
             mask.transform.localScale = normalX;
@@ -35,7 +35,7 @@ public class EntityAnimationController : MonoBehaviour
         }
 
         //Up
-        if (inputDir.y > 0f)
+        if (InputDir.y > 0f)
         {
             playerAnimator.SetBool("playerIsUp", true);
             raincoatAnimator.SetBool("umbrellaIsUp", true);
@@ -44,7 +44,7 @@ public class EntityAnimationController : MonoBehaviour
             runningShoesAnimator.SetBool("runningShoesIsUp", true);
 
         }
-        else if (inputDir.y == 0f)
+        else if (InputDir.y == 0f)
         {
             playerAnimator.SetBool("playerIsUp", false);
             raincoatAnimator.SetBool("umbrellaIsUp", false);
@@ -56,7 +56,7 @@ public class EntityAnimationController : MonoBehaviour
 
         //Right
         //else ifs? solo hay uno a la vez
-        if (inputDir.x > 0f)
+        if (InputDir.x > 0f)
         {
             playerAnimator.SetBool("playerIsRight", true);
             raincoatAnimator.SetBool("umbrellaIsRight", true);
@@ -64,7 +64,7 @@ public class EntityAnimationController : MonoBehaviour
             bootsAnimator.SetBool("bootsIsRight", true);
             runningShoesAnimator.SetBool("runningShoesIsRight", true);
         }
-        else if (inputDir.x == 0f)
+        else if (InputDir.x == 0f)
         {
             playerAnimator.SetBool("playerIsRight", false);
             raincoatAnimator.SetBool("umbrellaIsRight", false);
@@ -74,7 +74,7 @@ public class EntityAnimationController : MonoBehaviour
         }
 
         //Down
-        if (inputDir.y < 0f)
+        if (InputDir.y < 0f)
         {
             playerAnimator.SetBool("playerIsDown", true);
             raincoatAnimator.SetBool("umbrellaIsDown", true);
@@ -82,7 +82,7 @@ public class EntityAnimationController : MonoBehaviour
             bootsAnimator.SetBool("bootsIsDown", true);
             runningShoesAnimator.SetBool("runningShoesIsDown", true);
         }
-        else if (inputDir.y == 0f)
+        else if (InputDir.y == 0f)
         {
             playerAnimator.SetBool("playerIsDown", false);
             raincoatAnimator.SetBool("umbrellaIsDown", false);
@@ -92,7 +92,7 @@ public class EntityAnimationController : MonoBehaviour
         }
 
         //Left
-        if ((inputDir.x < 0f) && (inputDir.y == 0))
+        if ((InputDir.x < 0f) && (InputDir.y == 0))
         {
             //inverted X scale when going left
             playerAnimator.gameObject.transform.localScale = invertedX;
@@ -108,7 +108,7 @@ public class EntityAnimationController : MonoBehaviour
             bootsAnimator.SetBool("bootsIsLeft", true);
             runningShoesAnimator.SetBool("runningShoesIsLeft", true);
         }
-        else if (inputDir.x == 0f)
+        else if (InputDir.x == 0f)
         {
             playerAnimator.SetBool("playerIsLeft", false);
             raincoatAnimator.SetBool("umbrellaIsLeft", false);

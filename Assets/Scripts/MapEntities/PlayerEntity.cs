@@ -84,7 +84,12 @@ public class PlayerEntity : MapEntity, IMovable {
 
         // Reduce energy bar
         Energy--;
-        ExploreGUI.Instance.AlterHealthbar(-1, PlayerBars.Energy);
+
+        // Reduce water bar
+        Water--;
+
+        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Energy);
+        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Water);
         turnStatus = TurnStatus.Moving;
     }
 

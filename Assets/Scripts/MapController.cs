@@ -3,9 +3,11 @@ using System.Collections;
 
 public class MapController : MonoBehaviour {
 
+    
+    private int _height;
+    private int _width;
+
     private static MapController _instance;
-
-
     public static MapController Instance
     {
         get { return _instance; }
@@ -43,4 +45,27 @@ public class MapController : MonoBehaviour {
 
         return tile;
     }
+
+    /// <summary>Returns a random tile from the map, which is passable.</summary>
+    public MapTile GetRandomTile(bool passable = true)
+    {
+
+    }
+
+#region Properties
+
+    public int Width
+    {
+        get { return _width; }
+        set { _width = value; }
+    }
+
+    public int Height
+    {
+        get { return _height; }
+        set { _height = value; }
+    }
+
+#endregion
+
 }

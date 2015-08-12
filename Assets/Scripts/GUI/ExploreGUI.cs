@@ -24,7 +24,7 @@ public class ExploreGUI : MonoBehaviour {
         set { _instance = value; }
     }
 
-    public void AlterHealthbar(int value, PlayerBars bar)
+    public void AlterBar(int value, PlayerBars bar)
     {
         LayoutElement barLayout = null;
         int baseBarDelta = 0;
