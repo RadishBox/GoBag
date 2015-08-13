@@ -42,13 +42,18 @@ public class MapGenerationUtil : MonoBehaviour {
         for (int i = 0; i < mapTiles.Length; i++)
         {
             x = i % _columnNumber;
-            y = i / _columnNumber;
+            y = i / _columnNumber;            
             mapTiles[i].Name = x + "," + y;
             mapTiles[i].FormatToGameTile();
         }
 
         // Displace map
         Map.transform.position += MapDisplacement;
+
+        // Set Map Width and Height
+        Map.GetComponent<MapController>().Width = _columnNumber;
+        Map.GetComponent<MapController>().Height = y+1;
+
 
 #if UNITY_EDITOR
         if (Generate)

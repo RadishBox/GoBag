@@ -8,6 +8,7 @@ public class BagGridTile : DropArea
     private bool _isAvailable = true;
     private bool _isActive = true;
 
+
     private Vector2 _gridCoords;
 
     public override void OnDrop(PointerEventData eventData)

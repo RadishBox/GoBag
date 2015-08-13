@@ -15,3 +15,8 @@ Assembly-CSharp.csproj
 UnityVS.GoBag.CSharp.csproj
 UnityVS.GoBag.CSharp.csproj
 UnityVS.GoBag.sln
+Assembly-CSharp-firstpass-vs.csproj
+*.csproj
+Assembly-CSharp-firstpass-vs.csproj
+*.csproj
+UnityVS.GoBag.CSharp.csproj

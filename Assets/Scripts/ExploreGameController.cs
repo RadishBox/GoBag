@@ -98,11 +98,14 @@ public class ExploreGameController : MonoBehaviour {
 
             for(int i = 0; i < numberToSpawn; i++)
             {                
-                Vector2 targetPosition = Map.GetComponent<MapController>().GetRandomTile();                
+                MapTile targetTile = Map.GetComponent<MapController>().GetRandomTile();
 
                 GameObject entityGO = Instantiate(entity);
                 entityGO.transform.SetParent(Map.transform);
+                entityGO.transform.localPosition = targetTile.transform.localPosition;
                 entityGO.GetComponent<MapEntity>().Position = entityGO.transform.localPosition;
+
+                targetTile.EntityInTile = entityGO.GetComponent<MapEntity>();
             }
 
         }

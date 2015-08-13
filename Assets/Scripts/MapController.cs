@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MapController : MonoBehaviour {
+/// <summary>
+/// Controls the map in the exploration game part
+/// </summary>
+public class MapController : MonoBehaviour
+{
 
-    
+    [SerializeField]
     private int _height;
+    [SerializeField]
     private int _width;
 
     private static MapController _instance;
@@ -14,26 +19,25 @@ public class MapController : MonoBehaviour {
         set { _instance = value; }
     }
 
-	// Use this for initialization
-	void Awake () {
+    // Use this for initialization
+    void Awake ()
+    {
         Instance = this;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 
     public virtual void GenerateMap()
     {
 
     }
 
+    /// <summary>
+    /// Gets a tile from the map, given its coordinates
+    /// </summary>
     public MapTile GetTile(Vector2 coordinates)
     {
         MapTile tile = null;
 
-        string childName = coordinates.x+","+coordinates.y;
+        string childName = coordinates.x + "," + coordinates.y;
         print(childName);
 
         Transform tileGO = transform.FindChild("Tiles").FindChild(childName);
@@ -49,10 +53,31 @@ public class MapController : MonoBehaviour {
     /// <summary>Returns a random tile from the map, which is passable.</summary>
     public MapTile GetRandomTile(bool passable = true)
     {
+        int x, y = 0;
+        bool validTile = false;
+        Vector2 targetCoords;
+        MapTile tile = null;
 
+        // Get a random coord
+        while (!validTile)
+        {
+            x = Random.Range(0, Width);
+            y = Random.Range(0, Height);
+
+            targetCoords = new Vector2(x, y);
+
+            tile = GetTile(targetCoords);
+
+            if (tile.Passable && !tile.Occupied)
+            {
+                validTile = true;
+            }
+        }
+
+        return tile;
     }
 
-#region Properties
+    #region Properties
 
     public int Width
     {
@@ -66,6 +91,6 @@ public class MapController : MonoBehaviour {
         set { _height = value; }
     }
 
-#endregion
+    #endregion
 
 }

@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MapTile : MonoBehaviour {
+public class MapTile : MonoBehaviour
+{
 
     private Vector2 _canvasDisplacement;
     private Vector2 posInCanvasGrid;
     private MapEntity _entityInTile;
+
 
     public void FormatToGameTile()
     {
@@ -35,11 +37,11 @@ public class MapTile : MonoBehaviour {
         }
 
         // Detatch from canvas
-        Tile.transform.SetParent(GameObject.FindGameObjectWithTag("Map").transform.FindChild("Tiles"),true);
+        Tile.transform.SetParent(GameObject.FindGameObjectWithTag("Map").transform.FindChild("Tiles"), true);
         Tile.transform.localScale = Vector3.one;
 
         // Set position
-        targetPosition = new Vector2((targetPosition.x/45)-1, (targetPosition.y/45)-1);
+        targetPosition = new Vector2((targetPosition.x / 45) - 1, (targetPosition.y / 45) - 1);
         Tile.transform.localPosition = targetPosition;
 
         // Apply displacement
@@ -54,6 +56,7 @@ public class MapTile : MonoBehaviour {
 
         // Set GameObject Name
         Tile.gameObject.name = Name;
+
     }
 
     public Vector2 CanvasDisplacement
