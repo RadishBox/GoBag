@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: eab9518b8a2a3b247a45a1e7f7b74fac
-timeCreated: 1436627369
+timeCreated: 1439576034
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,6 +9,9 @@ TextureImporter:
     21300004: Fire3
     21300006: Pack
     21300008: TitleScreen
+    21300010: ItemsHealth
+    21300012: itemsWater
+    21300014: ItemsEnergy
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -101,6 +104,36 @@ TextureImporter:
         y: 0
         width: 682
         height: 1024
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ItemsHealth
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 358
+        width: 405
+        height: 666
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: itemsWater
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 643
+        width: 258
+        height: 341
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ItemsEnergy
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 0
+        width: 350
+        height: 358
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
