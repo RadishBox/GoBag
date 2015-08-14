@@ -22,10 +22,10 @@ public class PlayerAnimationController : EntityAnimationController {
     public Animator bootsAnimator;
     public Animator runningShoesAnimator;
 
-	public override void AnimateMovement()
+	public override void AnimateMovement(Vector2 direction)
     {
         //normal scale when anything but left
-        if ((InputDir.y != 0) || (InputDir.x > 0))
+        if ((direction.y != 0) || (direction.x > 0))
         {
             playerAnimator.gameObject.transform.localScale = normalX;
             mask.transform.localScale = normalX;
@@ -35,7 +35,7 @@ public class PlayerAnimationController : EntityAnimationController {
         }
 
         //Up
-        if (InputDir.y > 0f)
+        if (direction.y > 0f)
         {
             playerAnimator.SetBool("playerIsUp", true);
             raincoatAnimator.SetBool("umbrellaIsUp", true);
@@ -44,7 +44,7 @@ public class PlayerAnimationController : EntityAnimationController {
             runningShoesAnimator.SetBool("runningShoesIsUp", true);
 
         }
-        else if (InputDir.y == 0f)
+        else if (direction.y == 0f)
         {
             playerAnimator.SetBool("playerIsUp", false);
             raincoatAnimator.SetBool("umbrellaIsUp", false);
@@ -56,7 +56,7 @@ public class PlayerAnimationController : EntityAnimationController {
 
         //Right
         //else ifs? solo hay uno a la vez
-        if (InputDir.x > 0f)
+        if (direction.x > 0f)
         {
             playerAnimator.SetBool("playerIsRight", true);
             raincoatAnimator.SetBool("umbrellaIsRight", true);
@@ -64,7 +64,7 @@ public class PlayerAnimationController : EntityAnimationController {
             bootsAnimator.SetBool("bootsIsRight", true);
             runningShoesAnimator.SetBool("runningShoesIsRight", true);
         }
-        else if (InputDir.x == 0f)
+        else if (direction.x == 0f)
         {
             playerAnimator.SetBool("playerIsRight", false);
             raincoatAnimator.SetBool("umbrellaIsRight", false);
@@ -74,7 +74,7 @@ public class PlayerAnimationController : EntityAnimationController {
         }
 
         //Down
-        if (InputDir.y < 0f)
+        if (direction.y < 0f)
         {
             playerAnimator.SetBool("playerIsDown", true);
             raincoatAnimator.SetBool("umbrellaIsDown", true);
@@ -82,7 +82,7 @@ public class PlayerAnimationController : EntityAnimationController {
             bootsAnimator.SetBool("bootsIsDown", true);
             runningShoesAnimator.SetBool("runningShoesIsDown", true);
         }
-        else if (InputDir.y == 0f)
+        else if (direction.y == 0f)
         {
             playerAnimator.SetBool("playerIsDown", false);
             raincoatAnimator.SetBool("umbrellaIsDown", false);
@@ -92,7 +92,7 @@ public class PlayerAnimationController : EntityAnimationController {
         }
 
         //Left
-        if ((InputDir.x < 0f) && (InputDir.y == 0))
+        if ((direction.x < 0f) && (direction.y == 0))
         {
             //inverted X scale when going left
             playerAnimator.gameObject.transform.localScale = invertedX;
@@ -108,7 +108,7 @@ public class PlayerAnimationController : EntityAnimationController {
             bootsAnimator.SetBool("bootsIsLeft", true);
             runningShoesAnimator.SetBool("runningShoesIsLeft", true);
         }
-        else if (InputDir.x == 0f)
+        else if (direction.x == 0f)
         {
             playerAnimator.SetBool("playerIsLeft", false);
             raincoatAnimator.SetBool("umbrellaIsLeft", false);

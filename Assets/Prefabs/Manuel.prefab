@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerAnimator: {fileID: 9520640}
+  spriteRenderer: {fileID: 21226416}
   raincoat: {fileID: 155390}
   mask: {fileID: 184864}
   boots: {fileID: 194316}
