@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scenario: 0
   turnStatus: 3
+  MovementController: {fileID: 11467434}
 --- !u!114 &11467434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4867a0d42391545608c242a5a8e468aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAnimator: {fileID: 0}
+  playerAnimator: {fileID: 9568460}
+  spriteRenderer: {fileID: 21282156}
 --- !u!212 &21227040
 SpriteRenderer:
   m_ObjectHideFlags: 1

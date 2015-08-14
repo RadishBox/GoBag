@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"sp",
+				"sprite"
+			],
+			[
+				"spri",
+				"spriteRenderer"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"Vec",
+				"Vector3	x, y, z"
+			],
+			[
+				"d",
+				"down"
+			],
+			[
+				"canmo",
+				"canMoveDown"
+			],
+			[
+				"canm",
+				"canMoveUp"
+			],
+			[
+				"canmove",
+				"canMoveRight"
+			],
+			[
+				"canMove",
+				"canMoveUp"
+			],
+			[
+				"retu",
+				"return"
+			],
+			[
+				"entit",
+				"entityGO"
+			],
+			[
+				"Map",
+				"MapEntity"
+			],
+			[
 				"Getc",
 				"GetComponent	type"
 			],
@@ -50,10 +98,6 @@
 			[
 				"Place",
 				"PlaceEntities"
-			],
-			[
-				"entit",
-				"entity"
 			],
 			[
 				"Mo",
@@ -470,77 +514,17 @@
 			[
 				"other",
 				"OtherBodyInput"
-			],
-			[
-				"Ini",
-				"InitiliazeQuoteRoutine"
-			],
-			[
-				"Initial",
-				"InitiliazeQuote"
-			],
-			[
-				"LoadRe",
-				"LoadReusedQuoteRoutine"
-			],
-			[
-				"Sta",
-				"StandardColorPicker"
-			],
-			[
-				"Selected",
-				"SelectedColorModel"
-			],
-			[
-				"UIT",
-				"UIToggleColorPickerElement"
-			],
-			[
-				"Has",
-				"HasSelected"
-			],
-			[
-				"Metal",
-				"MetallicColorPicker"
-			],
-			[
-				"Change",
-				"ChangeRoofType"
-			],
-			[
-				"roof",
-				"roofOptionsShown"
-			],
-			[
-				"option",
-				"optionElement"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/MapController.cs",
-			"settings":
-			{
-				"buffer_size": 1936,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "Assets/Scripts/ExploreGameController.cs",
 			"settings":
 			{
-				"buffer_size": 3158,
+				"buffer_size": 3557,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/RatEntity.cs",
-			"settings":
-			{
-				"buffer_size": 1907,
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -552,18 +536,50 @@
 			}
 		},
 		{
-			"file": "Assets/Scripts/MapTile.cs",
+			"file": "Assets/Scripts/Explore/SerpentEntity.cs",
 			"settings":
 			{
-				"buffer_size": 3108,
+				"buffer_size": 2747,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/Explore/SerpentEntity.cs",
+			"file": "Assets/Scripts/MapEntities/SerpentAnimationController.cs",
 			"settings":
 			{
-				"buffer_size": 1911,
+				"buffer_size": 1534,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapEntities/RatEntity.cs",
+			"settings":
+			{
+				"buffer_size": 2743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapEntities/RatAnimationController.cs",
+			"settings":
+			{
+				"buffer_size": 1741,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapEntities/EntityAnimationController.cs",
+			"settings":
+			{
+				"buffer_size": 639,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/GridMove.cs",
+			"settings":
+			{
+				"buffer_size": 2514,
 				"line_ending": "Windows"
 			}
 		}
@@ -641,18 +657,21 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/GoBag.sublime-project",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/PlayerEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/C/Users/Felipe/Desktop/PCG.txt",
 		"/C/Program Files (x86)/Sublime/Sublime Text Build 3047 x64/Data/Installed Packages/Package Control.sublime-package",
@@ -765,10 +784,7 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Editor/Scenes/CotizadorPanelSelection.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/RoleModel.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/QuoteOptionsModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UILoadingGroup.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UILoading.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/BodyOptionElement.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/BodyModel.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UILoadingGroup.cs"
 	],
 	"find":
 	{
@@ -787,6 +803,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"setint",
+			"idleSpeed",
+			"animator",
+			"InputDir",
+			"animatemoveme",
+			"animatorController",
 			"inputDir",
 			"animatorController",
 			"orderTableController.",
@@ -908,13 +930,7 @@
 			"access",
 			"discount",
 			"insurance",
-			"selectitem",
-			"Description",
-			"body_optiona",
-			"toggle",
-			"reset",
-			"colormodel",
-			"loadreus"
+			"selectitem"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -932,24 +948,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/MapController.cs",
+					"file": "Assets/Scripts/ExploreGameController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1936,
+						"buffer_size": 3557,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1186,
-								1186
+								2775,
+								2775
 							]
 						],
 						"settings":
@@ -959,69 +975,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 854.0,
+						"translation.y": 1394.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/ExploreGameController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3158,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2998,
-								2998
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1099.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Scripts/MapEntities/RatEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1907,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								147,
-								147
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
 					"semi_transient": false,
 					"settings":
@@ -1033,8 +993,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								1085,
+								1095
 							]
 						],
 						"settings":
@@ -1044,55 +1004,84 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 532.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/Explore/SerpentEntity.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/MapEntities/SerpentAnimationController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 39.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/Scripts/MapTile.cs",
+					"file": "Assets/Scripts/MapEntities/RatEntity.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3108,
+						"buffer_size": 2743,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2921,
-								2933
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 903.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/Explore/SerpentEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1911,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								1911
+								401,
+								401
 							]
 						],
 						"settings":
@@ -1103,6 +1092,91 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/MapEntities/RatAnimationController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1741,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								912,
+								912
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 547.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/MapEntities/EntityAnimationController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								628,
+								628
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Scripts/GridMove.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1320,
+								1328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 549.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1161,6 +1235,34 @@
 		"selected_items":
 		[
 			[
+				"anima",
+				"MapEntities\\EntityAnimationController.cs"
+			],
+			[
+				"move",
+				"GridMove.cs"
+			],
+			[
+				"plater",
+				"MapEntities\\PlayerAnimationController.cs"
+			],
+			[
+				"entit",
+				"MapEntities\\EntityAnimationController.cs"
+			],
+			[
+				"gridmo",
+				"GridMove.cs"
+			],
+			[
+				"direc",
+				"DirectionalButton.cs"
+			],
+			[
+				"mapen",
+				"MapEntities\\MapEntity.cs"
+			],
+			[
 				"serpent",
 				"Explore\\SerpentEntity.cs"
 			],
@@ -1187,10 +1289,6 @@
 			[
 				"mapco",
 				"MapController.cs"
-			],
-			[
-				"entit",
-				"MapEntities/MapEntity.cs"
 			],
 			[
 				"libra",
@@ -1647,30 +1745,6 @@
 			[
 				"ntsd",
 				"Main/Database/_DAO/NtsDAO.cs"
-			],
-			[
-				"qutoteadd",
-				"Main/Scene/Quote/QuoteAdditionalData.cs"
-			],
-			[
-				"qutoedeta",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"quotemo",
-				"Main/Database/_Model/QuoteModel.cs"
-			],
-			[
-				"inventorycon",
-				"Main/Scene/Inventory/InventoryController.cs"
-			],
-			[
-				"uicolor",
-				"Main/UIScripts/UIToggleColorPickerElement.cs"
-			],
-			[
-				"unitoption",
-				"Main/Scene/Quote/QuoteUnitOptions.cs"
 			]
 		],
 		"width": 0.0

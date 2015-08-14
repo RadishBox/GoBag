@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// This class controls the exploration part of the game
@@ -12,6 +13,8 @@ public class ExploreGameController : MonoBehaviour {
     public GameObject Map;
     public GameObject Player;
     public Camera MainCamera;
+
+    private List<MapEntity> entities;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +37,7 @@ public class ExploreGameController : MonoBehaviour {
         // Place objective
 
         // Place entities
+        entities = new List<MapEntity>();
         PlaceEntities();
 
         StartCoroutine(AdvanceTurn());
@@ -81,6 +85,15 @@ public class ExploreGameController : MonoBehaviour {
         while (player.InTurn)
             yield return null;
 
+        // Process other entities' turn
+        foreach (MapEntity entity in entities) 
+        {
+            entity.PlayTurn();
+
+            while(entity.InTurn)
+                yield return null;
+        }
+
         print("Turn ended");
         _isTurnProcessing = false;
     }
@@ -89,9 +102,9 @@ public class ExploreGameController : MonoBehaviour {
     private void PlaceEntities()
     {
         // Get entities for this scenario
-        GameObject[] entities = MapEntityLibrary.Instance.Entities;
+        GameObject[] gameEntities = MapEntityLibrary.Instance.Entities;
 
-        foreach (GameObject entity in entities)
+        foreach (GameObject entity in gameEntities)
         {
             // Decide number of said entity
             int numberToSpawn = Random.Range(5, 8);
@@ -106,6 +119,8 @@ public class ExploreGameController : MonoBehaviour {
                 entityGO.GetComponent<MapEntity>().Position = entityGO.transform.localPosition;
 
                 targetTile.EntityInTile = entityGO.GetComponent<MapEntity>();
+                entities.Add(entityGO.GetComponent<MapEntity>());
+
             }
 
         }

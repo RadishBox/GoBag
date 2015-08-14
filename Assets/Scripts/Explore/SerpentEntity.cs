@@ -6,6 +6,9 @@ using System.Collections;
 /// </summary>
 public class SerpentEntity : MapEntity, IMovable
 {
+
+    public GridMove MovementController;
+
     /// <summary>
     /// Function activated upon this entity's turn
     /// </summary>
@@ -14,12 +17,7 @@ public class SerpentEntity : MapEntity, IMovable
         InTurn = true;
 
         // Move
-        while (turnStatus == TurnStatus.Idle)
-        {
-            yield return null;
-        }
-
-        Move(CalculateMovementDirection());
+        MovementController.Move(CalculateMovementDirection());
         while (turnStatus == TurnStatus.Moving)
         {
             yield return null;
@@ -34,51 +32,70 @@ public class SerpentEntity : MapEntity, IMovable
     {
         // Update position
         Position += movement;
-
-        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Energy);
-        turnStatus = TurnStatus.Moving; // Lock, is released by animator
+        //turnStatus = TurnStatus.Idle; // Release moving lock, should be handled by animator
     }
 
     public Vector2 CalculateMovementDirection()
     {
         Vector2 targetDirection = Vector2.zero;
+        bool canMoveUp, canMoveDown, canMoveLeft, canMoveRight;
 
         MapTile tile;
 
+        // Check available directions
         // Up
         tile = MapController.Instance.GetTile(Position + Vector2.up);
-        if (tile == null || !tile.Passable) // tile not found
-        {
-        }
-        else
-        {
-        }
+        canMoveUp = (tile != null) && (tile.Passable);
 
         // Down
         tile = MapController.Instance.GetTile(Position + Vector2.down);
-        if (tile == null || !tile.Passable) // tile not found
-        {
-        }
-        else
-        {
-        }
+        canMoveDown = (tile != null) && (tile.Passable);
 
         // Left
         tile = MapController.Instance.GetTile(Position + Vector2.left);
-        if (tile == null || !tile.Passable) // tile not found
-        {
-        }
-        else
-        {
-        }
+        canMoveLeft = (tile != null) && (tile.Passable);
 
         // Right
         tile = MapController.Instance.GetTile(Position + Vector2.right);
-        if (tile == null || !tile.Passable) // tile not found
+        canMoveRight = (tile != null) && (tile.Passable);
+
+        // Choose a movement direction
+        int randomDir;
+        bool validDir = false;
+        while (!validDir)
         {
-        }
-        else
-        {
+            randomDir = Random.Range(0, 4);
+            switch (randomDir)
+            {
+            case 0:
+                if (canMoveUp)
+                {
+                    validDir = true;
+                    targetDirection = Vector2.up;
+                }
+                break;
+            case 1:
+                if (canMoveDown)
+                {
+                    validDir = true;
+                    targetDirection = Vector2.down;
+                }
+                break;
+            case 2:
+                if (canMoveLeft)
+                {
+                    validDir = true;
+                    targetDirection = Vector2.left;
+                }
+                break;
+            case 3:
+                if (canMoveRight)
+                {
+                    validDir = true;
+                    targetDirection = Vector2.right;
+                }
+                break;
+            }
         }
 
         return targetDirection;

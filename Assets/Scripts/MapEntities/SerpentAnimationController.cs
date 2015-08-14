@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/// <summary>Controls the animation in the player</summary>
+/// <summary>Controls the animation in the serpent</summary>
 /// <para>Attached to:</para>
 /// <list type="table">
 /// <listheader>
@@ -10,58 +10,52 @@ using System.Collections;
 /// </listheader>
 /// <item><term>Multiple</term><description>Player</description></item>
 /// </list>
-public class SerpentAnimationController : EntityAnimationController {
+public class SerpentAnimationController : EntityAnimationController
+{
 
-	public override void AnimateMovement()
+    public override void AnimateMovement(Vector2 direction)
     {
+        if (direction.y == 0 && direction.x == 0) // Stop
+        {
+            playerAnimator.SetFloat("idleSpeed", 1);
+        }
+        else
+        {
+            playerAnimator.SetFloat("idleSpeed", 15);
+        }
+
         //normal scale when anything but left
-        if ((InputDir.y != 0) || (InputDir.x > 0))
+        if ((direction.y != 0) || (direction.x > 0))
         {
             playerAnimator.gameObject.transform.localScale = normalX;
         }
 
-        //Up
-        if (InputDir.y > 0f)
+        //Up rotate
+        if (direction.y > 0f)
         {
-            playerAnimator.SetBool("playerIsUp", true);
-        }
-        else if (InputDir.y == 0f)
-        {
-            playerAnimator.SetBool("playerIsUp", false);
+            transform.eulerAngles = new Vector3(0, 0, -135);
+            return;
         }
 
-
-        //Right
-        //else ifs? solo hay uno a la vez
-        if (InputDir.x > 0f)
+        //Right rotate
+        if (direction.x > 0f)
         {
-            playerAnimator.SetBool("playerIsRight", true);
-        }
-        else if (InputDir.x == 0f)
-        {
-            playerAnimator.SetBool("playerIsRight", false);
+            transform.eulerAngles = new Vector3(0, 0, 135);
+            return;
         }
 
-        //Down
-        if (InputDir.y < 0f)
+        //Down rotate
+        if (direction.y < 0f)
         {
-            playerAnimator.SetBool("playerIsDown", true);
-        }
-        else if (InputDir.y == 0f)
-        {
-            playerAnimator.SetBool("playerIsDown", false);
+            transform.eulerAngles = new Vector3(0, 0, 45);
+            return;
         }
 
-        //Left
-        if ((InputDir.x < 0f) && (InputDir.y == 0))
+        //Left rotate
+        if ((direction.x < 0f) && (direction.y == 0))
         {
-            //inverted X scale when going left
-            playerAnimator.gameObject.transform.localScale = invertedX;
-            playerAnimator.SetBool("playerIsLeft", true);
-        }
-        else if (InputDir.x == 0f)
-        {
-            playerAnimator.SetBool("playerIsLeft", false);
+            transform.eulerAngles  = new Vector3(0, 0, -45);
+            return;
         }
     }
 }
