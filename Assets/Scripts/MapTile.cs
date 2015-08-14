@@ -6,6 +6,7 @@ public class MapTile : MonoBehaviour
 
     private Vector2 _canvasDisplacement;
     private Vector2 posInCanvasGrid;
+    [SerializeField]
     private MapEntity _entityInTile;
 
 

@@ -43,21 +43,26 @@ public class RatEntity : MapEntity, IMovable
         MapTile tile;
 
         // Check available directions
-        // Up
+         // Up
         tile = MapController.Instance.GetTile(Position + Vector2.up);
-        canMoveUp = (tile != null) && (tile.Passable);
+        canMoveUp = (tile != null) && (tile.Passable) && !tile.Occupied;
 
         // Down
         tile = MapController.Instance.GetTile(Position + Vector2.down);
-        canMoveDown = (tile != null) && (tile.Passable);
+        canMoveDown = (tile != null) && (tile.Passable) && !tile.Occupied;
 
         // Left
         tile = MapController.Instance.GetTile(Position + Vector2.left);
-        canMoveLeft = (tile != null) && (tile.Passable);
+        canMoveLeft = (tile != null) && (tile.Passable) && !tile.Occupied;
 
         // Right
         tile = MapController.Instance.GetTile(Position + Vector2.right);
-        canMoveRight = (tile != null) && (tile.Passable);
+        canMoveRight = (tile != null) && (tile.Passable) && !tile.Occupied;
+
+        if(!canMoveUp && !canMoveDown && !canMoveLeft && !canMoveRight)
+        {
+            return Vector2.zero;
+        }
 
         // Choose a movement direction
         int randomDir;
@@ -97,6 +102,12 @@ public class RatEntity : MapEntity, IMovable
                 break;
             }
         }
+
+        // Free current tile
+        MapController.Instance.GetTile(Position).EntityInTile = null;
+
+        // Occupy tile
+        MapController.Instance.GetTile(Position + targetDirection).EntityInTile = this;
 
         return targetDirection;
     }
