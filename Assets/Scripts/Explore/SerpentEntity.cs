@@ -28,6 +28,18 @@ public class SerpentEntity : MapEntity, IMovable
         InTurn = false;
     }
 
+    /// <summary>
+    /// Activated when other entity walks onto this entity
+    /// </summary>
+    public override void ActivateEffect(MapEntity otherEntity)
+    {
+        // When walked on, reduce that entity life
+        if (otherEntity.GetType() == typeof(PlayerEntity))
+        {
+            (otherEntity as PlayerEntity).AlterBar(-1, PlayerBars.Health);
+        }
+    }
+
     public void Move(Vector2 movement)
     {
         // Update position
@@ -46,21 +58,21 @@ public class SerpentEntity : MapEntity, IMovable
         // Check available directions
         // Up
         tile = MapController.Instance.GetTile(Position + Vector2.up);
-        canMoveUp = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveUp = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Down
         tile = MapController.Instance.GetTile(Position + Vector2.down);
-        canMoveDown = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveDown = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Left
         tile = MapController.Instance.GetTile(Position + Vector2.left);
-        canMoveLeft = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveLeft = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Right
         tile = MapController.Instance.GetTile(Position + Vector2.right);
-        canMoveRight = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveRight = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
-        if(!canMoveUp && !canMoveDown && !canMoveLeft && !canMoveRight)
+        if (!canMoveUp && !canMoveDown && !canMoveLeft && !canMoveRight)
         {
             return Vector2.zero;
         }
@@ -107,6 +119,13 @@ public class SerpentEntity : MapEntity, IMovable
 
         // Free current tile
         MapController.Instance.GetTile(Position).EntityInTile = null;
+
+        // Check if tile had entity
+        if(MapController.Instance.GetTile(Position + targetDirection).Occupied)
+        {
+            // Activate entity effect
+            MapController.Instance.GetTile(Position + targetDirection).EntityInTile.ActivateEffect(this);
+        }
 
         // Occupy tile
         MapController.Instance.GetTile(Position + targetDirection).EntityInTile = this;

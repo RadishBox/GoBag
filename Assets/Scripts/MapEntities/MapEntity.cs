@@ -2,11 +2,12 @@
 using System.Collections;
 
 /// <summary>
-/// Class for entities that interact within the map, this includes: player, npc's and incidents 
+/// Class for entities that interact within the map, this includes: player, npc's and incidents
 /// </summary>
 public enum State { InTurn };
 public enum TurnStatus { WaitingBagUse, WaitingMove, Moving, Idle };
-public abstract class MapEntity : MonoBehaviour {
+public abstract class MapEntity : MonoBehaviour
+{
     private Vector2 _position;
     private State _state;
     private bool _inTurn;
@@ -27,6 +28,11 @@ public abstract class MapEntity : MonoBehaviour {
     {
         StartCoroutine(PlayTurnRoutine());
     }
+
+    /// <summary>
+    /// Activates the entity's effect. Used when Some other entity moves to this entity's tile
+    /// </summary>
+    public abstract void ActivateEffect(MapEntity otherEntity);
 
     /// <summary>
     /// Function activated upon this entity's turn

@@ -18,6 +18,7 @@ public class SerpentAnimationController : EntityAnimationController
         if (direction.y == 0 && direction.x == 0) // Stop
         {
             playerAnimator.SetFloat("idleSpeed", 1);
+            return;
         }
         else
         {

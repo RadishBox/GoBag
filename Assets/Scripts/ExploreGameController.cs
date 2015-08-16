@@ -107,7 +107,7 @@ public class ExploreGameController : MonoBehaviour {
         foreach (GameObject entity in gameEntities)
         {
             // Decide number of said entity
-            int numberToSpawn = Random.Range(5, 8);
+            int numberToSpawn = Random.Range(4, 5);
 
             for(int i = 0; i < numberToSpawn; i++)
             {                

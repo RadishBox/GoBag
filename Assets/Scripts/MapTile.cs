@@ -98,4 +98,9 @@ public class MapTile : MonoBehaviour
     {
         get { return EntityInTile != null; }
     }
+
+    public bool OccupiedByPlayer
+    {
+        get { return EntityInTile.GetType() == typeof(PlayerEntity);  }
+    }
 }

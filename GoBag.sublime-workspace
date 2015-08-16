@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"Acti",
+				"ActivateEffect"
+			],
+			[
+				"pOS",
+				"Position"
+			],
+			[
+				"Map",
+				"MapController"
+			],
+			[
+				"Pla",
+				"PlayerBars"
+			],
+			[
+				"other",
+				"otherEntity"
+			],
+			[
 				"sp",
 				"sprite"
 			],
@@ -46,10 +66,6 @@
 			[
 				"entit",
 				"entityGO"
-			],
-			[
-				"Map",
-				"MapEntity"
 			],
 			[
 				"Getc",
@@ -498,22 +514,6 @@
 			[
 				"Body",
 				"BodyOptionModel"
-			],
-			[
-				"unit",
-				"unitBody"
-			],
-			[
-				"Sele",
-				"SelectItem"
-			],
-			[
-				"Bod",
-				"BodyDropdown"
-			],
-			[
-				"other",
-				"OtherBodyInput"
 			]
 		]
 	},
@@ -528,10 +528,18 @@
 			}
 		},
 		{
+			"file": "Assets/Scripts/MapEntities/MapEntity.cs",
+			"settings":
+			{
+				"buffer_size": 1426,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
 			"settings":
 			{
-				"buffer_size": 3337,
+				"buffer_size": 4563,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,15 +547,7 @@
 			"file": "Assets/Scripts/Explore/SerpentEntity.cs",
 			"settings":
 			{
-				"buffer_size": 2747,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/SerpentAnimationController.cs",
-			"settings":
-			{
-				"buffer_size": 1534,
+				"buffer_size": 3926,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,31 +555,23 @@
 			"file": "Assets/Scripts/MapEntities/RatEntity.cs",
 			"settings":
 			{
-				"buffer_size": 2743,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/RatAnimationController.cs",
-			"settings":
-			{
-				"buffer_size": 1741,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/EntityAnimationController.cs",
-			"settings":
-			{
-				"buffer_size": 639,
+				"buffer_size": 3435,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/GridMove.cs",
+			"file": "Assets/Scripts/MapController.cs",
 			"settings":
 			{
-				"buffer_size": 2514,
+				"buffer_size": 1910,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapTile.cs",
+			"settings":
+			{
+				"buffer_size": 3247,
 				"line_ending": "Windows"
 			}
 		}
@@ -657,14 +649,18 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatAnimationController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentAnimationController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/EntityAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/GoBag.sublime-project",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
@@ -780,11 +776,7 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICarrousel.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/AccessControl/TaskPermissionsController.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UIButtonToggleElement.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/TurntableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Editor/Scenes/CotizadorPanelSelection.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/RoleModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/QuoteOptionsModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UILoadingGroup.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/TurntableController.cs"
 	],
 	"find":
 	{
@@ -948,7 +940,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -964,8 +956,8 @@
 						"selection":
 						[
 							[
-								2775,
-								2775
+								2241,
+								2241
 							]
 						],
 						"settings":
@@ -975,26 +967,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1394.0,
+						"translation.y": 929.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
+					"file": "Assets/Scripts/MapEntities/MapEntity.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3337,
+						"buffer_size": 1426,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1085,
-								1095
+								953,
+								953
 							]
 						],
 						"settings":
@@ -1004,26 +996,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 532.0,
+						"translation.y": 202.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Assets/Scripts/Explore/SerpentEntity.cs",
+					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2747,
+						"buffer_size": 4563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								2747
+								3254,
+								3019
 							]
 						],
 						"settings":
@@ -1033,26 +1025,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 97.0,
+						"translation.y": 1477.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/MapEntities/SerpentAnimationController.cs",
+					"file": "Assets/Scripts/Explore/SerpentEntity.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1534,
+						"buffer_size": 3926,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								3726,
+								3726
 							]
 						],
 						"settings":
@@ -1062,7 +1054,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
+						"translation.y": 1492.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1073,15 +1065,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2743,
+						"buffer_size": 3435,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								401,
-								401
+								2010,
+								2010
 							]
 						],
 						"settings":
@@ -1091,53 +1083,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "Assets/Scripts/MapEntities/RatAnimationController.cs",
+					"file": "Assets/Scripts/MapController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1741,
+						"buffer_size": 1910,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								912,
-								912
+								813,
+								813
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 547.0,
+						"translation.y": 292.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "Assets/Scripts/MapEntities/EntityAnimationController.cs",
+					"file": "Assets/Scripts/MapTile.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 639,
+						"buffer_size": 3247,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								628,
-								628
+								3144,
+								3160
 							]
 						],
 						"settings":
@@ -1147,36 +1141,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Assets/Scripts/GridMove.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1320,
-								1328
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 549.0,
+						"translation.y": 967.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1235,6 +1200,18 @@
 		"selected_items":
 		[
 			[
+				"maptile",
+				"MapTile.cs"
+			],
+			[
+				"guic",
+				"GUI\\ExploreGUI.cs"
+			],
+			[
+				"mapent",
+				"MapEntities\\MapEntity.cs"
+			],
+			[
 				"anima",
 				"MapEntities\\EntityAnimationController.cs"
 			],
@@ -1265,10 +1242,6 @@
 			[
 				"serpent",
 				"Explore\\SerpentEntity.cs"
-			],
-			[
-				"maptile",
-				"MapTile.cs"
 			],
 			[
 				"mapgene",
@@ -1737,14 +1710,6 @@
 			[
 				"inventodyd",
 				"Main/Database/_Model/InventoryDataModel.cs"
-			],
-			[
-				"inve",
-				"Main/Database/_Model/InventoryModel.cs"
-			],
-			[
-				"ntsd",
-				"Main/Database/_DAO/NtsDAO.cs"
 			]
 		],
 		"width": 0.0

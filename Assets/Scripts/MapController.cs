@@ -38,7 +38,6 @@ public class MapController : MonoBehaviour
         MapTile tile = null;
 
         string childName = coordinates.x + "," + coordinates.y;
-        print(childName);
 
         Transform tileGO = transform.FindChild("Tiles").FindChild(childName);
 

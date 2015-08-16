@@ -53,6 +53,15 @@ public class PlayerEntity : MapEntity, IMovable {
         InTurn = false;
     }
 
+    /// <summary>
+    /// Activated when other entity walks onto this entity
+    /// </summary>
+    public override void ActivateEffect(MapEntity otherEntity)
+    {
+        // When other entity walks onto the player, activate that entity's effect on the player
+        otherEntity.ActivateEffect(this);
+    }
+
     public int Health
     {
         get { return _healthPoints; }
@@ -71,6 +80,25 @@ public class PlayerEntity : MapEntity, IMovable {
         set { _energyPoints = value; }
     }
 
+    public void AlterBar(int value, PlayerBars bar)
+    {
+        switch (bar)
+        {
+            case PlayerBars.Health:
+                Health = Health + value;
+                ExploreGUI.Instance.AlterBar(value, PlayerBars.Health);
+                break;
+            case PlayerBars.Water:
+                Water = Water + value;
+                ExploreGUI.Instance.AlterBar(value, PlayerBars.Water);
+                break;
+            case PlayerBars.Energy:
+                Energy = Energy + value;
+                ExploreGUI.Instance.AlterBar(value, PlayerBars.Energy);
+                break;
+        }
+    }
+
     public Sickness Sickness
     {
         get { return _sickness; }
@@ -79,23 +107,31 @@ public class PlayerEntity : MapEntity, IMovable {
 
     public void Move(Vector2 movement)
     {
+        // Free current tile
+        MapController.Instance.GetTile(Position).EntityInTile = null;
+
         // Update position
         Position += movement;
 
         // Reduce energy bar
-        Energy--;
+        AlterBar(-1, PlayerBars.Energy);
 
         // Reduce water bar
-        Water--;
+        AlterBar(-1, PlayerBars.Water);
 
-        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Energy);
-        ExploreGUI.Instance.AlterBar(-1, PlayerBars.Water);
-        turnStatus = TurnStatus.Moving;
+        // Check if tile had entity
+        if(MapController.Instance.GetTile(Position).Occupied)
+        {
+            // Activate entity effect
+            MapController.Instance.GetTile(Position).EntityInTile.ActivateEffect(this);
+        }
+
+        // Occupy tile
+        MapController.Instance.GetTile(Position).EntityInTile = this;
     }
 
     public void UpdateMoveButtons()
     {
-        print(Position);
         MapTile tile;
 
         // Up

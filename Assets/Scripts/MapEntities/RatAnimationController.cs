@@ -19,6 +19,7 @@ public class RatAnimationController : EntityAnimationController
         if ((direction.y != 0) || (direction.x < 0))
         {
             playerAnimator.gameObject.transform.localScale = normalX;
+            return;
         }
 
         //Up

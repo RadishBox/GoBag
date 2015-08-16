@@ -28,6 +28,14 @@ public class RatEntity : MapEntity, IMovable
         InTurn = false;
     }
 
+    /// <summary>
+    /// Activated when other entity walks onto this entity
+    /// </summary>
+    public override void ActivateEffect(MapEntity otherEntity)
+    {
+
+    }
+
     public void Move(Vector2 movement)
     {
         // Update position
@@ -45,19 +53,19 @@ public class RatEntity : MapEntity, IMovable
         // Check available directions
          // Up
         tile = MapController.Instance.GetTile(Position + Vector2.up);
-        canMoveUp = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveUp = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Down
         tile = MapController.Instance.GetTile(Position + Vector2.down);
-        canMoveDown = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveDown = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Left
         tile = MapController.Instance.GetTile(Position + Vector2.left);
-        canMoveLeft = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveLeft = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         // Right
         tile = MapController.Instance.GetTile(Position + Vector2.right);
-        canMoveRight = (tile != null) && (tile.Passable) && !tile.Occupied;
+        canMoveRight = (tile != null) && (tile.Passable) && (!tile.Occupied || tile.OccupiedByPlayer);
 
         if(!canMoveUp && !canMoveDown && !canMoveLeft && !canMoveRight)
         {
