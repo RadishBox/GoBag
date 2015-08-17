@@ -10,6 +10,14 @@ public class ExploreGUI : MonoBehaviour {
     public Image WaterBar;
     public Image EnergyBar;
 
+    public GameObject SicknessListParent;
+    public GameObject SicknessPrefab;
+
+    public Color HealthColor;
+    public Color WaterColor;
+    public Color EnergyColor;
+
+
     void Awake()
     {
         _instance = this;
@@ -50,5 +58,16 @@ public class ExploreGUI : MonoBehaviour {
 
         result = baseBarDelta * value;
         barLayout.preferredWidth = barLayout.preferredWidth + result;
+    }
+
+    public void AddSickness(Sickness sickness)
+    {
+        GameObject sicknessGO;
+        sicknessGO = Instantiate(SicknessPrefab);
+        sicknessGO.transform.SetParent(SicknessListParent.transform,false);
+        sicknessGO.GetComponent<Text>().color = sickness.Color;
+        sicknessGO.GetComponent<Text>().text = sickness.Name;
+
+
     }
 }

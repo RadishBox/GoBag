@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// Describes the player behaviour inside the map
@@ -11,12 +12,17 @@ public class PlayerEntity : MapEntity, IMovable {
     private int _waterPoints = 30;
     private int _energyPoints = 30;
 
-    private Sickness _sickness;
+    private List<Sickness> _sicknesses;
 
     public GameObject UpButton;
     public GameObject DownButton;
     public GameObject LeftButton;
     public GameObject RightButton;
+
+    void Start()
+    {
+        Sicknesses = new List<Sickness>();
+    }
 
     /// <summary>
     /// Function activated upon this entity's turn
@@ -47,6 +53,12 @@ public class PlayerEntity : MapEntity, IMovable {
         }
 
         // Check winning condition
+
+        // Check sicknesses effects
+        foreach (Sickness sickness in Sicknesses)
+        {
+            sickness.ActivateEffect(this);
+        }
         
         // Check for effects movement and ambient
 
@@ -99,10 +111,19 @@ public class PlayerEntity : MapEntity, IMovable {
         }
     }
 
-    public Sickness Sickness
+    public void AddSickness(Sickness sickness)
     {
-        get { return _sickness; }
-        set { _sickness = value; }
+        // Add sickness to the player
+        Sicknesses.Add(sickness);
+
+        // Add sickness to the gui
+        ExploreGUI.Instance.AddSickness(sickness);
+    }
+
+    public List<Sickness> Sicknesses
+    {
+        get { return _sicknesses; }
+        set { _sicknesses = value; }
     }
 
     public void Move(Vector2 movement)

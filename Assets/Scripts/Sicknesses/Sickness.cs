@@ -5,13 +5,20 @@ using System.Collections;
 /// Describes the sickness status that the player can be in
 /// </summary>
 [System.Serializable]
-public class Sickness {
+public abstract class Sickness
+{
 
     [SerializeField]
     private string _name;
-
-    public ScenarioLibrary.ScenarioType Scenario;
     public Color Color;
+
+    public Sickness(string name, Color color)
+    {
+        Name = name;
+        Color = color;
+    }
+
+    public abstract void ActivateEffect(MapEntity entity);
 
     /// <summary>
     /// Name of the sickness as it will appear in the game

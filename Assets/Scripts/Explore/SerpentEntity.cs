@@ -36,7 +36,14 @@ public class SerpentEntity : MapEntity, IMovable
         // When walked on, reduce that entity life
         if (otherEntity.GetType() == typeof(PlayerEntity))
         {
-            (otherEntity as PlayerEntity).AlterBar(-1, PlayerBars.Health);
+            // Spawn sickness
+            Sickness injury = SicknessLibrary.Instance.GetSickness(SicknessType.Injury);
+
+            // Check that the player doesn't have that sickness
+            if(!(otherEntity as PlayerEntity).Sicknesses.Exists(x => x.Name == "Herida"))
+            {
+                (otherEntity as PlayerEntity).AddSickness(injury);
+            }
         }
     }
 
