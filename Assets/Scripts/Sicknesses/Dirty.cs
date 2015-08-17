@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Injury : Sickness {
+public class Dirty : Sickness {
 
 	private int _turn = 0;
-	private Vector2 _turnsToInfectionLimits;
+	private Vector2 _turnsToStomachacheLimits;
 
-	public Injury(string name, Color color, Vector2 turnsToInfectionLimits) : base(name, color)
+	public Dirty(string name, Color color, Vector2 turnsToStomachacheLimits) : base(name, color)
 	{
 		Turn = 0;
-		TurnsToInfectionLimits = turnsToInfectionLimits;
+		TurnsToStomachacheLimits = turnsToStomachacheLimits;
 	}
 
 	/// <summary>Activated each turn.</summary>
@@ -21,12 +21,12 @@ public class Injury : Sickness {
             
             (entity as PlayerEntity).AlterBar(-1, PlayerBars.Health);
             
-            // Convert to Infection
-            if(Turn >= TurnsToInfectionLimits.y)
+            // Convert to Stomachache
+            if(Turn >= TurnsToStomachacheLimits.y)
             {
             	EvolveSickness(entity);
             }
-            else if(Turn >= TurnsToInfectionLimits.x)
+            else if(Turn >= TurnsToStomachacheLimits.x)
             {
             	// Check prob
             	float prob = Random.Range(0.0f, 1.0f);
@@ -42,7 +42,7 @@ public class Injury : Sickness {
 
 	private void EvolveSickness(MapEntity entity)
 	{
-		(entity as PlayerEntity).EvolveSickness(this, SicknessLibrary.Instance.GetSickness(SicknessType.Infection));
+		(entity as PlayerEntity).EvolveSickness(this, SicknessLibrary.Instance.GetSickness(SicknessType.Stomachache));
 	}
 
 	public int Turn
@@ -51,9 +51,9 @@ public class Injury : Sickness {
 		set { _turn = value; }
 	}
 
-	public Vector2 TurnsToInfectionLimits
+	public Vector2 TurnsToStomachacheLimits
 	{
-		get { return _turnsToInfectionLimits; }
-		set { _turnsToInfectionLimits = value; }
+		get { return _turnsToStomachacheLimits; }
+		set { _turnsToStomachacheLimits = value; }
 	}
 }

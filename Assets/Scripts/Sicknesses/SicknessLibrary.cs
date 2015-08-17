@@ -5,7 +5,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Contains all different sickness status in the game
 /// </summary>
-public enum SicknessType { Injury, Infection, Dirty, StomachAche, Cold, Cough };
+public enum SicknessType { Injury, Infection, Dirty, Stomachache, Cold, Cough };
 public class SicknessLibrary : MonoBehaviour
 {    
     public List<Sickness> Sicknesses;
@@ -31,8 +31,9 @@ public class SicknessLibrary : MonoBehaviour
     private void Initialize()
     {
         Sicknesses = new List<Sickness>();
-        Sicknesses.Add(new Injury("Herida", ExploreGUI.Instance.HealthColor, 3));
+        Sicknesses.Add(new Injury("Herida", ExploreGUI.Instance.HealthColor, new Vector2(3, 5)));
         Sicknesses.Add(new Infection("Infección", ExploreGUI.Instance.HealthColor));
+        Sicknesses.Add(new Dirty("Sucio", ExploreGUI.Instance.HealthColor, new Vector2(3, 5)));
     }
 
     public static SicknessLibrary Instance

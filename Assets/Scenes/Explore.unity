@@ -1318,6 +1318,7 @@ MonoBehaviour:
   Entities:
   - {fileID: 116056, guid: 9b96fcf2209c840e485ab9a099f85abe, type: 2}
   - {fileID: 116056, guid: fbaf7283997925246b16eb84ef6f5379, type: 2}
+  - {fileID: 191054, guid: d76e363757f534c1d8be8a0410275a8e, type: 2}
 --- !u!1 &674544497
 GameObject:
   m_ObjectHideFlags: 0

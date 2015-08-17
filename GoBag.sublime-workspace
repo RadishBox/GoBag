@@ -4,12 +4,44 @@
 		"selected_items":
 		[
 			[
+				"fla",
+				"float"
+			],
+			[
 				"Sick",
-				"Sickness"
+				"SicknessProbability"
+			],
+			[
+				"Sic",
+				"Sicknesses"
+			],
+			[
+				"Si",
+				"Sicknesses"
+			],
+			[
+				"sick",
+				"sickness"
+			],
+			[
+				"sic",
+				"sickness"
 			],
 			[
 				"Sickn",
-				"Sicknesses"
+				"Sickness"
+			],
+			[
+				"Turn",
+				"TurnsToInfection"
+			],
+			[
+				"Tur",
+				"TurnsToInfection"
+			],
+			[
+				"_tur",
+				"_turnsToInfection"
 			],
 			[
 				"Scen",
@@ -34,10 +66,6 @@
 			[
 				"parent",
 				"SicknessListParent"
-			],
-			[
-				"sick",
-				"sicknessGO"
 			],
 			[
 				"_sick",
@@ -486,95 +514,11 @@
 			[
 				"Opti",
 				"OptionModel"
-			],
-			[
-				"opti",
-				"optionCode"
-			],
-			[
-				"op",
-				"optionDao"
-			],
-			[
-				"inven",
-				"inventory"
-			],
-			[
-				"se",
-				"selectedModel"
-			],
-			[
-				"table",
-				"tableController"
-			],
-			[
-				"inve",
-				"inventory"
-			],
-			[
-				"Access",
-				"AccessoryDescription"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "Assets/Scripts/ExploreGameController.cs",
-			"settings":
-			{
-				"buffer_size": 3557,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-			"settings":
-			{
-				"buffer_size": 5059,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Sicknesses/Injury.cs",
-			"settings":
-			{
-				"buffer_size": 565,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Sicknesses/Sickness.cs",
-			"settings":
-			{
-				"buffer_size": 620,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
-			"settings":
-			{
-				"buffer_size": 883,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Explore/SerpentEntity.cs",
-			"settings":
-			{
-				"buffer_size": 4220,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/RatEntity.cs",
-			"settings":
-			{
-				"buffer_size": 3435,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -647,8 +591,31 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts"
+	],
 	"file_history":
 	[
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sicknesses/Dirty.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sicknesses/Injury.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sicknesses/Infection.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ExploreGameController.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Item.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/GridDropArea.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/GridMove.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/TrashEntity.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapTile.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ScrollElement.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Scenario.cs",
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sickness.cs",
@@ -674,8 +641,6 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/C/Users/Felipe/Desktop/PCG.txt",
 		"/C/Program Files (x86)/Sublime/Sublime Text Build 3047 x64/Data/Installed Packages/Package Control.sublime-package",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapTile.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Sickness.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
@@ -685,18 +650,12 @@
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ItemListDragHandler.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Level.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/GridMove.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/SerpentAnimatonController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/SerpentAnimationController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ScrollElement.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Scenario.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/SerpentAnimatorController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/MapEntities/PlayerEntityAnimationController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/EntityAnimationController.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/GoBag.sublime-project",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Bag.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/BagGrid.cs",
@@ -765,22 +724,11 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICustomSubmenuPlacer.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Resources/GameAnalytics/Settings.asset",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UIToggleColorPicker.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/NtsModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/BodyDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/FinancingPlanTermModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/AccessControl/PermissionsController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/FinancingDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Editor/Scenes/SceneQuickAccess.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/FinancingModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/FinancingPlanModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/OpenBodyOptionElement.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/DatabaseController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Benchmark/ComparativoRightTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICarrousel.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/NtsModel.cs"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -795,6 +743,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"TurnsToInfectionLimits",
+			"_turnsToInfectionLimits",
 			"AlterBar",
 			"alter",
 			"AlterBar",
@@ -920,9 +870,7 @@
 			"delivery",
 			"estimated",
 			"eta",
-			"ivarate",
-			"loadreused",
-			"loadused"
+			"ivarate"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -940,210 +888,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Assets/Scripts/ExploreGameController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3557,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1232,
-								1241
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 448.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5059,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2441,
-								2422
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1254.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Scripts/Sicknesses/Injury.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 565,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								473,
-								473
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Scripts/Sicknesses/Sickness.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 620,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								358,
-								358
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 883,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								749,
-								679
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/Explore/SerpentEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1313,
-								823
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 339.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Assets/Scripts/MapEntities/RatEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3435,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2010,
-								2010
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 330.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1197,6 +943,30 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"inj",
+				"Sicknesses/Injury.cs"
+			],
+			[
+				"garba",
+				"MapEntities/GarbageEntity.cs"
+			],
+			[
+				"trash",
+				"MapEntities/TrashEntity.cs"
+			],
+			[
+				"serpe",
+				"MapEntities/SerpentEntity.cs"
+			],
+			[
+				"",
+				"Explore/SerpentEntity.cs"
+			],
+			[
+				"explore",
+				"GUI/ExploreGUI.cs"
+			],
 			[
 				"gui",
 				"GUI\\ExploreGUI.cs"
@@ -1260,10 +1030,6 @@
 			[
 				"maptil",
 				"MapTile.cs"
-			],
-			[
-				"explore",
-				"ExploreGameController.cs"
 			],
 			[
 				"mapcon",
@@ -1688,26 +1454,6 @@
 			[
 				"ordertabl",
 				"Main/Scene/Inventory/OrderTableController.cs"
-			],
-			[
-				"uirow",
-				"Main/UIScripts/UITableRow.cs"
-			],
-			[
-				"uitable",
-				"Main/UIScripts/UITable.cs"
-			],
-			[
-				"circularec",
-				"Main/Scene/Memos/CircularesController.cs"
-			],
-			[
-				"inventorytable",
-				"Main/Scene/Inventory/InventoryTableController.cs"
-			],
-			[
-				"inventord",
-				"Main/Database/_DAO/InventoryDAO.cs"
 			]
 		],
 		"width": 0.0
@@ -1732,6 +1478,7 @@
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
