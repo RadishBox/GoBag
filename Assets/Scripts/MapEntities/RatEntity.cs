@@ -8,6 +8,7 @@ public class RatEntity : MapEntity, IMovable
 {
 
     public GridMove MovementController;
+    public float SicknessProbability = 0.25f;
 
     /// <summary>
     /// Function activated upon this entity's turn
@@ -33,7 +34,23 @@ public class RatEntity : MapEntity, IMovable
     /// </summary>
     public override void ActivateEffect(MapEntity otherEntity)
     {
+        // When walked on, reduce that entity life
+        if (otherEntity.GetType() == typeof(PlayerEntity))
+        {            
+            Sickness injury = SicknessLibrary.Instance.GetSickness(SicknessType.Injury);
 
+            // Check that the player doesn't have that sickness
+            if(!(otherEntity as PlayerEntity).Sicknesses.Exists(x => ((x.Name == "Herida") || (x.Name == "Infección"))))
+            {
+                // Probability 60%
+                float prob = Random.Range(0.0f, 1.0f);
+
+                if(prob <= SicknessProbability)
+                {
+                    (otherEntity as PlayerEntity).AddSickness(injury);
+                }
+            }
+        }
     }
 
     public void Move(Vector2 movement)

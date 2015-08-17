@@ -31,7 +31,8 @@ public class SicknessLibrary : MonoBehaviour
     private void Initialize()
     {
         Sicknesses = new List<Sickness>();
-        Sicknesses.Add(new Injury("Herida", ExploreGUI.Instance.HealthColor));
+        Sicknesses.Add(new Injury("Herida", ExploreGUI.Instance.HealthColor, 3));
+        Sicknesses.Add(new Infection("Infección", ExploreGUI.Instance.HealthColor));
     }
 
     public static SicknessLibrary Instance

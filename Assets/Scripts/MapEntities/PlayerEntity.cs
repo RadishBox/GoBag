@@ -55,9 +55,9 @@ public class PlayerEntity : MapEntity, IMovable {
         // Check winning condition
 
         // Check sicknesses effects
-        foreach (Sickness sickness in Sicknesses)
+        for(int i = 0; i < Sicknesses.Count; i++)
         {
-            sickness.ActivateEffect(this);
+            Sicknesses[i].ActivateEffect(this);
         }
         
         // Check for effects movement and ambient
@@ -118,6 +118,17 @@ public class PlayerEntity : MapEntity, IMovable {
 
         // Add sickness to the gui
         ExploreGUI.Instance.AddSickness(sickness);
+    }
+
+    /// <summary>Evolves given sickness for a new one.</summary>
+    public void EvolveSickness(Sickness sickness, Sickness newSickness)
+    {
+        if(Sicknesses.Exists(x => x.Name == sickness.Name))
+        {
+            Sicknesses.Remove(Sicknesses.Find(x => x.Name == sickness.Name));
+            Sicknesses.Add(newSickness);
+            ExploreGUI.Instance.AlterSickness(sickness, newSickness);
+        }
     }
 
     public List<Sickness> Sicknesses

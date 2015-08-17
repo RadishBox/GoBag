@@ -67,7 +67,18 @@ public class ExploreGUI : MonoBehaviour {
         sicknessGO.transform.SetParent(SicknessListParent.transform,false);
         sicknessGO.GetComponent<Text>().color = sickness.Color;
         sicknessGO.GetComponent<Text>().text = sickness.Name;
+        sicknessGO.name = sickness.Name;
+    }
 
-
+    public void AlterSickness(Sickness sickness, Sickness newSickness)
+    {
+        GameObject sicknessGO;
+        if(SicknessListParent.transform.Find(sickness.Name))
+        {
+            sicknessGO = SicknessListParent.transform.Find(sickness.Name).gameObject;
+            sicknessGO.GetComponent<Text>().color = newSickness.Color;
+            sicknessGO.GetComponent<Text>().text = newSickness.Name;
+            sicknessGO.name = newSickness.Name;
+        }
     }
 }
