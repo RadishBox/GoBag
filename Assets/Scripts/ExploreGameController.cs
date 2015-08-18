@@ -7,6 +7,9 @@ using System.Collections.Generic;
 /// </summary>
 public class ExploreGameController : MonoBehaviour {
 
+
+    private static ExploreGameController _instance;
+
     private int _turn = 0;
     private bool _isTurnProcessing = false;
 
@@ -14,7 +17,17 @@ public class ExploreGameController : MonoBehaviour {
     public GameObject Player;
     public Camera MainCamera;
 
+    private Level level; 
+
+    private List<ScenarioEffect> scenarioEffects;
     private List<MapEntity> entities;
+
+    // GUI prep
+    public GameObject StatusGroup;
+
+    void Awake() {
+        Instance = this;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -39,6 +52,9 @@ public class ExploreGameController : MonoBehaviour {
         // Place entities
         entities = new List<MapEntity>();
         PlaceEntities();
+
+        // Set scenario effects
+        //scenarioEffects = 
 
         StartCoroutine(AdvanceTurn());
     }
@@ -132,6 +148,12 @@ public class ExploreGameController : MonoBehaviour {
     {
         get { return _turn; }
         set { _turn = value; }
+    }
+
+    public static ExploreGameController Instance
+    {
+        get { return _instance; }
+        set { _instance = value; }
     }
 
 #endregion

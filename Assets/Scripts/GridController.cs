@@ -38,7 +38,8 @@ public class GridController : MonoBehaviour {
             {
                 if(row[j]=='0')
                 {
-                    Tiles[j, i].GetComponent<Image>().CrossFadeAlpha(0, 0, true);
+                    Color invisibleColor = new Color(1,1,1,0);
+                    Tiles[j, i].GetComponent<Image>().color = invisibleColor;
                     Tiles[j, i].Active = false;
                 }
                 Tiles[j, i].CalculateCenterPoint();

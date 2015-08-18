@@ -31,9 +31,11 @@ public class SicknessLibrary : MonoBehaviour
     private void Initialize()
     {
         Sicknesses = new List<Sickness>();
-        Sicknesses.Add(new Injury("Herida", ExploreGUI.Instance.HealthColor, new Vector2(3, 5)));
-        Sicknesses.Add(new Infection("Infección", ExploreGUI.Instance.HealthColor));
-        Sicknesses.Add(new Dirty("Sucio", ExploreGUI.Instance.HealthColor, new Vector2(3, 5)));
+        Sicknesses.Add(new Injury("Herida", GeneralGUI.Instance.HealthColor, new Vector2(3, 5)));
+        Sicknesses.Add(new Infection("Infección", GeneralGUI.Instance.HealthColor));
+        Sicknesses.Add(new Dirty("Sucio", GeneralGUI.Instance.HealthColor, new Vector2(3, 5)));
+        Sicknesses.Add(new Stomachache("Dolor de estómago", GeneralGUI.Instance.HealthColor));
+
     }
 
     public static SicknessLibrary Instance

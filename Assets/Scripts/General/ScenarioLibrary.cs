@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// Contains all different scenarios in the game
@@ -20,6 +21,11 @@ public class ScenarioLibrary : MonoBehaviour {
     void Awake()
     {
         Instance = this;
+    }
+
+    public List<ScenarioEffect> GetScenarioEffects(ScenarioType scenario)
+    {
+        return null;
     }
 	
 }

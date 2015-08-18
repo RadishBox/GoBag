@@ -30,7 +30,7 @@ public class GarbageEntity : MapEntity
         // When walked on, reduce that entity life
         if (otherEntity.GetType() == typeof(PlayerEntity))
         {            
-            Sickness injury = SicknessLibrary.Instance.GetSickness(SicknessType.Injury);
+            Sickness dirty = SicknessLibrary.Instance.GetSickness(SicknessType.Dirty);
 
             // Check that the player doesn't have that sickness
             if(!(otherEntity as PlayerEntity).Sicknesses.Exists(x => ((x.Name == "Sucio") || (x.Name == "Dolor de estómago"))))
@@ -40,7 +40,7 @@ public class GarbageEntity : MapEntity
 
                 if(prob <= DirtyProbability)
                 {
-                    (otherEntity as PlayerEntity).AddSickness(injury);
+                    (otherEntity as PlayerEntity).AddSickness(dirty);
                 }
             }
         }

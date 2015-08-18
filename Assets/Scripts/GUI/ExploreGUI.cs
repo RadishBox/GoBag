@@ -13,11 +13,6 @@ public class ExploreGUI : MonoBehaviour {
     public GameObject SicknessListParent;
     public GameObject SicknessPrefab;
 
-    public Color HealthColor;
-    public Color WaterColor;
-    public Color EnergyColor;
-
-
     void Awake()
     {
         _instance = this;

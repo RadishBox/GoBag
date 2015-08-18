@@ -3,11 +3,15 @@ using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class BagPrepController : MonoBehaviour {
+public class BagPrepController : MonoBehaviour
+{
     public static BagPrepController Instance;
 
     public GameObject GridItemsParentGO;
     public GameObject SelectedItemParentGO;
+    public GameObject ItemListGroupGO;
+    public GameObject ItemListParentGO;
+
     public Item SelectedItem;
 
     public Item DraggedItem;
@@ -20,22 +24,29 @@ public class BagPrepController : MonoBehaviour {
     // Civil Guy Group
     public CivilGuyController civilGuyController;
 
+    public GameObject ReadyButton;
+    public GameObject DeleteArea;
+    public GameObject UseArea;
+    public GameObject BagGroup;
 
-	// Use this for initialization
-	void Awake () {
+
+    // Use this for initialization
+    void Awake ()
+    {
         Instance = this;
         Input.multiTouchEnabled = false;
-	}
+    }
 
     void Start()
     {
         civilGuyController.ShowCivilGuyGroup();
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
+    // Update is called once per frame
+    void Update ()
+    {
+
+    }
 
     public void ItemSelect(Item selectedItem)
     {
@@ -68,7 +79,27 @@ public class BagPrepController : MonoBehaviour {
 
     public void LoadExploreScene()
     {
-        Application.LoadLevel("Explore");
+        ItemListGroupGO.SetActive(false);
+        DeleteArea.SetActive(false);
+        ReadyButton.SetActive(false);
+        UseArea.SetActive(true);
+
+        BagGroup.SetActive(false);
+
+        ExploreGameController.Instance.StatusGroup.SetActive(true);
+    }
+
+    public void TriggerBagOpen()
+    {
+        if (BagGroup.activeInHierarchy)
+        {
+            BagGroup.SetActive(false);
+        }
+        else
+        {
+            BagGroup.SetActive(true);
+        }
+
     }
 
     /* Getters and Setters */

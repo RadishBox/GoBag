@@ -13,6 +13,8 @@ public class Scenario {
     [SerializeField]
     private string _name;
 
+    [SerializeField]
+    private Sprite _icon;
 
 
     /// <summary>
@@ -28,5 +30,11 @@ public class Scenario {
     {
         get { return _name; }
         set { _name = value; }
+    }
+
+    public Sprite Icon
+    {
+        get { return _icon; }
+        set { _icon = value; }
     }
 }

@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level : MonoBehaviour {
+[System.Serializable]
+public class Level {
 
+    [SerializeField]
     private int _id;
+    [SerializeField]
     private float _bagTime;
+    [SerializeField]
+    private GameObject Map;
 
+    public ScenarioLibrary.ScenarioType scenario;
 
     private Item[] _availableItems;
 
