@@ -17,8 +17,6 @@ public class ExploreGameController : MonoBehaviour {
     public GameObject Player;
     public Camera MainCamera;
 
-    private Level level; 
-
     private List<ScenarioEffect> scenarioEffects;
     private List<MapEntity> entities;
 
@@ -54,7 +52,8 @@ public class ExploreGameController : MonoBehaviour {
         PlaceEntities();
 
         // Set scenario effects
-        //scenarioEffects = 
+        scenarioEffects = new List<ScenarioEffect>();
+        PrepareScenarioEffects();
 
         StartCoroutine(AdvanceTurn());
     }
@@ -142,6 +141,13 @@ public class ExploreGameController : MonoBehaviour {
         }
     }
 
+    private void PrepareScenarioEffects()
+    {
+        // Get scenario
+        GameObject ScenarioEffect = Instantiate(GameConfiguration.Instance.Level.CurrentScenario.ScenarioEffect);
+        scenarioEffects.Add(ScenarioEffect.GetComponent<ScenarioEffect>());
+    }   
+
 
 #region Properties
     public int Turn
@@ -154,6 +160,11 @@ public class ExploreGameController : MonoBehaviour {
     {
         get { return _instance; }
         set { _instance = value; }
+    }
+
+    public List<ScenarioEffect> ScenarioEffects
+    {
+        get { return scenarioEffects; }
     }
 
 #endregion

@@ -16,6 +16,8 @@ public class Scenario {
     [SerializeField]
     private Sprite _icon;
 
+    public GameObject ScenarioEffect;
+
 
     /// <summary>
     /// Used to associate different elements with a specific scenario

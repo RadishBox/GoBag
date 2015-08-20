@@ -15,7 +15,7 @@ public class TitleScreenController : MonoBehaviour
 	void Awake()
 	{
 		StageSelectionPanel.SetActive(false);
-		//DontDestroyOnLoad(GameLibraries);	
+		DontDestroyOnLoad(GameLibraries);	
 	}
 
 	// Use this for initialization

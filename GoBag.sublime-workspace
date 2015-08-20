@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"Scena",
+				"ScenarioEffect"
+			],
+			[
+				"Scenario",
+				"scenarioEffects"
+			],
+			[
+				"scenar",
+				"scenarioEffects"
+			],
+			[
+				"Scenaroi",
+				"ScenarioLibrary"
+			],
+			[
 				"Bag",
 				"BagGroup"
 			],
@@ -498,33 +514,25 @@
 			[
 				"Queyr",
 				"QUERY_LOAD_ALL_MEDIA"
-			],
-			[
-				"optionc",
-				"optionCode"
-			],
-			[
-				"Query_load_by",
-				"QUERY_LOAD_BY_NT_AND_CODE"
-			],
-			[
-				"Query",
-				"QUERY_LOAD_ALL_BY_NT"
-			],
-			[
-				"with",
-				"WITH_CODE"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/ExploreGameController.cs",
+			"file": "Assets/Scripts/General/ScenarioLibrary.cs",
 			"settings":
 			{
-				"buffer_size": 3984,
+				"buffer_size": 771,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Explore/ScenarioEffect.cs",
+			"settings":
+			{
+				"buffer_size": 399,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -536,18 +544,10 @@
 			}
 		},
 		{
-			"file": "Assets/Scripts/BagPrepController.cs",
+			"file": "Assets/Scripts/ExploreGameController.cs",
 			"settings":
 			{
-				"buffer_size": 2910,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/GridController.cs",
-			"settings":
-			{
-				"buffer_size": 5944,
+				"buffer_size": 4389,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,8 +555,24 @@
 			"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
 			"settings":
 			{
-				"buffer_size": 782,
+				"buffer_size": 780,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Explore/Rain.cs",
+			"settings":
+			{
+				"buffer_size": 166,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
+			"settings":
+			{
+				"buffer_size": 5708,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -633,21 +649,25 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/GeneralGUI.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Rain.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/ScenarioEffect.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Scenario.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Infection.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Dirty.cs",
@@ -656,13 +676,11 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Injury.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sickness.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGrid.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentAnimationController.cs",
@@ -758,9 +776,7 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/GalleryVideosDAO.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/VehicleFilterController.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/NtsDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/SpriteLoader.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/VersionDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/VersionModel.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/SpriteLoader.cs"
 	],
 	"find":
 	{
@@ -779,6 +795,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"scenarioEffects",
 			"fade",
 			"onenabl",
 			"AlterBar",
@@ -905,8 +922,7 @@
 			"quotemodel",
 			"delivery",
 			"estimated",
-			"eta",
-			"ivarate"
+			"eta"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -924,24 +940,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/ExploreGameController.cs",
+					"file": "Assets/Scripts/General/ScenarioLibrary.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3984,
+						"buffer_size": 771,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								645,
-								645
+								748,
+								748
 							]
 						],
 						"settings":
@@ -951,13 +967,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Assets/Scripts/Explore/ScenarioEffect.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
 					"semi_transient": false,
 					"settings":
@@ -969,8 +1014,8 @@
 						"selection":
 						[
 							[
-								1057,
-								1176
+								590,
+								494
 							]
 						],
 						"settings":
@@ -980,55 +1025,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 168.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/Scripts/BagPrepController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2910,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2624,
-								2624
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 672.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/GridController.cs",
+					"file": "Assets/Scripts/ExploreGameController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5944,
+						"buffer_size": 4389,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								560,
-								560
+								1299,
+								1299
 							]
 						],
 						"settings":
@@ -1038,7 +1054,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 252.0,
+						"translation.y": 360.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1049,15 +1065,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 782,
+						"buffer_size": 780,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								334,
+								334
 							]
 						],
 						"settings":
@@ -1067,6 +1083,62 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/Explore/Rain.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1532,
+								1532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 535.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1125,6 +1197,46 @@
 		"selected_items":
 		[
 			[
+				"player",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"rain",
+				"Explore\\Rain.cs"
+			],
+			[
+				"titl",
+				"TitleScreen\\TitleScreenController.cs"
+			],
+			[
+				"explore",
+				"ExploreGameController.cs"
+			],
+			[
+				"mapcontr",
+				"MapController.cs"
+			],
+			[
+				"sickness",
+				"Sicknesses\\SicknessLibrary.cs"
+			],
+			[
+				"gamecon",
+				"General\\GameConfiguration.cs"
+			],
+			[
+				"level",
+				"General\\Level.cs"
+			],
+			[
+				"scenario",
+				"Explore\\Scenario.cs"
+			],
+			[
+				"entitylib",
+				"General\\MapEntityLibrary.cs"
+			],
+			[
 				"tit",
 				"TitleScreen\\TitleScreenController.cs"
 			],
@@ -1139,14 +1251,6 @@
 			[
 				"senariola",
 				"General\\ScenarioLibrary.cs"
-			],
-			[
-				"level",
-				"General\\Level.cs"
-			],
-			[
-				"scenario",
-				"Explore\\Scenario.cs"
 			],
 			[
 				"sic",
@@ -1237,10 +1341,6 @@
 				"MapTile.cs"
 			],
 			[
-				"explore",
-				"ExploreGameController.cs"
-			],
-			[
 				"mapcon",
 				"MapController.cs"
 			],
@@ -1251,10 +1351,6 @@
 			[
 				"libra",
 				"General/ScenarioLibrary.cs"
-			],
-			[
-				"player",
-				"PlayerEntity.cs"
 			],
 			[
 				"quoteinv",
@@ -1611,30 +1707,6 @@
 			[
 				"turntable",
 				"Main/Scene/Quote/TurntableController.cs"
-			],
-			[
-				"quoteunitb",
-				"Main/Scene/Quote/QuoteUnitBody.cs"
-			],
-			[
-				"quoteoption",
-				"Main/Database/_Model/QuoteOptionsModel.cs"
-			],
-			[
-				"inventoryco",
-				"Main/Scene/Inventory/InventoryController.cs"
-			],
-			[
-				"bodyoption",
-				"Main/Database/_Model/BodyOptionModel.cs"
-			],
-			[
-				"quotemod",
-				"Main/Database/_Model/QuoteModel.cs"
-			],
-			[
-				"quoteb",
-				"Main/Scene/Quote/QuoteUnitBody.cs"
 			]
 		],
 		"width": 0.0

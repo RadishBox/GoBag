@@ -54,6 +54,12 @@ public class PlayerEntity : MapEntity, IMovable {
 
         // Check winning condition
 
+        // Check scenario effects
+        for(int i = 0; i < ExploreGameController.Instance.ScenarioEffects.Count; i++)
+        {
+            ExploreGameController.Instance.ScenarioEffects[i].ActivateEffect(this);
+        }
+
         // Check sicknesses effects
         for(int i = 0; i < Sicknesses.Count; i++)
         {

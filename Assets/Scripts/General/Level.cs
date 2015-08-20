@@ -32,4 +32,9 @@ public class Level {
         get { return _availableItems; }
         set { _availableItems = value; }
     }
+
+    public Scenario CurrentScenario
+    {
+        get { return ScenarioLibrary.Instance.GetScenario(scenario); }
+    }
 }

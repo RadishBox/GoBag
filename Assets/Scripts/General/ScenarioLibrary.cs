@@ -27,5 +27,10 @@ public class ScenarioLibrary : MonoBehaviour {
     {
         return null;
     }
+
+    public Scenario GetScenario(ScenarioType type)
+    {
+        return Scenarios[(int)type];
+    }
 	
 }
