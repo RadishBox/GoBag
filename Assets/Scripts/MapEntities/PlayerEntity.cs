@@ -54,6 +54,7 @@ public class PlayerEntity : MapEntity, IMovable {
         {
             yield return null;
         }
+        UpdateMoveButtons();
 
         // Check winning condition
 
