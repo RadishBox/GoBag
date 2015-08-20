@@ -8,7 +8,7 @@ using System.Collections.Generic;
 public enum PlayerBars { Health, Water, Energy }
 public class PlayerEntity : MapEntity, IMovable {
 
-    private int _healthPoints = 20;
+    private int _healthPoints = 30;
     private int _waterPoints = 30;
     private int _energyPoints = 30;
 
@@ -18,6 +18,9 @@ public class PlayerEntity : MapEntity, IMovable {
     public GameObject DownButton;
     public GameObject LeftButton;
     public GameObject RightButton;
+
+    // Equippable slots
+    public Raincoat raincoat;
 
     void Start()
     {

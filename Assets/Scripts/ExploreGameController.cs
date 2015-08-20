@@ -143,9 +143,12 @@ public class ExploreGameController : MonoBehaviour {
 
     private void PrepareScenarioEffects()
     {
-        // Get scenario
-        GameObject ScenarioEffect = Instantiate(GameConfiguration.Instance.Level.CurrentScenario.ScenarioEffect);
-        scenarioEffects.Add(ScenarioEffect.GetComponent<ScenarioEffect>());
+        // Get scenario if any
+        if(GameConfiguration.Instance.Level.CurrentScenario.ScenarioEffect)
+        {            
+            GameObject ScenarioEffect = Instantiate(GameConfiguration.Instance.Level.CurrentScenario.ScenarioEffect);
+            scenarioEffects.Add(ScenarioEffect.GetComponent<ScenarioEffect>());
+        }
     }   
 
 

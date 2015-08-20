@@ -35,6 +35,8 @@ public class SicknessLibrary : MonoBehaviour
         Sicknesses.Add(new Infection("Infección", GeneralGUI.Instance.HealthColor));
         Sicknesses.Add(new Dirty("Sucio", GeneralGUI.Instance.HealthColor, new Vector2(3, 5)));
         Sicknesses.Add(new Stomachache("Dolor de estómago", GeneralGUI.Instance.HealthColor));
+        Sicknesses.Add(new Cold("Resfriado", GeneralGUI.Instance.HealthColor));
+        Sicknesses.Add(new Cough("Tos", GeneralGUI.Instance.HealthColor));
 
     }
 
