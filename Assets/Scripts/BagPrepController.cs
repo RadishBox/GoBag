@@ -39,7 +39,7 @@ public class BagPrepController : MonoBehaviour
 
     void Start()
     {
-        civilGuyController.ShowCivilGuyGroup();
+        civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">huracán</color>!",true);
     }
 
     // Update is called once per frame

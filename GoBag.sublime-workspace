@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"GetCom",
+				"GetComponentInChildren	type"
+			],
+			[
+				"Civil",
+				"CivilGuyBig"
+			],
+			[
 				"Scena",
 				"ScenarioEffect"
 			],
@@ -506,14 +514,6 @@
 			[
 				"optio",
 				"optionDao"
-			],
-			[
-				"Rooft",
-				"RooftypeModel"
-			],
-			[
-				"Queyr",
-				"QUERY_LOAD_ALL_MEDIA"
 			]
 		]
 	},
@@ -539,7 +539,7 @@
 			"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
 			"settings":
 			{
-				"buffer_size": 1179,
+				"buffer_size": 1334,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,7 +547,7 @@
 			"file": "Assets/Scripts/ExploreGameController.cs",
 			"settings":
 			{
-				"buffer_size": 4389,
+				"buffer_size": 4561,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,15 +563,31 @@
 			"file": "Assets/Scripts/Explore/Rain.cs",
 			"settings":
 			{
-				"buffer_size": 166,
-				"line_ending": "Unix"
+				"buffer_size": 944,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
 			"settings":
 			{
-				"buffer_size": 5708,
+				"buffer_size": 5792,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/CivilGuyController.cs",
+			"settings":
+			{
+				"buffer_size": 1677,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/BagPrepController.cs",
+			"settings":
+			{
+				"buffer_size": 2970,
 				"line_ending": "Windows"
 			}
 		}
@@ -649,6 +665,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Bag.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
@@ -656,7 +674,6 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
@@ -775,8 +792,7 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/GalleryPhotosDAO.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/GalleryVideosDAO.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/VehicleFilterController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/NtsDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/SpriteLoader.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/NtsDAO.cs"
 	],
 	"find":
 	{
@@ -795,6 +811,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"SetMessage",
 			"scenarioEffects",
 			"fade",
 			"onenabl",
@@ -921,8 +938,7 @@
 			"QUERY_LOAD_BY_NT_CODE",
 			"quotemodel",
 			"delivery",
-			"estimated",
-			"eta"
+			"estimated"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -940,7 +956,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 7,
 			"sheets":
 			[
 				{
@@ -1007,15 +1023,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1179,
+						"buffer_size": 1334,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								590,
-								494
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1036,15 +1052,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4389,
+						"buffer_size": 4561,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1299,
-								1299
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1093,15 +1109,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 166,
+						"buffer_size": 944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1120,15 +1136,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5708,
+						"buffer_size": 5792,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1532,
-								1532
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1139,6 +1155,64 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 535.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/Scripts/CivilGuyController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1677,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 308.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/Scripts/BagPrepController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								892,
+								909
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 854.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1196,6 +1270,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"bagpre",
+				"BagPrepController.cs"
+			],
+			[
+				"civil",
+				"CivilGuyController.cs"
+			],
 			[
 				"player",
 				"MapEntities\\PlayerEntity.cs"
@@ -1699,14 +1781,6 @@
 			[
 				"financinplan",
 				"Main/Database/_Model/FinancingPlanTermModel.cs"
-			],
-			[
-				"quotemde",
-				"Main/Database/_Model/QuoteModel.cs"
-			],
-			[
-				"turntable",
-				"Main/Scene/Quote/TurntableController.cs"
 			]
 		],
 		"width": 0.0
