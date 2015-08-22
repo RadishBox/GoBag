@@ -29,6 +29,9 @@ public class BagPrepController : MonoBehaviour
     public GameObject UseArea;
     public GameObject BagGroup;
 
+    // Level info
+    private Level level;
+
 
     // Use this for initialization
     void Awake ()
@@ -39,7 +42,9 @@ public class BagPrepController : MonoBehaviour
 
     void Start()
     {
-        civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">huracán</color>!",true);
+        // Obtain level
+        level = GameConfiguration.Instance.Level;
+        civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">" + level.CurrentScenario.Name + "</color>!",true,CivilGuyState.Worried);
     }
 
     // Update is called once per frame

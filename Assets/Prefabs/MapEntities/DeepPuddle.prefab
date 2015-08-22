@@ -76,6 +76,8 @@ MonoBehaviour:
   - {fileID: 21300098, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
   spriteRenderer: {fileID: 21216598}
   spawnFrequencyLimits: {x: 3, y: 5}
+  DeathSprite: {fileID: 21300004, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
+  DeathText: "\xA1Cuidado con los charcos profundos! \xA1Ponte trucha, Manuel trucha!"
 --- !u!212 &21216598
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -116,6 +118,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: spawnFrequencyLimits.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: DeathSprite
+      value: 
+      objectReference: {fileID: 21300004, guid: 637cb829827f0d94293ce8b6d722d6b9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: DeathText
+      value: "\xA1Cuidado con los charcos profundos! \xA1Ponte trucha, Manuel trucha!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

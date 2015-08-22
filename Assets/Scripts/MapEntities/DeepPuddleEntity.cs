@@ -12,6 +12,10 @@ public class DeepPuddleEntity : MapEntity
 
     public Vector2 spawnFrequencyLimits;
 
+    // Game Over properties
+    public Sprite DeathSprite;
+    public string DeathText;
+
     void Start()
     {
         SetRandomSprite();
@@ -45,7 +49,7 @@ public class DeepPuddleEntity : MapEntity
             if(prob <= DeathProbability)
             {
                 // Kill player
-
+                (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);
             }
         }
     }
