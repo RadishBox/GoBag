@@ -21,7 +21,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	void Start()
 	{
 		PrevButton.interactable = false;
-		SkipButton.interactable = false;
+		//SkipButton.interactable = false;
 	}
 
 	public void Initialize()

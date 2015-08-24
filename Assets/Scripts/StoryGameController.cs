@@ -23,8 +23,8 @@ public class StoryGameController : MonoBehaviour {
         storyDragHandler.Initialize();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void LoadGame()
+	{
+		Application.LoadLevel("Game");
 	}
 }
