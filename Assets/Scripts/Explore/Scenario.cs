@@ -17,6 +17,7 @@ public class Scenario {
     private Sprite _icon;
 
     public GameObject ScenarioEffect;
+    public GameObject ScenarioStory;
 
 
     /// <summary>

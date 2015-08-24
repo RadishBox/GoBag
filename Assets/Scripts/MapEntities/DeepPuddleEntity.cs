@@ -49,11 +49,7 @@ public class DeepPuddleEntity : MapEntity
             if(prob <= DeathProbability)
             {
                 // Kill player
-<<<<<<< HEAD
-                
-=======
-                (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);
->>>>>>> origin/master
+                (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);	
             }
         }
     }

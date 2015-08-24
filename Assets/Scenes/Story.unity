@@ -87,6 +87,48 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22635082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 22635083}
+  - 114: {fileID: 22635084}
+  m_Layer: 0
+  m_Name: _StoryGameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &22635083
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22635082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1169.2373, y: 251.44751, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!114 &22635084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 22635082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d57bc4132ac46dea019405027bb7ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyDragHandler: {fileID: 1174752884}
+  ItemsParent: {fileID: 642047582}
+  canvasScaler: {fileID: 45317438}
 --- !u!1 &45317435
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +157,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 96508583}
   - {fileID: 1174752883}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -234,122 +275,6 @@ MonoBehaviour:
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
---- !u!1 &96508582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 96508583}
-  - 222: {fileID: 96508585}
-  - 114: {fileID: 96508584}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &96508583
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96508582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 45317436}
-  m_RootOrder: 0
-  m_AnchorMin: {x: 0, y: .6996876}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -8.10623169e-06, y: 0}
-  m_SizeDelta: {x: -46, y: 6}
-  m_Pivot: {x: .5, y: 1}
---- !u!114 &96508584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96508582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: c5797dc2b860481468bfc46cf0905ada, type: 3}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "Manuel estaba en clases un d\xEDa, cuando lleg\xF3 una persona de protecci\xF3n
-    civil a ense\xF1arle a la clase a empacar mochilas para emergencias.\r\n"
---- !u!222 &96508585
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96508582}
---- !u!1 &496514359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 496514361}
-  - 114: {fileID: 496514360}
-  m_Layer: 0
-  m_Name: TutorialCarrouselController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &496514360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496514359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cb1fd3e79ade74893bdbb7feded287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - sprite: {fileID: 21300000, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "Manuel estaba en clases un d\xEDa, cuando lleg\xF3 una persona de protecci\xF3n
-      civil a ense\xF1arle a la clase a empacar mochilas para emergencias."
-  - sprite: {fileID: 21300002, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "El se\xF1or dijo \u201CEmpaquen en su mochila lo que crean que necesitan
-      para una emergencia y luego salimos a practicar afuera a ver si empacaron bien\u201D"
-  ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
-  ItemsParent: {fileID: 642047582}
-  canvasScaler: {fileID: 45317438}
---- !u!4 &496514361
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496514359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 319.418671, y: 232.020248, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1 &610179126
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +447,7 @@ RectTransform:
   - {fileID: 642047583}
   - {fileID: 51626791}
   m_Father: {fileID: 45317436}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -541,6 +466,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemsParent: {fileID: 642047582}
   canvasScaler: {fileID: 45317438}
+  PrevButton: {fileID: 1501982775}
+  NextButton: {fileID: 1770685796}
+  SkipButton: {fileID: 1287030859}
 --- !u!114 &1174752885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -976,64 +904,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!1 &2078547729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2078547731}
-  - 114: {fileID: 2078547730}
-  m_Layer: 0
-  m_Name: HurricaneCarrouselController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2078547730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078547729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cb1fd3e79ade74893bdbb7feded287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items:
-  - sprite: {fileID: 21300004, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "Manuel vive en un pueblo cerca de la costa. Hay alerta de cicl\xF3n tropical
-      cercano."
-  - sprite: {fileID: 21300006, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "A la mitad de sus clases, el cicl\xF3n se acerca, y ya es hurac\xE1n. Las
-      autoridades indican que todos evacuen a un punto seguro para ser trasladados
-      a un albergue."
-  - sprite: {fileID: 21300008, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "Manuel vive cerca de la escuela, as\xED que va a su casa a buscar a sus
-      pap\xE1s."
-  - sprite: {fileID: 21300010, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: Manuel los espera, pero no llegan.
-  - sprite: {fileID: 21300006, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
-    text: "Despu\xE9s de un rato, Manuel decide empacar cosas en su  mochila para
-      caminar al punto de evacuaci\xF3n."
-  ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
-  ItemsParent: {fileID: 642047582}
-  canvasScaler: {fileID: 45317438}
---- !u!4 &2078547731
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2078547729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 319.418671, y: 232.020248, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
 --- !u!1 &2136873821
 GameObject:
   m_ObjectHideFlags: 0

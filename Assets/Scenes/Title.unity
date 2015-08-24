@@ -1001,14 +1001,17 @@ MonoBehaviour:
     _name: Todos
     _icon: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: 9c9179d263128434bb980cb9e69daab5, type: 2}
   - _id: 1
     _name: "Hurac\xE1n"
     _icon: {fileID: 21300338, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 193674, guid: 233c5d10dd2dc844da15aed5b3444f57, type: 2}
+    ScenarioStory: {fileID: 109212, guid: c3a731d0e199240de9920072f20b9d9e, type: 2}
   - _id: 2
     _name: Incendio
     _icon: {fileID: 21300340, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 160598, guid: d393b7d36a81c4f438bc6dc7df4a3f2c, type: 2}
   SicknessPrefab: {fileID: 110834, guid: 810342e3ced265042a82a104a8cfd2dc, type: 2}
 --- !u!4 &1451030892
 Transform:

@@ -12,6 +12,23 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
 	private Vector2 currentSwipeDirection = Vector2.zero;
 
+	public Button PrevButton;
+	public Button NextButton;
+	public Button SkipButton;
+
+	private int childIterator = 0;
+
+	void Start()
+	{
+		PrevButton.interactable = false;
+		SkipButton.interactable = false;
+	}
+
+	public void Initialize()
+	{		
+		UpdateButtonInteraction();
+	}
+
 	//Do this when the user starts dragging the element this script is attached to..
 	public void OnBeginDrag (PointerEventData data)
 	{
@@ -21,14 +38,24 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	//Do this while the user is dragging this UI Element.
 	public void OnDrag (PointerEventData data)
 	{
-		if (data.delta.x < 0)
+		Vector2 inputDelta = data.delta;
+
+		// Check input has been big enough
+		if(Mathf.Abs(inputDelta.x) > 1)
 		{
-			// swipe to left, move to right
-			currentSwipeDirection = Vector2.right;
-		}
-		else if(data.delta.x > 0)
-		{
-			currentSwipeDirection = Vector2.left;
+			if (inputDelta.x < 0)
+			{
+				// swipe to left, move to right
+				currentSwipeDirection = Vector2.right;
+			}
+			else if(inputDelta.x > 0)
+			{
+				currentSwipeDirection = Vector2.left;
+			}
+			else
+			{
+				currentSwipeDirection = Vector2.zero;
+			}
 		}
 		else
 		{
@@ -50,23 +77,44 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 		}
 	}
 
-
-
 	public void Next()
 	{
-		Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
-		Vector2 targetPos = new Vector2(currentPos.x - canvasScaler.referenceResolution.x, currentPos.y);
+		if(NextButton.interactable)
+		{
+			Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
+			Vector2 targetPos = new Vector2(currentPos.x - canvasScaler.referenceResolution.x, currentPos.y);
 
-		// Animate
-		ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+			// Animate
+			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+
+			childIterator++;
+
+			UpdateButtonInteraction();
+		}
 	}
 
 	public void Previous()
 	{
-		Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
-		Vector2 targetPos = new Vector2(currentPos.x + canvasScaler.referenceResolution.x, currentPos.y);
+		if(PrevButton.interactable)
+		{
+			Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
+			Vector2 targetPos = new Vector2(currentPos.x + canvasScaler.referenceResolution.x, currentPos.y);
 
-		// Animate
-		ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+			// Animate
+			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+
+			childIterator--;
+
+			UpdateButtonInteraction();
+		}
+	}
+
+	public void UpdateButtonInteraction()
+	{
+		// CheckNext
+		NextButton.interactable = (childIterator + 1 < ItemsParent.transform.childCount);
+
+		// CheckPrevious
+		PrevButton.interactable = (childIterator > 0);
 	}
 }

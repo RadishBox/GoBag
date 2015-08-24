@@ -17,16 +17,25 @@ public class ImageCarrousel : MonoBehaviour
 
 	public CanvasScaler canvasScaler;
 
-	void Start()
+	public void Initialize(GameObject itemsParent, CanvasScaler scaler)
 	{
-		Initialize();
-	}
+		ItemsParent = itemsParent;
+		canvasScaler = scaler;
 
-	public void Initialize()
-	{
 		foreach (CarrouselItem item in items)
 		{
-			GameObject carrouselItem = Instantiate(ItemPrefab);
+			GameObject carrouselItem;
+			// Check if item has a gameobject
+			if(item.tutorialPrefab != null)
+			{
+				// Panel is a prefab
+				carrouselItem = Instantiate(item.tutorialPrefab);
+			}
+			else
+			{
+				// Panel is an image with text
+				carrouselItem = Instantiate(ItemPrefab);
+			}
 			carrouselItem.transform.SetParent(ItemsParent.transform, false);
 			carrouselItem.transform.SetAsLastSibling();
 

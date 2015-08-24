@@ -7,4 +7,6 @@ public class CarrouselItem {
 
 	public Sprite sprite;
 	public string text;
+
+	public GameObject tutorialPrefab;
 }

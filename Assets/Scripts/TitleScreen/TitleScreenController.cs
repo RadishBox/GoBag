@@ -40,6 +40,6 @@ public class TitleScreenController : MonoBehaviour
 		Level selectedLevel = LevelLibrary.Instance.GetLevel(levelId);
 		GameConfiguration.Instance.Level = selectedLevel;
 
-		Application.LoadLevel("Explore");
+		Application.LoadLevel("Story");
 	}
 }
