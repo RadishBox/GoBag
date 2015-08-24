@@ -13,6 +13,8 @@ public class ExploreGUI : MonoBehaviour {
     public GameObject SicknessListParent;
     public GameObject SicknessPrefab;
 
+    public CivilGuyController civilGuyController;
+
     void Awake()
     {
         _instance = this;
@@ -75,5 +77,10 @@ public class ExploreGUI : MonoBehaviour {
             sicknessGO.GetComponent<Text>().text = newSickness.Name;
             sicknessGO.name = newSickness.Name;
         }
+    }
+
+    public void StartGameOverSequence(Sprite gameOverSprite, string message)
+    {
+        civilGuyController.StartGameOverSequence(gameOverSprite, message);
     }
 }

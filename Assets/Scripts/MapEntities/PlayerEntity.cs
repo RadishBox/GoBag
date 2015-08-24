@@ -84,6 +84,14 @@ public class PlayerEntity : MapEntity, IMovable {
         otherEntity.ActivateEffect(this);
     }
 
+    /// <summary>
+    /// Kills player
+    /// </summary>
+    public void Kill(Sprite deathSprite, string deathText)
+    {
+        ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText);
+    }    
+
     public int Health
     {
         get { return _healthPoints; }
