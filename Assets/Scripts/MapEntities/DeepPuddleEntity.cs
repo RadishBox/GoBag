@@ -16,6 +16,9 @@ public class DeepPuddleEntity : MapEntity
     public Sprite DeathSprite;
     public string DeathText;
 
+    // Audio related to effect
+    public AudioClip DeathFX;
+
     void Start()
     {
         SetRandomSprite();
@@ -48,6 +51,9 @@ public class DeepPuddleEntity : MapEntity
 
             if(prob <= DeathProbability)
             {
+                // Play audio effect
+                AudioManager.Instance.Play(AudioManager.AudioType.FX, DeathFX);
+
                 // Kill player
                 (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);	
             }

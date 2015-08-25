@@ -42,6 +42,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: Lluvia
+  SicknessProbability: .5
+  RainAmbience: {fileID: 8300000, guid: 091766d4b85a05b48bfd8efc6ee970aa, type: 3}
 --- !u!198 &19885482
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -1127,7 +1129,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: RainAmbience
+      value: 
+      objectReference: {fileID: 8300000, guid: 091766d4b85a05b48bfd8efc6ee970aa, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193674}

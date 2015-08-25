@@ -34,6 +34,13 @@ public class SceneQuickAccess : Editor
 		OpenScene("Game");
 	}
 
+	/// <summary>Open the MapCreationUtil Screen Scene.</summary>
+	[MenuItem("Open Scene/MapCreationUtil")]
+	public static void OpenMapCreationUtilScreen()
+	{
+		OpenScene("MapCreationUtil");
+	}
+
 	static void OpenScene(string name)
 	{
 		if (EditorApplication.SaveCurrentSceneIfUserWantsTo())

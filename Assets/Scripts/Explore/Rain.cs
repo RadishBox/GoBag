@@ -5,6 +5,16 @@ public class Rain : ScenarioEffect {
 
 	public float SicknessProbability = 0.5f;
 
+	// Audio related to effect
+    public AudioClip RainAmbience;
+
+    public void Awake()
+    {
+    	// Play audio effect
+        AudioManager.Instance.Play(AudioManager.AudioType.Ambience, RainAmbience);
+    }
+
+
 	public override void ActivateEffect(MapEntity entity)
 	{
         if (entity.GetType() == typeof(PlayerEntity))
