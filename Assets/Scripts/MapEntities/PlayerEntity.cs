@@ -22,9 +22,19 @@ public class PlayerEntity : MapEntity, IMovable {
     // Equippable slots
     public Raincoat raincoat;
 
+    // Death by natural causes (any of the bars)
+    public Sprite NaturalDeathSprite;
+    public string HealthDeathText;
+    public string WaterDeathText;
+    public string EnergyDeathText;
+    private string NaturalDeathText;
+
+
     void Start()
     {
         Sicknesses = new List<Sickness>();
+        turnStatus = TurnStatus.WaitingMove;
+        DisableMoveButtons();
     }
 
     /// <summary>
@@ -33,15 +43,15 @@ public class PlayerEntity : MapEntity, IMovable {
     protected override IEnumerator PlayTurnRoutine()
     {
         InTurn = true;
+        //turnStatus = TurnStatus.WaitingMove;
+
         // Item usage
-        //while (turnStatus == TurnStatus.WaitingBagUse)
+        //while (turnStatus == TurnStatus.Idle)
         //{
-         //   yield return null;
+        //   yield return null;
         //}
 
         // Move
-        // Turn off directional buttons
-
         UpdateMoveButtons();
         turnStatus = TurnStatus.WaitingMove;
         while(turnStatus == TurnStatus.WaitingMove)
@@ -57,22 +67,38 @@ public class PlayerEntity : MapEntity, IMovable {
         UpdateMoveButtons();
 
         // Check winning condition
-
-        // Check scenario effects
-        for(int i = 0; i < ExploreGameController.Instance.ScenarioEffects.Count; i++)
+        if(CheckVictory())
         {
-            ExploreGameController.Instance.ScenarioEffects[i].ActivateEffect(this);
-        }
+            // Win
 
-        // Check sicknesses effects
-        for(int i = 0; i < Sicknesses.Count; i++)
-        {
-            Sicknesses[i].ActivateEffect(this);
         }
-        
-        // Check for effects movement and ambient
+        else
+        {   
+            // Check if GameOver
+            if(CheckGameOver())
+            {
+                // Die
+                Kill(NaturalDeathSprite, NaturalDeathText);
+            }
+            else
+            {   
+                // Check scenario effects
+                for(int i = 0; i < ExploreGameController.Instance.ScenarioEffects.Count; i++)
+                {
+                    ExploreGameController.Instance.ScenarioEffects[i].ActivateEffect(this);
+                }
 
-        InTurn = false;
+                // Check sicknesses effects
+                for(int i = 0; i < Sicknesses.Count; i++)
+                {
+                    Sicknesses[i].ActivateEffect(this);
+                }
+                
+                // Check for effects movement and ambient
+
+                InTurn = false;
+            }
+        }        
     }
 
     /// <summary>
@@ -84,11 +110,43 @@ public class PlayerEntity : MapEntity, IMovable {
         otherEntity.ActivateEffect(this);
     }
 
+    /// <summary>Checks winning condition (On finish tile).</summary>
+    public bool CheckVictory()
+    {
+        bool victory = false;
+        return victory;
+    }
+
+    /// <summary>Checks game over condition (Any bar equals 0).</summary>
+    public bool CheckGameOver()
+    {
+        bool gameOver = false;
+
+        if(Health <= 0)
+        {
+            gameOver = true;
+            NaturalDeathText = HealthDeathText;
+        }
+        if(Water <= 0)
+        {
+            gameOver = true;
+            NaturalDeathText = WaterDeathText;
+        }
+        if(Energy <= 0)
+        {
+            gameOver = true;
+            NaturalDeathText = EnergyDeathText;
+        }        
+
+        return gameOver;
+    }
+
     /// <summary>
     /// Kills player
     /// </summary>
     public void Kill(Sprite deathSprite, string deathText)
     {
+        DisableMoveButtons();
         ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText);
     }    
 
@@ -180,6 +238,7 @@ public class PlayerEntity : MapEntity, IMovable {
         MapController.Instance.GetTile(Position).EntityInTile = this;
     }
 
+    /// <summary>Updates movement buttons according to tile availability.</summary>
     public void UpdateMoveButtons()
     {
         MapTile tile;
@@ -227,5 +286,14 @@ public class PlayerEntity : MapEntity, IMovable {
         {
             RightButton.SetActive(true);
         }
+    }
+
+    /// <summary>Disables all movebuttons.</summary>
+    public void DisableMoveButtons()
+    {
+        UpButton.SetActive(false);
+        DownButton.SetActive(false);
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
     }
 }
