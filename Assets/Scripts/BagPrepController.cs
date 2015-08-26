@@ -42,6 +42,11 @@ public class BagPrepController : MonoBehaviour
 
     void Start()
     {
+        
+    }
+
+    public void Initialize()
+    {
         // Obtain level
         level = GameConfiguration.Instance.Level;
         civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">" + level.CurrentScenario.Name + "</color>!",true,CivilGuyState.Worried);
@@ -92,6 +97,8 @@ public class BagPrepController : MonoBehaviour
         BagGroup.SetActive(false);
 
         ExploreGameController.Instance.StatusGroup.SetActive(true);
+
+        ExploreGameController.Instance.BeginExploration();
     }
 
     public void TriggerBagOpen()

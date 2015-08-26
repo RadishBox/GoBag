@@ -29,13 +29,7 @@ public class ExploreGameController : MonoBehaviour
         Instance = this;
     }
 
-    // Use this for initialization
-    void Start ()
-    {
-        Initialize();
-    }
-
-    void Initialize()
+    public void Initialize()
     {
         // BuildMap
         Map = Instantiate(Map);
@@ -57,7 +51,10 @@ public class ExploreGameController : MonoBehaviour
         // Set scenario effects
         scenarioEffects = new List<ScenarioEffect>();
         PrepareScenarioEffects();
+    }
 
+    public void BeginExploration()
+    {
         StartCoroutine(AdvanceTurn());
     }
 

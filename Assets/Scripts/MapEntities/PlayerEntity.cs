@@ -29,12 +29,16 @@ public class PlayerEntity : MapEntity, IMovable {
     public string EnergyDeathText;
     private string NaturalDeathText;
 
+    void Awake()
+    {        
+        DisableMoveButtons();
+    }
+
 
     void Start()
     {
         Sicknesses = new List<Sickness>();
         turnStatus = TurnStatus.WaitingMove;
-        DisableMoveButtons();
     }
 
     /// <summary>
@@ -43,7 +47,7 @@ public class PlayerEntity : MapEntity, IMovable {
     protected override IEnumerator PlayTurnRoutine()
     {
         InTurn = true;
-        //turnStatus = TurnStatus.WaitingMove;
+        //turnStatus = TurnStatus.Idle;
 
         // Item usage
         //while (turnStatus == TurnStatus.Idle)
