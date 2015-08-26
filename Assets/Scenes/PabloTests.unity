@@ -305,7 +305,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 449478, guid: 08735f09daf16a14a81956906f881e4e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11455484, guid: 08735f09daf16a14a81956906f881e4e, type: 2}
       propertyPath: umbrella
