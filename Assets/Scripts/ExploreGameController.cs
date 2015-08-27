@@ -31,8 +31,15 @@ public class ExploreGameController : MonoBehaviour
 
     public void Initialize()
     {
-        // BuildMap
-        Map = Instantiate(Map);
+        if(GameObject.FindWithTag("GameLibraries"))
+        {
+            Map = Instantiate(GameConfiguration.Instance.Level.Map);
+        }
+        else
+        {            
+            // BuildMap
+            Map = Instantiate(Map);
+        }
 
         // Place Player
         Player = Instantiate(Player);

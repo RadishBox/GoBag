@@ -8,8 +8,7 @@ public class Level {
     private int _id;
     [SerializeField]
     private float _bagTime;
-    [SerializeField]
-    private GameObject Map;
+    public GameObject Map;
 
     public ScenarioLibrary.ScenarioType scenario;
 

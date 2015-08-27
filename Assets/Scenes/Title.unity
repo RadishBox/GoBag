@@ -1163,7 +1163,7 @@ MonoBehaviour:
     scenario: 1
   - _id: 3
     _bagTime: 0
-    Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    Map: {fileID: 140818, guid: 0e3828067670885428a38a7294739956, type: 2}
     scenario: 1
   - _id: 4
     _bagTime: 0
@@ -1204,7 +1204,7 @@ GameObject:
   - 114: {fileID: 1451030894}
   m_Layer: 0
   m_Name: _GameLibraries
-  m_TagString: Untagged
+  m_TagString: GameLibraries
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

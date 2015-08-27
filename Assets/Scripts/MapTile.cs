@@ -31,7 +31,13 @@ public class MapTile : MonoBehaviour
             spriteRenderer.sortingLayerName = originalSpriteRenderer.sortingLayerName;
             spriteRenderer.sortingOrder = originalSpriteRenderer.sortingOrder;
 
+            // Copy rotation
             childGO.transform.localRotation = child.transform.localRotation;
+
+            // Copy scale
+            print(child.transform.localScale);
+            childGO.transform.localScale = child.transform.localScale;
+            print("Applied: " +childGO.transform.localScale );
 
             childGO.name = child.gameObject.name;
             //childGO.GetComponent<MapTileUnit>().FormatToGameTile();
