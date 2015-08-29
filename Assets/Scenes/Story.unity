@@ -466,6 +466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemsParent: {fileID: 642047582}
   canvasScaler: {fileID: 45317438}
+  PrevNextFX: {fileID: 8300000, guid: d15f0c65001a4d14881aa4103f3b1573, type: 3}
   PrevButton: {fileID: 1501982775}
   NextButton: {fileID: 1770685796}
   SkipButton: {fileID: 1287030859}

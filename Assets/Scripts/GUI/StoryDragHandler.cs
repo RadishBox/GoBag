@@ -12,6 +12,8 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
 	private Vector2 currentSwipeDirection = Vector2.zero;
 
+	public AudioClip PrevNextFX;
+
 	public Button PrevButton;
 	public Button NextButton;
 	public Button SkipButton;
@@ -116,5 +118,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
 		// CheckPrevious
 		PrevButton.interactable = (childIterator > 0);
+
+		AudioManager.Instance.Play(AudioManager.AudioType.FX, PrevNextFX);
 	}
 }

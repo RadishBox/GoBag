@@ -8,7 +8,7 @@ public class Tennis : Item {
         base.Start();
     }
 
-    protected override void Use()
+    public override void Use(MapEntity entity)
     {
         throw new System.NotImplementedException();
     }

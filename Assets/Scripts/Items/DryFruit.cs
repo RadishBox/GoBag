@@ -8,8 +8,11 @@ public class DryFruit : Item {
         base.Start();
     }
 
-    protected override void Use()
+    public override void Use(MapEntity entity)
     {
-        throw new System.NotImplementedException();
+        if (entity.GetType() == typeof(PlayerEntity))
+        {   
+            (entity as PlayerEntity).AlterBar(3, PlayerBars.Energy);            
+        }
     }
 }

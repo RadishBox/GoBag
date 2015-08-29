@@ -24,14 +24,25 @@ public class PlayerEntity : MapEntity, IMovable {
 
     // Death by natural causes (any of the bars)
     public Sprite NaturalDeathSprite;
+    public AudioClip NaturalDeathFX;
     public string HealthDeathText;
     public string WaterDeathText;
     public string EnergyDeathText;
     private string NaturalDeathText;
 
+    // Temporal
+    private static PlayerEntity _instance;
+
     void Awake()
-    {        
+    {                
+        _instance = this;
         DisableMoveButtons();
+    }
+
+    public static PlayerEntity Instance
+    {
+        get { return _instance; }
+        set { _instance = value; }
     }
 
 
@@ -152,6 +163,7 @@ public class PlayerEntity : MapEntity, IMovable {
     {
         DisableMoveButtons();
         ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText);
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, NaturalDeathFX);
     }    
 
     public int Health

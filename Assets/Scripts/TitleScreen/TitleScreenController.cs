@@ -12,6 +12,9 @@ public class TitleScreenController : MonoBehaviour
 
 	public GameObject GameLibraries;
 
+	public AudioClip TitleBgMusic;
+	public AudioClip LevelButtonFX;
+
 	void Awake()
 	{
 		StageSelectionPanel.SetActive(false);
@@ -21,7 +24,7 @@ public class TitleScreenController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-
+		AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, TitleBgMusic);
 	}
 
 	// Update is called once per frame
@@ -41,5 +44,7 @@ public class TitleScreenController : MonoBehaviour
 		GameConfiguration.Instance.Level = selectedLevel;
 
 		Application.LoadLevel("Story");
+
+		AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
 	}
 }

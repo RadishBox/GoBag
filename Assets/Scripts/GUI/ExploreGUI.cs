@@ -39,7 +39,7 @@ public class ExploreGUI : MonoBehaviour {
         {
             case PlayerBars.Health:
                 barLayout = HealthBar.GetComponent<LayoutElement>();
-                baseBarDelta = 20;
+                baseBarDelta = 30;
                 break;
             case PlayerBars.Water:
                 barLayout = WaterBar.GetComponent<LayoutElement>();
