@@ -28,6 +28,11 @@ public abstract class Item : MonoBehaviour {
 
     private float nativeSizeFactor = 1.2f;
 
+    // Animation, graphic that appears when in effect
+    public GameObject AnimationObject;
+    public int AnimationType;
+    public AudioClip UseFX;
+
     protected virtual void Awake()
     {
         _rectTrans = GetComponent<RectTransform>();

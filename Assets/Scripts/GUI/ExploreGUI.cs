@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using DG.Tweening;
 
-public class ExploreGUI : MonoBehaviour {
+public class ExploreGUI : MonoBehaviour
+{
 
     private static ExploreGUI _instance;
 
@@ -22,7 +24,7 @@ public class ExploreGUI : MonoBehaviour {
 
     public static ExploreGUI Instance
     {
-        get 
+        get
         {
             return _instance;
         }
@@ -34,34 +36,54 @@ public class ExploreGUI : MonoBehaviour {
         LayoutElement barLayout = null;
         int baseBarDelta = 0;
         int result = 0;
+        string barTweenId = "";
+
+        Image targetBar = null;
 
         switch (bar)
         {
-            case PlayerBars.Health:
-                barLayout = HealthBar.GetComponent<LayoutElement>();
-                baseBarDelta = 30;
-                break;
-            case PlayerBars.Water:
-                barLayout = WaterBar.GetComponent<LayoutElement>();
-                baseBarDelta = 30;
-                break;
-            case PlayerBars.Energy:
-                barLayout = EnergyBar.GetComponent<LayoutElement>();
-                baseBarDelta = 30;
-                break;
+        case PlayerBars.Health:
+            targetBar = HealthBar;
+            baseBarDelta = 30;
+            barTweenId = "Health";
+            break;
+        case PlayerBars.Water:
+            targetBar = WaterBar;
+            baseBarDelta = 30;
+            barTweenId = "Water";
+            break;
+        case PlayerBars.Energy:
+            targetBar = EnergyBar;
+            baseBarDelta = 30;
+            barTweenId = "Energy";
+            break;
         }
+
+        barLayout = targetBar.GetComponent<LayoutElement>();
 
         baseBarDelta = 210 / baseBarDelta;
 
         result = baseBarDelta * value;
-        barLayout.preferredWidth = barLayout.preferredWidth + result;
+        //barLayout.preferredWidth = barLayout.preferredWidth + result;
+        DOTween.Complete("BarSize"+barTweenId);
+        // Animation        
+        targetBar.DOFade(0.2f, 0.3f).SetLoops(-1, LoopType.Yoyo).SetId("BarColor");
+        barLayout.DOPreferredSize(new Vector2(barLayout.preferredWidth + result, barLayout.preferredHeight), 1.0f).SetId("BarSize"+barTweenId).OnComplete(()=>CompletedBarAnimation(targetBar));
+
+    }
+
+    private void CompletedBarAnimation(Image Bar)
+    {
+        DOTween.Kill("BarColor");
+        Bar.DOFade(1f, 0.5f);
+
     }
 
     public void AddSickness(Sickness sickness)
     {
         GameObject sicknessGO;
         sicknessGO = Instantiate(SicknessPrefab);
-        sicknessGO.transform.SetParent(SicknessListParent.transform,false);
+        sicknessGO.transform.SetParent(SicknessListParent.transform, false);
         sicknessGO.GetComponent<Text>().color = sickness.Color;
         sicknessGO.GetComponent<Text>().text = sickness.Name;
         sicknessGO.name = sickness.Name;
@@ -70,7 +92,7 @@ public class ExploreGUI : MonoBehaviour {
     public void AlterSickness(Sickness sickness, Sickness newSickness)
     {
         GameObject sicknessGO;
-        if(SicknessListParent.transform.Find(sickness.Name))
+        if (SicknessListParent.transform.Find(sickness.Name))
         {
             sicknessGO = SicknessListParent.transform.Find(sickness.Name).gameObject;
             sicknessGO.GetComponent<Text>().color = newSickness.Color;

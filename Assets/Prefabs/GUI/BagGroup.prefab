@@ -299,7 +299,7 @@ GameObject:
   - 224: {fileID: 22455084}
   - 222: {fileID: 22202336}
   - 114: {fileID: 11442736}
-  - 114: {fileID: 11498220}
+  - 114: {fileID: 11439356}
   m_Layer: 5
   m_Name: UseArea
   m_TagString: Untagged
@@ -1929,6 +1929,9 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11431304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2048,6 +2051,11 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 6
+  UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
+  EffectValue: 7
+  TargetBar: 2
 --- !u!114 &11439292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2061,6 +2069,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &11439356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229d2590a493c7143ba76182d5455027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 11442736}
+  _centerPoint: {x: 0, y: 0}
 --- !u!114 &11439774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2275,6 +2296,9 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11442210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2417,6 +2441,9 @@ MonoBehaviour:
   - 01
   - 11
   _dragPivotCoords: {x: 1, y: 1}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11447876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2435,6 +2462,9 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11448822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2572,6 +2602,9 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
+  AnimationObject: {fileID: 180488, guid: 7de013590efe5dc4fb9bcf909bf4925a, type: 2}
+  AnimationType: 4
+  UseFX: {fileID: 0}
 --- !u!114 &11451186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2709,7 +2742,7 @@ MonoBehaviour:
   SelectedItem: {fileID: 0}
   DraggedItem: {fileID: 0}
   BagGrid: {fileID: 11473006}
-  civilGuyController: {fileID: 11466482}
+  civilGuyController: {fileID: 0}
   ReadyButton: {fileID: 139302}
   DeleteArea: {fileID: 115490}
   UseArea: {fileID: 117048}
@@ -2798,6 +2831,9 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11457766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2970,6 +3006,11 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 6
+  UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
+  EffectValue: 3
+  TargetBar: 2
 --- !u!114 &11464162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3154,8 +3195,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackgroundFade: {fileID: 11444532}
   CivilGuy: {fileID: 22448614}
+  CivilGuyBig: {fileID: 0}
   MessageText: {fileID: 11400376}
   AnimationEase: 22
+  HappyCivilGuy: {fileID: 0}
+  InstructingCivilGuy: {fileID: 0}
+  CivilGuyImage: {fileID: 0}
+  EndingSprite: {fileID: 0}
 --- !u!114 &11466680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3173,6 +3219,9 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11467386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3467,6 +3516,11 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 6
+  UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
+  EffectValue: 5
+  TargetBar: 2
 --- !u!114 &11484570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3527,6 +3581,9 @@ MonoBehaviour:
   _stringTiles:
   - 11
   _dragPivotCoords: {x: 1, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11486722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3605,6 +3662,9 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
 --- !u!114 &11493374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3747,19 +3807,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
---- !u!114 &11498220
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 824939a52acb67644a2a732a02a28565, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 11442736}
-  _centerPoint: {x: 0, y: 0}
 --- !u!114 &11498474
 MonoBehaviour:
   m_ObjectHideFlags: 1
