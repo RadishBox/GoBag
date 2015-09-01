@@ -44,12 +44,71 @@ MonoBehaviour:
     text: "Manuel estaba en clases un d\xEDa, cuando lleg\xF3 una persona de protecci\xF3n
       civil a ense\xF1arle a la clase a empacar mochilas para emergencias."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
   - sprite: {fileID: 21300002, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "El se\xF1or dijo \u201CEmpaquen en su mochila lo que crean que necesitan
-      para una emergencia y luego salimos a practicar afuera a ver si empacaron bien\u201D"
+    text: "El se\xF1or dijo que hay que pensar en qu\xE9 necesitamos para la emergencia
+      que est\xE1 pasando y que adem\xE1s es muy importante tomar agua, comer y llevar
+      cosas por si nos enfermamos o lastimamos."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
+  - sprite: {fileID: 0}
+    text: kek m8
+    tutorialPrefab: {fileID: 189418, guid: f58573199c18a4d4993754ebf7050941, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+  - sprite: {fileID: 0}
+    text: loltun
+    tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}
@@ -59,7 +118,41 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.size
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].text
+      value: kek m8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].tutorialPrefab
+      value: 
+      objectReference: {fileID: 189418, guid: f58573199c18a4d4993754ebf7050941, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].text
+      value: loltun
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].tutorialPrefab
+      value: 
+      objectReference: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].text
+      value: "El se\xF1or dijo que hay que pensar en qu\xE9 necesitamos para la emergencia
+        que est\xE1 pasando y que adem\xE1s es muy importante tomar agua, comer y
+        llevar cosas por si nos enfermamos o lastimamos."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123440}

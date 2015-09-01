@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1439082337
+timeCreated: 1441122245
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -216,6 +216,8 @@ TextureImporter:
     21300418: iconWater
     21300420: iconHealth
     21300422: btnNext
+    21300424: GoalWhole
+    21300426: btnSkip
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -624,7 +626,7 @@ TextureImporter:
     - name: PalmtreeA1
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 832
         width: 64
         height: 64
@@ -634,7 +636,7 @@ TextureImporter:
     - name: PalmtreeB1
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 832
         width: 64
         height: 64
@@ -644,7 +646,7 @@ TextureImporter:
     - name: PalmtreeC1
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 832
         width: 64
         height: 64
@@ -2294,7 +2296,7 @@ TextureImporter:
     - name: PalmtreeA2
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 768
         width: 64
         height: 64
@@ -2304,7 +2306,7 @@ TextureImporter:
     - name: PalmtreeB2
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 768
         width: 64
         height: 64
@@ -2314,7 +2316,7 @@ TextureImporter:
     - name: PalmtreeC2
       rect:
         serializedVersion: 2
-        x: 448
+        x: 256
         y: 768
         width: 64
         height: 64
@@ -2366,6 +2368,26 @@ TextureImporter:
         serializedVersion: 2
         x: 640
         y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GoalWhole
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: btnSkip
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 768
         width: 128
         height: 128
       alignment: 0
