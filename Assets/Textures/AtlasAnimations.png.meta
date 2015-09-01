@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 986f89136c27aad4c95c92d0804e255e
-timeCreated: 1434737314
+timeCreated: 1440962910
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -32,6 +32,7 @@ TextureImporter:
     21300050: Heal12
     21300052: Heal13
     21300054: Heal14
+    21300056: actionBalloon
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -211,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 512
+        y: 513
         width: 256
         height: 256
       alignment: 0
@@ -352,6 +353,16 @@ TextureImporter:
         serializedVersion: 2
         x: 1280
         y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: actionBalloon
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
         width: 256
         height: 256
       alignment: 0
