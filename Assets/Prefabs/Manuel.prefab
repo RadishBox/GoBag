@@ -471,6 +471,10 @@ MonoBehaviour:
   DownButton: {fileID: 194208}
   LeftButton: {fileID: 186300}
   RightButton: {fileID: 165730}
+  Raincoat: {fileID: 21226772}
+  Boots: {fileID: 21230620}
+  RunningShoes: {fileID: 21267974}
+  Mask: {fileID: 21212878}
   raincoat: {fileID: 0}
   NaturalDeathSprite: {fileID: 21300006, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
   NaturalDeathFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}

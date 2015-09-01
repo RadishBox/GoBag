@@ -188,5 +188,12 @@ public abstract class Item : MonoBehaviour {
         set { _rectTrans = value; }
     }
 
+    [System.Serializable]
+    public struct BarValue
+    {
+        public PlayerBars TargetBar;
+        public int EffectValue;
+    }
+
 
 }

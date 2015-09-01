@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RainBoots : Item 
-{
+public class RainBoots : Item {
 
     protected override void Start()
     {
@@ -11,6 +10,12 @@ public class RainBoots : Item
 
     public override void Use(MapEntity entity)
     {
-        throw new System.NotImplementedException();
+        if (entity.GetType() == typeof(PlayerEntity))
+        {   
+            (entity as PlayerEntity).Boots.enabled = true;  
+        }
+
+        // Destroy GameObject
+    	Destroy(this.gameObject);
     }
 }

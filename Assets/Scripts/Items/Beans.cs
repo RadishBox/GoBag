@@ -4,8 +4,7 @@ using UnityEngine.UI;
 
 public class Beans : Item {
 
-	public int EffectValue;
-	public PlayerBars TargetBar;
+	public BarValue[] BarEffects;
 
     protected override void Start()
     {
@@ -18,7 +17,10 @@ public class Beans : Item {
 
         if (entity.GetType() == typeof(PlayerEntity))
         {   
-            (entity as PlayerEntity).AlterBar(EffectValue, TargetBar);            
+            foreach (BarValue barValue in BarEffects)
+            {                
+                (entity as PlayerEntity).AlterBar(barValue.EffectValue, barValue.TargetBar);  
+            }          
         }
     }
 

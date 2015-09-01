@@ -101,6 +101,15 @@ public class ExploreGUI : MonoBehaviour
         }
     }
 
+    public void RemoveSickness(Sickness sickness)
+    {
+        GameObject sicknessGO;
+        if (SicknessListParent.transform.Find(sickness.Name))
+        {
+            Destroy(SicknessListParent.transform.Find(sickness.Name).gameObject);
+        }
+    }
+
     public void StartGameOverSequence(Sprite gameOverSprite, string message)
     {
         civilGuyController.StartGameOverSequence(gameOverSprite, message);

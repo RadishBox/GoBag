@@ -2296,9 +2296,12 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
-  AnimationType: 0
-  UseFX: {fileID: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 1
+  UseFX: {fileID: 8300000, guid: c93aba2614865014fb3015dbdc140319, type: 3}
+  BarEffects:
+  - TargetBar: 0
+    EffectValue: 2
 --- !u!114 &11442210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2602,9 +2605,11 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
-  AnimationObject: {fileID: 180488, guid: 7de013590efe5dc4fb9bcf909bf4925a, type: 2}
-  AnimationType: 4
-  UseFX: {fileID: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 2
+  UseFX: {fileID: 8300000, guid: 76f456338a03c074b80309760058de20, type: 3}
+  EffectValue: 5
+  TargetBar: 1
 --- !u!114 &11451186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2831,9 +2836,13 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
-  AnimationType: 0
-  UseFX: {fileID: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 4
+  UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
+  BarEffects:
+  - TargetBar: 0
+    EffectValue: 1
+  SicknessCures: 01000000
 --- !u!114 &11457766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3009,8 +3018,11 @@ MonoBehaviour:
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
-  EffectValue: 3
-  TargetBar: 2
+  BarEffects:
+  - TargetBar: 2
+    EffectValue: 3
+  - TargetBar: 0
+    EffectValue: 1
 --- !u!114 &11464162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3219,9 +3231,13 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
-  AnimationType: 0
-  UseFX: {fileID: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 3
+  UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
+  BarEffects:
+  - TargetBar: 0
+    EffectValue: 1
+  SicknessCures: 00000000
 --- !u!114 &11467386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3519,8 +3535,11 @@ MonoBehaviour:
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
-  EffectValue: 5
-  TargetBar: 2
+  BarEffects:
+  - TargetBar: 2
+    EffectValue: 5
+  - TargetBar: 1
+    EffectValue: 1
 --- !u!114 &11484570
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3662,9 +3681,13 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
-  AnimationType: 0
-  UseFX: {fileID: 0}
+  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationType: 5
+  UseFX: {fileID: 8300000, guid: 954993e47d9d56a4a832a0f7ac35df08, type: 3}
+  BarEffects:
+  - TargetBar: 0
+    EffectValue: 1
+  SicknessCures: 02000000
 --- !u!114 &11493374
 MonoBehaviour:
   m_ObjectHideFlags: 1

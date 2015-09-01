@@ -10,6 +10,12 @@ public class Raincoat : Item {
 
     public override void Use(MapEntity entity)
     {
-        throw new System.NotImplementedException();
+        if (entity.GetType() == typeof(PlayerEntity))
+        {   
+            (entity as PlayerEntity).Raincoat.enabled = true;  
+        }
+
+        // Destroy GameObject
+    	Destroy(this.gameObject);
     }
 }
