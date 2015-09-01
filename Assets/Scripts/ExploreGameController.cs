@@ -7,8 +7,6 @@ using System.Collections.Generic;
 /// </summary>
 public class ExploreGameController : MonoBehaviour
 {
-
-
     private static ExploreGameController _instance;
 
     private int _turn = 0;

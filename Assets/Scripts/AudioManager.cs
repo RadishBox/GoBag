@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 /// <summary>
 /// Manages all sounds in the game. Three types: bgmusic, ambience, fx
@@ -33,7 +34,7 @@ public class AudioManager : MonoBehaviour
     /// <summary>
     /// Plays given audio clip in the corresponding audiosource
     /// </summary>
-    public void Play(AudioType type, AudioClip clip)
+    public void Play(AudioType type, AudioClip clip, float volumeMultiplier = 1.0f)
     {
         AudioSource targetAudio = null;
 
@@ -54,7 +55,66 @@ public class AudioManager : MonoBehaviour
         }
 
         targetAudio.clip = clip;
-        targetAudio.Play();
+        if (volumeMultiplier != 1)
+        {
+            targetAudio.PlayOneShot(clip, volumeMultiplier);
+        }
+        else
+        {
+            targetAudio.Play();
+        }
+    }
+
+
+    /// <summary>
+    /// Fades given audio type currently playing
+    /// </summary>
+    public void Fade(AudioType type, float targetValue, float time)
+    {
+        AudioSource targetAudio = null;
+
+        switch (type)
+        {
+        case AudioType.BgMusic:
+            targetAudio = BgAudio;
+            break;
+        case AudioType.Ambience:
+            targetAudio = AmbienceAudio;
+            break;
+        case AudioType.FX:
+            targetAudio = FXAudio;
+            break;
+        default:
+            targetAudio = FXAudio;
+            break;
+        }
+
+        float originalVolume = targetAudio.volume;
+        targetAudio.DOFade(targetValue, time).OnComplete(()=>FadeCallback(type, originalVolume));
+    }
+
+    private void FadeCallback(AudioType type, float volume)
+    {
+        AudioSource targetAudio = null;
+
+        switch (type)
+        {
+        case AudioType.BgMusic:
+            targetAudio = BgAudio;
+            break;
+        case AudioType.Ambience:
+            targetAudio = AmbienceAudio;
+            break;
+        case AudioType.FX:
+            targetAudio = FXAudio;
+            break;
+        default:
+            targetAudio = FXAudio;
+            break;
+        }
+
+        targetAudio.Stop();
+        targetAudio.volume = volume;
     }
 
 }

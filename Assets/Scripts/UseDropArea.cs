@@ -20,7 +20,6 @@ public class UseDropArea : DropArea {
             {
                 BagPrepController.Instance.BagGrid.ClearItem(draggedItem);
             }            
-            Destroy(draggedItem.gameObject);
         }
     }
 }

@@ -37,17 +37,21 @@ public class PuddleEntity : MapEntity
         // When walked on, reduce that entity life
         if (otherEntity.GetType() == typeof(PlayerEntity))
         {            
-            Sickness cold = SicknessLibrary.Instance.GetSickness(SicknessType.Cold);
-
-            // Check that the player doesn't have that sickness
-            if(!(otherEntity as PlayerEntity).Sicknesses.Exists(x => (x.Name == cold.Name)))
+            // if player is not equipped with a raincoat
+            if(!(otherEntity as PlayerEntity).Boots.enabled)
             {
-                // Probability check
-                float prob = Random.Range(0.0f, 1.0f);
+                Sickness cold = SicknessLibrary.Instance.GetSickness(SicknessType.Cold);
 
-                if(prob <= ColdProbability)
+                // Check that the player doesn't have that sickness
+                if(!(otherEntity as PlayerEntity).Sicknesses.Exists(x => (x.Name == cold.Name)))
                 {
-                    (otherEntity as PlayerEntity).AddSickness(cold);
+                    // Probability check
+                    float prob = Random.Range(0.0f, 1.0f);
+
+                    if(prob <= ColdProbability)
+                    {
+                        (otherEntity as PlayerEntity).AddSickness(cold);
+                    }
                 }
             }
         }

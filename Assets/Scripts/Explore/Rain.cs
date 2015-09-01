@@ -20,7 +20,7 @@ public class Rain : ScenarioEffect {
         if (entity.GetType() == typeof(PlayerEntity))
         {            
         	// if player is not equipped with a raincoat
-        	if((entity as PlayerEntity).raincoat == null)
+        	if(!(entity as PlayerEntity).Raincoat.enabled)
         	{
         		Sickness cold = SicknessLibrary.Instance.GetSickness(SicknessType.Cold);
 

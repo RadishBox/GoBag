@@ -106,10 +106,16 @@ public class BagPrepController : MonoBehaviour
         if (BagGroup.activeInHierarchy)
         {
             BagGroup.SetActive(false);
+
+            // Activate input
+            GameController.Instance.Paused = false;
         }
         else
         {
             BagGroup.SetActive(true);
+
+            // Deactivate input
+            GameController.Instance.Paused = true;
         }
 
     }

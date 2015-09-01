@@ -19,6 +19,11 @@ public class PlayerEntity : MapEntity, IMovable {
     public GameObject LeftButton;
     public GameObject RightButton;
 
+    public SpriteRenderer Raincoat;
+    public SpriteRenderer Boots;
+    public SpriteRenderer RunningShoes;
+    public SpriteRenderer Mask;
+
     // Equippable slots
     public Raincoat raincoat;
 
@@ -220,6 +225,15 @@ public class PlayerEntity : MapEntity, IMovable {
             Sicknesses.Remove(Sicknesses.Find(x => x.Name == sickness.Name));
             Sicknesses.Add(newSickness);
             ExploreGUI.Instance.AlterSickness(sickness, newSickness);
+        }
+    }
+
+    public void CureSickness(Sickness sickness)
+    {
+        if(Sicknesses.Exists(x => x.Name == sickness.Name))
+        {
+            Sicknesses.Remove(Sicknesses.Find(x => x.Name == sickness.Name));
+            ExploreGUI.Instance.RemoveSickness(sickness);
         }
     }
 
