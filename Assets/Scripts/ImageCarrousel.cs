@@ -35,12 +35,13 @@ public class ImageCarrousel : MonoBehaviour
 			{
 				// Panel is an image with text
 				carrouselItem = Instantiate(ItemPrefab);
+				carrouselItem.GetComponent<Image>().sprite = item.sprite;
+				carrouselItem.GetComponentInChildren<Text>().text = item.text;
 			}
 			carrouselItem.transform.SetParent(ItemsParent.transform, false);
 			carrouselItem.transform.SetAsLastSibling();
 
-			carrouselItem.GetComponent<Image>().sprite = item.sprite;
-			carrouselItem.GetComponentInChildren<Text>().text = item.text;
+			
 
 			// Adjust preferred width to screen size to scaler reference resolution
 			carrouselItem.GetComponent<LayoutElement>().preferredWidth = canvasScaler.referenceResolution.x;
