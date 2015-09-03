@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11430776}
   m_Layer: 0
   m_Name: _GameLibraries
-  m_TagString: Untagged
+  m_TagString: GameLibraries
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +47,8 @@ MonoBehaviour:
   - {fileID: 116056, guid: 9b96fcf2209c840e485ab9a099f85abe, type: 2}
   - {fileID: 116056, guid: fbaf7283997925246b16eb84ef6f5379, type: 2}
   - {fileID: 191054, guid: d76e363757f534c1d8be8a0410275a8e, type: 2}
+  - {fileID: 142692, guid: f8ba920410a7245629510f922a4968d0, type: 2}
+  - {fileID: 113300, guid: fa0c0c9ff1fa746c1af28ec88972907d, type: 2}
 --- !u!114 &11421578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -62,12 +64,18 @@ MonoBehaviour:
   - _id: 0
     _name: Todos
     _icon: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: 9c9179d263128434bb980cb9e69daab5, type: 2}
   - _id: 1
     _name: "Hurac\xE1n"
     _icon: {fileID: 21300338, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 193674, guid: 233c5d10dd2dc844da15aed5b3444f57, type: 2}
+    ScenarioStory: {fileID: 109212, guid: c3a731d0e199240de9920072f20b9d9e, type: 2}
   - _id: 2
     _name: Incendio
     _icon: {fileID: 21300340, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 160598, guid: d393b7d36a81c4f438bc6dc7df4a3f2c, type: 2}
   SicknessPrefab: {fileID: 110834, guid: 810342e3ced265042a82a104a8cfd2dc, type: 2}
 --- !u!114 &11427342
 MonoBehaviour:

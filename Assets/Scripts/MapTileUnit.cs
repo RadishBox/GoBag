@@ -8,11 +8,14 @@ public class MapTileUnit : MonoBehaviour {
     private int _layer;
     [SerializeField]
     private bool _passable;
+    [SerializeField]
+    private bool _isObjective;
 
     public bool UpPass = true;
     public bool RightPass = true;
     public bool DownPass = true;
     public bool LeftPass = true;
+
 
     void Awake()
     {
@@ -38,5 +41,11 @@ public class MapTileUnit : MonoBehaviour {
     {
         get { return _passable; }
         set { _passable = value; }
+    }
+
+    public bool IsObjective
+    {
+        get { return _isObjective; }
+        set { _isObjective = value; }
     }
 }

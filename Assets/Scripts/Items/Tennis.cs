@@ -12,7 +12,8 @@ public class Tennis : Item {
     {
         if (entity.GetType() == typeof(PlayerEntity))
         {   
-            (entity as PlayerEntity).RunningShoes.enabled = true;  
+            (entity as PlayerEntity).RunningShoes.enabled = true; 
+            (entity as PlayerEntity).MovementNumber = 2;
         }
 
         // Destroy GameObject

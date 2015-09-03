@@ -20,8 +20,11 @@ public class CivilGuyController : MonoBehaviour {
     public Sprite InstructingCivilGuy;
     public Image CivilGuyImage;
 
+    public Button DismissButton;
+
     //Game over 
     public Image EndingSprite;
+    public Button GameOverNextButton;
 	
     // Use this for initialization
     void Awake()
@@ -38,9 +41,9 @@ public class CivilGuyController : MonoBehaviour {
     {
         Vector2 targetPos = new Vector2(activeCivilGuy.anchoredPosition.x, -1156);
         activeCivilGuy.DOAnchorPos(targetPos, 1).SetEase(AnimationEase);
+        canvasGroup.blocksRaycasts = false;
         BackgroundFade.DOFade(0, 1);
         yield return new WaitForSeconds(1);
-        canvasGroup.blocksRaycasts = false;
     }
 
     public void ShowCivilGuyGroup(string message, bool isBig, CivilGuyState state)
@@ -84,22 +87,40 @@ public class CivilGuyController : MonoBehaviour {
         activeCivilGuy.transform.Find("Message").GetComponentInChildren<Text>().text = message;
     }
 
-    public void StartGameOverSequence(Sprite gameOverSprite, string message)
+    public void StartGameOverSequence(Sprite gameOverSprite, string message, CivilGuyState civilGuyState)
     {
+        // Disable return button
+        DismissButton.interactable = false;
+
         // set variables
         EndingSprite.sprite = gameOverSprite;
-
-        StartCoroutine(GameOverSequence(message));
+        StartCoroutine(GameOverSequence(message, civilGuyState));
     }
 
-    private IEnumerator GameOverSequence(string message)
+    private IEnumerator GameOverSequence(string message, CivilGuyState civilGuyState)
     {
         // Fade in ending sprite
+        BackgroundFade.DOFade(0.5f, 1);
         EndingSprite.gameObject.SetActive(true);
 
-        // set message and show civil guy
-        ShowCivilGuyGroup(message, false, CivilGuyState.Worried);
-        yield return null;
+        yield return new WaitForSeconds(1.0f);
 
+        // set message and show civil guy
+        ShowCivilGuyGroup(message, false, civilGuyState);
+
+        GameOverNextButton.gameObject.SetActive(true);
+        GameOverNextButton.GetComponent<Image>().DOFade(0.25f, 0.5f).SetLoops(-1, LoopType.Yoyo);
+    }
+
+    public void LoadTitle()
+    {
+        StartCoroutine(LoadTitleRoutine());
+    }
+
+    private IEnumerator LoadTitleRoutine()
+    {
+        AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        Application.LoadLevel("Title"); 
     }
 }

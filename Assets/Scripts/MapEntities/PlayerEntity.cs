@@ -12,6 +12,9 @@ public class PlayerEntity : MapEntity, IMovable {
     private int _waterPoints = 30;
     private int _energyPoints = 30;
 
+    private int _movementNumber = 1;
+    private int _currentMovement = 0;
+
     private List<Sickness> _sicknesses;
 
     public GameObject UpButton;
@@ -19,13 +22,11 @@ public class PlayerEntity : MapEntity, IMovable {
     public GameObject LeftButton;
     public GameObject RightButton;
 
+    // Equippable slots
     public SpriteRenderer Raincoat;
     public SpriteRenderer Boots;
     public SpriteRenderer RunningShoes;
     public SpriteRenderer Mask;
-
-    // Equippable slots
-    public Raincoat raincoat;
 
     // Death by natural causes (any of the bars)
     public Sprite NaturalDeathSprite;
@@ -34,6 +35,11 @@ public class PlayerEntity : MapEntity, IMovable {
     public string WaterDeathText;
     public string EnergyDeathText;
     private string NaturalDeathText;
+
+    // Winnin case
+    public Sprite WinSprite;
+    public string WinText;
+    public AudioClip WinFX;
 
     // Temporal
     private static PlayerEntity _instance;
@@ -63,6 +69,7 @@ public class PlayerEntity : MapEntity, IMovable {
     protected override IEnumerator PlayTurnRoutine()
     {
         InTurn = true;
+        _currentMovement = 0;
         //turnStatus = TurnStatus.Idle;
 
         // Item usage
@@ -72,25 +79,28 @@ public class PlayerEntity : MapEntity, IMovable {
         //}
 
         // Move
-        UpdateMoveButtons();
-        turnStatus = TurnStatus.WaitingMove;
-        while(turnStatus == TurnStatus.WaitingMove)
+        for (int i = 0; i < _movementNumber; i++) 
         {
-            yield return null;
-        }
-        
-        //Move();
-        while (turnStatus == TurnStatus.Moving)
-        {
-            yield return null;
-        }
-        UpdateMoveButtons();
+            UpdateMoveButtons();
+            turnStatus = TurnStatus.WaitingMove;
+            while(turnStatus == TurnStatus.WaitingMove)
+            {
+                yield return null;
+            }
+            
+            //Move();
+            while (turnStatus == TurnStatus.Moving)
+            {
+                yield return null;
+            }
+            UpdateMoveButtons();
+        }        
 
         // Check winning condition
         if(CheckVictory())
         {
             // Win
-
+            Win(WinSprite, WinText);
         }
         else
         {   
@@ -134,6 +144,13 @@ public class PlayerEntity : MapEntity, IMovable {
     public bool CheckVictory()
     {
         bool victory = false;
+
+        // Check if tile had entity
+        if(MapController.Instance.GetTile(Position).IsObjective)
+        {
+            victory = true;
+        }
+
         return victory;
     }
 
@@ -167,9 +184,19 @@ public class PlayerEntity : MapEntity, IMovable {
     public void Kill(Sprite deathSprite, string deathText)
     {
         DisableMoveButtons();
-        ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText);
+        ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText, CivilGuyState.Worried);
         AudioManager.Instance.Play(AudioManager.AudioType.FX, NaturalDeathFX);
     }    
+
+    /// <summary>
+    /// Player winning 
+    /// </summary>
+    public void Win(Sprite winSprite, string winText)
+    {
+        DisableMoveButtons();
+        ExploreGUI.Instance.StartGameOverSequence(winSprite, winText, CivilGuyState.Happy);
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, WinFX);
+    }
 
     public int Health
     {
@@ -266,6 +293,8 @@ public class PlayerEntity : MapEntity, IMovable {
 
         // Occupy tile
         MapController.Instance.GetTile(Position).EntityInTile = this;
+
+        _currentMovement++;
     }
 
     /// <summary>Updates movement buttons according to tile availability.</summary>
@@ -325,5 +354,11 @@ public class PlayerEntity : MapEntity, IMovable {
         DownButton.SetActive(false);
         LeftButton.SetActive(false);
         RightButton.SetActive(false);
+    }
+
+    public int MovementNumber
+    {
+        get { return _movementNumber; }
+        set { _movementNumber = value; }
     }
 }

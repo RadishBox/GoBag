@@ -32,6 +32,8 @@ public abstract class Item : MonoBehaviour {
     public GameObject AnimationObject;
     public int AnimationType;
     public AudioClip UseFX;
+    protected bool isBeingUsed = false;
+    protected GameObject Animation;
 
     protected virtual void Awake()
     {

@@ -67,14 +67,14 @@ public class ExploreGUI : MonoBehaviour
         //barLayout.preferredWidth = barLayout.preferredWidth + result;
         DOTween.Complete("BarSize"+barTweenId);
         // Animation        
-        targetBar.DOFade(0.2f, 0.3f).SetLoops(-1, LoopType.Yoyo).SetId("BarColor");
-        barLayout.DOPreferredSize(new Vector2(barLayout.preferredWidth + result, barLayout.preferredHeight), 1.0f).SetId("BarSize"+barTweenId).OnComplete(()=>CompletedBarAnimation(targetBar));
+        targetBar.DOFade(0.2f, 0.3f).SetLoops(-1, LoopType.Yoyo).SetId("BarColor"+barTweenId);
+        barLayout.DOPreferredSize(new Vector2(barLayout.preferredWidth + result, barLayout.preferredHeight), 1.0f).SetId("BarSize"+barTweenId).OnComplete(()=>CompletedBarAnimation(targetBar, barTweenId));
 
     }
 
-    private void CompletedBarAnimation(Image Bar)
+    private void CompletedBarAnimation(Image Bar, string targetBarId)
     {
-        DOTween.Kill("BarColor");
+        DOTween.Kill("BarColor"+targetBarId);
         Bar.DOFade(1f, 0.5f);
 
     }
@@ -110,8 +110,8 @@ public class ExploreGUI : MonoBehaviour
         }
     }
 
-    public void StartGameOverSequence(Sprite gameOverSprite, string message)
+    public void StartGameOverSequence(Sprite gameOverSprite, string message, CivilGuyState state)
     {
-        civilGuyController.StartGameOverSequence(gameOverSprite, message);
+        civilGuyController.StartGameOverSequence(gameOverSprite, message, state);
     }
 }

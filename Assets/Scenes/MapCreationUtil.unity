@@ -1033,6 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -1230,6 +1231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -1657,6 +1659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -2662,6 +2665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -2885,6 +2889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -3086,6 +3091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -3344,6 +3350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -3454,6 +3461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -3564,6 +3572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -4605,6 +4614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -4771,6 +4781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -4995,6 +5006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -5105,6 +5117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -5389,6 +5402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -5556,6 +5570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -5923,6 +5938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -6090,6 +6106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 1
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -6287,6 +6304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -6397,6 +6415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -6826,6 +6845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -7166,6 +7186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -7592,6 +7613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -7876,6 +7898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8417,6 +8440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8527,6 +8551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8637,6 +8662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8949,6 +8975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9429,6 +9456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9826,6 +9854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9936,6 +9965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10425,6 +10455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10622,6 +10653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10788,6 +10820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10954,6 +10987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11469,6 +11503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11723,6 +11758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -12408,6 +12444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -12779,6 +12816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -13063,6 +13101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -13644,6 +13683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -13867,6 +13907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14064,6 +14105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14317,6 +14359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14540,6 +14583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14650,6 +14694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14760,6 +14805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -14982,6 +15028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -15693,6 +15740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -15860,6 +15908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -16083,6 +16132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -16339,6 +16389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -17434,6 +17485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -17544,6 +17596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -17940,6 +17993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -18339,6 +18393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -19373,6 +19428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -20321,6 +20377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -20665,6 +20722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -21554,6 +21612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -21865,6 +21924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -22410,6 +22470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -22864,6 +22925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -23208,6 +23270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -23663,6 +23726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -23773,6 +23837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -24057,6 +24122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -24750,6 +24816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -25117,6 +25184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -25490,147 +25558,147 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22440824, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40.6666679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 210
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22467534, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22480816, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40.6666679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 210
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22401568, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22470088, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 40.6666679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 155
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -20.333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 210
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22430570, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22449942, guid: c0da8f63667ccaf42a0e68b73dd90efa, type: 2}
       propertyPath: m_AnchorMin.y
@@ -26347,6 +26415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -26715,6 +26784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -27170,6 +27240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -28639,6 +28710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -29097,6 +29169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -29847,6 +29920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -30760,6 +30834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -31014,6 +31089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -31215,6 +31291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -31733,6 +31810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -31907,6 +31985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -32162,6 +32241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 1
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -32441,6 +32521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -32952,6 +33033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -33319,6 +33401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -34622,6 +34705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -35049,6 +35133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -36422,6 +36507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -36532,6 +36618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -36786,6 +36873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -36897,6 +36985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -37007,6 +37096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -37667,6 +37757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -38009,6 +38100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -38206,6 +38298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -38811,6 +38904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -39351,6 +39445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -39575,6 +39670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -39776,6 +39872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -40086,6 +40183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -41668,6 +41766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -42922,6 +43021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -43032,6 +43132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -43229,6 +43330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -43339,6 +43441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -43627,6 +43730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -44198,6 +44302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -44452,6 +44557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -44562,6 +44668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46032,6 +46139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46199,6 +46307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46309,6 +46418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46419,6 +46529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46586,6 +46697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -46988,6 +47100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -47242,6 +47355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -47584,6 +47698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -48541,6 +48656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -49546,6 +49662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -49743,6 +49860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -49940,6 +50058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -50166,6 +50285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -50276,6 +50396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -50791,6 +50912,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -51598,6 +51720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -51764,6 +51887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -51962,6 +52086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -52303,6 +52428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -52674,6 +52800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -52985,6 +53112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -54476,6 +54604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -55338,6 +55467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -55448,6 +55578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -55558,6 +55689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 1
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -55668,6 +55800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -57016,6 +57149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -57415,6 +57549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -57756,6 +57891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -58010,6 +58146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -58120,6 +58257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -58491,6 +58629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -58601,6 +58740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -59699,6 +59839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -59809,6 +59950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -61061,6 +61203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -61171,6 +61314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -61567,6 +61711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -62282,6 +62427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -62392,6 +62538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -62502,6 +62649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -62612,6 +62760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -63096,6 +63245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -64233,6 +64383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -65035,6 +65186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -65232,6 +65384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 1
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -65915,6 +66068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -66281,6 +66435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -66606,6 +66761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -66716,6 +66872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -66971,6 +67128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -67456,6 +67614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -67827,6 +67986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -68081,6 +68241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -68422,6 +68583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -68821,6 +68983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -69075,6 +69238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -69387,6 +69551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -69554,6 +69719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -70127,6 +70293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -70237,6 +70404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -70347,6 +70515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -70659,6 +70828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -71118,6 +71288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -71228,6 +71399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -71425,6 +71597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -71800,6 +71973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -72324,6 +72498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -72753,6 +72928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -72863,6 +73039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -73117,6 +73294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -73370,6 +73548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -73567,6 +73746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -73821,6 +74001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -74451,6 +74632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -74937,6 +75119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1

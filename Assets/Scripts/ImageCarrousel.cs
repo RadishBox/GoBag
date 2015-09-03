@@ -42,10 +42,15 @@ public class ImageCarrousel : MonoBehaviour
 			carrouselItem.transform.SetAsLastSibling();
 
 			
-
-			// Adjust preferred width to screen size to scaler reference resolution
-			carrouselItem.GetComponent<LayoutElement>().preferredWidth = canvasScaler.referenceResolution.x;
-
+			if(carrouselItem.GetComponent<LayoutElement>())
+			{
+				// Adjust preferred width to screen size to scaler reference resolution
+				carrouselItem.GetComponent<LayoutElement>().preferredWidth = canvasScaler.referenceResolution.x;
+			}
+			else
+			{
+				print(carrouselItem.gameObject.name);
+			}
 		}
 	}
 

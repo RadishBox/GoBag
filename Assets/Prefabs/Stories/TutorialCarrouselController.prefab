@@ -126,7 +126,7 @@ MonoBehaviour:
     tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
   - sprite: {fileID: 0}
     text: "\xA1Para llenar esta barra, toma agua! "
-    tutorialPrefab: {fileID: 145366, guid: 16d52d53580a1ab4dab70545e149f61d, type: 2}
+    tutorialPrefab: {fileID: 135854, guid: 4cceb9916fa8e3246b529bf71a25f7a1, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}

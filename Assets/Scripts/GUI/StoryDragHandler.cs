@@ -83,11 +83,11 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	{
 		if(NextButton.interactable)
 		{
-			Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
-			Vector2 targetPos = new Vector2(currentPos.x - canvasScaler.referenceResolution.x, currentPos.y);
+			float currentPos = childIterator*canvasScaler.referenceResolution.x;
+			Vector2 targetPos = new Vector2(-currentPos - canvasScaler.referenceResolution.x, 0);
 
 			// Animate
-			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false).SetId("NextTween");
 
 			childIterator++;
 
@@ -99,11 +99,11 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	{
 		if(PrevButton.interactable)
 		{
-			Vector2 currentPos = ItemsParent.GetComponent<RectTransform>().anchoredPosition;
-			Vector2 targetPos = new Vector2(currentPos.x + canvasScaler.referenceResolution.x, currentPos.y);
+			float currentPos = childIterator*canvasScaler.referenceResolution.x;
+			Vector2 targetPos = new Vector2(-currentPos + canvasScaler.referenceResolution.x, 0);
 
 			// Animate
-			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false);
+			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false).SetId("PrevTween");
 
 			childIterator--;
 

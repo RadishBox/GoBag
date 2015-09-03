@@ -475,13 +475,15 @@ MonoBehaviour:
   Boots: {fileID: 21230620}
   RunningShoes: {fileID: 21267974}
   Mask: {fileID: 21212878}
-  raincoat: {fileID: 0}
   NaturalDeathSprite: {fileID: 21300006, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
   NaturalDeathFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}
   HealthDeathText: "\xA1Cuida tu salud! \xA1Ponte Trucha, Manuel Trucha!"
   WaterDeathText: "\xA1Es muy importante mantenerte hidratado! \xA1Ponte Trucha, Manuel
     Trucha!"
   EnergyDeathText: "\xA1Atento a tu energ\xEDa! \xA1Ponte Trucha, Manuel Trucha!"
+  WinSprite: {fileID: 21300004, guid: 2b323cee6587ff54eadccef5d39713c7, type: 3}
+  WinText: "\xA1Felicidades, llegaste al punto de reuni\xF3n!"
+  WinFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
 --- !u!114 &11458536
 MonoBehaviour:
   m_ObjectHideFlags: 1

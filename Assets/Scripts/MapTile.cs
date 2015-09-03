@@ -37,7 +37,7 @@ public class MapTile : MonoBehaviour
             // Copy scale
             print(child.transform.localScale);
             childGO.transform.localScale = child.transform.localScale;
-            print("Applied: " +childGO.transform.localScale );
+            print("Applied: " + childGO.transform.localScale );
 
             childGO.name = child.gameObject.name;
             //childGO.GetComponent<MapTileUnit>().FormatToGameTile();
@@ -108,5 +108,21 @@ public class MapTile : MonoBehaviour
     public bool OccupiedByPlayer
     {
         get { return EntityInTile.GetType() == typeof(PlayerEntity);  }
+    }
+
+    public bool IsObjective
+    {
+        get
+        {
+            foreach (Transform child in transform)
+            {
+                MapTileUnit tileUnit = child.GetComponent<MapTileUnit>();
+                if (tileUnit.IsObjective)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
