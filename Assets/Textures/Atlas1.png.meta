@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1441122245
+timeCreated: 1441294343
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -218,6 +218,7 @@ TextureImporter:
     21300422: btnNext
     21300424: GoalWhole
     21300426: btnSkip
+    21300428: BtnPause
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -2390,6 +2391,16 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BtnPause
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
