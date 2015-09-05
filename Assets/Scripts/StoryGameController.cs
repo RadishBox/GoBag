@@ -25,6 +25,8 @@ public class StoryGameController : MonoBehaviour {
 	
 	public void LoadGame()
 	{
+		//AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 1.0f, 0.5f);
+		AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, GameConfiguration.Instance.Level.BgMusic, 0.5f);
 		Application.LoadLevel("Game");
 	}
 }

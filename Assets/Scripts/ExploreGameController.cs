@@ -106,8 +106,9 @@ public class ExploreGameController : MonoBehaviour
             yield return null;
 
         // Process other entities' turn
-        foreach (MapEntity entity in entities)
+        for(int i = 0; i < entities.Count; i++)
         {
+            MapEntity entity = entities[i];
             entity.PlayTurn();
 
             while (entity.InTurn)
@@ -179,6 +180,11 @@ public class ExploreGameController : MonoBehaviour
     public List<ScenarioEffect> ScenarioEffects
     {
         get { return scenarioEffects; }
+    }
+
+    public List<MapEntity> Entities
+    {
+        get { return entities; }
     }
 
     #endregion

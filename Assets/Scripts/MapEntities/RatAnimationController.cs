@@ -19,18 +19,13 @@ public class RatAnimationController : EntityAnimationController
         if ((direction.y != 0) || (direction.x < 0))
         {
             playerAnimator.gameObject.transform.localScale = normalX;
-            return;
         }
 
         //Up
         if (direction.y > 0f)
         {
             playerAnimator.SetInteger("direction", 1);
-
-        }
-        else if (direction.y == 0f)
-        {
-            playerAnimator.SetInteger("direction", 0);
+            return;
         }
 
 
@@ -40,30 +35,21 @@ public class RatAnimationController : EntityAnimationController
         	//inverted X scale when going left
             playerAnimator.gameObject.transform.localScale = invertedX;
             playerAnimator.SetInteger("direction", 2);
-        }
-        else if (direction.x == 0f)
-        {
-            playerAnimator.SetInteger("direction", 0);
+            return;
         }
 
         //Down
         if (direction.y < 0f)
         {
             playerAnimator.SetInteger("direction", 3);
-        }
-        else if (direction.y == 0f)
-        {
-            playerAnimator.SetInteger("direction", 0);
+            return;
         }
 
         //Left
         if ((direction.x < 0f) && (direction.y == 0))
         {
             playerAnimator.SetInteger("direction", 4);
-        }
-        else if (direction.x == 0f)
-        {
-            playerAnimator.SetInteger("direction", 0);
+            return;
         }
     }
 }

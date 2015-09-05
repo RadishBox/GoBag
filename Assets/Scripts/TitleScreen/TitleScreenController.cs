@@ -54,6 +54,8 @@ public class TitleScreenController : MonoBehaviour
 		Level selectedLevel = LevelLibrary.Instance.GetLevel(levelId);
 		GameConfiguration.Instance.Level = selectedLevel;
 
+		AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0.0f, 0.5f);
+
 		Application.LoadLevel("Story");
 
 		AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);

@@ -482,7 +482,7 @@ MonoBehaviour:
     Trucha!"
   EnergyDeathText: "\xA1Atento a tu energ\xEDa! \xA1Ponte Trucha, Manuel Trucha!"
   WinSprite: {fileID: 21300004, guid: 2b323cee6587ff54eadccef5d39713c7, type: 3}
-  WinText: "\xA1Felicidades, llegaste al punto de reuni\xF3n!"
+  WinText: "\xA1Felicidades, llegaste a la zona segura!"
   WinFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
 --- !u!114 &11458536
 MonoBehaviour:
@@ -799,7 +799,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: WinText
+      value: "\xA1Felicidades, llegaste a la zona segura!"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138488}

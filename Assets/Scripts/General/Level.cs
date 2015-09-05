@@ -9,6 +9,7 @@ public class Level {
     [SerializeField]
     private float _bagTime;
     public GameObject Map;
+    public AudioClip BgMusic;
 
     public ScenarioLibrary.ScenarioType scenario;
 

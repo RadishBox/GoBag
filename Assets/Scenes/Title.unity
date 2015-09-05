@@ -903,30 +903,37 @@ MonoBehaviour:
   - _id: 0
     _bagTime: 0
     Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 0
   - _id: 1
     _bagTime: 0
     Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 1
   - _id: 2
     _bagTime: 0
     Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 1
   - _id: 3
     _bagTime: 0
     Map: {fileID: 114170, guid: 0e3828067670885428a38a7294739956, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 1
   - _id: 4
     _bagTime: 0
     Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 2
   - _id: 5
     _bagTime: 0
     Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 2
   - _id: 6
     _bagTime: 0
     Map: {fileID: 181784, guid: 9e4d817360f43ad459211c86da71c92f, type: 2}
+    BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 2
 --- !u!4 &1055445124
 Transform:
