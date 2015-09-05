@@ -19,24 +19,24 @@ public class VidyaConsole : Item {
     private IEnumerator AnimationCoroutine()
     {
     	// Spawn animation
-    	GameObject Animation = Instantiate(AnimationObject);
-    	Animation.transform.SetParent(transform.root, false);
-
-    	Animation.GetComponent<Animator>().SetInteger("type", AnimationType);
+    	GameObject Message = Instantiate(AnimationObject);
+    	Message.transform.SetParent(transform.root, false);
 
     	// Turn on object
-    	Animation.GetComponent<Image>().color = Color.white;
+        Message.GetComponent<ItemUseInfoController>().ShowItemInfoGroup(UseMessage);
 
     	// Play FX
     	AudioManager.Instance.Play(AudioManager.AudioType.FX, UseFX);
     	AudioManager.Instance.Fade(AudioManager.AudioType.FX, 0, 2.5f);
 
-    	yield return new WaitForSeconds(2.5f);
+    	//yield return new WaitForSeconds(2.5f);
 
-    	// Despawn Animation
-    	Destroy(Animation.gameObject);
+    	// Despawn Message
+    	//Destroy(Message.gameObject);
 
     	// Destroy GameObject
     	Destroy(this.gameObject);
+
+        yield return null;
     }
 }

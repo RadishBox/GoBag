@@ -334,7 +334,6 @@ GameObject:
   - 222: {fileID: 22202336}
   - 114: {fileID: 11442736}
   - 114: {fileID: 11439356}
-  - 114: {fileID: 11424374}
   m_Layer: 5
   m_Name: UseArea
   m_TagString: Untagged
@@ -890,7 +889,7 @@ GameObject:
   - 222: {fileID: 22247790}
   - 114: {fileID: 11439774}
   - 225: {fileID: 22536044}
-  - 114: {fileID: 11457766}
+  - 114: {fileID: 11484688}
   m_Layer: 5
   m_Name: ItemInfoGroup
   m_TagString: Untagged
@@ -1594,14 +1593,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Libro
   _itemSprite: {fileID: 21300386, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "El cl\xE1sico de Cervantes: \"El ingenioso hidalgo: Don Quijote de
+    la Mancha\" \xA1Impriosiona a tus amigos con los conocimientos que aprender\xE1s!"
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
+  AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
-  UseFX: {fileID: 0}
-  UseMessage: 
+  UseFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}
+  UseMessage: "Los libros son buenos para distraerte y relajarte \xA1Pero ahora no
+    es el momento!"
 --- !u!114 &11415408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2000,19 +2001,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11424374
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229d2590a493c7143ba76182d5455027, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 11442736}
-  _centerPoint: {x: 0, y: 0}
 --- !u!114 &11425120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2271,9 +2259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4322bf13b18ba4349a135e2e2cd747b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: 
-  _itemSprite: {fileID: 0}
-  _description: 
+  _name: Impermeable
+  _itemSprite: {fileID: 21300238, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  _description: "Te protege de la lluvia. \xA1Estar mucho tiempo bajo la lluvia te
+    puede causar resfriados!"
   _stringTiles:
   - 1
   - 1
@@ -2706,14 +2695,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Calculadora
   _itemSprite: {fileID: 21300380, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Modelo Kassio 9000-TX. Popular entre estudiantes no tan populares.
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
+  AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
-  UseFX: {fileID: 0}
-  UseMessage: 
+  UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
+  UseMessage: "Usando tus conocimientos de c\xE1lculo avanzado, triangulas tu posici\xF3n
+    en el \xE1rea: {0} No te sirve de nada esto, pero al menos lo sabes."
 --- !u!114 &11443664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3170,7 +3160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 11452580}
   _centerPoint: {x: 0, y: 0}
-  itemInfoController: {fileID: 11457766}
+  itemInfoController: {fileID: 11484688}
 --- !u!114 &11457374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3196,22 +3186,6 @@ MonoBehaviour:
   - TargetBar: 0
     EffectValue: 1
   SicknessCures: 01000000
---- !u!114 &11457766
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 158182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfdab4af03e7d81449b9a2ba2df63066, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemName: {fileID: 11494588}
-  ItemDescription: {fileID: 11478920}
-  ItemImage: {fileID: 11422476}
-  AnimationEase: 0
-  AnimationDuration: .5
 --- !u!114 &11458296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3259,16 +3233,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbd9801c7cf42044bfbfab3ea6e177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: Videojuegos
+  _name: "Consola port\xE1til"
   _itemSprite: {fileID: 21300384, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: 'Pato Gaemz Portable: Contiene 5000 juegos en uno.'
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 0}
+  AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
-  UseFX: {fileID: 0}
-  UseMessage: 
+  UseFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}
+  UseMessage: "Los videojuegos son divertidos... \xA1Pero ahora no es el momento!"
 --- !u!114 &11461408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3726,7 +3700,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11457766}
+      - m_Target: {fileID: 11484688}
         m_MethodName: HideItemInfoGroup
         m_Mode: 1
         m_Arguments:
@@ -3752,7 +3726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: "Medicina para el est\xF3mago"
   _itemSprite: {fileID: 21300368, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "Esta medicina alivia tus dolores de est\xF3mago."
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
@@ -3899,14 +3873,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Peluche
   _itemSprite: {fileID: 21300382, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "Un peluche de tu personaje favorito \"El Pato Blergh\"\xAE. "
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
-  AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
+  AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
-  UseFX: {fileID: 0}
-  UseMessage: 
+  UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
+  UseMessage: Al apretarlo se oye un reconfortante "Blergh" saliendo del peluche.
 --- !u!114 &11478920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4141,7 +4115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Medicina para el resfriado
   _itemSprite: {fileID: 21300378, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: Esta medicina alivia tu resfriado.
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
@@ -4253,6 +4227,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11484688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfdab4af03e7d81449b9a2ba2df63066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemName: {fileID: 11494588}
+  ItemDescription: {fileID: 11478920}
+  ItemImage: {fileID: 11422476}
+  AnimationEase: 0
+  AnimationDuration: .5
 --- !u!114 &11484692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4809,16 +4799,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Guitarra
   _itemSprite: {fileID: 21300388, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-  _description: 
+  _description: "Modelo est\xE1ndar electroac\xFAstico. Perfecto para tocar rancheras."
   _stringTiles:
   - 1
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
-  AnimationObject: {fileID: 0}
+  AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
-  UseFX: {fileID: 0}
-  UseMessage: 
+  UseFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
+  UseMessage: "Logras sacar un acorde, pero recuerdas el peligro de la situaci\xF3n
+    alrededor tuyo. La m\xFAsica es buena para relajarse, pero ahora no es el momento.
+    \xA1Ponte trucha!"
 --- !u!114 &11496774
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6821,7 +6813,7 @@ CanvasGroup:
   m_Enabled: 1
   m_Alpha: 0
   m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!225 &22536908
 CanvasGroup:
