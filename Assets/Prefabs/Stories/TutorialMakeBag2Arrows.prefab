@@ -159,7 +159,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 682
+  m_PreferredWidth: 720
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
@@ -209,7 +209,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kek, m8
+  m_Text: "Si quieres saber qu\xE9 hace una cosa, arr\xE1strala al \u201C?\u201D y
+    si quieres sacarla de la mochila, arr\xE1strala a la \u201CX\u201D."
 --- !u!114 &11484522
 MonoBehaviour:
   m_ObjectHideFlags: 1

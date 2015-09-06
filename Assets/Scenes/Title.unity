@@ -856,6 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StageSelectionPanel: {fileID: 1604309863}
+  TitleGraphic: {fileID: 1372099570}
   TitleBgMusic: {fileID: 8300000, guid: a6d298ba2e99ae146b14a958868ba0c5, type: 3}
   LevelButtonFX: {fileID: 8300000, guid: b270648a2e937b447b32b33860f120fb, type: 3}
   AudioManagerPrefab: {fileID: 121046, guid: 7f978c0c9ed45d043bb5dadff9e496f1, type: 2}
@@ -907,12 +908,12 @@ MonoBehaviour:
     scenario: 0
   - _id: 1
     _bagTime: 0
-    Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    Map: {fileID: 152348, guid: 5d8c0181b30d36a4983132cff5e18510, type: 2}
     BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 1
   - _id: 2
     _bagTime: 0
-    Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    Map: {fileID: 164662, guid: 11dba0069316b0b43b08e216b3352a14, type: 2}
     BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 1
   - _id: 3
@@ -922,12 +923,12 @@ MonoBehaviour:
     scenario: 1
   - _id: 4
     _bagTime: 0
-    Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    Map: {fileID: 185618, guid: 4f675528594a2dc4b99171818d009e47, type: 2}
     BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 2
   - _id: 5
     _bagTime: 0
-    Map: {fileID: 169948, guid: 2b8d4d95ab7256b42aa65fd2cf368ea7, type: 2}
+    Map: {fileID: 175172, guid: 531d69b8a0000a14397ca8a87be79590, type: 2}
     BgMusic: {fileID: 8300000, guid: b714c2bd85d9d9744a57d20a28015f78, type: 3}
     scenario: 2
   - _id: 6

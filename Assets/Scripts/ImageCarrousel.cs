@@ -30,6 +30,26 @@ public class ImageCarrousel : MonoBehaviour
 			{
 				// Panel is a prefab
 				carrouselItem = Instantiate(item.tutorialPrefab);
+				if(carrouselItem.GetComponentInChildren<Text>())
+				{	
+				/*	
+					Text[] texts = carrouselItem.GetComponentsInChildren<Text>();	
+					if(texts.Length > 1)
+					{
+						foreach (Text text in texts)
+						{
+							if(text.transform.parent.gameObject.name == "BigBalloon")
+							{
+								carrouselItem.GetComponentInChildren<Text>().text = item.text;
+							}
+						}
+					}		
+					else 
+					{
+						carrouselItem.GetComponentInChildren<Text>().text = item.text;
+					}	*/
+					carrouselItem.transform.Find("BigBalloon").GetComponentInChildren<Text>().text = item.text;
+				}
 			}
 			else
 			{

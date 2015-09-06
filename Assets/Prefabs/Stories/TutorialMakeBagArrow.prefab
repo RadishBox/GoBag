@@ -111,7 +111,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kek, m8
+  m_Text: "Arrastra tu objeto desde el cuadro del objeto seleccionado a la mochila.\n\nEmpaca
+    objetos que crees que necesitar\xE1s para la emergencia."
 --- !u!114 &11426994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 682
+  m_PreferredWidth: 720
   m_PreferredHeight: -1
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1

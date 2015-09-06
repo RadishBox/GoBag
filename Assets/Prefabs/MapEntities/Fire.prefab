@@ -89,8 +89,8 @@ MonoBehaviour:
   Scenario: 0
   turnStatus: 3
   SmokePrefab:
-  - {fileID: 189714, guid: b72466b66e49558468417ac490f95b2e, type: 2}
-  - {fileID: 145662, guid: 93b846cbb4295f34bb9071e6ec6118ff, type: 2}
+  - {fileID: 148124, guid: 8d1da993c8600ba40b9aa484b385b7a0, type: 2}
+  - {fileID: 127982, guid: 25f3df2051b66094cba2bba8fe9431d0, type: 2}
   TurnsToSmoke: 3
   SmokeProb: .300000012
   DeathSprite: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
@@ -128,7 +128,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: SmokePrefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 148124, guid: 8d1da993c8600ba40b9aa484b385b7a0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: SmokePrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 127982, guid: 25f3df2051b66094cba2bba8fe9431d0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 199990}

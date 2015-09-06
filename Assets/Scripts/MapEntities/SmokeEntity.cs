@@ -7,6 +7,8 @@ using System.Collections;
 public class SmokeEntity : MapEntity
 {
 
+	//public float CoughProbability = 1.0f;
+
     /// <summary>
     /// Function activated upon this entity's turn
     /// </summary>

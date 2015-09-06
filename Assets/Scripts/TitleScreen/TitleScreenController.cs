@@ -9,6 +9,7 @@ public class TitleScreenController : MonoBehaviour
 {
 
 	public GameObject StageSelectionPanel;
+	public RectTransform TitleGraphic;
 
 	public AudioClip TitleBgMusic;
 	public AudioClip LevelButtonFX;
@@ -36,6 +37,8 @@ public class TitleScreenController : MonoBehaviour
 			DontDestroyOnLoad(GameLibraries);
 		}
 		AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, TitleBgMusic);
+
+		TitleGraphic.DOAnchorPos(new Vector2(0, 100), 1).SetRelative(true).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
 	}
 
 	// Update is called once per frame
