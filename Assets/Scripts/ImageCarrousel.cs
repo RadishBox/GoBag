@@ -48,7 +48,8 @@ public class ImageCarrousel : MonoBehaviour
 					{
 						carrouselItem.GetComponentInChildren<Text>().text = item.text;
 					}	*/
-					carrouselItem.transform.Find("BigBalloon").GetComponentInChildren<Text>().text = item.text;
+					if(carrouselItem.transform.Find("BigBalloon"))
+						carrouselItem.transform.Find("BigBalloon").GetComponentInChildren<Text>().text = item.text;
 				}
 			}
 			else

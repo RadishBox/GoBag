@@ -61,7 +61,7 @@ MonoBehaviour:
       caminar al punto de evacuaci\xF3n."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 0}
-    text: PONTE TRUCHA!
+    text: 
     tutorialPrefab: {fileID: 193026, guid: 1880764dc08644f1bbce2f3ce2cffbf4, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}

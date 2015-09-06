@@ -484,6 +484,9 @@ MonoBehaviour:
   WinSprite: {fileID: 21300004, guid: 2b323cee6587ff54eadccef5d39713c7, type: 3}
   WinText: "\xA1Felicidades, llegaste a la zona segura!"
   WinFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
+  DamageFX: {fileID: 8300000, guid: bd02709ece6f3fb448bf961396aaddd7, type: 3}
+  DamageFlashColor: {r: .933333337, g: .290196121, b: .290196121, a: 1}
+  PlayerSpriteRenderer: {fileID: 21226416}
 --- !u!114 &11458536
 MonoBehaviour:
   m_ObjectHideFlags: 1

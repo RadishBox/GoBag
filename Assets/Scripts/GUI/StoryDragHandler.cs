@@ -18,6 +18,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	public Button NextButton;
 	public Button SkipButton;
 
+
 	private int childIterator = 0;
 
 	void Start()

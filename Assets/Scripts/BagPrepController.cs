@@ -49,7 +49,8 @@ public class BagPrepController : MonoBehaviour
     {
         // Obtain level
         level = GameConfiguration.Instance.Level;
-        civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">" + level.CurrentScenario.Name + "</color>!",true,CivilGuyState.Worried);
+        int metersToGoal = ExploreGameController.Instance.Map.GetComponent<MapController>().Height * 250;
+        civilGuyController.ShowCivilGuyGroup("¡Empaca para un <color=\"#335A96FF\">" + level.CurrentScenario.Name + "</color>! Hay " + metersToGoal + " metros hasta la zona segura. ",true,CivilGuyState.Worried);
     }
 
     // Update is called once per frame

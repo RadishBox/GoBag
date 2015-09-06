@@ -21,6 +21,19 @@ public class GameController : MonoBehaviour
 		BagPrepController.Instance.Initialize();
 	}
 
+	public void LoadTitle()
+    {
+        StartCoroutine(LoadTitleRoutine());
+    }
+
+    private IEnumerator LoadTitleRoutine()
+    {
+        AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
+        AudioManager.Instance.Fade(AudioManager.AudioType.Ambience, 0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        Application.LoadLevel("Title"); 
+    }
+
 	public static GameController Instance
 	{
 		get { return _instance; }

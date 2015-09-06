@@ -43,22 +43,21 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "Manuel est\xE1 en su casa viendo su programa favorito."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
   - sprite: {fileID: 21300002, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "De repente, aparece una advertencia sobre un incendio en el pueblo de Manuel,
       diciendo que la gente de ah\xED debe ir al centro de evacuaci\xF3n."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
   - sprite: {fileID: 21300004, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "No sabe si esperar a sus pap\xE1s para salir, pero cuando ve que el fuego
       no est\xE1 tan lejos, decide irse r\xE1pido."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
   - sprite: {fileID: 21300006, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "Para poder llegar seguro al punto de evacuaci\xF3n, Manuel empaca cosas
       r\xE1pidamente en una mochila."
     tutorialPrefab: {fileID: 0}
-    isTutorialPanel: 0
+  - sprite: {fileID: 0}
+    text: 
+    tutorialPrefab: {fileID: 193026, guid: 1880764dc08644f1bbce2f3ce2cffbf4, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}

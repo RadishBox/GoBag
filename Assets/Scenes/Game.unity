@@ -917,7 +917,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -80.8149643
+      value: -79.5201645
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.x
@@ -925,7 +925,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 101.629929
+      value: 99.040329
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchorMin.y
@@ -941,7 +941,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -261.814972
+      value: -260.520142
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.x
@@ -949,7 +949,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 260.370087
+      value: 262.959656
       objectReference: {fileID: 0}
     - target: {fileID: 22484422, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchorMin.y
@@ -2199,7 +2199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1005204590
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2542,7 +2542,7 @@ RectTransform:
   m_AnchorMin: {x: .157401368, y: .236000016}
   m_AnchorMax: {x: .808496654, y: .70760566}
   m_AnchoredPosition: {x: 4.57763672e-05, y: 1}
-  m_SizeDelta: {x: 0, y: -3}
+  m_SizeDelta: {x: 51, y: 38}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1474567445
 MonoBehaviour:
@@ -2561,7 +2561,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: c5797dc2b860481468bfc46cf0905ada, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4

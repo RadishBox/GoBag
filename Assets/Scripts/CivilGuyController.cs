@@ -114,13 +114,6 @@ public class CivilGuyController : MonoBehaviour {
 
     public void LoadTitle()
     {
-        StartCoroutine(LoadTitleRoutine());
-    }
-
-    private IEnumerator LoadTitleRoutine()
-    {
-        AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
-        yield return new WaitForSeconds(0.5f);
-        Application.LoadLevel("Title"); 
+        GameController.Instance.LoadTitle();
     }
 }

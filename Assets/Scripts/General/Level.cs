@@ -10,6 +10,7 @@ public class Level {
     private float _bagTime;
     public GameObject Map;
     public AudioClip BgMusic;
+    public bool IsTutorial;
 
     public ScenarioLibrary.ScenarioType scenario;
 

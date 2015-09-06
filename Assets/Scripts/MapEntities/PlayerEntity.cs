@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 
 /// <summary>
 /// Describes the player behaviour inside the map
@@ -40,6 +41,10 @@ public class PlayerEntity : MapEntity, IMovable {
     public Sprite WinSprite;
     public string WinText;
     public AudioClip WinFX;
+
+    public AudioClip DamageFX;
+    public Color DamageFlashColor;
+    public SpriteRenderer PlayerSpriteRenderer;
 
     // Temporal
     private static PlayerEntity _instance;
@@ -240,6 +245,8 @@ public class PlayerEntity : MapEntity, IMovable {
         // Add sickness to the player
         Sicknesses.Add(sickness);
 
+        PlayDamageEffects();
+
         // Add sickness to the gui
         ExploreGUI.Instance.AddSickness(sickness);
     }
@@ -354,6 +361,12 @@ public class PlayerEntity : MapEntity, IMovable {
         DownButton.SetActive(false);
         LeftButton.SetActive(false);
         RightButton.SetActive(false);
+    }
+
+    private void PlayDamageEffects()
+    {
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, DamageFX);
+        PlayerSpriteRenderer.DOColor(DamageFlashColor, 0.25f).SetLoops(4, LoopType.Yoyo);
     }
 
     public int MovementNumber

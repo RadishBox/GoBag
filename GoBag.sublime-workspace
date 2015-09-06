@@ -4,6 +4,194 @@
 		"selected_items":
 		[
 			[
+				"Play",
+				"PlayDamageEffects"
+			],
+			[
+				"damage",
+				"DamageFlashColor"
+			],
+			[
+				"GetCompon",
+				"GetComponentsInChildren	type"
+			],
+			[
+				"Title",
+				"TitleGraphic"
+			],
+			[
+				"Map",
+				"MapEntity"
+			],
+			[
+				"smok",
+				"smokeSpawned"
+			],
+			[
+				"prob",
+				"SmokeProb"
+			],
+			[
+				"smoke",
+				"TurnsToSmoke"
+			],
+			[
+				"turn",
+				"turnCounter"
+			],
+			[
+				"Spawn",
+				"SpawnSmoke"
+			],
+			[
+				"entit",
+				"entities"
+			],
+			[
+				"Au",
+				"AudioType"
+			],
+			[
+				"on",
+				"OnFire"
+			],
+			[
+				"tar",
+				"targetBarId"
+			],
+			[
+				"curre",
+				"_currentMovement"
+			],
+			[
+				"movement",
+				"_movementNumber"
+			],
+			[
+				"for",
+				"for	For"
+			],
+			[
+				"Game",
+				"GameLibraries"
+			],
+			[
+				"Load",
+				"LoadTitleRoutine"
+			],
+			[
+				"Audio",
+				"_AudioManager"
+			],
+			[
+				"civil",
+				"civilGuyState"
+			],
+			[
+				"Civiu",
+				"CivilGuyState"
+			],
+			[
+				"game",
+				"gameObject"
+			],
+			[
+				"es",
+				"else	Else"
+			],
+			[
+				"Sick",
+				"Sickness"
+			],
+			[
+				"Sicnk",
+				"SicknessCures"
+			],
+			[
+				"us",
+				"using"
+			],
+			[
+				"Heal",
+				"HealthBar"
+			],
+			[
+				"targe",
+				"targetValue"
+			],
+			[
+				"Ania",
+				"AnimationCoroutine"
+			],
+			[
+				"Playe",
+				"PlayerEntity"
+			],
+			[
+				"Natura",
+				"NaturalDeathFX"
+			],
+			[
+				"Prev",
+				"PrevNextFX"
+			],
+			[
+				"Ins",
+				"Instance"
+			],
+			[
+				"Am",
+				"AmbienceAudio"
+			],
+			[
+				"Vec",
+				"Vector2	x, y"
+			],
+			[
+				"parent",
+				"ItemsParent"
+			],
+			[
+				"carr",
+				"carrouselItem"
+			],
+			[
+				"happy",
+				"HappyCivilGuy"
+			],
+			[
+				"Civu",
+				"CivilGuyImage"
+			],
+			[
+				"Civil",
+				"CivilGuyState"
+			],
+			[
+				"Show",
+				"ShowCivilGuyGroup"
+			],
+			[
+				"deat",
+				"deathText"
+			],
+			[
+				"ex",
+				"ExploreGUI"
+			],
+			[
+				"endin",
+				"EndingSprite"
+			],
+			[
+				"GAME",
+				"gameOverSprite"
+			],
+			[
+				"GetCom",
+				"GetComponentInChildren	type"
+			],
+			[
 				"Scena",
 				"ScenarioEffect"
 			],
@@ -40,10 +228,6 @@
 				"levelId"
 			],
 			[
-				"Game",
-				"GameObject"
-			],
-			[
 				"_",
 				"_icon"
 			],
@@ -58,10 +242,6 @@
 			[
 				"scenario",
 				"scenarioEffects"
-			],
-			[
-				"Sick",
-				"Sickness"
 			],
 			[
 				"Sickn",
@@ -86,10 +266,6 @@
 			[
 				"Pla",
 				"PlayerEntity"
-			],
-			[
-				"parent",
-				"SicknessListParent"
 			],
 			[
 				"sick",
@@ -120,10 +296,6 @@
 				"Position"
 			],
 			[
-				"Map",
-				"MapController"
-			],
-			[
 				"other",
 				"otherEntity"
 			],
@@ -138,10 +310,6 @@
 			[
 				"retur",
 				"return"
-			],
-			[
-				"Vec",
-				"Vector3	x, y, z"
 			],
 			[
 				"d",
@@ -168,10 +336,6 @@
 				"return"
 			],
 			[
-				"entit",
-				"entityGO"
-			],
-			[
 				"Getc",
 				"GetComponent	type"
 			],
@@ -184,10 +348,6 @@
 				"entityGO"
 			],
 			[
-				"tar",
-				"targetTile"
-			],
-			[
 				"Gett",
 				"GetTile"
 			],
@@ -198,10 +358,6 @@
 			[
 				"Transfor",
 				"TransformDirection	x, y, z"
-			],
-			[
-				"for",
-				"for	For"
 			],
 			[
 				"Get",
@@ -274,10 +430,6 @@
 			[
 				"upds",
 				"updPhotosList"
-			],
-			[
-				"Load",
-				"LoadType"
 			],
 			[
 				"Sprit",
@@ -362,184 +514,40 @@
 			[
 				"finan",
 				"financingPlan"
-			],
-			[
-				"Financing",
-				"FinancingPlanModel"
-			],
-			[
-				"Fin",
-				"FinancingPlanModel"
-			],
-			[
-				"financin",
-				"financing_plan_id"
-			],
-			[
-				"quey",
-				"QUERY_LOAD_TERM_BY_ID"
-			],
-			[
-				"financ",
-				"financing_plan_id"
-			],
-			[
-				"fina",
-				"financing_plan_terms"
-			],
-			[
-				"Seleced",
-				"SelectBodyOptionsRoutine"
-			],
-			[
-				"loaded",
-				"optionsLoaded"
-			],
-			[
-				"curre",
-				"currentLoadedMediaSprites"
-			],
-			[
-				"bod",
-				"BodyDAO"
-			],
-			[
-				"metall",
-				"MetallicColorPriceWarning"
-			],
-			[
-				"Seat",
-				"SeatNumberDropdown"
-			],
-			[
-				"plan",
-				"FinancePlanList"
-			],
-			[
-				"Dr",
-				"DropdownYear"
-			],
-			[
-				"loadin",
-				"loadingGroup"
-			],
-			[
-				"Bac",
-				"BackgroundImage"
-			],
-			[
-				"M",
-				"Message"
-			],
-			[
-				"Mess",
-				"MessageText"
-			],
-			[
-				"Show",
-				"ShowLoadingMessage"
-			],
-			[
-				"Saveq",
-				"SaveQuoteRoutine"
-			],
-			[
-				"Loadin",
-				"LoadingPrefab"
-			],
-			[
-				"Acc",
-				"AccessoryPrice"
-			],
-			[
-				"Isa",
-				"IsanType"
-			],
-			[
-				"disc",
-				"DiscountDealer"
-			],
-			[
-				"insu",
-				"InsuranceCompany"
-			],
-			[
-				"Ace",
-				"AcceptButton"
-			],
-			[
-				"f",
-				"false"
-			],
-			[
-				"accep",
-				"AcceptAction"
-			],
-			[
-				"Qutoe",
-				"Quote"
-			],
-			[
-				"warnin",
-				"warningMessage"
-			],
-			[
-				"Bui",
-				"BuildQuoteModelFromInventory"
-			],
-			[
-				"war",
-				"WarningInventoryQuoteAcceptActionReturn"
-			],
-			[
-				"Quotene",
-				"NewQuotePanel"
-			],
-			[
-				"Inven",
-				"InventoryPanel"
-			],
-			[
-				"show",
-				"ShowInventoryQuoteWarning"
-			],
-			[
-				"optio",
-				"optionDao"
-			],
-			[
-				"Rooft",
-				"RooftypeModel"
-			],
-			[
-				"Queyr",
-				"QUERY_LOAD_ALL_MEDIA"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/General/ScenarioLibrary.cs",
+			"file": "Assets/Scripts/General/GameController.cs",
 			"settings":
 			{
-				"buffer_size": 771,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Explore/ScenarioEffect.cs",
-			"settings":
-			{
-				"buffer_size": 399,
+				"buffer_size": 952,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
+			"file": "Assets/Scripts/CivilGuyController.cs",
 			"settings":
 			{
-				"buffer_size": 1179,
+				"buffer_size": 3418,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/AudioManager.cs",
+			"settings":
+			{
+				"buffer_size": 2783,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/BagPrepController.cs",
+			"settings":
+			{
+				"buffer_size": 3576,
 				"line_ending": "Windows"
 			}
 		},
@@ -547,31 +555,7 @@
 			"file": "Assets/Scripts/ExploreGameController.cs",
 			"settings":
 			{
-				"buffer_size": 4389,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
-			"settings":
-			{
-				"buffer_size": 780,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/Explore/Rain.cs",
-			"settings":
-			{
-				"buffer_size": 166,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-			"settings":
-			{
-				"buffer_size": 5708,
+				"buffer_size": 5146,
 				"line_ending": "Windows"
 			}
 		}
@@ -649,47 +633,93 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SmokeEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/FireEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ImageCarrousel.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/StoryDragHandler.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryGameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryLoadGame.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/GeneralGUI.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Cough.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ItemInfoController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ItemUseInfoController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Plushie.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Guitar.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Calculator.cs",
+		"/C/Windows/SysWOW64/VirtualMIDISynth/VirtualMIDISynth.conf",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Book.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/VidyaConsole.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/UseDropArea.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/HelpDropArea.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Rain.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/DeepPuddleEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/AudioManager.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Item.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tennis.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CivilGuyController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WetTowels.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Beans.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/StomachMedicine.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/ColdMedicine.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Sanitizer.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WaterBottle.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tuna.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PuddleEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Raincoat.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/RainBoots.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Mask.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Bandaids.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Toothbrush.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/DryFruit.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ItemLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
+		"/C/Users/Felipe/Desktop/Sogne.txt",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/PabloControllerTest.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CarrouselItem.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Editor/SceneQuickAccess/SceneQuickAccess.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/SoundManager.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DragHandler.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/ScenarioEffect.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Bag.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/GeneralGUI.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Scenario.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Infection.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Dirty.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Stomachache.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Injury.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sickness.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGrid.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentAnimationController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/EntityAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/GoBag.sublime-project",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/PlayerEntity.cs",
 		"/C/Users/Felipe/Desktop/PCG.txt",
 		"/C/Program Files (x86)/Sublime/Sublime Text Build 3047 x64/Data/Installed Packages/Package Control.sublime-package",
@@ -730,53 +760,7 @@
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/OrderController.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/InventoryDAO.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/TableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/PaginatedTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Information/DirectorioTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Information/DirectoryController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/DatabaseInfoDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/DealerDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/OrderTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/InventoryMenuController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/InventoryDataModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/PlantillaController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICustomImageAnimation.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Multimedia/GalleryController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/sqlitekit/SQLiteQuery.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/OptionDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/RooftypeModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/CircularesDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/CircularesModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Memos/CircularesController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/CotizadorController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/OptionElement.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UITableRow.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Update/ActualizacionController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteAdditionalData.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Login/LoginController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UIWarningPopUp.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteDetailController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteUnitOptions.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteUnitColorAndTapestry.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UIDropdownListItem.cs",
-		"/Users/nikel/Downloads/LogErrorTeclado.txt",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteUnitBody.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteCustomer.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/QuoteModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteFinancing.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/BodyOptionModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/DealerModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/WS/WebServicesManager.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICustomListObject.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/LoadingController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Resources/DOTweenSettings.asset",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UICustomSubmenuOption.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/UIScripts/UIDropdownList.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/GalleryPhotosDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/GalleryVideosDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/VehicleFilterController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/NtsDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/SpriteLoader.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/PaginatedTableController.cs"
 	],
 	"find":
 	{
@@ -795,6 +779,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"addsick",
+			"spriterender",
+			"fx",
+			"load",
+			"UpdateButtonInteraction",
+			"SkipButton",
+			"Instantiate",
+			"animatorController",
+			"CalculateMovementDirection",
+			"movementco",
+			"gridmo",
+			"animatio",
+			"entities",
+			"scenarioeffec",
+			"BarColor",
+			"childIterator",
+			"do",
+			"GameLibraries",
+			"Win",
+			"WinSprite",
+			"NaturalDeathSprite",
+			"WinSprite",
+			"StartGameOverSequence",
+			"button",
+			"StartGameOverSequence",
+			"Kill",
+			"gettile",
+			"CheckVictory",
+			"addsick",
+			"addsicl",
+			"addsicnk",
+			";\n",
+			"trigger",
+			"alterbar",
+			"kill",
+			"death",
+			"kill",
+			"ShowCivilGuyGroup",
+			"SetMessage",
 			"scenarioEffects",
 			"fade",
 			"onenabl",
@@ -883,46 +906,7 @@
 			"QUERY_LOAD_MEDIA_BY_ITEM",
 			"LoadMediaByItem",
 			"skip",
-			"optionsLoaded",
-			"yield return null",
-			"reuse",
-			"reload",
-			"called",
-			"DefaultOptionPhoto",
-			"GetPhotos",
-			"LoadMediaByItem",
-			"clear",
-			"currentLoadedMediaSprites",
-			"initialize",
-			"clearvalues",
-			"InputDownPayment",
-			"updatedown",
-			"addmetal",
-			"option",
-			"addcolor",
-			"_minSeatNumber",
-			"financing_id",
-			"financin",
-			"financing",
-			"termlist",
-			"reset",
-			"currentloaded",
-			"currentmedia",
-			"scrollre",
-			"inventoryscro",
-			"ShowLoadingMessage",
-			"savequote",
-			"QUERY_LOAD_METALLIC_COLOR_OPTION_BY_NT",
-			"tech",
-			"roof",
-			"colormodel",
-			"currentselecte",
-			"currentselectedid",
-			"QUERY_LOAD_BY_NT_CODE",
-			"quotemodel",
-			"delivery",
-			"estimated",
-			"eta"
+			"optionsLoaded"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -945,26 +929,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/General/ScenarioLibrary.cs",
+					"file": "Assets/Scripts/General/GameController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 771,
+						"buffer_size": 952,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								748,
-								748
+								204,
+								204
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -974,19 +957,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/Explore/ScenarioEffect.cs",
+					"file": "Assets/Scripts/CivilGuyController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 399,
+						"buffer_size": 3418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46,
-								46
+								3415,
+								3415
 							]
 						],
 						"settings":
@@ -996,26 +979,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Assets/Scripts/Sicknesses/SicknessLibrary.cs",
+					"file": "Assets/Scripts/AudioManager.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1179,
+						"buffer_size": 2783,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								590,
-								494
+								516,
+								524
 							]
 						],
 						"settings":
@@ -1032,19 +1015,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/ExploreGameController.cs",
+					"file": "Assets/Scripts/BagPrepController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4389,
+						"buffer_size": 3576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1299,
-								1299
+								1270,
+								1270
 							]
 						],
 						"settings":
@@ -1054,81 +1037,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 360.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
+					"file": "Assets/Scripts/ExploreGameController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 780,
+						"buffer_size": 5146,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								334,
-								334
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/Explore/Rain.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 166,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156,
-								156
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5708,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1532,
-								1532
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1138,7 +1066,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 535.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1197,20 +1125,316 @@
 		"selected_items":
 		[
 			[
+				"explore",
+				"ExploreGameController.cs"
+			],
+			[
+				"bagpre",
+				"BagPrepController.cs"
+			],
+			[
+				"audioa",
+				"AudioManager.cs"
+			],
+			[
+				"civil",
+				"CivilGuyController.cs"
+			],
+			[
+				"game",
+				"General\\GameController.cs"
+			],
+			[
+				"level",
+				"General\\Level.cs"
+			],
+			[
+				"drag",
+				"GUI\\StoryDragHandler.cs"
+			],
+			[
+				"storycon",
+				"StoryGameController.cs"
+			],
+			[
+				"title",
+				"TitleScreen\\TitleScreenController.cs"
+			],
+			[
 				"player",
 				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"cough",
+				"Sicknesses\\Cough.cs"
+			],
+			[
+				"calcu",
+				"Items\\Calculator.cs"
+			],
+			[
+				"guitar",
+				"Items\\Guitar.cs"
+			],
+			[
+				"plushi",
+				"Items\\Plushie.cs"
+			],
+			[
+				"book",
+				"Items\\Book.cs"
+			],
+			[
+				"use",
+				"UseDropArea.cs"
+			],
+			[
+				"itemin",
+				"ItemInfoController.cs"
+			],
+			[
+				"vidya",
+				"Items\\VidyaConsole.cs"
+			],
+			[
+				"gridm",
+				"GridMove.cs"
+			],
+			[
+				"rate",
+				"MapEntities\\RatEntity.cs"
+			],
+			[
+				"rat",
+				"MapEntities\\RatAnimationController.cs"
+			],
+			[
+				"deep",
+				"MapEntities\\DeepPuddleEntity.cs"
+			],
+			[
+				"garbage",
+				"MapEntities\\GarbageEntity.cs"
+			],
+			[
+				"serpe",
+				"MapEntities\\SerpentEntity.cs"
+			],
+			[
+				"playerent",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"garba",
+				"MapEntities\\GarbageEntity.cs"
+			],
+			[
+				"story",
+				"StoryGameController.cs"
+			],
+			[
+				"audio",
+				"AudioManager.cs"
+			],
+			[
+				"fireen",
+				"MapEntities\\FireEntity.cs"
+			],
+			[
+				"scenariol",
+				"General\\ScenarioLibrary.cs"
+			],
+			[
+				"gamecon",
+				"General\\GameConfiguration.cs"
+			],
+			[
+				"ex",
+				"ExploreGameController.cs"
 			],
 			[
 				"rain",
 				"Explore\\Rain.cs"
 			],
 			[
-				"titl",
-				"TitleScreen\\TitleScreenController.cs"
+				"item",
+				"Item.cs"
 			],
 			[
-				"explore",
+				"explo",
+				"GUI\\ExploreGUI.cs"
+			],
+			[
+				"carr",
+				"ImageCarrousel.cs"
+			],
+			[
+				"tenn",
+				"Items\\Tennis.cs"
+			],
+			[
+				"pla",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"map",
+				"MapTileUnit.cs"
+			],
+			[
+				"tile",
+				"MapTile.cs"
+			],
+			[
+				"towe",
+				"Items\\WetTowels.cs"
+			],
+			[
+				"san",
+				"Items\\Sanitizer.cs"
+			],
+			[
+				"water",
+				"Items\\WaterBottle.cs"
+			],
+			[
+				"boo",
+				"Items\\Book.cs"
+			],
+			[
+				"vid",
+				"Items\\VidyaConsole.cs"
+			],
+			[
+				"guita",
+				"Items\\Guitar.cs"
+			],
+			[
+				"tuna",
+				"Items\\Tuna.cs"
+			],
+			[
+				"pudde",
+				"MapEntities\\PuddleEntity.cs"
+			],
+			[
+				"puddle",
+				"MapEntities\\PuddleEntity.cs"
+			],
+			[
+				"mask",
+				"Items\\Mask.cs"
+			],
+			[
+				"boots",
+				"Items\\RainBoots.cs"
+			],
+			[
+				"bean",
+				"Items\\Beans.cs"
+			],
+			[
+				"rainco",
+				"Items\\Raincoat.cs"
+			],
+			[
+				"sicknessl",
+				"Sicknesses\\SicknessLibrary.cs"
+			],
+			[
+				"sick",
+				"Sicknesses\\Sickness.cs"
+			],
+			[
+				"toot",
+				"Items\\Toothbrush.cs"
+			],
+			[
+				"dry",
+				"Items\\DryFruit.cs"
+			],
+			[
+				"beans",
+				"Items\\Beans.cs"
+			],
+			[
+				"dryfr",
+				"Items\\DryFruit.cs"
+			],
+			[
+				"audoi",
+				"AudioManager.cs"
+			],
+			[
+				"direc",
+				"DirectionalButton.cs"
+			],
+			[
+				"gamec",
+				"General\\GameController.cs"
+			],
+			[
+				"directi",
+				"DirectionalButton.cs"
+			],
+			[
+				"exploregam",
 				"ExploreGameController.cs"
+			],
+			[
+				"expl",
+				"GUI\\ExploreGUI.cs"
+			],
+			[
+				"handler",
+				"GUI\\StoryDragHandler.cs"
+			],
+			[
+				"plae",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"mapg",
+				"Util\\MapGenerationUtil.cs"
+			],
+			[
+				"gene",
+				"Util\\MapGenerationUtil.cs"
+			],
+			[
+				"paler",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"bagcon",
+				"BagPrepController.cs"
+			],
+			[
+				"mapent",
+				"MapEntities\\MapEntity.cs"
+			],
+			[
+				"playere",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"mapc",
+				"MapController.cs"
+			],
+			[
+				"carrou",
+				"CarrouselItem.cs"
+			],
+			[
+				"image",
+				"ImageCarrousel.cs"
+			],
+			[
+				"scenar",
+				"Explore\\Scenario.cs"
+			],
+			[
+				"titl",
+				"TitleScreen\\TitleScreenController.cs"
 			],
 			[
 				"mapcontr",
@@ -1219,14 +1443,6 @@
 			[
 				"sickness",
 				"Sicknesses\\SicknessLibrary.cs"
-			],
-			[
-				"gamecon",
-				"General\\GameConfiguration.cs"
-			],
-			[
-				"level",
-				"General\\Level.cs"
 			],
 			[
 				"scenario",
@@ -1261,14 +1477,6 @@
 				"Explore\\Scenario.cs"
 			],
 			[
-				"scenar",
-				"General\\ScenarioLibrary.cs"
-			],
-			[
-				"mapent",
-				"MapEntities\\MapEntity.cs"
-			],
-			[
 				"sickne",
 				"Sicknesses\\SicknessLibrary.cs"
 			],
@@ -1279,10 +1487,6 @@
 			[
 				"dir",
 				"Sicknesses\\Dirty.cs"
-			],
-			[
-				"garba",
-				"MapEntities\\GarbageEntity.cs"
 			],
 			[
 				"gui",
@@ -1319,10 +1523,6 @@
 			[
 				"gridmo",
 				"GridMove.cs"
-			],
-			[
-				"direc",
-				"DirectionalButton.cs"
 			],
 			[
 				"mapen",
@@ -1435,278 +1635,6 @@
 			[
 				"quotecolo",
 				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"quoteuni",
-				"Main/Scene/Quote/QuoteUnit.cs"
-			],
-			[
-				"quotecus",
-				"Main/Scene/Quote/QuoteCustomer.cs"
-			],
-			[
-				"quotemode",
-				"Main/Database/_Model/QuoteModel.cs"
-			],
-			[
-				"qute",
-				"Main/Database/_DAO/QuoteDAO.cs"
-			],
-			[
-				"quoteunitc",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"quotede",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"quotebody",
-				"Main/Scene/Quote/QuoteUnitBody.cs"
-			],
-			[
-				"webser",
-				"Main/WS/WebServicesManager.cs"
-			],
-			[
-				"dealerd",
-				"Main/Database/_DAO/DealerDAO.cs"
-			],
-			[
-				"dealermod",
-				"Main/Database/_Model/DealerModel.cs"
-			],
-			[
-				"quotecolor",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"quoteadd",
-				"Main/Scene/Quote/QuoteAdditionalData.cs"
-			],
-			[
-				"quoteun",
-				"Main/Scene/Quote/QuoteUnit.cs"
-			],
-			[
-				"quotedeta",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"quoteunit",
-				"Main/Scene/Quote/QuoteUnit.cs"
-			],
-			[
-				"quote",
-				"Main/Scene/Quote/QuoteUnit.cs"
-			],
-			[
-				"qutoecolor",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"add",
-				"Main/Scene/Quote/QuoteAdditionalData.cs"
-			],
-			[
-				"uidropd",
-				"Main/UIScripts/UIDropdownList.cs"
-			],
-			[
-				"versiod",
-				"Main/Database/_DAO/VersionDAO.cs"
-			],
-			[
-				"filter",
-				"Main/Scene/General/VehicleFilterController.cs"
-			],
-			[
-				"nts",
-				"Main/Database/_DAO/NtsDAO.cs"
-			],
-			[
-				"sprite",
-				"Main/Util/SpriteLoader.cs"
-			],
-			[
-				"ntsda",
-				"Main/Database/_DAO/NtsDAO.cs"
-			],
-			[
-				"quotecu",
-				"Main/Scene/Quote/QuoteCustomer.cs"
-			],
-			[
-				"quotedete",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"qutoede",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"cotiza",
-				"Main/Scene/Quote/CotizadorController.cs"
-			],
-			[
-				"quoteinve",
-				"Main/Scene/Quote/QuoteInventory.cs"
-			],
-			[
-				"financec",
-				"Main/Scene/Finance/FinanceController.cs"
-			],
-			[
-				"pagia",
-				"Main/Scene/General/PaginatedTableController.cs"
-			],
-			[
-				"ntsmod",
-				"Main/Database/_Model/NtsModel.cs"
-			],
-			[
-				"cir",
-				"Main/Database/_DAO/CircularesDAO.cs"
-			],
-			[
-				"optionda",
-				"Main/Database/_DAO/OptionDAO.cs"
-			],
-			[
-				"bodyda",
-				"Main/Database/_DAO/BodyDAO.cs"
-			],
-			[
-				"galleryvide",
-				"Main/Database/_DAO/GalleryVideosDAO.cs"
-			],
-			[
-				"galleryphot",
-				"Main/Database/_DAO/GalleryPhotosDAO.cs"
-			],
-			[
-				"gallery",
-				"Main/Scene/Multimedia/GalleryController.cs"
-			],
-			[
-				"planti",
-				"Main/Scene/General/PlantillaController.cs"
-			],
-			[
-				"paginate",
-				"Main/Scene/General/PaginatedTableController.cs"
-			],
-			[
-				"finance",
-				"Main/Scene/Finance/FinanceController.cs"
-			],
-			[
-				"custom",
-				"Main/Scene/Quote/QuoteCustomer.cs"
-			],
-			[
-				"inventorydao",
-				"Main/Database/_DAO/InventoryDAO.cs"
-			],
-			[
-				"inventoryda",
-				"Main/Database/_Model/InventoryDataModel.cs"
-			],
-			[
-				"addi",
-				"Main/Scene/Quote/QuoteAdditionalData.cs"
-			],
-			[
-				"inventody",
-				"Main/Database/_DAO/InventoryDAO.cs"
-			],
-			[
-				"financin",
-				"Main/Database/_DAO/FinancingDAO.cs"
-			],
-			[
-				"financingm",
-				"Main/Database/_Model/FinancingModel.cs"
-			],
-			[
-				"dropdow",
-				"Main/UIScripts/UIDropdownList.cs"
-			],
-			[
-				"financingplan",
-				"Main/Database/_Model/FinancingPlanTermModel.cs"
-			],
-			[
-				"financingda",
-				"Main/Database/_DAO/FinancingDAO.cs"
-			],
-			[
-				"qutedet",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"financing",
-				"Main/Database/_Model/FinancingPlanModel.cs"
-			],
-			[
-				"financecon",
-				"Main/Scene/Finance/FinanceController.cs"
-			],
-			[
-				"quoteuniop",
-				"Main/Scene/Quote/QuoteUnitOptions.cs"
-			],
-			[
-				"quotebod",
-				"Main/Scene/Quote/QuoteUnitBody.cs"
-			],
-			[
-				"quotefin",
-				"Main/Scene/Quote/QuoteFinancing.cs"
-			],
-			[
-				"finan",
-				"Main/Scene/Finance/FinanceController.cs"
-			],
-			[
-				"unitcolor",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"quotedet",
-				"Main/Scene/Quote/QuoteDetailController.cs"
-			],
-			[
-				"quoteopt",
-				"Main/Scene/Quote/QuoteUnitOptions.cs"
-			],
-			[
-				"quoteunitpo",
-				"Main/Scene/Quote/QuoteUnitOptions.cs"
-			],
-			[
-				"colora",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
-			],
-			[
-				"quoteinf",
-				"Main/Singleton/QuoteInformation.cs"
-			],
-			[
-				"quoteda",
-				"Main/Database/_DAO/QuoteDAO.cs"
-			],
-			[
-				"financinplan",
-				"Main/Database/_Model/FinancingPlanTermModel.cs"
-			],
-			[
-				"quotemde",
-				"Main/Database/_Model/QuoteModel.cs"
-			],
-			[
-				"turntable",
-				"Main/Scene/Quote/TurntableController.cs"
 			]
 		],
 		"width": 0.0
