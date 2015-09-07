@@ -81,21 +81,20 @@ MonoBehaviour:
       una cosa, arr\xE1strala al \u201C?\u201D "
     tutorialPrefab: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
   - sprite: {fileID: 0}
-    text: "En el mundo hay peligros, as\xED que ten cuidado!  Si algo malo te pasa,
-      saldr\xE1 aqu\xED."
+    text: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo te
+      pasa, saldr\xE1 aqu\xED."
     tutorialPrefab: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
   - sprite: {fileID: 0}
     text: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
       si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
     tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
   - sprite: {fileID: 0}
-    text: "Si no te quitas los problemas, van a vaciar tus barras m\xE1s r\xE1pido.
-      \xA1Cuida tus barras! la azul es tu nivel de agua, la roja es tu nivel de salud
-      y la verde es tu nivel de fuerza. "
+    text: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud) m\xE1s
+      r\xE1pido "
     tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
   - sprite: {fileID: 0}
-    text: Si cualquier barra se acaba, pierdes.
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    text: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
+    tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
   - sprite: {fileID: 0}
     text: "Si llegas a la zona segura, \xA1Ganas! \xA1Suerte!"
     tutorialPrefab: {fileID: 105102, guid: 0bd29d88345a5914490cc7985c7b3a96, type: 2}
@@ -104,28 +103,27 @@ MonoBehaviour:
       espacio, esta barra baja un poco."
     tutorialPrefab: {fileID: 121304, guid: ee78cd7d9dc478a40a898a6f3b122dd0, type: 2}
   - sprite: {fileID: 0}
-    text: "Para llenar esta barra, come comida!   Si la comida tiene m\xE1s calor\xEDas,
+    text: "Para llenar esta barra, \xA1come comida! Si la comida tiene m\xE1s calor\xEDas,
       llena m\xE1s la barra."
     tutorialPrefab: {fileID: 129640, guid: a391ec785b94f5f4889af6f05ee38421, type: 2}
   - sprite: {fileID: 0}
     text: "La barra roja es cu\xE1nta salud general tienes. Tu salud baja cuando tienes
-      alg\xFAn problema de salud. Estos problemas salen a la derecha de la mochila
-      con letras rojas."
+      alg\xFAn problema de salud. Estos problemas tienen letras rojas."
     tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
     text: "Cuando tienes el cuerpo sucio, no baja tu salud, pero puede causar una
       enfermedad del est\xF3mago, y esa s\xED baja salud."
     tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
-    text: 'Para llenar esta barra, usa los siguientes objetos:  Algunos objetos no
-      suben la barra, pero quitan problemas de salud que hacen de baje la barra.'
+    text: "Para llenar esta barra, usa los siguientes objetos:  Algunos objetos no
+      suben la barra, pero quitan problemas de salud que s\xED la bajan."
     tutorialPrefab: {fileID: 139754, guid: 37391a100bd51f947ae06b8ce937e2c5, type: 2}
   - sprite: {fileID: 0}
     text: "La barra azul es cu\xE1nta agua tienes.  Cada vez que caminas un espacio,
       esta barra baja un poco."
     tutorialPrefab: {fileID: 151292, guid: ddb5780a99296214ca8ca48cd3c7d7d3, type: 2}
   - sprite: {fileID: 0}
-    text: "\xA1Para llenar esta barra, toma agua! "
+    text: "Para llenar esta barra, \xA1toma agua! "
     tutorialPrefab: {fileID: 135854, guid: 4cceb9916fa8e3246b529bf71a25f7a1, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
@@ -199,7 +197,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[14].tutorialPrefab
       value: 
-      objectReference: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+      objectReference: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[4].text
       value: "Si quieres saber qu\xE9 hace una cosa, arr\xE1strala al \u201C?\u201D
@@ -249,8 +247,8 @@ Prefab:
       objectReference: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[11].text
-      value: "En el mundo hay peligros, as\xED que ten cuidado!  Si algo malo te pasa,
-        saldr\xE1 a la derecha de la mochila."
+      value: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo
+        te pasa, saldr\xE1 aqu\xED."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[12].text
@@ -259,13 +257,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[13].text
-      value: "Si no te quitas los problemas, van a vaciar tus barras m\xE1s r\xE1pido.
-        \xA1Cuida tus barras! la azul es tu nivel de agua, la roja es tu nivel de
-        salud y la verde es tu nivel de fuerza. "
+      value: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud)
+        m\xE1s r\xE1pido "
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[14].text
-      value: Si cualquier barra se acaba, pierdes.
+      value: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[15].tutorialPrefab
@@ -290,7 +287,7 @@ Prefab:
       objectReference: {fileID: 129640, guid: a391ec785b94f5f4889af6f05ee38421, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[17].text
-      value: "Para llenar esta barra, come comida!   Si la comida tiene m\xE1s calor\xEDas,
+      value: "Para llenar esta barra, \xA1come comida! Si la comida tiene m\xE1s calor\xEDas,
         llena m\xE1s la barra."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
@@ -304,8 +301,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[18].text
       value: "La barra roja es cu\xE1nta salud general tienes. Tu salud baja cuando
-        tienes alg\xFAn problema de salud. Estos problemas salen a la derecha de la
-        mochila con letras rojas."
+        tienes alg\xFAn problema de salud. Estos problemas tienen letras rojas."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[19].text
@@ -318,8 +314,8 @@ Prefab:
       objectReference: {fileID: 139754, guid: 37391a100bd51f947ae06b8ce937e2c5, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[20].text
-      value: 'Para llenar esta barra, usa los siguientes objetos:  Algunos objetos
-        no suben la barra, pero quitan problemas de salud que hacen de baje la barra.'
+      value: "Para llenar esta barra, usa los siguientes objetos:  Algunos objetos
+        no suben la barra, pero quitan problemas de salud que s\xED la bajan."
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[21].text
@@ -332,7 +328,7 @@ Prefab:
       objectReference: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[22].text
-      value: "\xA1Para llenar esta barra, toma agua! "
+      value: "Para llenar esta barra, \xA1toma agua! "
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[22].tutorialPrefab
