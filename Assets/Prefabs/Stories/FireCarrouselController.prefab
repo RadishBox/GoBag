@@ -49,7 +49,7 @@ MonoBehaviour:
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300004, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "No sabe si esperar a sus pap\xE1s para salir, pero cuando ve que el fuego
-      no est\xE1 tan lejos, decide irse r\xE1pido."
+      se acerca, decide irse r\xE1pido."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300006, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
     text: "Para poder llegar seguro al punto de evacuaci\xF3n, Manuel empaca cosas

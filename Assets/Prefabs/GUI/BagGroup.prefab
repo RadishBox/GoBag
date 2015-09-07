@@ -2703,7 +2703,7 @@ MonoBehaviour:
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
   UseMessage: "Usando tus conocimientos de c\xE1lculo avanzado, triangulas tu posici\xF3n
-    en el \xE1rea: {0} No te sirve de nada esto, pero al menos lo sabes."
+    en el \xE1rea: {0} No es \xFAtil saber esto, pero al menos lo sabes."
 --- !u!114 &11443664
 MonoBehaviour:
   m_ObjectHideFlags: 1

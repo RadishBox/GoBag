@@ -121,8 +121,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Felipe/Documents/RadishBox/Games/GoBag/PonteTrucha.keystore
+  AndroidKeyaliasName: ponte trucha
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   androidEnableBanner: 1

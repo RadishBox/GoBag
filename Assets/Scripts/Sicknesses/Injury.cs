@@ -5,6 +5,7 @@ public class Injury : Sickness {
 
 	private int _turn = 0;
 	private Vector2 _turnsToInfectionLimits;
+	private int _turnsToHeal = 2; 
 
 	public Injury(string name, Color color, Vector2 turnsToInfectionLimits) : base(name, color)
 	{
@@ -20,20 +21,9 @@ public class Injury : Sickness {
         {
             
             (entity as PlayerEntity).AlterBar(-1, PlayerBars.Health);
-            
-            // Convert to Infection
-            if(Turn >= TurnsToInfectionLimits.y)
+            if(Turn >= _turnsToHeal)
             {
-            	EvolveSickness(entity);
-            }
-            else if(Turn >= TurnsToInfectionLimits.x)
-            {
-            	// Check prob
-            	float prob = Random.Range(0.0f, 1.0f);
-            	if(prob < 0.5f)
-            	{
-            		EvolveSickness(entity);
-            	}
+            	(entity as PlayerEntity).CureSickness(this);
             }
         }	
         

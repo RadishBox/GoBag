@@ -45,7 +45,7 @@ MonoBehaviour:
       cercano."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300006, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
-    text: "A la mitad de sus clases, el cicl\xF3n se acerca, y ya es hurac\xE1n. Las
+    text: "A la mitad de sus clases, el cicl\xF3n se transforma en hurac\xE1n. Las
       autoridades indican que todos evacuen a un punto seguro para ser trasladados
       a un albergue."
     tutorialPrefab: {fileID: 0}
