@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ce5b16a6dc86fae4bb618534f26cb643
-timeCreated: 1441070801
+timeCreated: 1441646033
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -9,7 +9,8 @@ TextureImporter:
     21300004: BigBalloon
     21300006: ScreencapLevel
     21300008: ScreencapBag
-    21300010: ScreencapBag2
+    21300010: ScreencapBagEmpty
+    21300012: ScreencapBagBrowse
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -105,12 +106,22 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: ScreencapBag2
+    - name: ScreencapBagEmpty
       rect:
         serializedVersion: 2
         x: 1366
         y: 1024
         width: 682
+        height: 1024
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ScreencapBagBrowse
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 683
         height: 1024
       alignment: 0
       pivot: {x: .5, y: .5}

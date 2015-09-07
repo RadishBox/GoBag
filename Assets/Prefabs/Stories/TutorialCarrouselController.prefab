@@ -51,18 +51,18 @@ MonoBehaviour:
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 0}
     text: Escoge de la barra de abajo los objetos que quieras empacar.
-    tutorialPrefab: {fileID: 189418, guid: f58573199c18a4d4993754ebf7050941, type: 2}
+    tutorialPrefab: {fileID: 127100, guid: 32440f119cc10d5428c528d95d6f72ae, type: 2}
   - sprite: {fileID: 0}
     text: "Arrastra tu objeto desde el cuadro del objeto seleccionado a la mochila.
       Empaca objetos que crees que necesitar\xE1s para la emergencia. "
-    tutorialPrefab: {fileID: 153460, guid: 641a88286f794204e8c24cfb0b1b2725, type: 2}
+    tutorialPrefab: {fileID: 167246, guid: cc6cb56954ec9d147aeed60987f41472, type: 2}
   - sprite: {fileID: 0}
     text: "Si quieres saber qu\xE9 hace una cosa, arr\xE1strala al \u201C?\u201D y
-      si quieres sacarla de la mochila, arr\xE1strala a la \u201CX\u201D."
+      si quieres sacarla de la mochila, arr\xE1strala al bote de basura."
     tutorialPrefab: {fileID: 183886, guid: 1896e080646d0db4384df4fa2dd84a6a, type: 2}
   - sprite: {fileID: 0}
     text: "Cuando est\xE9s listo, presiona la flecha verde."
-    tutorialPrefab: {fileID: 180180, guid: 67fcb468a0f128842ba6388cb386a716, type: 2}
+    tutorialPrefab: {fileID: 156192, guid: e3f547d8f765e8a4398b83d94aa81bb4, type: 2}
   - sprite: {fileID: 0}
     text: "Tu objetivo es llegar a la zona segura que est\xE1 al norte (arriba)."
     tutorialPrefab: {fileID: 105448, guid: b3f4de9d1bb28ab4d97204bfbff7049a, type: 2}
@@ -72,7 +72,7 @@ MonoBehaviour:
     tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
   - sprite: {fileID: 0}
     text: Para abrir tu mochila, toca la mochila de abajo
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 125268, guid: 3d554160ec8989349be98170dc1c14b8, type: 2}
   - sprite: {fileID: 0}
     text: Ahora puedes usar las cosas que empacaste.
     tutorialPrefab: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
@@ -82,8 +82,8 @@ MonoBehaviour:
     tutorialPrefab: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
   - sprite: {fileID: 0}
     text: "En el mundo hay peligros, as\xED que ten cuidado!  Si algo malo te pasa,
-      saldr\xE1 a la derecha de la mochila."
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+      saldr\xE1 aqu\xED."
+    tutorialPrefab: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
   - sprite: {fileID: 0}
     text: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
       si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
@@ -92,7 +92,7 @@ MonoBehaviour:
     text: "Si no te quitas los problemas, van a vaciar tus barras m\xE1s r\xE1pido.
       \xA1Cuida tus barras! la azul es tu nivel de agua, la roja es tu nivel de salud
       y la verde es tu nivel de fuerza. "
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
   - sprite: {fileID: 0}
     text: Si cualquier barra se acaba, pierdes.
     tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
@@ -102,7 +102,7 @@ MonoBehaviour:
   - sprite: {fileID: 0}
     text: "La barra verde es cu\xE1nta energ\xEDa tienes.  Cada vez que caminas un
       espacio, esta barra baja un poco."
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 121304, guid: ee78cd7d9dc478a40a898a6f3b122dd0, type: 2}
   - sprite: {fileID: 0}
     text: "Para llenar esta barra, come comida!   Si la comida tiene m\xE1s calor\xEDas,
       llena m\xE1s la barra."
@@ -111,11 +111,11 @@ MonoBehaviour:
     text: "La barra roja es cu\xE1nta salud general tienes. Tu salud baja cuando tienes
       alg\xFAn problema de salud. Estos problemas salen a la derecha de la mochila
       con letras rojas."
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
     text: "Cuando tienes el cuerpo sucio, no baja tu salud, pero puede causar una
       enfermedad del est\xF3mago, y esa s\xED baja salud."
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
     text: 'Para llenar esta barra, usa los siguientes objetos:  Algunos objetos no
       suben la barra, pero quitan problemas de salud que hacen de baje la barra.'
@@ -123,7 +123,7 @@ MonoBehaviour:
   - sprite: {fileID: 0}
     text: "La barra azul es cu\xE1nta agua tienes.  Cada vez que caminas un espacio,
       esta barra baja un poco."
-    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    tutorialPrefab: {fileID: 151292, guid: ddb5780a99296214ca8ca48cd3c7d7d3, type: 2}
   - sprite: {fileID: 0}
     text: "\xA1Para llenar esta barra, toma agua! "
     tutorialPrefab: {fileID: 135854, guid: 4cceb9916fa8e3246b529bf71a25f7a1, type: 2}
