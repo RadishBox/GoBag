@@ -8,6 +8,10 @@ public class GameController : MonoBehaviour
 
 	private bool _paused = false;
 
+	public GameObject BagGroup;
+	public GameObject PauseMenu;
+	public GameObject PauseButton;
+
 	void Awake ()
 	{
 		Instance = this;
@@ -32,6 +36,38 @@ public class GameController : MonoBehaviour
         AudioManager.Instance.Fade(AudioManager.AudioType.Ambience, 0, 0.5f);
         yield return new WaitForSeconds(0.5f);
         Application.LoadLevel("Title"); 
+    }
+
+    public void TriggerPause(bool Pause)
+    {
+    	if(Pause)
+    	{
+    		PauseMenu.SetActive(true);
+    		Paused = true;
+    	}
+    	else
+    	{
+    		PauseMenu.SetActive(false);
+    		Paused = false;
+    	}
+    }
+
+    public void TriggerBagOpen(bool Open)
+    {
+    	if (!Open)
+        {
+            BagGroup.SetActive(false);
+            PauseButton.SetActive(true);
+            // Activate input
+            Paused = false;
+        }
+        else
+        {
+            BagGroup.SetActive(true);
+            PauseButton.SetActive(false);
+            // Deactivate input
+            Paused = true;
+        }
     }
 
 	public static GameController Instance

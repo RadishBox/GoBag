@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1441641148
+timeCreated: 1441767566
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -220,6 +220,7 @@ TextureImporter:
     21300426: btnSkip
     21300428: BtnPause
     21300430: Circle
+    21300432: rainAll
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -2412,6 +2413,16 @@ TextureImporter:
         y: 768
         width: 128
         height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rainAll
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 640
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

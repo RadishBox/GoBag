@@ -104,21 +104,7 @@ public class BagPrepController : MonoBehaviour
 
     public void TriggerBagOpen()
     {
-        if (BagGroup.activeInHierarchy)
-        {
-            BagGroup.SetActive(false);
-
-            // Activate input
-            GameController.Instance.Paused = false;
-        }
-        else
-        {
-            BagGroup.SetActive(true);
-
-            // Deactivate input
-            GameController.Instance.Paused = true;
-        }
-
+        GameController.Instance.TriggerBagOpen(!BagGroup.activeInHierarchy);
     }
 
     /* Getters and Setters */

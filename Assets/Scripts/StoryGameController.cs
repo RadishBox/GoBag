@@ -30,7 +30,7 @@ public class StoryGameController : MonoBehaviour
 		if (!GameConfiguration.Instance.Level.IsTutorial)
 		{
 			//AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 1.0f, 0.5f);
-			AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, GameConfiguration.Instance.Level.BgMusic, 0.5f);
+			AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, GameConfiguration.Instance.Level.BgMusic, 0.65f);
 			Application.LoadLevel("Game");
 		}
 		else

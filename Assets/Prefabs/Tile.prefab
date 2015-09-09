@@ -30,6 +30,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 11463736}
+  _centerPoint: {x: 0, y: 0}
 --- !u!114 &11463736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -43,7 +44,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: .65882355}
-  m_Sprite: {fileID: 21300000, guid: 12267e12b9561c94a9647cbd8c5e81be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ecab042651a1b741a25e58ae37679dd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -80,7 +81,12 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ecab042651a1b741a25e58ae37679dd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103906}

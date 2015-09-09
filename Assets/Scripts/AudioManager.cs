@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
     /// <summary>
     /// Plays given audio clip in the corresponding audiosource
     /// </summary>
-    public void Play(AudioType type, AudioClip clip, float volumeMultiplier = 1.0f)
+    public void Play(AudioType type, AudioClip clip, float volume = 1.0f)
     {
         AudioSource targetAudio = null;
 
@@ -55,14 +55,8 @@ public class AudioManager : MonoBehaviour
         }
 
         targetAudio.clip = clip;
-        if (volumeMultiplier != 1)
-        {
-            targetAudio.PlayOneShot(clip, volumeMultiplier);
-        }
-        else
-        {
-            targetAudio.Play();
-        }
+        targetAudio.volume = volume;
+        targetAudio.Play();
     }
 
 
