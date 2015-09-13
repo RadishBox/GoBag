@@ -41,19 +41,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - sprite: {fileID: 21300000, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
-    text: "Manuel est\xE1 en su casa viendo su programa favorito."
+    text: "Manuel est\xE1 solo en casa, viendo su programa favorito."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300002, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
-    text: "De repente, aparece una advertencia sobre un incendio en el pueblo de Manuel,
-      diciendo que la gente de ah\xED debe ir al centro de evacuaci\xF3n."
+    text: "\u201CInterrumpimos su programa para informarle que hay un incendio en
+      el pueblo! Por favor vaya al centro de evacuaci\xF3n pronto.\u201D"
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300004, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
-    text: "No sabe si esperar a sus pap\xE1s para salir, pero cuando ve que el fuego
-      se acerca, decide irse r\xE1pido."
+    text: "Manuel sabe que tiene que ir al punto de evacuaci\xF3n."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300006, guid: eab9518b8a2a3b247a45a1e7f7b74fac, type: 3}
-    text: "Para poder llegar seguro al punto de evacuaci\xF3n, Manuel empaca cosas
-      r\xE1pidamente en una mochila."
+    text: "As\xED que r\xE1pidamente empaca su mochila de emergencia para un incendio."
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 0}
     text: 
@@ -67,7 +65,24 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0].text
+      value: "Manuel est\xE1 solo en casa, viendo su programa favorito."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].text
+      value: "\u201CInterrumpimos su programa para informarle que hay un incendio
+        en el pueblo! Por favor vaya al centro de evacuaci\xF3n pronto.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].text
+      value: "Manuel sabe que tiene que ir al punto de evacuaci\xF3n."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].text
+      value: "As\xED que r\xE1pidamente empaca su mochila de emergencia para un incendio."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160598}
