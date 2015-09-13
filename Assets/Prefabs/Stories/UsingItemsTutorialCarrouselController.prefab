@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &123440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 421248}
+  - 114: {fileID: 11464930}
+  m_Layer: 0
+  m_Name: UsingItemsTutorialCarrouselController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123440}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 319.418671, y: 232.020248, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11464930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cb1fd3e79ade74893bdbb7feded287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - sprite: {fileID: 0}
+    text: Para abrir tu mochila, toca la mochila de abajo
+    tutorialPrefab: {fileID: 125268, guid: 3d554160ec8989349be98170dc1c14b8, type: 2}
+  - sprite: {fileID: 0}
+    text: Ahora puedes usar las cosas que empacaste.
+    tutorialPrefab: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
+  - sprite: {fileID: 0}
+    text: "Para usar una cosa, arr\xE1strala a la mano verde. Para saber qu\xE9 hace
+      una cosa, arr\xE1strala al \u201C?\u201D "
+    tutorialPrefab: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
+  - sprite: {fileID: 0}
+    text: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo te
+      pasa, saldr\xE1 aqu\xED."
+    tutorialPrefab: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
+  - sprite: {fileID: 0}
+    text: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
+      si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
+    tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+  - sprite: {fileID: 0}
+    text: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud) m\xE1s
+      r\xE1pido "
+    tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+  - sprite: {fileID: 0}
+    text: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
+    tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+  - sprite: {fileID: 0}
+    text: VIDYA
+    tutorialPrefab: {fileID: 0}
+  ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
+  ItemsParent: {fileID: 0}
+  canvasScaler: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: items.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].text
+      value: "Para usar una cosa, arr\xE1strala a la mano verde. Para saber qu\xE9
+        hace una cosa, arr\xE1strala al \u201C?\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[2].tutorialPrefab
+      value: 
+      objectReference: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].text
+      value: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo
+        te pasa, saldr\xE1 aqu\xED."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].tutorialPrefab
+      value: 
+      objectReference: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].text
+      value: Ahora puedes usar las cosas que empacaste.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[4].tutorialPrefab
+      value: 
+      objectReference: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[5].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[7].tutorialPrefab
+      value: 
+      objectReference: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[8].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125268, guid: 3d554160ec8989349be98170dc1c14b8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[10].tutorialPrefab
+      value: 
+      objectReference: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[12].tutorialPrefab
+      value: 
+      objectReference: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[14].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[4].text
+      value: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
+        si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[5].text
+      value: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud)
+        m\xE1s r\xE1pido "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[6].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[6].text
+      value: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[7].text
+      value: "Para moverte, toca un cuadrado oscuro de los que est\xE1n cerca de ti
+        y te mover\xE1s a ese lugar. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[8].text
+      value: Para abrir tu mochila, toca la mochila de abajo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[9].text
+      value: Ahora puedes usar las cosas que empacaste.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[9].tutorialPrefab
+      value: 
+      objectReference: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[10].text
+      value: "Para usar una cosa, arr\xE1strala a la mano verde. Para saber qu\xE9
+        hace una cosa, arr\xE1strala al \u201C?\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[11].tutorialPrefab
+      value: 
+      objectReference: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[13].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[11].text
+      value: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo
+        te pasa, saldr\xE1 aqu\xED."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[12].text
+      value: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
+        si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[13].text
+      value: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud)
+        m\xE1s r\xE1pido "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[14].text
+      value: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[15].tutorialPrefab
+      value: 
+      objectReference: {fileID: 105102, guid: 0bd29d88345a5914490cc7985c7b3a96, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[15].text
+      value: "Si llegas a la zona segura, \xA1Ganas! \xA1Suerte!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[16].tutorialPrefab
+      value: 
+      objectReference: {fileID: 121304, guid: ee78cd7d9dc478a40a898a6f3b122dd0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[16].text
+      value: "La barra verde es cu\xE1nta energ\xEDa tienes.  Cada vez que caminas
+        un espacio, esta barra baja un poco."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[17].tutorialPrefab
+      value: 
+      objectReference: {fileID: 129640, guid: a391ec785b94f5f4889af6f05ee38421, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[17].text
+      value: "Para llenar esta barra, \xA1come comida! Si la comida tiene m\xE1s calor\xEDas,
+        llena m\xE1s la barra."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[18].tutorialPrefab
+      value: 
+      objectReference: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[19].tutorialPrefab
+      value: 
+      objectReference: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[18].text
+      value: "La barra roja es cu\xE1nta salud general tienes. Tu salud baja cuando
+        tienes alg\xFAn problema de salud. Estos problemas tienen letras rojas."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[19].text
+      value: "Cuando tienes el cuerpo sucio, no baja tu salud, pero puede causar una
+        enfermedad del est\xF3mago, y esa s\xED baja salud."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[20].tutorialPrefab
+      value: 
+      objectReference: {fileID: 139754, guid: 37391a100bd51f947ae06b8ce937e2c5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[20].text
+      value: "Para llenar esta barra, usa los siguientes objetos:  Algunos objetos
+        no suben la barra, pero quitan problemas de salud que s\xED la bajan."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[21].text
+      value: "La barra azul es cu\xE1nta agua tienes.  Cada vez que caminas un espacio,
+        esta barra baja un poco."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[21].tutorialPrefab
+      value: 
+      objectReference: {fileID: 151292, guid: ddb5780a99296214ca8ca48cd3c7d7d3, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[22].text
+      value: "Para llenar esta barra, \xA1toma agua! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[22].tutorialPrefab
+      value: 
+      objectReference: {fileID: 135854, guid: 4cceb9916fa8e3246b529bf71a25f7a1, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0].text
+      value: Para abrir tu mochila, toca la mochila de abajo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[0].tutorialPrefab
+      value: 
+      objectReference: {fileID: 125268, guid: 3d554160ec8989349be98170dc1c14b8, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[1].tutorialPrefab
+      value: 
+      objectReference: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 123440}
+  m_IsPrefabParent: 1
