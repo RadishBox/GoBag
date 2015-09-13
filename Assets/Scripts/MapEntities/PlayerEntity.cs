@@ -16,6 +16,7 @@ public class PlayerEntity : MapEntity, IMovable {
     private int _movementNumber = 1;
     private int _currentMovement = 0;
 
+    // List of sicknesses player currently has
     private List<Sickness> _sicknesses;
 
     public GameObject UpButton;
@@ -36,6 +37,9 @@ public class PlayerEntity : MapEntity, IMovable {
     public string WaterDeathText;
     public string EnergyDeathText;
     private string NaturalDeathText;
+    public Tip HealthDeathTip;
+    public Tip WaterDeathTip;
+    public Tip EnergyDeathTip;
 
     // Winnin case
     public Sprite WinSprite;
@@ -45,6 +49,9 @@ public class PlayerEntity : MapEntity, IMovable {
     public AudioClip DamageFX;
     public Color DamageFlashColor;
     public SpriteRenderer PlayerSpriteRenderer;
+
+    // Tips
+    public List<Tip> Tips;
 
     // Temporal
     private static PlayerEntity _instance;
@@ -66,6 +73,7 @@ public class PlayerEntity : MapEntity, IMovable {
     {
         Sicknesses = new List<Sickness>();
         turnStatus = TurnStatus.WaitingMove;
+        Tips = new List<Tip>();
     }
 
     /// <summary>
@@ -168,16 +176,19 @@ public class PlayerEntity : MapEntity, IMovable {
         {
             gameOver = true;
             NaturalDeathText = HealthDeathText;
+            Tips.Add(HealthDeathTip);
         }
         if(Water <= 0)
         {
             gameOver = true;
             NaturalDeathText = WaterDeathText;
+            Tips.Add(WaterDeathTip);
         }
         if(Energy <= 0)
         {
             gameOver = true;
             NaturalDeathText = EnergyDeathText;
+            Tips.Add(EnergyDeathTip);
         }        
 
         return gameOver;

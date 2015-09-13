@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Rain : ScenarioEffect {
 
 	public float SicknessProbability = 0.5f;
+
+	
 
 	// Audio related to effect
     public AudioClip RainAmbience;

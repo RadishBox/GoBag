@@ -8,7 +8,6 @@ public class Bandaids : Item {
 
 	public SicknessType[] SicknessCures;
 
-    private GameObject Animation;
     private bool hasAnimStarted = false;
 
     protected override void Start()

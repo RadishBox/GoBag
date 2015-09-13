@@ -77,6 +77,14 @@ MonoBehaviour:
   - {fileID: 21300092, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
   - {fileID: 21300094, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
   spriteRenderer: {fileID: 21275974}
+  tip:
+    Cause:
+      Image: {fileID: 21300092, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: Charco
+    Solutions:
+    - Image: {fileID: 21300236, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: Utiliza botas para cruzar los charcos sin mojarte.
+    Id: Charco
 --- !u!212 &21275974
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -109,7 +117,33 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300092, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Text
+      value: Charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Id
+      value: Charco
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300236, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Text
+      value: Utiliza botas para cruzar los charcos sin mojarte.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142692}

@@ -481,12 +481,40 @@ MonoBehaviour:
   WaterDeathText: "\xA1Es muy importante mantenerte hidratado! \xA1Ponte Trucha, Manuel
     Trucha!"
   EnergyDeathText: "\xA1Atento a tu energ\xEDa! \xA1Ponte Trucha, Manuel Trucha!"
+  HealthDeathTip:
+    Cause:
+      Image: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "\xA1Se agot\xF3 tu salud!"
+    Solutions:
+    - Image: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "\xA1Pon m\xE1s atenci\xF3n a tu barra de salud!"
+    - Image: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: Recuerda prevenir enfermedades que disminuyan tu salud.
+    Id: Salud
+  WaterDeathTip:
+    Cause:
+      Image: {fileID: 21300418, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "\xA1Te deshidrataste!"
+    Solutions:
+    - Image: {fileID: 21300274, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "Recuerda empacar botellas de agua para mantenerte hidratado. \xA1Es muy
+        importante!"
+    Id: Water
+  EnergyDeathTip:
+    Cause:
+      Image: {fileID: 21300416, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "\xA1Agotaste tu energ\xEDa!"
+    Solutions:
+    - Image: {fileID: 21300220, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: Recuerda empacar alimentos para tu viaje.
+    Id: Energy
   WinSprite: {fileID: 21300004, guid: 2b323cee6587ff54eadccef5d39713c7, type: 3}
   WinText: "\xA1Felicidades, llegaste a la zona segura!"
   WinFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
   DamageFX: {fileID: 8300000, guid: bd02709ece6f3fb448bf961396aaddd7, type: 3}
   DamageFlashColor: {r: .933333337, g: .290196121, b: .290196121, a: 1}
   PlayerSpriteRenderer: {fileID: 21226416}
+  Tips: []
 --- !u!114 &11458536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -804,8 +832,91 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Solutions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: WinText
       value: "\xA1Felicidades, llegaste a la zona segura!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Cause.Text
+      value: "\xA1Se agot\xF3 tu salud!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Solutions.Array.data[0].Text
+      value: "\xA1Pon m\xE1s atenci\xF3n a tu barra de salud!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Solutions.Array.data[1].Text
+      value: Recuerda prevenir enfermedades que disminuyan tu salud.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: HealthDeathTip.Id
+      value: Salud
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300418, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Cause.Text
+      value: "\xA1Te deshidrataste!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300274, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Solutions.Array.data[0].Text
+      value: "Recuerda empacar botellas de agua para mantenerte hidratado. \xA1Es
+        muy importante!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: WaterDeathTip.Id
+      value: Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300416, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Cause.Text
+      value: "\xA1Agotaste tu energ\xEDa!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300220, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Solutions.Array.data[0].Text
+      value: Recuerda empacar alimentos para tu viaje.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: EnergyDeathTip.Id
+      value: Energy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

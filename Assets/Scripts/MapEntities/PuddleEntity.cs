@@ -10,6 +10,8 @@ public class PuddleEntity : MapEntity
     public Sprite[] puddleSprites;
     public SpriteRenderer spriteRenderer;
 
+    public Tip tip;
+
     void Start()
     {
         SetRandomSprite();
@@ -37,7 +39,7 @@ public class PuddleEntity : MapEntity
         // When walked on, reduce that entity life
         if (otherEntity.GetType() == typeof(PlayerEntity))
         {            
-            // if player is not equipped with a raincoat
+            // if player is not equipped with boots
             if(!(otherEntity as PlayerEntity).Boots.enabled)
             {
                 Sickness cold = SicknessLibrary.Instance.GetSickness(SicknessType.Cold);
@@ -51,6 +53,10 @@ public class PuddleEntity : MapEntity
                     if(prob <= ColdProbability)
                     {
                         (otherEntity as PlayerEntity).AddSickness(cold);
+                        if(!(otherEntity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+                        {
+                            (otherEntity as PlayerEntity).Tips.Add(tip);
+                        }
                     }
                 }
             }

@@ -10,6 +10,8 @@ public class SerpentEntity : MapEntity, IMovable
     public GridMove MovementController;
     public float SicknessProbability = 0.6f;
 
+    public Tip tip;
+
     /// <summary>
     /// Function activated upon this entity's turn
     /// </summary>
@@ -48,6 +50,11 @@ public class SerpentEntity : MapEntity, IMovable
                 if(prob <= SicknessProbability)
                 {
                     (otherEntity as PlayerEntity).AddSickness(injury);
+
+                    if(!(otherEntity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+                    {
+                        (otherEntity as PlayerEntity).Tips.Add(tip);
+                    }
                 }
             }
         }

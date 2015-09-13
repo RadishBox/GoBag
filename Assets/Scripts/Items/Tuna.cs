@@ -7,7 +7,6 @@ public class Tuna : Item {
 	public int EffectValue;
 	public PlayerBars TargetBar;
 
-    private GameObject Animation;
     private bool hasAnimStarted = false;
 
     protected override void Start()

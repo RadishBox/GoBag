@@ -96,6 +96,14 @@ MonoBehaviour:
   DeathSprite: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
   DeathText: "\xA1Ten cuidado con el fuego! \xA1Ponte trucha, Manuel Trucha!"
   DeathFX: {fileID: 8300000, guid: 4e4f22db38e96b343890b0eae89ced2c, type: 3}
+  tip:
+    Cause:
+      Image: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
+      Text: Te quemaste
+    Solutions:
+    - Image: {fileID: 21300120, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "\xA1Es muy peligroso, ev\xEDtalo a toda costa!"
+    Id: Fire
 --- !u!212 &21272382
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -130,6 +138,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: SmokePrefab.Array.data[0]
       value: 
       objectReference: {fileID: 148124, guid: 8d1da993c8600ba40b9aa484b385b7a0, type: 2}
@@ -137,6 +149,46 @@ Prefab:
       propertyPath: SmokePrefab.Array.data[1]
       value: 
       objectReference: {fileID: 127982, guid: 25f3df2051b66094cba2bba8fe9431d0, type: 2}
+    - target: {fileID: 0}
+      propertyPath: tip.Id
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Text
+      value: Te quemaste
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Text
+      value: "\xA1Es muy peligroso, ev\xEDtalo a toda costa!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300120, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[1].Image
+      value: 
+      objectReference: {fileID: 21300202, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[1].Text
+      value: Esto es lel
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[2].Image
+      value: 
+      objectReference: {fileID: 21300020, guid: 986f89136c27aad4c95c92d0804e255e,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[2].Text
+      value: Muy lel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 199990}

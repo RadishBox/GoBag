@@ -12,6 +12,8 @@ public class GarbageEntity : MapEntity
     public GameObject FireEntityPrefab;
     private bool _onFire = false;
 
+    public Tip tip;
+
     /// <summary>
     /// Function activated upon this entity's turn
     /// </summary>
@@ -50,6 +52,11 @@ public class GarbageEntity : MapEntity
                 if(prob <= DirtyProbability)
                 {
                     (otherEntity as PlayerEntity).AddSickness(dirty);
+
+                    if(!(otherEntity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+                    {
+                        (otherEntity as PlayerEntity).Tips.Add(tip);
+                    }
                 }
             }
         }

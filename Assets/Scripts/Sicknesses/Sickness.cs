@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 /// <summary>
@@ -11,6 +11,8 @@ public abstract class Sickness
     [SerializeField]
     private string _name;
     public Color Color;
+
+    
 
     public Sickness(string name, Color color)
     {

@@ -19,6 +19,8 @@ public class DeepPuddleEntity : MapEntity
     // Audio related to effect
     public AudioClip DeathFX;
 
+    public Tip tip;
+
     void Start()
     {
         SetRandomSprite();
@@ -53,6 +55,11 @@ public class DeepPuddleEntity : MapEntity
             {
                 // Play audio effect
                 AudioManager.Instance.Play(AudioManager.AudioType.FX, DeathFX);
+
+                if(!(otherEntity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+                {
+                    (otherEntity as PlayerEntity).Tips.Add(tip);
+                }
 
                 // Kill player
                 (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);	

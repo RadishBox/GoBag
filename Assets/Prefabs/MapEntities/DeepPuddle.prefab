@@ -79,6 +79,14 @@ MonoBehaviour:
   DeathSprite: {fileID: 21300004, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
   DeathText: "\xA1Cuidado con los charcos profundos! \xA1Ponte trucha, Manuel trucha!"
   DeathFX: {fileID: 8300000, guid: 08214a21b3326954d9c322e538ac5f51, type: 3}
+  tip:
+    Cause:
+      Image: {fileID: 21300004, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
+      Text: Te ahogaste
+    Solutions:
+    - Image: {fileID: 21300098, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: "Evita los charcos profundos. \xA1Pueden ser muy enga\xF1osos!"
+    Id: DeepPuddle
 --- !u!212 &21216598
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -113,6 +121,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: spawnFrequencyLimits.x
       value: 3
       objectReference: {fileID: 0}
@@ -133,6 +145,28 @@ Prefab:
       propertyPath: DeathFX
       value: 
       objectReference: {fileID: 8300000, guid: 08214a21b3326954d9c322e538ac5f51, type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300004, guid: 637cb829827f0d94293ce8b6d722d6b9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Text
+      value: Te ahogaste
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300098, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Text
+      value: "Evita los charcos profundos. \xA1Pueden ser muy enga\xF1osos!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Id
+      value: DeepPuddle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113300}

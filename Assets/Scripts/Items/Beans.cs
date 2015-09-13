@@ -5,8 +5,6 @@ using UnityEngine.UI;
 public class Beans : Item {
 
 	public BarValue[] BarEffects;
-
-    private GameObject Animation;
     private bool hasAnimStarted = false;
 
     protected override void Start()

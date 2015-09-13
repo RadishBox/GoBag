@@ -20,6 +20,7 @@ public class FireEntity : MapEntity
     // Audio related to effect
     public AudioClip DeathFX;
 
+    public Tip tip;
 
     /// <summary>
     /// Function activated upon this entity's turn
@@ -49,6 +50,7 @@ public class FireEntity : MapEntity
 
             // Kill player
             (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);	
+            (otherEntity as PlayerEntity).Tips.Add(tip);
         }
     }
 

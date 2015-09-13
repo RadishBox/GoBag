@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using DG.Tweening;
 
 public enum CivilGuyState { Happy, Worried };
@@ -25,6 +26,13 @@ public class CivilGuyController : MonoBehaviour {
     //Game over 
     public Image EndingSprite;
     public Button GameOverNextButton;
+
+    // Tips
+    public GameObject TipsGroup;
+    public GameObject TipsParent;
+    public GameObject TipPrefab;
+    public GameObject TipElementSolutionPrefab;
+    public GameObject TipElementCausePrefab;
 	
     // Use this for initialization
     void Awake()
@@ -110,6 +118,50 @@ public class CivilGuyController : MonoBehaviour {
 
         GameOverNextButton.gameObject.SetActive(true);
         GameOverNextButton.GetComponent<Image>().DOFade(0.25f, 0.5f).SetLoops(-1, LoopType.Yoyo);
+        GameOverNextButton.onClick.AddListener(LoadTips);
+    }
+
+    public void LoadTips()
+    {
+        GameOverNextButton.onClick.RemoveAllListeners();
+        List<Tip> Tips = PlayerEntity.Instance.Tips;
+        if(Tips.Count > 0)
+        {
+            foreach (Tip tip in Tips) 
+            {
+                GameObject TipGroup = Instantiate(TipPrefab);
+                TipGroup.transform.SetParent(TipsParent.transform, false);
+
+                // Cause
+                GameObject TipElement = Instantiate(TipElementCausePrefab);
+                TipElement.transform.SetParent(TipGroup.transform, false);
+                TipElement.GetComponentsInChildren<Image>(true)[0].sprite = tip.Cause.Image;
+                TipElement.GetComponentsInChildren<Text>(true)[0].text = tip.Cause.Text;
+                TipElement.transform.SetAsLastSibling();
+
+                 // Solutions
+                foreach (Tip.TipItem solution in tip.Solutions) 
+                {
+                    GameObject TipSolutionElement = Instantiate(TipElementSolutionPrefab);
+                    TipSolutionElement.transform.SetParent(TipGroup.transform.Find("Solutions"), false);
+                    TipSolutionElement.GetComponentsInChildren<Image>(true)[0].sprite = solution.Image;
+                    TipSolutionElement.GetComponentsInChildren<Text>(true)[0].text = solution.Text;
+                }
+
+                // Modify Tip height according to number of solutions
+                float preferredHeight = TipGroup.GetComponent<LayoutElement>().preferredHeight;
+                TipGroup.GetComponent<LayoutElement>().preferredHeight = preferredHeight*tip.Solutions.Length;
+            }
+
+            TipsGroup.SetActive(true);
+
+            // Change button listener
+            GameOverNextButton.onClick.AddListener(LoadTitle);
+        }
+        else
+        {
+            LoadTitle();
+        }
     }
 
     public void LoadTitle()
