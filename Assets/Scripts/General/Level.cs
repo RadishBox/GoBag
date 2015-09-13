@@ -12,6 +12,9 @@ public class Level {
     public AudioClip BgMusic;
     public bool IsTutorial;
 
+    public bool isLocked = false;
+    private bool _isClear = false;
+
     public ScenarioLibrary.ScenarioType scenario;
 
     private Item[] _availableItems;
@@ -37,5 +40,11 @@ public class Level {
     public Scenario CurrentScenario
     {
         get { return ScenarioLibrary.Instance.GetScenario(scenario); }
+    }
+
+    public bool IsClear
+    {
+        get { return _isClear; }
+        set { _isClear = value; }
     }
 }

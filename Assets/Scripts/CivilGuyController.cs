@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using DG.Tweening;
 
 public enum CivilGuyState { Happy, Worried };
-public class CivilGuyController : MonoBehaviour {
+public class CivilGuyController : MonoBehaviour
+{
     public Image BackgroundFade;
     public RectTransform CivilGuy;
     public RectTransform CivilGuyBig;
@@ -23,7 +24,7 @@ public class CivilGuyController : MonoBehaviour {
 
     public Button DismissButton;
 
-    //Game over 
+    //Game over
     public Image EndingSprite;
     public Button GameOverNextButton;
 
@@ -33,7 +34,9 @@ public class CivilGuyController : MonoBehaviour {
     public GameObject TipPrefab;
     public GameObject TipElementSolutionPrefab;
     public GameObject TipElementCausePrefab;
-	
+
+    public GameObject RetryMenu;
+
     // Use this for initialization
     void Awake()
     {
@@ -59,14 +62,14 @@ public class CivilGuyController : MonoBehaviour {
         activeCivilGuy = (isBig ? CivilGuyBig : CivilGuy);
         SetMessage(message);
 
-        switch (state) 
+        switch (state)
         {
-            case CivilGuyState.Happy:
-                activeCivilGuy.GetComponent<Image>().sprite = HappyCivilGuy;
-                break;
-            case CivilGuyState.Worried:
-                activeCivilGuy.GetComponent<Image>().sprite = InstructingCivilGuy;
-                break;
+        case CivilGuyState.Happy:
+            activeCivilGuy.GetComponent<Image>().sprite = HappyCivilGuy;
+            break;
+        case CivilGuyState.Worried:
+            activeCivilGuy.GetComponent<Image>().sprite = InstructingCivilGuy;
+            break;
         }
 
         StartCoroutine(ShowGroupRoutine(isBig));
@@ -77,8 +80,8 @@ public class CivilGuyController : MonoBehaviour {
         canvasGroup.blocksRaycasts = true;
         Vector2 targetPos;
 
-        if(isBig)
-        {            
+        if (isBig)
+        {
             targetPos = new Vector2(activeCivilGuy.anchoredPosition.x, -352);
         }
         else
@@ -125,9 +128,9 @@ public class CivilGuyController : MonoBehaviour {
     {
         GameOverNextButton.onClick.RemoveAllListeners();
         List<Tip> Tips = PlayerEntity.Instance.Tips;
-        if(Tips.Count > 0)
+        if (Tips.Count > 0)
         {
-            foreach (Tip tip in Tips) 
+            foreach (Tip tip in Tips)
             {
                 GameObject TipGroup = Instantiate(TipPrefab);
                 TipGroup.transform.SetParent(TipsParent.transform, false);
@@ -139,8 +142,8 @@ public class CivilGuyController : MonoBehaviour {
                 TipElement.GetComponentsInChildren<Text>(true)[0].text = tip.Cause.Text;
                 TipElement.transform.SetAsLastSibling();
 
-                 // Solutions
-                foreach (Tip.TipItem solution in tip.Solutions) 
+                // Solutions
+                foreach (Tip.TipItem solution in tip.Solutions)
                 {
                     GameObject TipSolutionElement = Instantiate(TipElementSolutionPrefab);
                     TipSolutionElement.transform.SetParent(TipGroup.transform.Find("Solutions"), false);
@@ -150,18 +153,31 @@ public class CivilGuyController : MonoBehaviour {
 
                 // Modify Tip height according to number of solutions
                 float preferredHeight = TipGroup.GetComponent<LayoutElement>().preferredHeight;
-                TipGroup.GetComponent<LayoutElement>().preferredHeight = preferredHeight*tip.Solutions.Length;
+                TipGroup.GetComponent<LayoutElement>().preferredHeight = preferredHeight * tip.Solutions.Length;
             }
 
             TipsGroup.SetActive(true);
 
             // Change button listener
-            GameOverNextButton.onClick.AddListener(LoadTitle);
+            if (GameConfiguration.Instance.Level.IsClear)
+            {
+                GameOverNextButton.onClick.AddListener(LoadTitle);
+            }
+            else
+            {
+                GameOverNextButton.onClick.AddListener(LoadMenu);
+            }
+
         }
         else
         {
             LoadTitle();
         }
+    }
+
+    public void LoadMenu()
+    {
+        RetryMenu.SetActive(true);
     }
 
     public void LoadTitle()

@@ -210,6 +210,7 @@ public class PlayerEntity : MapEntity, IMovable {
     public void Win(Sprite winSprite, string winText)
     {
         DisableMoveButtons();
+        GameConfiguration.Instance.Level.IsClear = true;
         ExploreGUI.Instance.StartGameOverSequence(winSprite, winText, CivilGuyState.Happy);
         AudioManager.Instance.Play(AudioManager.AudioType.FX, WinFX);
     }
@@ -368,6 +369,8 @@ public class PlayerEntity : MapEntity, IMovable {
     /// <summary>Disables all movebuttons.</summary>
     public void DisableMoveButtons()
     {
+        GameController.Instance.Paused = true;
+
         UpButton.SetActive(false);
         DownButton.SetActive(false);
         LeftButton.SetActive(false);

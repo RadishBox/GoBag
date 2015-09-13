@@ -38,6 +38,21 @@ public class GameController : MonoBehaviour
         Application.LoadLevel("Title"); 
     }
 
+    public void ReloadLevel()
+    {
+        StartCoroutine(ReLoadLevelRoutine());
+    }
+
+    private IEnumerator ReLoadLevelRoutine()
+    {
+        AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
+        AudioManager.Instance.Fade(AudioManager.AudioType.Ambience, 0, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, 0.5f);
+        AudioManager.Instance.Play(AudioManager.AudioType.Ambience, 0.5f);
+        Application.LoadLevel("Game"); 
+    }
+
     public void TriggerPause(bool Pause)
     {
     	if(Pause)

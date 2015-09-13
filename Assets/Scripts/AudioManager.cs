@@ -59,6 +59,30 @@ public class AudioManager : MonoBehaviour
         targetAudio.Play();
     }
 
+    public void Play(AudioType type, float volume = 1.0f)
+    {
+        AudioSource targetAudio = null;
+
+        switch (type)
+        {
+        case AudioType.BgMusic:
+            targetAudio = BgAudio;
+            break;
+        case AudioType.Ambience:
+            targetAudio = AmbienceAudio;
+            break;
+        case AudioType.FX:
+            targetAudio = FXAudio;
+            break;
+        default:
+            targetAudio = FXAudio;
+            break;
+        }
+        
+        targetAudio.volume = volume;
+        targetAudio.Play();
+    }
+
 
     /// <summary>
     /// Fades given audio type currently playing

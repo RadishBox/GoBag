@@ -60,6 +60,7 @@ public class ExploreGameController : MonoBehaviour
 
     public void BeginExploration()
     {
+        GameController.Instance.Paused = false;
         StartCoroutine(AdvanceTurn());
     }
 
