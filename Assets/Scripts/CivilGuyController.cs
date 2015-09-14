@@ -37,6 +37,8 @@ public class CivilGuyController : MonoBehaviour
 
     public GameObject RetryMenu;
 
+    public AudioClip LevelButtonFX;
+
     // Use this for initialization
     void Awake()
     {
@@ -126,6 +128,7 @@ public class CivilGuyController : MonoBehaviour
 
     public void LoadTips()
     {
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
         GameOverNextButton.onClick.RemoveAllListeners();
         List<Tip> Tips = PlayerEntity.Instance.Tips;
         if (Tips.Count > 0)
@@ -177,6 +180,7 @@ public class CivilGuyController : MonoBehaviour
 
     public void LoadMenu()
     {
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
         RetryMenu.SetActive(true);
     }
 

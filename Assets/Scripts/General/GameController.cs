@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
 	public GameObject PauseMenu;
 	public GameObject PauseButton;
 
+    public AudioClip LevelButtonFX;
+
 	void Awake ()
 	{
 		Instance = this;
@@ -32,6 +34,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator LoadTitleRoutine()
     {
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
         AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
         AudioManager.Instance.Fade(AudioManager.AudioType.Ambience, 0, 0.5f);
         yield return new WaitForSeconds(0.5f);
@@ -45,6 +48,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator ReLoadLevelRoutine()
     {
+        AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
         AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0, 0.5f);
         AudioManager.Instance.Fade(AudioManager.AudioType.Ambience, 0, 0.5f);
         yield return new WaitForSeconds(0.5f);

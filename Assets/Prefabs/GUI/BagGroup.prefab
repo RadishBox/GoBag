@@ -2928,6 +2928,10 @@ MonoBehaviour:
   UseFX: {fileID: 8300000, guid: 76f456338a03c074b80309760058de20, type: 3}
   EffectValue: 5
   TargetBar: 1
+  uses: 2
+  UseSprites:
+  - {fileID: 21300276, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  - {fileID: 21300278, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
 --- !u!114 &11451186
 MonoBehaviour:
   m_ObjectHideFlags: 1

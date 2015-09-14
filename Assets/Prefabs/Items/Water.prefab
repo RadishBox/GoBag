@@ -150,7 +150,15 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
-  _dragPivot: {x: .5, y: .25}
+  AnimationObject: {fileID: 0}
+  AnimationType: 0
+  UseFX: {fileID: 0}
+  EffectValue: 0
+  TargetBar: 0
+  uses: 2
+  UseSprites:
+  - {fileID: 21300276, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+  - {fileID: 21300278, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
 --- !u!114 &11475648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -278,7 +286,21 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: UseSprites.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: UseSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300276, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: UseSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300278, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137584}

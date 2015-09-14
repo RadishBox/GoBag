@@ -1003,7 +1003,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -78.5821991
+      value: -78.4862671
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1011,7 +1011,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22425224, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 97.1643982
+      value: 96.9725418
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1027,7 +1027,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -259.582214
+      value: -259.486267
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.x
@@ -1035,7 +1035,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22417014, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 264.835632
+      value: 265.027466
       objectReference: {fileID: 0}
     - target: {fileID: 22484422, guid: 1fc0c76d68699b1469b4fd2820318037, type: 2}
       propertyPath: m_AnchorMin.y
@@ -1936,6 +1936,7 @@ MonoBehaviour:
   TipElementCausePrefab: {fileID: 137466, guid: c8fb1f3dd6ac1c24faaf82f82f86d7bf,
     type: 2}
   RetryMenu: {fileID: 543305887}
+  LevelButtonFX: {fileID: 8300000, guid: d15f0c65001a4d14881aa4103f3b1573, type: 3}
 --- !u!114 &760091425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4320,6 +4321,7 @@ MonoBehaviour:
   BagGroup: {fileID: 191442040}
   PauseMenu: {fileID: 252907473}
   PauseButton: {fileID: 1425217441}
+  LevelButtonFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
 --- !u!1 &1914180714
 GameObject:
   m_ObjectHideFlags: 0
