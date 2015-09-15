@@ -42,32 +42,40 @@ MonoBehaviour:
   items:
   - sprite: {fileID: 0}
     text: Para abrir tu mochila, toca la mochila de abajo
+    isVideo: 0
     tutorialPrefab: {fileID: 125268, guid: 3d554160ec8989349be98170dc1c14b8, type: 2}
   - sprite: {fileID: 0}
     text: Ahora puedes usar las cosas que empacaste.
+    isVideo: 0
     tutorialPrefab: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
   - sprite: {fileID: 0}
     text: "Para usar una cosa, arr\xE1strala a la mano verde. Para saber qu\xE9 hace
       una cosa, arr\xE1strala al \u201C?\u201D "
+    isVideo: 0
     tutorialPrefab: {fileID: 152042, guid: 483a83d2064f4324dba0a75002afcf4c, type: 2}
   - sprite: {fileID: 0}
     text: "En el mundo hay peligros, as\xED que \xA1ten cuidado!  Si algo malo te
       pasa, saldr\xE1 aqu\xED."
+    isVideo: 0
     tutorialPrefab: {fileID: 108872, guid: e2dccce409528074b82c87ae0b81a995, type: 2}
   - sprite: {fileID: 0}
     text: "Puedes arreglar estos problemas si usas el objeto correcto.  Por ejemplo,
       si tienes toallitas h\xFAmedas, puedes quitarte suciedad. "
+    isVideo: 0
     tutorialPrefab: {fileID: 192044, guid: 72cfbba61a591ae4e8e5d0602f6a125b, type: 2}
   - sprite: {fileID: 0}
     text: "Si no te quitas los problemas, van a vaciar tu barra roja (tu salud) m\xE1s
       r\xE1pido "
+    isVideo: 0
     tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
   - sprite: {fileID: 0}
     text: "\xA1Cuida tus barras! Si cualquier barra se acaba, pierdes."
+    isVideo: 0
     tutorialPrefab: {fileID: 125752, guid: 6e7b822176336da4297a06c6ab2de2b9, type: 2}
   - sprite: {fileID: 0}
-    text: VIDYA
-    tutorialPrefab: {fileID: 0}
+    text: UsingItems
+    isVideo: 1
+    tutorialPrefab: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}
@@ -123,7 +131,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[7].tutorialPrefab
       value: 
-      objectReference: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+      objectReference: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[8].tutorialPrefab
       value: 
@@ -160,8 +168,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[7].text
-      value: "Para moverte, toca un cuadrado oscuro de los que est\xE1n cerca de ti
-        y te mover\xE1s a ese lugar. "
+      value: UsingItems
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[8].text
@@ -297,6 +304,10 @@ Prefab:
       propertyPath: items.Array.data[1].tutorialPrefab
       value: 
       objectReference: {fileID: 147434, guid: d953e107bf38ef049827b9635fd49307, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[7].isVideo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123440}

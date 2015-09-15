@@ -18,6 +18,8 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	public Button NextButton;
 	public Button SkipButton;
 
+	public StoryGameController storyGameController;
+
 
 	private int childIterator = 0;
 
@@ -28,7 +30,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	}
 
 	public void Initialize()
-	{		
+	{
 		UpdateButtonInteraction();
 	}
 
@@ -44,14 +46,14 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 		Vector2 inputDelta = data.delta;
 
 		// Check input has been big enough
-		if(Mathf.Abs(inputDelta.x) > 1)
+		if (Mathf.Abs(inputDelta.x) > 1)
 		{
 			if (inputDelta.x < 0)
 			{
 				// swipe to left, move to right
 				currentSwipeDirection = Vector2.right;
 			}
-			else if(inputDelta.x > 0)
+			else if (inputDelta.x > 0)
 			{
 				currentSwipeDirection = Vector2.left;
 			}
@@ -74,7 +76,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 			// swipe to left, move to right
 			Next();
 		}
-		else if(currentSwipeDirection.x < 0)
+		else if (currentSwipeDirection.x < 0)
 		{
 			Previous();
 		}
@@ -82,25 +84,41 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 
 	public void Next()
 	{
-		if(NextButton.interactable)
+		if (NextButton.interactable)
 		{
-			float currentPos = childIterator*canvasScaler.referenceResolution.x;
-			Vector2 targetPos = new Vector2(-currentPos - canvasScaler.referenceResolution.x, 0);
+			// Check if next is last one
+			if (childIterator == ItemsParent.transform.childCount - 1)
+			{
+				storyGameController.LoadGame();
+			}
+			else
+			{
+				float currentPos = childIterator * canvasScaler.referenceResolution.x;
+				Vector2 targetPos = new Vector2(-currentPos - canvasScaler.referenceResolution.x, 0);
 
-			// Animate
-			ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false).SetId("NextTween");
+				// Animate
+				ItemsParent.GetComponent<RectTransform>().DOAnchorPos(targetPos, 0.5f, false).SetId("NextTween");
 
-			childIterator++;
+				childIterator++;
 
-			UpdateButtonInteraction();
+				UpdateButtonInteraction();
+
+
+
+				// Check if next is movie if it is, play it
+				if (storyGameController.storyElementGroup.items[childIterator].isVideo)
+				{
+					storyGameController.storyElementGroup.PlayVideoFromItem(childIterator);
+				}
+			}			
 		}
 	}
 
 	public void Previous()
 	{
-		if(PrevButton.interactable)
+		if (PrevButton.interactable)
 		{
-			float currentPos = childIterator*canvasScaler.referenceResolution.x;
+			float currentPos = childIterator * canvasScaler.referenceResolution.x;
 			Vector2 targetPos = new Vector2(-currentPos + canvasScaler.referenceResolution.x, 0);
 
 			// Animate
@@ -115,7 +133,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 	public void UpdateButtonInteraction()
 	{
 		// CheckNext
-		NextButton.interactable = (childIterator + 1 < ItemsParent.transform.childCount);
+		//NextButton.interactable = childIterator + 1 < ItemsParent.transform.childCount;
 
 		// CheckPrevious
 		PrevButton.interactable = (childIterator > 0);

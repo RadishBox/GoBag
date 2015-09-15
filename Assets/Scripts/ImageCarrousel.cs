@@ -51,10 +51,10 @@ public class ImageCarrousel : MonoBehaviour
 					if(carrouselItem.transform.Find("BigBalloon"))
 						carrouselItem.transform.Find("BigBalloon").GetComponentInChildren<Text>().text = item.text;
 				}
+
 				if(item.isVideo)
 				{
-					// Play video
-					Handheld.PlayFullScreenMovie (item.text+".mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+					carrouselItem.transform.Find("Replay").GetComponent<Button>().onClick.AddListener(() => PlayVideoFromItem(item));
 				}
 			}
 			else
@@ -80,6 +80,16 @@ public class ImageCarrousel : MonoBehaviour
 		}
 	}
 
-	
 
+	public void PlayVideoFromItem(int index)
+	{
+		// Play video
+		Handheld.PlayFullScreenMovie (items[index].text+".mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);		
+	}
+
+	public void PlayVideoFromItem(CarrouselItem item)
+	{
+		// Play video
+		Handheld.PlayFullScreenMovie (item.text+".mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);		
+	}
 }
