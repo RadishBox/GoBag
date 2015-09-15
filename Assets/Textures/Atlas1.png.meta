@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 72a2bb8cbddb7434d8905e3fd881c3cf
-timeCreated: 1441767566
+timeCreated: 1442276397
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -56,7 +56,7 @@ TextureImporter:
     21300098: WaterDeep2
     21300100: Droplets1
     21300102: Droplets2
-    21300104: Droplets3
+    21300104: IconTutorialHealthEtc
     21300106: Droplets4
     21300108: RatDown
     21300110: RatTop
@@ -184,7 +184,7 @@ TextureImporter:
     21300354: GrassSemi3
     21300356: GrassSemi2
     21300358: GrassSemi1
-    21300360: IconTutorial
+    21300360: IconTutorialPack
     21300362: iconBlue
     21300364: iconRed
     21300366: Arrow
@@ -221,6 +221,8 @@ TextureImporter:
     21300428: BtnPause
     21300430: Circle
     21300432: rainAll
+    21300434: IconTutorialMove
+    21300436: IconTutorialUseItems
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -786,13 +788,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Droplets3
+    - name: IconTutorialHealthEtc
       rect:
         serializedVersion: 2
-        x: 512
-        y: 704
-        width: 64
-        height: 64
+        x: 515
+        y: 706
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2056,7 +2058,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: IconTutorial
+    - name: IconTutorialPack
       rect:
         serializedVersion: 2
         x: 128
@@ -2421,6 +2423,26 @@ TextureImporter:
         serializedVersion: 2
         x: 449
         y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IconTutorialMove
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IconTutorialUseItems
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
         width: 64
         height: 64
       alignment: 0
