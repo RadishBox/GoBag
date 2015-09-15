@@ -65,7 +65,7 @@ MonoBehaviour:
     _name: Todos
     _icon: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 0}
-    ScenarioStory: {fileID: 123440, guid: 9c9179d263128434bb980cb9e69daab5, type: 2}
+    ScenarioStory: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
   - _id: 1
     _name: "Hurac\xE1n"
     _icon: {fileID: 21300338, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
@@ -119,7 +119,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[0].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134326}

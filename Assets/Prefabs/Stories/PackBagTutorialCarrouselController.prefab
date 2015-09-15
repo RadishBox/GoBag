@@ -42,28 +42,35 @@ MonoBehaviour:
   items:
   - sprite: {fileID: 21300000, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
     text: "En la escuela de Manuel est\xE1 aprendiendo como empacar mochilas de emergencia."
+    isVideo: 0
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 21300002, guid: aef31102c93887b4a8ec1421817e9edd, type: 3}
     text: El instructor explica que cuando empacas una mochila de emergencia es importante
       llevar agua, alimentos, medicina y cosas necesarias para el tipo de emergencia
       o el lugar donde estemos.
+    isVideo: 0
     tutorialPrefab: {fileID: 0}
   - sprite: {fileID: 0}
     text: Para agregar objetos a la mochila primero escoge el objeto en la barra.
+    isVideo: 0
     tutorialPrefab: {fileID: 127100, guid: 32440f119cc10d5428c528d95d6f72ae, type: 2}
   - sprite: {fileID: 0}
     text: Arrastra el objeto a la mochila.
+    isVideo: 0
     tutorialPrefab: {fileID: 167246, guid: cc6cb56954ec9d147aeed60987f41472, type: 2}
   - sprite: {fileID: 0}
     text: "Si quieres saber qu\xE9 hace una cosa, arr\xE1strala al \u201C?\u201D y
       si quieres sacarla de la mochila, arr\xE1strala al bote de basura."
+    isVideo: 0
     tutorialPrefab: {fileID: 183886, guid: 1896e080646d0db4384df4fa2dd84a6a, type: 2}
   - sprite: {fileID: 0}
     text: "Cuando est\xE9s listo, presiona la flecha verde."
+    isVideo: 0
     tutorialPrefab: {fileID: 156192, guid: e3f547d8f765e8a4398b83d94aa81bb4, type: 2}
   - sprite: {fileID: 0}
-    text: VIDYA
-    tutorialPrefab: {fileID: 0}
+    text: Packing
+    isVideo: 1
+    tutorialPrefab: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}
@@ -148,10 +155,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[6].tutorialPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[6].text
-      value: VIDYA
+      value: Packing
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[7].text
@@ -276,6 +283,10 @@ Prefab:
       propertyPath: items.Array.data[0].text
       value: "En la escuela de Manuel est\xE1 aprendiendo como empacar mochilas de
         emergencia."
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[6].isVideo
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
