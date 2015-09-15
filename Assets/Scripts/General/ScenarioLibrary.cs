@@ -6,7 +6,7 @@ using System.Collections.Generic;
 /// Contains all different scenarios in the game
 /// </summary>
 public class ScenarioLibrary : MonoBehaviour {
-    public enum ScenarioType { All, Hurricane, Fire };
+    public enum ScenarioType { All, Hurricane, Fire, PackingTut, MovingTut, UsingItemsTut, BarsTut };
     public Scenario[] Scenarios;
 
     private static ScenarioLibrary _instance;

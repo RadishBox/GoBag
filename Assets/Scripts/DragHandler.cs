@@ -31,7 +31,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
         if (!BagPrepController.Instance.IsInDropArea) // if not valid drop area
         {
-            AnimateBackToStartPosition();
+            AnimateBackToStartPosition(0.15f);
         }
         else // if is in valid drop area
         {
@@ -39,9 +39,17 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         }
     }
 
-    public void AnimateBackToStartPosition()
+    public void AnimateBackToStartPosition(float time)
     {
-        StartCoroutine(AnimateBackToStartPositionRoutine(0.15f));
+        if(time > 0)
+        {
+            StartCoroutine(AnimateBackToStartPositionRoutine(time));
+        }
+        else
+        {
+            transform.DOMove(startPosition, 0, false);
+            CompleteBackAnim();
+        }
     }
 
     private IEnumerator AnimateBackToStartPositionRoutine(float duration)
@@ -52,6 +60,12 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         
         yield return new WaitForSeconds(duration);
 
+        CompleteBackAnim();
+        
+    }
+
+    private void CompleteBackAnim()
+    {
         if (BagPrepController.Instance.DraggedItem.InBag) // If item is in bag already
         {
             BagPrepController.Instance.DraggedItem = null;
@@ -63,6 +77,5 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             BagPrepController.Instance.SpawnNewSelectedItem(); // Spawn new one
             Destroy(gameObject); // Destroy this object
         }
-        
     }
 }

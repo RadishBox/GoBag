@@ -50,7 +50,7 @@ public class BagGridTile : DropArea
             }
             else
             {
-                draggedItem.GetComponent<DragHandler>().AnimateBackToStartPosition();  
+                draggedItem.GetComponent<DragHandler>().AnimateBackToStartPosition(0.15f);  
             }
             
         }        
