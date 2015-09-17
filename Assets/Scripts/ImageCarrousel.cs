@@ -27,7 +27,7 @@ public class ImageCarrousel : MonoBehaviour
 			GameObject carrouselItem;
 			// Check if item has a gameobject
 			if(item.tutorialPrefab != null)
-			{
+			{				
 				// Panel is a prefab
 				carrouselItem = Instantiate(item.tutorialPrefab);
 				if(carrouselItem.GetComponentInChildren<Text>())
@@ -50,6 +50,11 @@ public class ImageCarrousel : MonoBehaviour
 					}	*/
 					if(carrouselItem.transform.Find("BigBalloon"))
 						carrouselItem.transform.Find("BigBalloon").GetComponentInChildren<Text>().text = item.text;
+				}
+
+				if(item.isVideo)
+				{
+					carrouselItem.transform.Find("Replay").GetComponent<Button>().onClick.AddListener(() => PlayVideoFromItem(item));
 				}
 			}
 			else
@@ -75,6 +80,16 @@ public class ImageCarrousel : MonoBehaviour
 		}
 	}
 
-	
 
+	public void PlayVideoFromItem(int index)
+	{
+		// Play video
+		Handheld.PlayFullScreenMovie (items[index].text+".mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);		
+	}
+
+	public void PlayVideoFromItem(CarrouselItem item)
+	{
+		// Play video
+		Handheld.PlayFullScreenMovie (item.text+".mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);		
+	}
 }

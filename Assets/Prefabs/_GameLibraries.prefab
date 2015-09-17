@@ -62,10 +62,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scenarios:
   - _id: 0
-    _name: Todos
+    _name: All
     _icon: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 0}
-    ScenarioStory: {fileID: 123440, guid: 9c9179d263128434bb980cb9e69daab5, type: 2}
+    ScenarioStory: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
   - _id: 1
     _name: "Hurac\xE1n"
     _icon: {fileID: 21300338, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
@@ -76,6 +76,26 @@ MonoBehaviour:
     _icon: {fileID: 21300340, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
     ScenarioEffect: {fileID: 0}
     ScenarioStory: {fileID: 160598, guid: d393b7d36a81c4f438bc6dc7df4a3f2c, type: 2}
+  - _id: 101
+    _name: PackingTutorial
+    _icon: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
+  - _id: 102
+    _name: MovingTutorial
+    _icon: {fileID: 21300434, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: 37308d7636cf69944a180bf1a8a39218, type: 2}
+  - _id: 103
+    _name: UsingItemsTutorial
+    _icon: {fileID: 21300436, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: ff627c8f7fb4e8d46b550a5d153dd492, type: 2}
+  - _id: 104
+    _name: BarsTutorial
+    _icon: {fileID: 21300104, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+    ScenarioEffect: {fileID: 0}
+    ScenarioStory: {fileID: 123440, guid: 3789e46096217324eac078af0aad8edc, type: 2}
   SicknessPrefab: {fileID: 110834, guid: 810342e3ced265042a82a104a8cfd2dc, type: 2}
 --- !u!114 &11427342
 MonoBehaviour:
@@ -119,7 +139,87 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[0].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[0]._name
+      value: All
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[3]._name
+      value: PackingTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[3]._icon
+      value: 
+      objectReference: {fileID: 21300360, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[3].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: 8dbb4520933cae74db677d9d4c9edfcf, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[3]._id
+      value: 101
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[0]._id
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[4]._id
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[5]._id
+      value: 103
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[4]._name
+      value: MovingTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[4]._icon
+      value: 
+      objectReference: {fileID: 21300434, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[4].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: 37308d7636cf69944a180bf1a8a39218, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[5]._name
+      value: UsingItemsTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[5]._icon
+      value: 
+      objectReference: {fileID: 21300436, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[5].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: ff627c8f7fb4e8d46b550a5d153dd492, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[6]._name
+      value: BarsTutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[6]._icon
+      value: 
+      objectReference: {fileID: 21300104, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[6].ScenarioStory
+      value: 
+      objectReference: {fileID: 123440, guid: 3789e46096217324eac078af0aad8edc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134326}

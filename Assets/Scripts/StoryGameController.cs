@@ -6,7 +6,7 @@ public class StoryGameController : MonoBehaviour
 {
 
 	public StoryDragHandler storyDragHandler;
-	private ImageCarrousel storyElementGroup;
+	public ImageCarrousel storyElementGroup;
 
 	public GameObject ItemsParent;
 	public CanvasScaler canvasScaler;

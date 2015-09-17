@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyDragHandler: {fileID: 1174752884}
+  storyElementGroup: {fileID: 0}
   ItemsParent: {fileID: 642047582}
   canvasScaler: {fileID: 45317438}
 --- !u!1 &45317435
@@ -470,6 +471,7 @@ MonoBehaviour:
   PrevButton: {fileID: 1501982775}
   NextButton: {fileID: 1770685796}
   SkipButton: {fileID: 1287030859}
+  storyGameController: {fileID: 22635084}
 --- !u!114 &1174752885
 MonoBehaviour:
   m_ObjectHideFlags: 0

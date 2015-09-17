@@ -42,17 +42,21 @@ MonoBehaviour:
   items:
   - sprite: {fileID: 0}
     text: "Tu objetivo es llegar a la zona segura que est\xE1 al norte (arriba)."
+    isVideo: 0
     tutorialPrefab: {fileID: 105448, guid: b3f4de9d1bb28ab4d97204bfbff7049a, type: 2}
   - sprite: {fileID: 0}
     text: "Para moverte, toca un cuadrado oscuro de los que est\xE1n cerca de ti y
       te mover\xE1s a ese lugar. "
+    isVideo: 0
     tutorialPrefab: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
   - sprite: {fileID: 0}
     text: "Si llegas a la zona segura, \xA1Ganas! \xA1Suerte!"
+    isVideo: 0
     tutorialPrefab: {fileID: 105102, guid: 0bd29d88345a5914490cc7985c7b3a96, type: 2}
   - sprite: {fileID: 0}
-    text: VIDYA
-    tutorialPrefab: {fileID: 0}
+    text: Walking
+    isVideo: 1
+    tutorialPrefab: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}
@@ -85,12 +89,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[3].text
-      value: VIDYA
+      value: Walking
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[3].tutorialPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[1].text
       value: "Para moverte, toca un cuadrado oscuro de los que est\xE1n cerca de ti
@@ -280,6 +284,10 @@ Prefab:
       propertyPath: items.Array.data[1].tutorialPrefab
       value: 
       objectReference: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[3].isVideo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123440}

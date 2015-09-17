@@ -43,33 +43,41 @@ MonoBehaviour:
   - sprite: {fileID: 0}
     text: "La barra verde es cu\xE1nta energ\xEDa tienes.  Cada vez que caminas un
       espacio, esta barra baja un poco."
+    isVideo: 0
     tutorialPrefab: {fileID: 121304, guid: ee78cd7d9dc478a40a898a6f3b122dd0, type: 2}
   - sprite: {fileID: 0}
     text: "Para llenar esta barra, \xA1come comida! Si la comida tiene m\xE1s calor\xEDas,
       llena m\xE1s la barra."
+    isVideo: 0
     tutorialPrefab: {fileID: 129640, guid: a391ec785b94f5f4889af6f05ee38421, type: 2}
   - sprite: {fileID: 0}
     text: "La barra roja es cu\xE1nta salud general tienes. Tu salud baja cuando tienes
       alg\xFAn problema de salud. Estos problemas tienen letras rojas."
+    isVideo: 0
     tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
     text: "Cuando tienes el cuerpo sucio, no baja tu salud, pero puede causar una
       enfermedad del est\xF3mago, y esa s\xED baja salud."
+    isVideo: 0
     tutorialPrefab: {fileID: 129350, guid: 29590d575f259a44eba987a1fd246034, type: 2}
   - sprite: {fileID: 0}
     text: "Para llenar esta barra, usa los siguientes objetos:  Algunos objetos no
       suben la barra, pero quitan problemas de salud que s\xED la bajan."
+    isVideo: 0
     tutorialPrefab: {fileID: 139754, guid: 37391a100bd51f947ae06b8ce937e2c5, type: 2}
   - sprite: {fileID: 0}
     text: "La barra azul es cu\xE1nta agua tienes.  Cada vez que caminas un espacio,
       esta barra baja un poco."
+    isVideo: 0
     tutorialPrefab: {fileID: 151292, guid: ddb5780a99296214ca8ca48cd3c7d7d3, type: 2}
   - sprite: {fileID: 0}
     text: "Para llenar esta barra, \xA1toma agua! "
+    isVideo: 0
     tutorialPrefab: {fileID: 135854, guid: 4cceb9916fa8e3246b529bf71a25f7a1, type: 2}
   - sprite: {fileID: 0}
-    text: VIDYA
-    tutorialPrefab: {fileID: 0}
+    text: Healing
+    isVideo: 1
+    tutorialPrefab: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
   ItemPrefab: {fileID: 159422, guid: 424633e666cc7bb4caa1c5ad668f4246, type: 2}
   ItemsParent: {fileID: 0}
   canvasScaler: {fileID: 0}
@@ -126,7 +134,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: items.Array.data[7].tutorialPrefab
       value: 
-      objectReference: {fileID: 104396, guid: aab2cdac52639b942b8481b201fb713b, type: 2}
+      objectReference: {fileID: 117650, guid: 671395803d3b393458241867aa3c2805, type: 2}
     - target: {fileID: 0}
       propertyPath: items.Array.data[8].tutorialPrefab
       value: 
@@ -163,8 +171,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[7].text
-      value: "Para moverte, toca un cuadrado oscuro de los que est\xE1n cerca de ti
-        y te mover\xE1s a ese lugar. "
+      value: Healing
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: items.Array.data[8].text
@@ -301,6 +308,10 @@ Prefab:
       propertyPath: items.Array.data[1].tutorialPrefab
       value: 
       objectReference: {fileID: 129640, guid: a391ec785b94f5f4889af6f05ee38421, type: 2}
+    - target: {fileID: 0}
+      propertyPath: items.Array.data[7].isVideo
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123440}

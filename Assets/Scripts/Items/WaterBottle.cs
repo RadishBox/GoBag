@@ -46,18 +46,18 @@ public class WaterBottle : Item
 
         yield return new WaitForSeconds(2.0f);
 
-        CompleteAnimation();
+        CompleteAnimation(0.15f);
     }
 
     void OnDisable()
     {
         if (hasAnimStarted)
         {
-            CompleteAnimation();
+            CompleteAnimation(0);
         }
     }
 
-    private void CompleteAnimation()
+    private void CompleteAnimation(float time)
     {
         // Despawn Animation
         Destroy(Animation.gameObject);
@@ -69,7 +69,7 @@ public class WaterBottle : Item
         }
         else
         {
-            this.GetComponent<DragHandler>().AnimateBackToStartPosition();
+            this.GetComponent<DragHandler>().AnimateBackToStartPosition(time);
             this.transform.Find("Unselected").GetComponent<Image>().sprite = UseSprites[0];
         }
 
