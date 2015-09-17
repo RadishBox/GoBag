@@ -58,4 +58,14 @@ public class LevelLibrary : MonoBehaviour {
     	return Levels[0]; // level not found, return the first level
     }
 
+    public Dictionary<int, Level> GetLevelsDictionary()
+    {
+        Dictionary<int, Level> result = new Dictionary<int, Level>();
+        foreach (Level level in Levels) 
+        {
+            result.Add(level.Id, level);
+        }
+
+        return result;
+    }
 }

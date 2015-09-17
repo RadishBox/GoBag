@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 using DG.Tweening;
 
 /// <summary>
@@ -20,7 +22,6 @@ public class TitleScreenController : MonoBehaviour
 
 	void Awake()
 	{
-		StageSelectionPanel.SetActive(false);
 	}
 
 	// Use this for initialization
@@ -39,12 +40,18 @@ public class TitleScreenController : MonoBehaviour
 		AudioManager.Instance.Play(AudioManager.AudioType.BgMusic, TitleBgMusic);
 
 		TitleGraphic.DOAnchorPos(new Vector2(0, 100), 1).SetRelative(true).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+
+		LockUnpassedLevels();
+		StageSelectionPanel.SetActive(false);
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-
+		if (Input.GetKeyDown(KeyCode.Escape)) 
+		{ 
+			Application.Quit(); 
+		}
 	}
 
 	public void TriggerStageSelection(bool value)
@@ -62,5 +69,29 @@ public class TitleScreenController : MonoBehaviour
 		Application.LoadLevel("Story");
 
 		AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
+	}
+
+	public void UnlockPassedLevels()
+	{
+
+	}
+
+	private void LockUnpassedLevels()
+	{
+		GameObject[] LevelButtons = GameObject.FindGameObjectsWithTag("LevelButton");
+		print(LevelButtons.Length);
+
+		Dictionary<int, Level> Levels = LevelLibrary.Instance.GetLevelsDictionary();
+		foreach (GameObject levelButton in LevelButtons) 
+		{
+			int nameId = int.Parse(levelButton.name);
+			if(Levels.ContainsKey(nameId))
+			{
+				if(Levels[(nameId)].isLocked)
+				{
+					levelButton.GetComponent<Button>().interactable = false;
+				}
+			}			
+		}
 	}
 }

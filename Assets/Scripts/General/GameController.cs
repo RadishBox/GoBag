@@ -27,6 +27,14 @@ public class GameController : MonoBehaviour
 		BagPrepController.Instance.Initialize();
 	}
 
+    void Update() 
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        { 
+            TriggerPause(true); 
+        }
+    }
+
 	public void LoadTitle()
     {
         StartCoroutine(LoadTitleRoutine());

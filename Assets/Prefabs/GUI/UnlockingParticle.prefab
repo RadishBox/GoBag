@@ -1,75 +1,52 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &193674
+--- !u!1 &159254
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 495468}
-  - 198: {fileID: 19885482}
-  - 199: {fileID: 19971472}
-  - 114: {fileID: 11430018}
-  m_Layer: 0
-  m_Name: RainPrefab
+  - 4: {fileID: 480796}
+  - 198: {fileID: 19859050}
+  - 199: {fileID: 19913190}
+  m_Layer: 5
+  m_Name: UnlockingParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &495468
+--- !u!4 &480796
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193674}
+  m_GameObject: {fileID: 159254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.66000009, y: 21.2000008, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11430018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38d2ff4f9e897e94a8a2b486fc631a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _name: Lluvia
-  SicknessProbability: .5
-  tip:
-    Cause:
-      Image: {fileID: 21300432, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-      Text: Te empapaste con la lluvia y te resfriaste
-    Solutions:
-    - Image: {fileID: 21300238, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-      Text: Puedes usar un impermeable para protegerte de la lluvia.
-    Id: Lluvia
-  RainAmbience: {fileID: 8300000, guid: 091766d4b85a05b48bfd8efc6ee970aa, type: 3}
---- !u!198 &19885482
+--- !u!198 &19859050
 ParticleSystem:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193674}
-  lengthInSec: 5
+  m_GameObject: {fileID: 159254}
+  lengthInSec: 1
   startDelay: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .5
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -102,7 +79,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: -50
+      scalar: 1.19000006
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -229,7 +206,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: .140000001
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -296,13 +273,13 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 200
+    maxNumParticles: 1000
   ShapeModule:
     serializedVersion: 2
     enabled: 1
-    type: 12
-    radius: 15.6400003
-    angle: 25
+    type: 11
+    radius: 58.5999985
+    angle: 79.1500015
     length: 5
     boxX: 1
     boxY: 1
@@ -315,7 +292,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 100
+      scalar: 60
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -357,7 +334,7 @@ ParticleSystem:
     time3: 0
     m_BurstCount: 0
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       scalar: 1
       maxCurve:
@@ -365,11 +342,11 @@ ParticleSystem:
         m_Curve:
         - time: 0
           value: 1
-          inSlope: 0
-          outSlope: 0
+          inSlope: -2
+          outSlope: -2
           tangentMode: 0
         - time: 1
-          value: 1
+          value: 0
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -427,21 +404,21 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 4281716462
         key1:
           serializedVersion: 2
           rgba: 4294967295
         key2:
           serializedVersion: 2
-          rgba: 0
+          rgba: 4910678
         key3:
           serializedVersion: 2
-          rgba: 0
+          rgba: 54271
         key4:
           serializedVersion: 2
           rgba: 0
@@ -456,8 +433,8 @@ ParticleSystem:
           rgba: 0
         ctime0: 0
         ctime1: 65535
-        ctime2: 0
-        ctime3: 0
+        ctime2: 44333
+        ctime3: 65535
         ctime4: 0
         ctime5: 0
         ctime6: 0
@@ -523,15 +500,20 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 1
   UVModule:
-    enabled: 1
+    enabled: 0
     frameOverTime:
       scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 1
+          value: 0
           inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 1
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
@@ -542,21 +524,26 @@ ParticleSystem:
         - time: 0
           value: 0
           inSlope: 0
+          outSlope: 1
+          tangentMode: 0
+        - time: 1
+          value: 1
+          inSlope: 1
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-      minMaxState: 3
-    tilesX: 4
+      minMaxState: 1
+    tilesX: 1
     tilesY: 1
-    animationType: 1
+    animationType: 0
     rowIndex: 0
     cycles: 1
-    randomRow: 0
+    randomRow: 1
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
-      scalar: -25
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1095,21 +1082,21 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
---- !u!199 &19971472
+--- !u!199 &19913190
 ParticleSystemRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193674}
+  m_GameObject: {fileID: 159254}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: e4573ebf0bc073b46b9784d56005f7cf, type: 2}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 0
+  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
@@ -1117,7 +1104,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 144848053
+  m_SortingLayerID: 0
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: .5
@@ -1127,7 +1114,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -1137,38 +1124,8 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: tip.Solutions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: RainAmbience
-      value: 
-      objectReference: {fileID: 8300000, guid: 091766d4b85a05b48bfd8efc6ee970aa, type: 3}
-    - target: {fileID: 0}
-      propertyPath: tip.Cause.Image
-      value: 
-      objectReference: {fileID: 21300432, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
-        type: 3}
-    - target: {fileID: 0}
-      propertyPath: tip.Cause.Text
-      value: Te empapaste con la lluvia y te resfriaste
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: tip.Solutions.Array.data[0].Image
-      value: 
-      objectReference: {fileID: 21300238, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
-        type: 3}
-    - target: {fileID: 0}
-      propertyPath: tip.Solutions.Array.data[0].Text
-      value: Puedes usar un impermeable para protegerte de la lluvia.
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: tip.Id
-      value: Lluvia
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 193674}
+  m_RootGameObject: {fileID: 159254}
   m_IsPrefabParent: 1

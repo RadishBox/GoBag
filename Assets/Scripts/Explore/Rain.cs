@@ -4,8 +4,7 @@ using System.Collections;
 public class Rain : ScenarioEffect {
 
 	public float SicknessProbability = 0.5f;
-
-	
+	public Tip tip;	
 
 	// Audio related to effect
     public AudioClip RainAmbience;
@@ -35,6 +34,10 @@ public class Rain : ScenarioEffect {
 	                if(prob <= SicknessProbability)
 	                {
 	                    (entity as PlayerEntity).AddSickness(cold);
+	                    if(!(entity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+	                    {
+	                        (entity as PlayerEntity).Tips.Add(tip);
+	                    }
 	                }
 	            }	        		
         	}            

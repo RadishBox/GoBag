@@ -25,6 +25,14 @@ public class StoryGameController : MonoBehaviour
 		storyDragHandler.Initialize();
 	}
 
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Escape)) 
+        { 
+            Application.LoadLevel("Title");
+        }
+	}
+
 	public void LoadGame()
 	{
 		if (!GameConfiguration.Instance.Level.IsTutorial)

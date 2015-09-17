@@ -50,7 +50,10 @@ public class FireEntity : MapEntity
 
             // Kill player
             (otherEntity as PlayerEntity).Kill(DeathSprite, DeathText);	
-            (otherEntity as PlayerEntity).Tips.Add(tip);
+            if(!(otherEntity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+            {
+                (otherEntity as PlayerEntity).Tips.Add(tip);
+            }
         }
     }
 

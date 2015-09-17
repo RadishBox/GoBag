@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &193674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 495468}
+  - 114: {fileID: 11428418}
+  m_Layer: 0
+  m_Name: FireAmbiencePrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &495468
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193674}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.66000009, y: 21.2000008, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11428418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175276da40bc8c045bef94ed465ad2e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: Incendio
+  FirePrefab: {fileID: 175430, guid: c473b4eee71a11b49b7043873ba9887b, type: 2}
+  startOnTurnNumber: 4
+  FireAmbience: {fileID: 8300000, guid: 6bc360094ca7dcb4098ed166aa80e184, type: 3}
+  DeathSprite: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
+  DeathText: "\xA1Te alcanz\xF3 el incendio, procura ir directo a la zona segura!"
+  DeathFX: {fileID: 8300000, guid: 4e4f22db38e96b343890b0eae89ced2c, type: 3}
+  tip:
+    Cause:
+      Image: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9, type: 3}
+      Text: "\xA1Te alcanz\xF3 el incendio!"
+    Solutions:
+    - Image: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
+      Text: Procura ir directo a la zona segura.
+    Id: Incendio
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: RainAmbience
+      value: 
+      objectReference: {fileID: 8300000, guid: 091766d4b85a05b48bfd8efc6ee970aa, type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Image
+      value: 
+      objectReference: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Cause.Text
+      value: "\xA1Te alcanz\xF3 el incendio!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Image
+      value: 
+      objectReference: {fileID: 21300420, guid: 72a2bb8cbddb7434d8905e3fd881c3cf,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: tip.Solutions.Array.data[0].Text
+      value: Procura ir directo a la zona segura.
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: tip.Id
+      value: Incendio
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _name
+      value: Incendio
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: FirePrefab
+      value: 
+      objectReference: {fileID: 175430, guid: c473b4eee71a11b49b7043873ba9887b, type: 2}
+    - target: {fileID: 0}
+      propertyPath: FireAmbience
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bc360094ca7dcb4098ed166aa80e184, type: 3}
+    - target: {fileID: 0}
+      propertyPath: DeathSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 637cb829827f0d94293ce8b6d722d6b9,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: DeathText
+      value: "\xA1Te alcanz\xF3 el incendio, procura ir directo a la zona segura!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: DeathFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e4f22db38e96b343890b0eae89ced2c, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 193674}
+  m_IsPrefabParent: 1

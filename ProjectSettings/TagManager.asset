@@ -10,6 +10,7 @@ TagManager:
   - Map
   - GameLibraries
   - AudioManager
+  - LevelButton
   layers:
   - Default
   - TransparentFX

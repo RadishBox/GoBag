@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 /// <summary>
 /// Controls the map in the exploration game part
@@ -74,6 +75,20 @@ public class MapController : MonoBehaviour
         }
 
         return tile;
+    }
+
+    public List<MapTile> GetRow(int rowNumber)
+    {
+        List<MapTile> tiles = new List<MapTile>();
+
+        for(int i = 0; i < Width; i++)
+        {
+            Vector2 coords = new Vector2(i, rowNumber);
+            MapTile tile = GetTile(coords);
+            tiles.Add(tile);
+        }        
+
+        return tiles;        
     }
 
     #region Properties

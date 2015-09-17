@@ -74,7 +74,7 @@ MonoBehaviour:
   - _id: 2
     _name: Incendio
     _icon: {fileID: 21300340, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
-    ScenarioEffect: {fileID: 0}
+    ScenarioEffect: {fileID: 193674, guid: e6bd6be514087ce458c18352fd99e51c, type: 2}
     ScenarioStory: {fileID: 160598, guid: d393b7d36a81c4f438bc6dc7df4a3f2c, type: 2}
   - _id: 101
     _name: PackingTutorial
@@ -220,6 +220,10 @@ Prefab:
       propertyPath: Scenarios.Array.data[6].ScenarioStory
       value: 
       objectReference: {fileID: 123440, guid: 3789e46096217324eac078af0aad8edc, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Scenarios.Array.data[2].ScenarioEffect
+      value: 
+      objectReference: {fileID: 193674, guid: e6bd6be514087ce458c18352fd99e51c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134326}
