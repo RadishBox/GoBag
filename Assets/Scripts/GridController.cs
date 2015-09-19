@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GridController : MonoBehaviour {
+public class GridController : MonoBehaviour
+{
 
     public GameObject GridTilePrefab;
     public string[] tilesString;
@@ -22,11 +23,82 @@ public class GridController : MonoBehaviour {
     [SerializeField]
     private int _maximumWidth;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start ()
+    {
         GenerateBaseGrid();
         GenerateGrid();
-	}
+        GenerateRandomGrid();
+    }
+
+    private void GenerateRandomGrid()
+    {
+        int addedTiles = 0;
+        int addedTilesLimit = 0;
+        int currentLevelHeight = ExploreGameController.Instance.Map.GetComponent<MapController>().Height * 250;
+
+        if (currentLevelHeight <= 1350)
+        {
+            addedTilesLimit = 3;
+        }
+        else if (currentLevelHeight > 1350 && currentLevelHeight <= 7500 )
+        {
+            addedTilesLimit = 7;
+        }
+        else
+        {
+            addedTilesLimit = 10;
+        }
+
+        // From base grid with base height and base width modify it randomly
+        for (int i = 0; i < Tiles.GetLength(1); i++)
+        {
+            for (int j = 0; j < Tiles.GetLength(0); j++)
+            {
+                if(addedTiles >= addedTilesLimit)
+                {
+                   return;
+                }
+                if (!Tiles[j, i].Active)
+                {
+                    bool hasAdjAvailableTile = false;
+                    if (i != 0)
+                    {
+                        // Check down
+                        hasAdjAvailableTile |= Tiles[j, i - 1].Active;
+                    }
+                    if (j != 0)
+                    {
+                        // Check left
+                        hasAdjAvailableTile |= Tiles[j - 1, i].Active;
+                    }
+                    if (i < Tiles.GetLength(1) - 1)
+                    {
+                        // Check up
+                        hasAdjAvailableTile |= Tiles[j, i + 1].Active;
+                    }
+                    if (j < Tiles.GetLength(0) - 1)
+                    {
+                        // Check right
+                        hasAdjAvailableTile |= Tiles[j + 1, i].Active;
+                    }
+
+                    if (hasAdjAvailableTile)
+                    {
+                        // Check for probability to make this tile availble
+                        float prob = Random.Range(0.0f, 1.0f);
+                        if (prob < 0.5f)
+                        {
+                            Tiles[j, i].Active = true;
+                            Tiles[j, i].GetComponent<Image>().color = Color.white;
+                            addedTiles++;
+                        }
+                    }
+                } 
+                
+            }
+        }
+    }
 
     public virtual void GenerateGrid()
     {
@@ -36,9 +108,9 @@ public class GridController : MonoBehaviour {
             string row = tilesString[i];
             for (int j = 0; j < Tiles.GetLength(0); j++)
             {
-                if(row[j]=='0')
+                if (row[j] == '0')
                 {
-                    Color invisibleColor = new Color(1,1,1,0);
+                    Color invisibleColor = new Color(1, 1, 1, 0);
                     Tiles[j, i].GetComponent<Image>().color = invisibleColor;
                     Tiles[j, i].Active = false;
                 }
@@ -50,10 +122,10 @@ public class GridController : MonoBehaviour {
 
     public virtual void GenerateBaseGrid()
     {
-        Tiles = new BagGridTile[BaseWidth, BaseHeight];
-        for (int i = 0; i < BaseHeight; i++)
+        Tiles = new BagGridTile[MaximumWidth, MaximumHeight];
+        for (int i = 0; i < MaximumHeight; i++)
         {
-            for (int j = 0; j < BaseWidth; j++)
+            for (int j = 0; j < MaximumWidth; j++)
             {
                 GameObject tile = GameObject.Instantiate(GridTilePrefab);
                 tile.transform.SetParent(this.transform);
@@ -78,7 +150,7 @@ public class GridController : MonoBehaviour {
             for (int j = 0; j < itemTiles.GetLength(1); j++)
             {
                 // Project item's tiles in grid
-                Vector2 tileLocalCoords = new Vector2(j,i); // Tile's local coords
+                Vector2 tileLocalCoords = new Vector2(j, i); // Tile's local coords
                 Vector2 tileGridCoords = tileLocalCoords + PosInGrid - item.DragPivotCoords;
 
                 print(tileGridCoords + " = " + tileLocalCoords + " + " + PosInGrid + " - " + item.DragPivotCoords);
@@ -109,18 +181,18 @@ public class GridController : MonoBehaviour {
                     }
 
                     // Save this tile's grid coords
-                    itemTilesInGrid[i,j] = tileGridCoords;                    
+                    itemTilesInGrid[i, j] = tileGridCoords;
                 }
                 else
                 {
-                    itemTilesInGrid[i, j] = -Vector2.one; 
+                    itemTilesInGrid[i, j] = -Vector2.one;
                 }
-            }                
+            }
         }
 
         OccupyInGrid(itemTilesInGrid);
         item.TilesInGrid = itemTilesInGrid;
-        
+
         return true;
     }
 
@@ -131,7 +203,7 @@ public class GridController : MonoBehaviour {
             for (int j = 0; j < coords.GetLength(1); j++)
             {
                 Vector2 coord = coords[i, j];
-                if (coord != -Vector2.one) 
+                if (coord != -Vector2.one)
                     Tiles[(int)coord.x, (int)coord.y].Available = false;
             }
         }
@@ -148,7 +220,7 @@ public class GridController : MonoBehaviour {
                 {
                     Tiles[(int)coord.x, (int)coord.y].Available = true;
                     item.TilesInGrid[i, j] = -Vector2.one;
-                }                
+                }
             }
         }
     }
