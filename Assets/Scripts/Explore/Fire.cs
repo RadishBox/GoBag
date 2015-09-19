@@ -52,13 +52,14 @@ public class Fire : ScenarioEffect {
 		}
 
 		// Check if player was not consumed by the flames of Hell
-		if((entity as PlayerEntity).Position.y == mapRow)
+		PlayerEntity player = entity as PlayerEntity;
+		if(player != null && player.Position.y == mapRow)
 		{
 			// Kill player
-            (entity as PlayerEntity).Kill(DeathSprite, DeathText);	
-            if(!(entity as PlayerEntity).Tips.Exists(x => (x.Id == tip.Id)))
+            player.Kill(DeathSprite, DeathText);	
+            if(!player.Tips.Exists(x => (x.Id == tip.Id)))
 	        {
-            	(entity as PlayerEntity).Tips.Add(tip);
+            	player.Tips.Add(tip);
         	}
 		}
 		

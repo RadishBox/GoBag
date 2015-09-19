@@ -4,16 +4,128 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"for	For"
+			],
+			[
+				"manage",
+				"ManageSavedGames"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"level",
+				"levelButton"
+			],
+			[
+				"GetCompon",
+				"GetComponent	type"
+			],
+			[
+				"levelb",
+				"levelButton"
+			],
+			[
+				"levelbut",
+				"LevelButtons"
+			],
+			[
+				"Level",
+				"LevelButtons"
+			],
+			[
+				"Find",
+				"FindGameObjectsWithTag	tag"
+			],
+			[
+				"Getc",
+				"GetComponentInChildren	type"
+			],
+			[
+				"GetCompo",
+				"GetComponent	type"
+			],
+			[
+				"m",
+				"MapTile"
+			],
+			[
+				"carro",
+				"carrouselItem"
+			],
+			[
+				"Next",
+				"NextButton"
+			],
+			[
+				"sprite",
+				"UseSprites"
+			],
+			[
+				"Tpoele",
+				"TipElementSolutionPrefab"
+			],
+			[
+				"Waterd",
+				"WaterDeathTip"
+			],
+			[
+				"health",
+				"HealthDeathTip"
+			],
+			[
+				"GetCo",
+				"GetComponentInChildren	type"
+			],
+			[
+				"Parent",
+				"TipsParent"
+			],
+			[
+				"Prefab",
+				"TipPrefab"
+			],
+			[
+				"Gameo",
+				"GameObject"
+			],
+			[
+				"Tips",
+				"Tips"
+			],
+			[
+				"Game",
+				"GameObject"
+			],
+			[
+				"Gameover",
+				"GameOverNextButton"
+			],
+			[
+				"butt",
+				"GameOverNextButton"
+			],
+			[
+				"volu",
+				"volumeMultiplier"
+			],
+			[
+				"tar",
+				"targetAudio"
+			],
+			[
+				"turnst",
+				"_turnsToHeal"
+			],
+			[
 				"Play",
 				"PlayDamageEffects"
 			],
 			[
 				"damage",
 				"DamageFlashColor"
-			],
-			[
-				"GetCompon",
-				"GetComponentsInChildren	type"
 			],
 			[
 				"Title",
@@ -56,24 +168,12 @@
 				"OnFire"
 			],
 			[
-				"tar",
-				"targetBarId"
-			],
-			[
 				"curre",
 				"_currentMovement"
 			],
 			[
 				"movement",
 				"_movementNumber"
-			],
-			[
-				"for",
-				"for	For"
-			],
-			[
-				"Game",
-				"GameLibraries"
 			],
 			[
 				"Load",
@@ -224,10 +324,6 @@
 				"selectedLevel"
 			],
 			[
-				"level",
-				"levelId"
-			],
-			[
 				"_",
 				"_icon"
 			],
@@ -336,10 +432,6 @@
 				"return"
 			],
 			[
-				"Getc",
-				"GetComponent	type"
-			],
-			[
 				"enti",
 				"entityGO"
 			],
@@ -350,10 +442,6 @@
 			[
 				"Gett",
 				"GetTile"
-			],
-			[
-				"GetCo",
-				"GetComponent	type"
 			],
 			[
 				"Transfor",
@@ -426,136 +514,64 @@
 			[
 				"defa",
 				"photoDefaultThumb"
-			],
-			[
-				"upds",
-				"updPhotosList"
-			],
-			[
-				"Sprit",
-				"SpriteLoader"
-			],
-			[
-				"Qute",
-				"QuoteButton"
-			],
-			[
-				"Elem",
-				"ElementColorModel"
-			],
-			[
-				"Qut",
-				"QuoteInformation"
-			],
-			[
-				"INVE",
-				"InventoryTableController"
-			],
-			[
-				"Fina",
-				"FINAL_QUERY"
-			],
-			[
-				"year",
-				"yearString"
-			],
-			[
-				"valu",
-				"valueList"
-			],
-			[
-				"model",
-				"model_year"
-			],
-			[
-				"Quote",
-				"QuoteInformation"
-			],
-			[
-				"Error",
-				"ErrorText"
-			],
-			[
-				"Em",
-				"InputEmail"
-			],
-			[
-				"Et",
-				"ETA"
-			],
-			[
-				"Date",
-				"DateTime"
-			],
-			[
-				"Quoe",
-				"QuoteInformation"
-			],
-			[
-				"Seta",
-				"SetArrowActive"
-			],
-			[
-				"Financ",
-				"FinancingPlan"
-			],
-			[
-				"term",
-				"termModel"
-			],
-			[
-				"fin",
-				"financing"
-			],
-			[
-				"financing",
-				"financingDao"
-			],
-			[
-				"finan",
-				"financingPlan"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/General/GameController.cs",
+			"file": "Assets/Scripts/General/LevelLibrary.cs",
 			"settings":
 			{
-				"buffer_size": 952,
+				"buffer_size": 1911,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/Scripts/CivilGuyController.cs",
+			"file": "Assets/Scripts/General/Level.cs",
 			"settings":
 			{
-				"buffer_size": 3418,
+				"buffer_size": 991,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/AudioManager.cs",
+			"file": "Assets/Scripts/GameSave.cs",
 			"settings":
 			{
-				"buffer_size": 2783,
+				"buffer_size": 275,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/SaveLoadUtil.cs",
+			"settings":
+			{
+				"buffer_size": 3523,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
+			"settings":
+			{
+				"buffer_size": 10506,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/BagPrepController.cs",
+			"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
 			"settings":
 			{
-				"buffer_size": 3576,
+				"buffer_size": 2663,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/ExploreGameController.cs",
+			"file": "Assets/Scripts/Explore/Fire.cs",
 			"settings":
 			{
-				"buffer_size": 5146,
+				"buffer_size": 1673,
 				"line_ending": "Windows"
 			}
 		}
@@ -633,17 +649,66 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SmokeEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/FireEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ImageCarrousel.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/StoryDragHandler.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryGameController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryLoadGame.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameController.cs",
+		"/E/Tec de Monterey/Semestre10/Tesina/Bathysphere/Assets/Scripts/SaveLoadUtil.cs",
+		"/E/Tec de Monterey/Semestre10/Tesina/Bathysphere/Assets/Scripts/GameSave.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CameraController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Cough.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
+		"/C/Users/Felipe/Desktop/GitHubLog.txt",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryGameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Fire.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Rain.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CarrouselItem.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/StoryDragHandler.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ImageCarrousel.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Bag.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Item.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DragHandler.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WaterBottle.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MovieTest.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Videos/Healing.mp4",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/UseDropArea.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CivilGuyController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/AudioManager.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/DeepPuddleEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PuddleEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Tip.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WetTowels.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Sanitizer.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tuna.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/StomachMedicine.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Toothbrush.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Bandaids.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Beans.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/ColdMedicine.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/DryFruit.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/ScenarioEffect.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Injury.cs",
+		"/C/Users/Felipe/Documents/Unity Projects/PaPierreRes/PaPierre/Build/Build.html",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SmokeEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryLoadGame.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Cough.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ItemInfoController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ItemUseInfoController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Plushie.cs",
@@ -652,66 +717,27 @@
 		"/C/Windows/SysWOW64/VirtualMIDISynth/VirtualMIDISynth.conf",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Book.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/VidyaConsole.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/UseDropArea.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/HelpDropArea.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridMove.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/RatAnimationController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Rain.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/DeepPuddleEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/AudioManager.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Item.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Scenario.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tennis.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CivilGuyController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WetTowels.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Beans.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/StomachMedicine.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/ColdMedicine.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Sanitizer.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WaterBottle.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tuna.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/SicknessLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PuddleEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Raincoat.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/RainBoots.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Mask.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Bandaids.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Sickness.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Toothbrush.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/DryFruit.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DirectionalButton.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ItemLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Util/MapGenerationUtil.cs",
 		"/C/Users/Felipe/Desktop/Sogne.txt",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/PabloControllerTest.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CarrouselItem.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Editor/SceneQuickAccess/SceneQuickAccess.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/SoundManager.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DragHandler.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/ScenarioEffect.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Bag.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/GeneralGUI.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Scenario.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Infection.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Dirty.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Stomachache.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Injury.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sickness.cs",
@@ -750,17 +776,7 @@
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Bag.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/BagGrid.cs",
 		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteInventory.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/InventoryController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Singleton/QuoteInformation.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteUnit.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/QuoteDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/InventoryTableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_Model/InventoryModel.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Singleton/UserInformation.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/OrderController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Database/_DAO/InventoryDAO.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Util/TableController.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/General/PaginatedTableController.cs"
+		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/InventoryController.cs"
 	],
 	"find":
 	{
@@ -779,6 +795,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"current",
+			"LockUnpassedLevels",
+			"Win",
+			"win",
+			"scenarioEffects",
+			"movement",
+			"enable",
+			"enable}",
+			"enable",
+			"DisableMoveButtons",
+			"deactivate",
+			"DisableMoveButtons",
+			"Win",
+			"WaterDeathText",
+			"NaturalDeathFX",
+			"instance",
+			"GameOverNextButton",
+			"animation",
+			"trigger",
+			"paused",
 			"addsick",
 			"spriterender",
 			"fx",
@@ -886,27 +922,7 @@
 			"LoadAllByNTList",
 			"QUERY_LOAD_BY_NT_LIST",
 			"exit",
-			"returned",
-			"loadquote",
-			"accept",
-			"acceptbut",
-			"ClearSearch",
-			"update",
-			"warning",
-			"format",
-			"parse",
-			"delivery",
-			"plann",
-			"listdiscount",
-			"eta",
-			"buttonhe",
-			"listdiscount",
-			"frominven",
-			"discount",
-			"QUERY_LOAD_MEDIA_BY_ITEM",
-			"LoadMediaByItem",
-			"skip",
-			"optionsLoaded"
+			"returned"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -924,30 +940,60 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/General/GameController.cs",
+					"file": "Assets/Scripts/General/LevelLibrary.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 952,
+						"buffer_size": 1911,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								204,
-								204
+								1822,
+								1822
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 784.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/General/Level.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								320,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -956,56 +1002,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Assets/Scripts/CivilGuyController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3418,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3415,
-								3415
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "Assets/Scripts/AudioManager.cs",
+					"file": "Assets/Scripts/GameSave.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2783,
+						"buffer_size": 275,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								516,
-								524
+								78,
+								78
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C#/C#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1015,48 +1030,46 @@
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/BagPrepController.cs",
+					"file": "Assets/Scripts/SaveLoadUtil.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3576,
+						"buffer_size": 3523,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1270,
-								1270
+								1279,
+								1249
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C#/C#.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 87.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/Scripts/ExploreGameController.cs",
+					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5146,
+						"buffer_size": 10506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								5599,
+								5610
 							]
 						],
 						"settings":
@@ -1066,7 +1079,62 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2702.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2542,
+								2542
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1260.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Scripts/Explore/Fire.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1673,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1633,
+								1633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1125,20 +1193,16 @@
 		"selected_items":
 		[
 			[
-				"explore",
-				"ExploreGameController.cs"
+				"fire",
+				"Explore\\Fire.cs"
 			],
 			[
-				"bagpre",
-				"BagPrepController.cs"
+				"title",
+				"TitleScreen\\TitleScreenController.cs"
 			],
 			[
-				"audioa",
-				"AudioManager.cs"
-			],
-			[
-				"civil",
-				"CivilGuyController.cs"
+				"playeren",
+				"MapEntities\\PlayerEntity.cs"
 			],
 			[
 				"game",
@@ -1149,20 +1213,248 @@
 				"General\\Level.cs"
 			],
 			[
+				"leve",
+				"General\\Level.cs"
+			],
+			[
+				"levell",
+				"General\\LevelLibrary.cs"
+			],
+			[
+				"storyga",
+				"StoryGameController.cs"
+			],
+			[
+				"firee",
+				"MapEntities\\FireEntity.cs"
+			],
+			[
+				"playerent",
+				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"explre",
+				"ExploreGameController.cs"
+			],
+			[
+				"rain",
+				"Explore\\Rain.cs"
+			],
+			[
+				"mapcon",
+				"MapController.cs"
+			],
+			[
+				"serp",
+				"MapEntities\\SerpentEntity.cs"
+			],
+			[
+				"item",
+				"CarrouselItem.cs"
+			],
+			[
+				"stro",
+				"StoryGameController.cs"
+			],
+			[
 				"drag",
 				"GUI\\StoryDragHandler.cs"
 			],
 			[
-				"storycon",
+				"water",
+				"Items\\WaterBottle.cs"
+			],
+			[
+				"scenariol",
+				"General\\ScenarioLibrary.cs"
+			],
+			[
+				"story",
 				"StoryGameController.cs"
 			],
 			[
-				"title",
+				"dragc",
+				"DragHandler.cs"
+			],
+			[
+				"use",
+				"UseDropArea.cs"
+			],
+			[
+				"civilg",
+				"CivilGuyController.cs"
+			],
+			[
+				"gamecon",
+				"General\\GameController.cs"
+			],
+			[
+				"titles",
 				"TitleScreen\\TitleScreenController.cs"
+			],
+			[
+				"explorega",
+				"ExploreGameController.cs"
+			],
+			[
+				"bagprep",
+				"BagPrepController.cs"
+			],
+			[
+				"gamecontr",
+				"General\\GameController.cs"
 			],
 			[
 				"player",
 				"MapEntities\\PlayerEntity.cs"
+			],
+			[
+				"gameconf",
+				"General\\GameConfiguration.cs"
+			],
+			[
+				"audio",
+				"AudioManager.cs"
+			],
+			[
+				"deepp",
+				"MapEntities\\DeepPuddleEntity.cs"
+			],
+			[
+				"garbage",
+				"MapEntities\\GarbageEntity.cs"
+			],
+			[
+				"rat",
+				"MapEntities\\RatEntity.cs"
+			],
+			[
+				"pudd",
+				"MapEntities\\PuddleEntity.cs"
+			],
+			[
+				"serpent",
+				"MapEntities\\SerpentEntity.cs"
+			],
+			[
+				"sick",
+				"Sicknesses\\Sickness.cs"
+			],
+			[
+				"mape",
+				"MapEntities\\MapEntity.cs"
+			],
+			[
+				"pudde",
+				"MapEntities\\PuddleEntity.cs"
+			],
+			[
+				"exploregui",
+				"GUI\\ExploreGUI.cs"
+			],
+			[
+				"wet",
+				"Items\\WetTowels.cs"
+			],
+			[
+				"san",
+				"Items\\Sanitizer.cs"
+			],
+			[
+				"tuna",
+				"Items\\Tuna.cs"
+			],
+			[
+				"stomac",
+				"Items\\StomachMedicine.cs"
+			],
+			[
+				"banda",
+				"Items\\Bandaids.cs"
+			],
+			[
+				"toot",
+				"Items\\Toothbrush.cs"
+			],
+			[
+				"coldme",
+				"Items\\ColdMedicine.cs"
+			],
+			[
+				"beans",
+				"Items\\Beans.cs"
+			],
+			[
+				"fruit",
+				"Items\\DryFruit.cs"
+			],
+			[
+				"bagpre",
+				"BagPrepController.cs"
+			],
+			[
+				"guiex",
+				"GUI\\ExploreGUI.cs"
+			],
+			[
+				"direc",
+				"DirectionalButton.cs"
+			],
+			[
+				"gam",
+				"General\\GameController.cs"
+			],
+			[
+				"explore",
+				"ExploreGameController.cs"
+			],
+			[
+				"gamec",
+				"General\\GameController.cs"
+			],
+			[
+				"audiom",
+				"AudioManager.cs"
+			],
+			[
+				"too",
+				"Items\\Toothbrush.cs"
+			],
+			[
+				"towe",
+				"Items\\WetTowels.cs"
+			],
+			[
+				"sant",
+				"Items\\Sanitizer.cs"
+			],
+			[
+				"band",
+				"Items\\Bandaids.cs"
+			],
+			[
+				"medi",
+				"Items\\StomachMedicine.cs"
+			],
+			[
+				"dr",
+				"Items\\DryFruit.cs"
+			],
+			[
+				"injur",
+				"Sicknesses\\Injury.cs"
+			],
+			[
+				"audioa",
+				"AudioManager.cs"
+			],
+			[
+				"civil",
+				"CivilGuyController.cs"
+			],
+			[
+				"storycon",
+				"StoryGameController.cs"
 			],
 			[
 				"cough",
@@ -1185,10 +1477,6 @@
 				"Items\\Book.cs"
 			],
 			[
-				"use",
-				"UseDropArea.cs"
-			],
-			[
 				"itemin",
 				"ItemInfoController.cs"
 			],
@@ -1205,60 +1493,24 @@
 				"MapEntities\\RatEntity.cs"
 			],
 			[
-				"rat",
-				"MapEntities\\RatAnimationController.cs"
-			],
-			[
 				"deep",
 				"MapEntities\\DeepPuddleEntity.cs"
-			],
-			[
-				"garbage",
-				"MapEntities\\GarbageEntity.cs"
 			],
 			[
 				"serpe",
 				"MapEntities\\SerpentEntity.cs"
 			],
 			[
-				"playerent",
-				"MapEntities\\PlayerEntity.cs"
-			],
-			[
 				"garba",
 				"MapEntities\\GarbageEntity.cs"
-			],
-			[
-				"story",
-				"StoryGameController.cs"
-			],
-			[
-				"audio",
-				"AudioManager.cs"
 			],
 			[
 				"fireen",
 				"MapEntities\\FireEntity.cs"
 			],
 			[
-				"scenariol",
-				"General\\ScenarioLibrary.cs"
-			],
-			[
-				"gamecon",
-				"General\\GameConfiguration.cs"
-			],
-			[
 				"ex",
 				"ExploreGameController.cs"
-			],
-			[
-				"rain",
-				"Explore\\Rain.cs"
-			],
-			[
-				"item",
-				"Item.cs"
 			],
 			[
 				"explo",
@@ -1285,18 +1537,6 @@
 				"MapTile.cs"
 			],
 			[
-				"towe",
-				"Items\\WetTowels.cs"
-			],
-			[
-				"san",
-				"Items\\Sanitizer.cs"
-			],
-			[
-				"water",
-				"Items\\WaterBottle.cs"
-			],
-			[
 				"boo",
 				"Items\\Book.cs"
 			],
@@ -1307,14 +1547,6 @@
 			[
 				"guita",
 				"Items\\Guitar.cs"
-			],
-			[
-				"tuna",
-				"Items\\Tuna.cs"
-			],
-			[
-				"pudde",
-				"MapEntities\\PuddleEntity.cs"
 			],
 			[
 				"puddle",
@@ -1341,20 +1573,8 @@
 				"Sicknesses\\SicknessLibrary.cs"
 			],
 			[
-				"sick",
-				"Sicknesses\\Sickness.cs"
-			],
-			[
-				"toot",
-				"Items\\Toothbrush.cs"
-			],
-			[
 				"dry",
 				"Items\\DryFruit.cs"
-			],
-			[
-				"beans",
-				"Items\\Beans.cs"
 			],
 			[
 				"dryfr",
@@ -1363,14 +1583,6 @@
 			[
 				"audoi",
 				"AudioManager.cs"
-			],
-			[
-				"direc",
-				"DirectionalButton.cs"
-			],
-			[
-				"gamec",
-				"General\\GameController.cs"
 			],
 			[
 				"directi",
@@ -1461,10 +1673,6 @@
 				"GridController.cs"
 			],
 			[
-				"bagprep",
-				"BagPrepController.cs"
-			],
-			[
 				"senariola",
 				"General\\ScenarioLibrary.cs"
 			],
@@ -1495,146 +1703,6 @@
 			[
 				"sickn",
 				"Sicknesses\\Sickness.cs"
-			],
-			[
-				"maptile",
-				"MapTile.cs"
-			],
-			[
-				"guic",
-				"GUI\\ExploreGUI.cs"
-			],
-			[
-				"anima",
-				"MapEntities\\EntityAnimationController.cs"
-			],
-			[
-				"move",
-				"GridMove.cs"
-			],
-			[
-				"plater",
-				"MapEntities\\PlayerAnimationController.cs"
-			],
-			[
-				"entit",
-				"MapEntities\\EntityAnimationController.cs"
-			],
-			[
-				"gridmo",
-				"GridMove.cs"
-			],
-			[
-				"mapen",
-				"MapEntities\\MapEntity.cs"
-			],
-			[
-				"serpent",
-				"Explore\\SerpentEntity.cs"
-			],
-			[
-				"mapgene",
-				"Util\\MapGenerationUtil.cs"
-			],
-			[
-				"maptil",
-				"MapTile.cs"
-			],
-			[
-				"mapcon",
-				"MapController.cs"
-			],
-			[
-				"mapco",
-				"MapController.cs"
-			],
-			[
-				"libra",
-				"General/ScenarioLibrary.cs"
-			],
-			[
-				"quoteinv",
-				"Main/Scene/Quote/QuoteInventory.cs"
-			],
-			[
-				"invent",
-				"Main/Scene/Inventory/InventoryController.cs"
-			],
-			[
-				"direct",
-				"Main/Scene/Information/DirectorioTableController.cs"
-			],
-			[
-				"tablecontrol",
-				"Main/Scene/Quote/QuoteTableController.cs"
-			],
-			[
-				"inven",
-				"Main/Scene/Inventory/InventoryTableController.cs"
-			],
-			[
-				"ganita",
-				"Main/Scene/General/PaginatedTableController.cs"
-			],
-			[
-				"table",
-				"Main/Util/TableController.cs"
-			],
-			[
-				"tablec",
-				"Main/Util/TableController.cs"
-			],
-			[
-				"orderc",
-				"Main/Scene/Inventory/OrderController.cs"
-			],
-			[
-				"orderta",
-				"Main/Scene/Inventory/OrderTableController.cs"
-			],
-			[
-				"quotein",
-				"Main/Singleton/QuoteInformation.cs"
-			],
-			[
-				"userin",
-				"Main/Singleton/UserInformation.cs"
-			],
-			[
-				"inventor",
-				"Main/Scene/Inventory/InventoryController.cs"
-			],
-			[
-				"inventoryta",
-				"Main/Scene/Inventory/InventoryTableController.cs"
-			],
-			[
-				"inventory",
-				"Main/Database/_DAO/InventoryDAO.cs"
-			],
-			[
-				"actua",
-				"Main/Scene/Update/ActualizacionController.cs"
-			],
-			[
-				"uiwarn",
-				"Main/UIScripts/UIWarningPopUp.cs"
-			],
-			[
-				"cot",
-				"Main/Scene/Quote/CotizadorController.cs"
-			],
-			[
-				"loginc",
-				"Main/Scene/Login/LoginController.cs"
-			],
-			[
-				"quoteop",
-				"Main/Scene/Quote/QuoteUnitOptions.cs"
-			],
-			[
-				"quotecolo",
-				"Main/Scene/Quote/QuoteUnitColorAndTapestry.cs"
 			]
 		],
 		"width": 0.0

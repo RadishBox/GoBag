@@ -20,13 +20,21 @@ public class TitleScreenController : MonoBehaviour
 	public GameObject AudioManagerPrefab;
 	public GameObject GameLibrariesPrefab;
 
+	public bool DebugMode = false;
+
+	// Levels 
+	public GameObject ClearedSpritePrefab;
+	public GameObject UnlockLevelAnimation;
+
 	void Awake()
 	{
+		
 	}
 
 	// Use this for initialization
 	void Start ()
 	{
+		ManageSavedGames();
 		if (!GameObject.FindWithTag("AudioManager"))
 		{
 			Instantiate(AudioManagerPrefab);
@@ -41,16 +49,21 @@ public class TitleScreenController : MonoBehaviour
 
 		TitleGraphic.DOAnchorPos(new Vector2(0, 100), 1).SetRelative(true).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
 
-		LockUnpassedLevels();
+		if (!DebugMode)
+		{
+			LockUnpassedLevels();
+		}
+		MarkClearedLevels();
+		MarkUnlockedLevels();
 		StageSelectionPanel.SetActive(false);
 	}
 
 	// Update is called once per frame
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape)) 
-		{ 
-			Application.Quit(); 
+		if (Input.GetKeyDown(KeyCode.Escape))
+		{
+			Application.Quit();
 		}
 	}
 
@@ -71,27 +84,80 @@ public class TitleScreenController : MonoBehaviour
 		AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
 	}
 
-	public void UnlockPassedLevels()
-	{
-
-	}
-
 	private void LockUnpassedLevels()
 	{
 		GameObject[] LevelButtons = GameObject.FindGameObjectsWithTag("LevelButton");
 		print(LevelButtons.Length);
 
 		Dictionary<int, Level> Levels = LevelLibrary.Instance.GetLevelsDictionary();
-		foreach (GameObject levelButton in LevelButtons) 
+		foreach (GameObject levelButton in LevelButtons)
 		{
 			int nameId = int.Parse(levelButton.name);
-			if(Levels.ContainsKey(nameId))
+			if (Levels.ContainsKey(nameId))
 			{
-				if(Levels[(nameId)].isLocked)
+				if (Levels[(nameId)].isLocked)
 				{
 					levelButton.GetComponent<Button>().interactable = false;
+					levelButton.GetComponent<CanvasGroup>().alpha = 0;
 				}
-			}			
+			}
+		}
+	}
+
+	private void MarkClearedLevels()
+	{
+		GameObject[] LevelButtons = GameObject.FindGameObjectsWithTag("LevelButton");
+
+		Dictionary<int, Level> Levels = LevelLibrary.Instance.GetLevelsDictionary();
+		foreach (GameObject levelButton in LevelButtons)
+		{
+			int nameId = int.Parse(levelButton.name);
+			if (Levels.ContainsKey(nameId))
+			{
+				if (Levels[(nameId)].IsClear)
+				{
+					GameObject ClearedSprite = Instantiate(ClearedSpritePrefab);
+					ClearedSprite.transform.SetParent(levelButton.transform, false);
+				}
+			}
+		}
+	}
+
+	private void MarkUnlockedLevels()
+	{
+		GameObject[] LevelButtons = GameObject.FindGameObjectsWithTag("LevelButton");
+
+		Dictionary<int, Level> Levels = LevelLibrary.Instance.GetLevelsDictionary();
+		foreach (GameObject levelButton in LevelButtons)
+		{
+			int nameId = int.Parse(levelButton.name);
+			if (Levels.ContainsKey(nameId))
+			{
+				if (!Levels[(nameId)].IsLocked && !Levels[(nameId)].IsTutorial && !Levels[(nameId)].IsClear)
+				{
+					GameObject ClearedAnim = Instantiate(UnlockLevelAnimation);
+					ClearedAnim.transform.SetParent(levelButton.transform, false);
+				}
+			}
+		}
+	}
+
+	/// <summary>
+	/// Manages loading a savefile if there is one or creating one if there is none
+	/// </summary>
+	private void ManageSavedGames()
+	{
+		if (SaveLoadUtil.LoadGameSave() != null)
+		{
+			// There is already a save file
+			print("Save at: "+Application.persistentDataPath);
+			LevelLibrary.Instance.LoadLibrary();
+		}
+		else
+		{
+			// It's a new save file
+			GameSave.Instance = new GameSave();
+			print("New save file!");
 		}
 	}
 }

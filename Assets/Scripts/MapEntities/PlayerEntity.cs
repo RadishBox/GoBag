@@ -210,9 +210,13 @@ public class PlayerEntity : MapEntity, IMovable {
     public void Win(Sprite winSprite, string winText)
     {
         DisableMoveButtons();
-        GameConfiguration.Instance.Level.IsClear = true;
+        //GameConfiguration.Instance.Level.IsClear = true;
+        LevelLibrary.Instance.ClearLevel(GameConfiguration.Instance.Level.Id);
+        GameSave.Instance.UnlockedLevels = LevelLibrary.Instance.GetUnlockedLevelIds();
+        GameSave.Instance.ClearedLevels = LevelLibrary.Instance.GetClearedLevelIds();
         ExploreGUI.Instance.StartGameOverSequence(winSprite, winText, CivilGuyState.Happy);
         AudioManager.Instance.Play(AudioManager.AudioType.FX, WinFX);
+        SaveLoadUtil.Save();
     }
 
     public int Health

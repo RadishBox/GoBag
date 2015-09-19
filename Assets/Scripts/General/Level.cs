@@ -13,9 +13,12 @@ public class Level {
     public bool IsTutorial;
 
     public bool isLocked = false;
+    [SerializeField]
     private bool _isClear = false;
 
     public ScenarioLibrary.ScenarioType scenario;
+
+    public int[] LevelsToUnlock;
 
     private Item[] _availableItems;
 
@@ -46,5 +49,11 @@ public class Level {
     {
         get { return _isClear; }
         set { _isClear = value; }
+    }
+
+    public bool IsLocked
+    {
+        get { return isLocked; }
+        set { isLocked = value; }
     }
 }
