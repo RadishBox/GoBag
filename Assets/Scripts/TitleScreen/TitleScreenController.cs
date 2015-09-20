@@ -12,6 +12,8 @@ public class TitleScreenController : MonoBehaviour
 
 	public GameObject StageSelectionPanel;
 	public RectTransform TitleGraphic;
+	public GameObject CreditsPanel;
+	private bool isCreditsPanelActive = false;
 
 	public AudioClip TitleBgMusic;
 	public AudioClip LevelButtonFX;
@@ -22,13 +24,13 @@ public class TitleScreenController : MonoBehaviour
 
 	public bool DebugMode = false;
 
-	// Levels 
+	// Levels
 	public GameObject ClearedSpritePrefab;
 	public GameObject UnlockLevelAnimation;
 
 	void Awake()
 	{
-		
+
 	}
 
 	// Use this for initialization
@@ -150,7 +152,7 @@ public class TitleScreenController : MonoBehaviour
 		if (SaveLoadUtil.LoadGameSave() != null)
 		{
 			// There is already a save file
-			print("Save at: "+Application.persistentDataPath);
+			print("Save at: " + Application.persistentDataPath);
 			LevelLibrary.Instance.LoadLibrary();
 		}
 		else
@@ -159,5 +161,21 @@ public class TitleScreenController : MonoBehaviour
 			GameSave.Instance = new GameSave();
 			print("New save file!");
 		}
+	}
+
+	public void TriggerCreditsPanel()
+	{
+		AudioManager.Instance.Play(AudioManager.AudioType.FX, LevelButtonFX);
+		if (!isCreditsPanelActive)
+		{
+			isCreditsPanelActive = true;
+			CreditsPanel.GetComponent<RectTransform>().DOAnchorPos(Vector2.zero, 0.5f).SetEase(Ease.InOutCirc);
+		}
+		else
+		{
+			isCreditsPanelActive = false;
+			CreditsPanel.GetComponent<RectTransform>().DOAnchorPos(new Vector2(1000, 0), 0.5f).SetEase(Ease.InOutCirc);
+		}
+
 	}
 }

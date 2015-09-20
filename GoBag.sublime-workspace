@@ -4,8 +4,68 @@
 		"selected_items":
 		[
 			[
+				"cred",
+				"isCreditsPanelActive"
+			],
+			[
+				"tar",
+				"Target"
+			],
+			[
+				"else",
+				"else	Else"
+			],
+			[
+				"Boun",
+				"BoundingLimits"
+			],
+			[
+				"Update",
+				"UpdatePosition"
+			],
+			[
+				"added",
+				"addedTilesLimit"
+			],
+			[
+				"adde",
+				"addedTilesLimit"
+			],
+			[
+				"Generate",
+				"GenerateRandomGrid"
+			],
+			[
+				"Genera",
+				"GenerateRandomGrid"
+			],
+			[
+				"Max",
+				"MaximumHeight"
+			],
+			[
+				"max",
+				"MaximumWidth"
+			],
+			[
+				"Unlo",
+				"UnlockLevelAnimation"
+			],
+			[
+				"Levels",
+				"LevelsDictionary"
+			],
+			[
 				"for",
-				"for	For"
+				"foreach	ForEach"
+			],
+			[
+				"Cleare",
+				"ClearedSprite"
+			],
+			[
+				"Leveli",
+				"LevelLibrary"
 			],
 			[
 				"manage",
@@ -110,10 +170,6 @@
 			[
 				"volu",
 				"volumeMultiplier"
-			],
-			[
-				"tar",
-				"targetAudio"
 			],
 			[
 				"turnst",
@@ -458,120 +514,40 @@
 			[
 				"num",
 				"numberToSpawn"
-			],
-			[
-				"Place",
-				"PlaceEntities"
-			],
-			[
-				"Mo",
-				"Moving"
-			],
-			[
-				"tur",
-				"turnStatus"
-			],
-			[
-				"INITI",
-				"Initialize"
-			],
-			[
-				"ORDE",
-				"orderTableController"
-			],
-			[
-				"ORDER",
-				"orderTableController"
-			],
-			[
-				"Initi",
-				"Initialized"
-			],
-			[
-				"Quer",
-				"QUERY_LOAD_ALL_BY_INVENTORY_TYPE_PAGINATED"
-			],
-			[
-				"Clear",
-				"ClearSearch"
-			],
-			[
-				"P",
-				"PublicPrice"
-			],
-			[
-				"Bo",
-				"BodyOptions"
-			],
-			[
-				"qu",
-				"QuoteInformation"
-			],
-			[
-				"Nt",
-				"NT"
-			],
-			[
-				"defa",
-				"photoDefaultThumb"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/Scripts/General/LevelLibrary.cs",
+			"file": "Assets/Scripts/CameraController.cs",
 			"settings":
 			{
-				"buffer_size": 1911,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/General/Level.cs",
-			"settings":
-			{
-				"buffer_size": 991,
+				"buffer_size": 1373,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/GameSave.cs",
+			"file": "Assets/Scripts/GUI/LoadWebsite.cs",
 			"settings":
 			{
-				"buffer_size": 275,
+				"buffer_size": 159,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/SaveLoadUtil.cs",
-			"settings":
-			{
-				"buffer_size": 3523,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-			"settings":
-			{
-				"buffer_size": 10506,
-				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
 			"settings":
 			{
-				"buffer_size": 2663,
+				"buffer_size": 4506,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/Scripts/Explore/Fire.cs",
+			"file": "Assets/Scripts/CivilGuyController.cs",
 			"settings":
 			{
-				"buffer_size": 1673,
+				"buffer_size": 6009,
 				"line_ending": "Windows"
 			}
 		}
@@ -649,39 +625,45 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGrid.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GameSave.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/SaveLoadUtil.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ImageCarrousel.cs",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
+		"/C/Users/Felipe/AppData/LocalLow/RadishBox/__Ponte Trucha_/PonteTruchaSave.gd",
+		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Fire.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/FireEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameController.cs",
 		"/E/Tec de Monterey/Semestre10/Tesina/Bathysphere/Assets/Scripts/SaveLoadUtil.cs",
 		"/E/Tec de Monterey/Semestre10/Tesina/Bathysphere/Assets/Scripts/GameSave.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CameraController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/TitleScreen/TitleScreenController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapTileUnit.cs",
 		"/C/Users/Felipe/Desktop/GitHubLog.txt",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/StoryGameController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ExploreGameController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Fire.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/Rain.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CarrouselItem.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/StoryDragHandler.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/ImageCarrousel.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Bag.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Item.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/ScenarioLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/DragHandler.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WaterBottle.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGridTile.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MovieTest.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Videos/Healing.mp4",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/UseDropArea.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/CivilGuyController.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagPrepController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/AudioManager.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Level.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/GameConfiguration.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/GarbageEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/DeepPuddleEntity.cs",
@@ -691,7 +673,6 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/Tip.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/ExploreGUI.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/MapEntity.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/LevelLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/WetTowels.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Sanitizer.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Items/Tuna.cs",
@@ -732,7 +713,6 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Editor/SceneQuickAccess/SceneQuickAccess.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/SoundManager.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/MapEntityLibrary.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GridController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/GUI/GeneralGUI.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Scenario.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sicknesses/Infection.cs",
@@ -741,7 +721,6 @@
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Explore/SerpentEntity.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/General/SicknessLibrary.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/Sickness.cs",
-		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/BagGrid.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/SerpentAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/EntityAnimationController.cs",
 		"/C/Users/Felipe/Documents/RadishBox/Games/GoBag/Assets/Scripts/MapEntities/PlayerAnimationController.cs",
@@ -773,10 +752,7 @@
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/EntityAnimationController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/ExploreGameController.cs",
 		"/Users/nikel/Documents/Felipe/GoBag/GoBag.sublime-project",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Bag.cs",
-		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/BagGrid.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Quote/QuoteInventory.cs",
-		"/Users/nikel/InWork/[MBMEX]VansBuilder/Assets/Scripts/Scene/Inventory/InventoryController.cs"
+		"/Users/nikel/Documents/Felipe/GoBag/Assets/Scripts/Bag.cs"
 	],
 	"find":
 	{
@@ -795,6 +771,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"do",
+			"Tiles",
+			"BaseHe",
+			"basehe",
+			"basewid",
+			"basehe",
+			"GenerateBaseGrid",
 			"current",
 			"LockUnpassedLevels",
 			"Win",
@@ -915,14 +898,7 @@
 			"active",
 			"loadfromfs",
 			"getselected",
-			"loadbynt",
-			"frominv",
-			"optiondao",
-			"LIKE",
-			"LoadAllByNTList",
-			"QUERY_LOAD_BY_NT_LIST",
-			"exit",
-			"returned"
+			"loadbynt"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -940,24 +916,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/Scripts/General/LevelLibrary.cs",
+					"file": "Assets/Scripts/CameraController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1911,
+						"buffer_size": 1373,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1822,
-								1822
+								825,
+								825
 							]
 						],
 						"settings":
@@ -967,33 +943,31 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 784.0,
+						"translation.y": 245.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/Scripts/General/Level.cs",
+					"file": "Assets/Scripts/GUI/LoadWebsite.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 991,
+						"buffer_size": 159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								320,
-								320
+								159,
+								159
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/C#/C#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1003,73 +977,47 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Assets/Scripts/GameSave.cs",
+					"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 275,
+						"buffer_size": 4506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
+								4384,
+								4384
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1932.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/Scripts/SaveLoadUtil.cs",
+					"file": "Assets/Scripts/CivilGuyController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3523,
+						"buffer_size": 6009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1279,
-								1249
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 87.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/Scripts/MapEntities/PlayerEntity.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10506,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5599,
-								5610
+								1427,
+								1363
 							]
 						],
 						"settings":
@@ -1079,62 +1027,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2702.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/Scripts/TitleScreen/TitleScreenController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2663,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2542,
-								2542
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1260.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Assets/Scripts/Explore/Fire.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1673,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1633,
-								1633
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 479.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1192,6 +1085,42 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"civilgu",
+				"CivilGuyController.cs"
+			],
+			[
+				"titles",
+				"TitleScreen\\TitleScreenController.cs"
+			],
+			[
+				"load",
+				"GUI\\LoadWebsite.cs"
+			],
+			[
+				"camera",
+				"CameraController.cs"
+			],
+			[
+				"bagtile",
+				"BagGridTile.cs"
+			],
+			[
+				"grid",
+				"GridController.cs"
+			],
+			[
+				"bagr",
+				"BagGrid.cs"
+			],
+			[
+				"bagprep",
+				"BagPrepController.cs"
+			],
+			[
+				"gamesa",
+				"GameSave.cs"
+			],
 			[
 				"fire",
 				"Explore\\Fire.cs"
@@ -1289,16 +1218,8 @@
 				"General\\GameController.cs"
 			],
 			[
-				"titles",
-				"TitleScreen\\TitleScreenController.cs"
-			],
-			[
 				"explorega",
 				"ExploreGameController.cs"
-			],
-			[
-				"bagprep",
-				"BagPrepController.cs"
 			],
 			[
 				"gamecontr",
@@ -1669,39 +1590,11 @@
 				"TitleScreen\\TitleScreenController.cs"
 			],
 			[
-				"grid",
-				"GridController.cs"
-			],
-			[
 				"senariola",
 				"General\\ScenarioLibrary.cs"
 			],
 			[
 				"sic",
-				"Sicknesses\\Sickness.cs"
-			],
-			[
-				"scena",
-				"Explore\\Scenario.cs"
-			],
-			[
-				"sickne",
-				"Sicknesses\\SicknessLibrary.cs"
-			],
-			[
-				"infec",
-				"Sicknesses\\Infection.cs"
-			],
-			[
-				"dir",
-				"Sicknesses\\Dirty.cs"
-			],
-			[
-				"gui",
-				"GUI\\ExploreGUI.cs"
-			],
-			[
-				"sickn",
 				"Sicknesses\\Sickness.cs"
 			]
 		],
