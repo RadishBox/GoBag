@@ -20,6 +20,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         BagPrepController.Instance.DraggedItem.SetSize(true);
         startPosition = transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
+        transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
