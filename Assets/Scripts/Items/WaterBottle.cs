@@ -7,7 +7,6 @@ public class WaterBottle : Item
     public int EffectValue;
     public PlayerBars TargetBar;
 
-    public int uses = 2;
     public Sprite[] UseSprites;
 
     protected override void Start()
@@ -24,6 +23,13 @@ public class WaterBottle : Item
         {
             (entity as PlayerEntity).AlterBar(EffectValue, TargetBar);
             uses--;
+        }
+
+        if(uses >= 1)
+        {
+            // If there are more uses of this item left
+            this.GetComponent<DragHandler>().AnimateBackToStartPosition(0.15f);
+            this.transform.Find("Unselected").GetComponent<Image>().sprite = UseSprites[0];
         }
     }
 
@@ -44,23 +50,18 @@ public class WaterBottle : Item
 
         yield return new WaitForSeconds(2.0f);
 
-        CompleteAnimation(0.15f);
+        CompleteAnimation();
     }
 
     void OnDisable()
     {
         if (hasAnimStarted)
         {
-            CompleteAnimation(0);
+            CompleteAnimation();
         }
     }
 
     public override void CompleteAnimation()
-    {
-        //CompleteAnimation(0.15f);
-    }
-
-    private void CompleteAnimation(float time)
     {
         // Despawn Animation
         Destroy(Animation.gameObject);
@@ -70,12 +71,6 @@ public class WaterBottle : Item
             // Destroy GameObject
             Destroy(this.gameObject);
         }
-        else
-        {
-            this.GetComponent<DragHandler>().AnimateBackToStartPosition(time);
-            this.transform.Find("Unselected").GetComponent<Image>().sprite = UseSprites[0];
-        }
-
 
         hasAnimStarted = false;
     }

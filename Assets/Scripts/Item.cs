@@ -23,6 +23,8 @@ public abstract class Item : MonoBehaviour {
 
     protected RectTransform _rectTrans;
 
+    public int uses = 1;
+
 
     protected bool _isInBag = false;
 
@@ -90,7 +92,21 @@ public abstract class Item : MonoBehaviour {
         }        
     }
 
+    public void BeginUsage(MapEntity entity)
+    {
+        // Item usage "destruction"
+        if(uses == 1)
+        {
+            // If is last usage
+            this.GetComponent<CanvasGroup>().alpha = 0;
+        }
+
+        Use(entity);
+    }
+
     public abstract void Use(MapEntity entity);
+
+
 
     public void SetSize(bool isRealSize)
     {

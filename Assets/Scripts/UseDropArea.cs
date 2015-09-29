@@ -25,7 +25,7 @@ public class UseDropArea : DropArea {
             // UnblockRaycasts from this item
             currentItem.GetComponent<CanvasGroup>().blocksRaycasts = false;
 
-            currentItem.Use(PlayerEntity.Instance);
+            currentItem.BeginUsage(PlayerEntity.Instance);
 
             // Remove item from bag
             if (currentItem.InBag)
