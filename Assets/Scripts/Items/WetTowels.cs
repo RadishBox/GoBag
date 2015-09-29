@@ -9,8 +9,6 @@ public class WetTowels : Item
 
     public SicknessType[] SicknessCures;
 
-    private bool hasAnimStarted = false;
-
     protected override void Start()
     {
         base.Start();
@@ -70,16 +68,5 @@ public class WetTowels : Item
         {            
             CompleteAnimation();  
         }
-    }
-
-    private void CompleteAnimation()
-    {
-        // Despawn Animation
-        Destroy(Animation.gameObject);
-
-        // Destroy GameObject
-        Destroy(this.gameObject);
-        
-        hasAnimStarted = false;     
     }
 }

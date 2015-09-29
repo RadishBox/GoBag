@@ -108,10 +108,15 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 				// Check if next is movie if it is, play it
 				if (storyGameController.storyElementGroup.items[childIterator].isVideo)
 				{
-					storyGameController.storyElementGroup.PlayVideoFromItem(childIterator);
+					//PlayMovieRoutine();
 				}
-			}			
+			}
 		}
+	}
+
+	private void PlayMovieRoutine()
+	{
+		storyGameController.storyElementGroup.PlayVideoFromItem(childIterator);
 	}
 
 	public void Previous()

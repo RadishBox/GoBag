@@ -5,20 +5,32 @@ using UnityEngine.UI;
 
 public class UseDropArea : DropArea {
 
+    private Item currentItem;
+
     public override void OnDrop(PointerEventData eventData)
     {
         if (BagPrepController.Instance.DraggedItem)
         {
-            print("its ondrop");
-            // TO DO: Delete item
-            DeselectArea();
-            // Free space in grid
-            Item draggedItem = BagPrepController.Instance.DraggedItem;
-            draggedItem.Use(PlayerEntity.Instance);
-
-            if (draggedItem.InBag)
+            if(currentItem != null)
             {
-                BagPrepController.Instance.BagGrid.ClearItem(draggedItem);
+                currentItem.CompleteAnimation();
+            }
+            print("its ondrop");
+            // Item is deleted after usage has been processed and handled by the item itself
+            DeselectArea();
+
+            // Free space in grid
+            currentItem = BagPrepController.Instance.DraggedItem;
+
+            // UnblockRaycasts from this item
+            currentItem.GetComponent<CanvasGroup>().blocksRaycasts = false;
+
+            currentItem.Use(PlayerEntity.Instance);
+
+            // Remove item from bag
+            if (currentItem.InBag)
+            {
+                BagPrepController.Instance.BagGrid.ClearItem(currentItem);
             }            
         }
     }

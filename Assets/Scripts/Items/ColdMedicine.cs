@@ -7,7 +7,6 @@ public class ColdMedicine : Item {
 	public BarValue[] BarEffects;
 
 	public SicknessType[] SicknessCures;
-    private bool hasAnimStarted = false;
 
     protected override void Start()
     {
@@ -67,16 +66,5 @@ public class ColdMedicine : Item {
         {            
             CompleteAnimation();  
         }
-    }
-
-    private void CompleteAnimation()
-    {
-        // Despawn Animation
-        Destroy(Animation.gameObject);
-
-        // Destroy GameObject
-        Destroy(this.gameObject);
-        
-        hasAnimStarted = false;     
     }
 }

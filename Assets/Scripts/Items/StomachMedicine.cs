@@ -8,8 +8,6 @@ public class StomachMedicine : Item {
 
 	public SicknessType[] SicknessCures;
 
-    private bool hasAnimStarted = false;
-
     protected override void Start()
     {
         base.Start();
@@ -68,16 +66,5 @@ public class StomachMedicine : Item {
         {            
             CompleteAnimation();  
         }
-    }
-
-    private void CompleteAnimation()
-    {
-        // Despawn Animation
-        Destroy(Animation.gameObject);
-
-        // Destroy GameObject
-        Destroy(this.gameObject);
-        
-        hasAnimStarted = false;     
     }
 }

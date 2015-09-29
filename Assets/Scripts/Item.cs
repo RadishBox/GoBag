@@ -35,6 +35,8 @@ public abstract class Item : MonoBehaviour {
     protected bool isBeingUsed = false;
     protected GameObject Animation;
 
+    protected bool hasAnimStarted = false;
+
     protected virtual void Awake()
     {
         _rectTrans = GetComponent<RectTransform>();
@@ -122,6 +124,17 @@ public abstract class Item : MonoBehaviour {
             RectTrans.sizeDelta = new Vector2(imageRect.rect.width,imageRect.rect.height);
         }
         
+    }
+
+    public virtual void CompleteAnimation()
+    {
+        // Despawn Animation
+        Destroy(Animation.gameObject);
+
+        // Destroy GameObject
+        Destroy(this.gameObject);
+        
+        hasAnimStarted = false;     
     }
 
     public int Id

@@ -7,8 +7,6 @@ public class Tuna : Item {
 	public int EffectValue;
 	public PlayerBars TargetBar;
 
-    private bool hasAnimStarted = false;
-
     protected override void Start()
     {
         base.Start();
@@ -51,16 +49,5 @@ public class Tuna : Item {
         {            
             CompleteAnimation();  
         }
-    }
-
-    private void CompleteAnimation()
-    {
-        // Despawn Animation
-        Destroy(Animation.gameObject);
-
-        // Destroy GameObject
-        Destroy(this.gameObject);
-        
-        hasAnimStarted = false;     
     }
 }

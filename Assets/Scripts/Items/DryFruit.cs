@@ -6,8 +6,6 @@ public class DryFruit : Item {
 
     public BarValue[] BarEffects;
 
-    private bool hasAnimStarted = false;
-
     protected override void Start()
     {
         base.Start();
@@ -55,14 +53,5 @@ public class DryFruit : Item {
         }
     }
 
-    private void CompleteAnimation()
-    {
-        // Despawn Animation
-        Destroy(Animation.gameObject);
-
-        // Destroy GameObject
-        Destroy(this.gameObject);
-        
-        hasAnimStarted = false;     
-    }
+    
 }

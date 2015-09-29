@@ -11,6 +11,7 @@ GameObject:
   - 222: {fileID: 22226176}
   - 114: {fileID: 11402000}
   - 95: {fileID: 9518454}
+  - 225: {fileID: 22594102}
   m_Layer: 5
   m_Name: CanvasItemAnimation
   m_TagString: Untagged
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Sprite: {fileID: 21300022, guid: 986f89136c27aad4c95c92d0804e255e, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -79,6 +80,17 @@ RectTransform:
   m_AnchoredPosition: {x: -13, y: -13}
   m_SizeDelta: {x: 707, y: 212}
   m_Pivot: {x: 1, y: 1}
+--- !u!225 &22594102
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149786}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -88,6 +100,10 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

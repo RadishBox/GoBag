@@ -32,6 +32,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         if (!BagPrepController.Instance.IsInDropArea) // if not valid drop area
         {
             AnimateBackToStartPosition(0.15f);
+            print("Not on valid drop area, reset item position");
         }
         else // if is in valid drop area
         {
@@ -66,16 +67,19 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     private void CompleteBackAnim()
     {
-        if (BagPrepController.Instance.DraggedItem.InBag) // If item is in bag already
+        if(BagPrepController.Instance.DraggedItem)
         {
-            BagPrepController.Instance.DraggedItem = null;
-            GetComponent<CanvasGroup>().blocksRaycasts = true; 
-        }
-        else // Item is not in bag
-        {
-            BagPrepController.Instance.DraggedItem = null;
-            BagPrepController.Instance.SpawnNewSelectedItem(); // Spawn new one
-            Destroy(gameObject); // Destroy this object
-        }
+            if (BagPrepController.Instance.DraggedItem.InBag) // If item is in bag already
+            {
+                BagPrepController.Instance.DraggedItem = null;
+                GetComponent<CanvasGroup>().blocksRaycasts = true; 
+            }
+            else // Item is not in bag
+            {
+                BagPrepController.Instance.DraggedItem = null;
+                BagPrepController.Instance.SpawnNewSelectedItem(); // Spawn new one
+                Destroy(gameObject); // Destroy this object
+            } 
+        }        
     }
 }

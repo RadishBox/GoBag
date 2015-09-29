@@ -10,8 +10,6 @@ public class WaterBottle : Item
     public int uses = 2;
     public Sprite[] UseSprites;
 
-    private bool hasAnimStarted = false;
-
     protected override void Start()
     {
         base.Start();
@@ -55,6 +53,11 @@ public class WaterBottle : Item
         {
             CompleteAnimation(0);
         }
+    }
+
+    public override void CompleteAnimation()
+    {
+        //CompleteAnimation(0.15f);
     }
 
     private void CompleteAnimation(float time)
