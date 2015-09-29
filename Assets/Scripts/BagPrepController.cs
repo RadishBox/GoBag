@@ -24,6 +24,9 @@ public class BagPrepController : MonoBehaviour
     // Civil Guy Group
     public CivilGuyController civilGuyController;
 
+    // DragArea Group
+    public DragAreaSlide DragAreaGroupSlider;
+
     public GameObject ReadyButton;
     public GameObject DeleteArea;
     public GameObject UseArea;

@@ -14,7 +14,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        
+        BagPrepController.Instance.DragAreaGroupSlider.Slide(true);
         BagPrepController.Instance.DraggedItem = this.GetComponent<Item>();
         // Set correct size
         BagPrepController.Instance.DraggedItem.SetSize(true);
@@ -39,6 +39,8 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             // handled by drop event            
         }
+
+        BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
     }
 
     public void AnimateBackToStartPosition(float time)
