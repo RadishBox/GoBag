@@ -91,6 +91,38 @@ public class MapController : MonoBehaviour
         return tiles;        
     }
 
+    // Path finding algorithm
+
+    /// <summary>Will return a set of tiles that make a path from one tile to another.</summary>
+    public List<MapTile> GetPath(MapTile from, MapTile to)
+    { 
+
+    }
+
+    /// <summary>The frontier of a tile is all tiles around it.</summary>
+    private List<MapTile> GetFrontier(MapTile tile)
+    {
+        List<MapTile> frontier = new List<MapTile>();
+        
+        // Up
+        if(GetTile(tile.Position + Vector2.up))
+        {
+            
+        }
+
+        // Down
+
+
+        // Left
+
+
+        // Right
+
+
+    }
+
+
+
     #region Properties
 
     public int Width
