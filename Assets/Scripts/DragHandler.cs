@@ -40,8 +40,7 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             // handled by drop event            
         }
-
-        
+        BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
     }
 
     public void AnimateBackToStartPosition(float time)
