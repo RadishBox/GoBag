@@ -28,8 +28,8 @@ public class ItemInfoController : MonoBehaviour {
     IEnumerator HideGroupRoutine()
     {
         canvasGroup.DOFade(0, AnimationDuration);
-        yield return new WaitForSeconds(AnimationDuration);
         canvasGroup.blocksRaycasts = false;
+        yield return null;
     }
 
     public void ShowItemInfoGroup(Item item)

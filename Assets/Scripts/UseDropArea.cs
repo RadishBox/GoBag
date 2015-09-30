@@ -11,6 +11,7 @@ public class UseDropArea : DropArea {
     {
         if (BagPrepController.Instance.DraggedItem)
         {
+            BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
             if(currentItem != null)
             {
                 currentItem.CompleteAnimation();
@@ -31,7 +32,7 @@ public class UseDropArea : DropArea {
             if (currentItem.InBag)
             {
                 BagPrepController.Instance.BagGrid.ClearItem(currentItem);
-            }            
+            }  
         }
     }
 }
