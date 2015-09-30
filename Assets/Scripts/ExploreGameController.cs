@@ -43,6 +43,9 @@ public class ExploreGameController : MonoBehaviour
         Player = Instantiate(Player);
         Player.transform.SetParent(Map.transform);
         Player.GetComponent<PlayerEntity>().Position = Player.transform.localPosition;
+        MapTile targetTile = MapController.Instance.GetTile(Player.GetComponent<PlayerEntity>().Position);
+        targetTile.EntityInTile = Player.GetComponent<MapEntity>();
+
 
         // Set camera target
         MainCamera.GetComponent<CameraController>().Target = Player.transform;

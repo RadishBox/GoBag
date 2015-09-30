@@ -68,7 +68,7 @@ public class MapController : MonoBehaviour
 
             tile = GetTile(targetCoords);
 
-            if (tile.Passable && !tile.Occupied)
+            if (tile.Passable && !tile.Occupied && !tile.IsObjective) // Tile cant be an objective tile
             {
                 validTile = true;
             }

@@ -34,13 +34,14 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         {
             AnimateBackToStartPosition(0.15f);
             print("Not on valid drop area, reset item position");
+            BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
         }
         else // if is in valid drop area
         {
             // handled by drop event            
         }
 
-        BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
+        
     }
 
     public void AnimateBackToStartPosition(float time)
