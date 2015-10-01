@@ -52,6 +52,8 @@ public class ExploreGameController : MonoBehaviour
 
         // Place objective
 
+        MapController.Instance.GetPath(MapController.Instance.GetTile(Player.transform.localPosition), MapController.Instance.GetTile(new Vector2(0, 10)));
+
         // Place entities
         entities = new List<MapEntity>();
         PlaceEntities();

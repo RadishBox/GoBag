@@ -1,13 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class MapTile : MonoBehaviour
+public class MapTile : MonoBehaviour, IComparable<MapTile>
 {
 
     private Vector2 _canvasDisplacement;
     private Vector2 posInCanvasGrid;
     [SerializeField]
     private MapEntity _entityInTile;
+
+    // For pathsearching purposes
+    private float _priority; 
 
 
     public void FormatToGameTile()
@@ -66,6 +70,14 @@ public class MapTile : MonoBehaviour
 
     }
 
+    public int CompareTo(MapTile other)
+    {
+        // If other is not a valid object reference, this instance is greater. 
+        if (other == null) return 1;
+
+        return Priority.CompareTo(other.Priority);
+    }
+
     public Vector2 CanvasDisplacement
     {
         get { return _canvasDisplacement; }
@@ -110,6 +122,16 @@ public class MapTile : MonoBehaviour
         get { return EntityInTile.GetType() == typeof(PlayerEntity);  }
     }
 
+    public Vector2 Position
+    {
+        get
+        {
+            string[] posString = this.gameObject.name.Split(new Char[]{','});
+            Vector2 pos = new Vector2(float.Parse(posString[0]), float.Parse(posString[1]));
+            return pos;
+        }
+    }
+
     public bool IsObjective
     {
         get
@@ -124,5 +146,11 @@ public class MapTile : MonoBehaviour
             }
             return false;
         }
+    }
+
+    public float Priority
+    {
+        get { return _priority; }
+        set { _priority = value; }
     }
 }

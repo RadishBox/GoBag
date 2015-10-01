@@ -94,31 +94,94 @@ public class MapController : MonoBehaviour
     // Path finding algorithm
 
     /// <summary>Will return a set of tiles that make a path from one tile to another.</summary>
-    public List<MapTile> GetPath(MapTile from, MapTile to)
+    public List<MapTile> GetPath(MapTile fromTile, MapTile toTile)
     { 
+    	List<MapTile> pathTiles = new List<MapTile>();
+    	List<MapTile> frontier = new List<MapTile>();
+    	Dictionary<string, MapTile> CameFrom = new Dictionary<string, MapTile>();
+    	Dictionary<string, float> CostSoFar = new Dictionary<string, float>();
 
+    	fromTile.Priority = 0;
+    	frontier.Add(fromTile);
+    	CameFrom.Add(fromTile.name, null);
+    	CostSoFar.Add(fromTile.name, 0);
+
+    	MapTile current = null;
+
+    	while(frontier.Count > 0)
+    	{
+    		frontier.Sort();
+    		current = frontier[0]; // Get first element in list
+    		frontier.RemoveAt(0);
+
+    		// Check if current is goal
+    		if(current.Position == toTile.Position)
+    			break;
+
+    		// Iterate through each neighbor in current
+    		foreach (MapTile next in GetNeighbors(current)) 
+    		{
+    			float newCost = CostSoFar[current.name] + DistanceBetweenTiles(current, next);
+    			if((!CostSoFar.ContainsKey(next.name)) || newCost < CostSoFar[next.name] ) 
+    			{
+    				CostSoFar.Add(next.name, newCost);
+    				float priority = newCost + DistanceBetweenTiles(toTile, next);
+    				next.Priority = priority;
+    				frontier.Add(next);
+    				CameFrom.Add(next.name, current);
+    			}
+    		}
+    	}
+
+    	// Get path taken
+    	print(current.Position);
+
+    	return pathTiles;
     }
 
-    /// <summary>The frontier of a tile is all tiles around it.</summary>
-    private List<MapTile> GetFrontier(MapTile tile)
+    private float Heuristic(MapTile fromTile, MapTile toTile)
     {
-        List<MapTile> frontier = new List<MapTile>();
+
+    	return 0;
+    }
+
+    private float DistanceBetweenTiles(MapTile fromTile, MapTile toTile)
+    {
+    	return Mathf.Abs(Vector2.Distance(fromTile.Position, toTile.Position));
+    }
+
+    /// <summary>The neighbors of a tile is all tiles around it.</summary>
+    private List<MapTile> GetNeighbors(MapTile fromTile)
+    {
+        List<MapTile> neighbors = new List<MapTile>();
         
         // Up
-        if(GetTile(tile.Position + Vector2.up))
-        {
-            
-        }
+        MapTile tile;
+        tile = GetTile(fromTile.Position + Vector2.up);
+        if(tile)
+            neighbors.Add(tile);
 
         // Down
-
+        tile = GetTile(fromTile.Position + Vector2.down);
+        if(tile)
+            neighbors.Add(tile);
 
         // Left
-
+        tile = GetTile(fromTile.Position + Vector2.left);
+        if(tile)
+            neighbors.Add(tile);
 
         // Right
+        tile = GetTile(fromTile.Position + Vector2.right);
+        if(tile)
+            neighbors.Add(tile);
 
+        return neighbors;
+    }
 
+    private float Heuristic(MapTile tile)
+    {
+    	return 0;
     }
 
 
