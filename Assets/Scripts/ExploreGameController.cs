@@ -46,13 +46,12 @@ public class ExploreGameController : MonoBehaviour
         MapTile targetTile = MapController.Instance.GetTile(Player.GetComponent<PlayerEntity>().Position);
         targetTile.EntityInTile = Player.GetComponent<MapEntity>();
 
-
         // Set camera target
         MainCamera.GetComponent<CameraController>().Target = Player.transform;
 
         // Place objective
 
-        MapController.Instance.GetPath(MapController.Instance.GetTile(Player.transform.localPosition), MapController.Instance.GetTile(new Vector2(0, 10)));
+        MapController.Instance.GetPath(MapController.Instance.GetTile(Player.transform.localPosition), MapController.Instance.GetObjectiveTile());
 
         // Place entities
         entities = new List<MapEntity>();

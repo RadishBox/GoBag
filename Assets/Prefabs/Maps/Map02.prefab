@@ -8271,6 +8271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11400638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8283,6 +8284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8298,6 +8300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11401120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8310,6 +8313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8326,6 +8330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8341,6 +8346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11402398
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8352,6 +8358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11402422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8363,6 +8370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11402478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8375,6 +8383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8390,6 +8399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11403590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8401,6 +8411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11403596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8413,6 +8424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8428,6 +8440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11403972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8439,6 +8452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11403998
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8451,6 +8465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8467,6 +8482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8483,6 +8499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8498,6 +8515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11404974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8510,6 +8528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8525,6 +8544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11405898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8537,6 +8557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8552,6 +8573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11405966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8564,6 +8586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8579,6 +8602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11406638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8590,6 +8614,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11406798
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8601,6 +8626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11407078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8613,6 +8639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8629,6 +8656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8645,6 +8673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8661,6 +8690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8676,6 +8706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11408524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8687,6 +8718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11408698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8699,6 +8731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8715,6 +8748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8730,6 +8764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11409762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8742,6 +8777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8757,6 +8793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11410124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8768,6 +8805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11410166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8779,6 +8817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11410366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8791,6 +8830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8806,6 +8846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11410794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8817,6 +8858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11410808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8829,6 +8871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8844,6 +8887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11411306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8855,6 +8899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11412184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8866,6 +8911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11412214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8877,6 +8923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11412896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8889,6 +8936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8904,6 +8952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11413106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8916,6 +8965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8932,6 +8982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8947,6 +8998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11413626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8959,6 +9011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8975,6 +9028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -8991,6 +9045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9007,6 +9062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9023,6 +9079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9039,6 +9096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9055,6 +9113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9071,6 +9130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9086,6 +9146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11416614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9097,6 +9158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11416742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9109,6 +9171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9125,6 +9188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9141,6 +9205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9157,6 +9222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9172,6 +9238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11418282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9183,6 +9250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11419182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9194,6 +9262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11419262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9205,6 +9274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11419324
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9217,6 +9287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9233,6 +9304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9249,6 +9321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9264,6 +9337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11420142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9276,6 +9350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9291,6 +9366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11420598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9302,6 +9378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11420802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9313,6 +9390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11421164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9324,6 +9402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11421290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9335,6 +9414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11422548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9346,6 +9426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11422988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9358,6 +9439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9374,6 +9456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9390,6 +9473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9406,6 +9490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9422,6 +9507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9438,6 +9524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9453,6 +9540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11426246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9465,6 +9553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9480,6 +9569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11427694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9491,6 +9581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11428364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9502,6 +9593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11428730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9514,6 +9606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9530,6 +9623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9546,6 +9640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9561,6 +9656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11431050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9573,6 +9669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9588,6 +9685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11431314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9600,6 +9698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9616,6 +9715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9632,6 +9732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9647,6 +9748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11433072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9659,6 +9761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9674,6 +9777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11433460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9686,6 +9790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9702,6 +9807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9717,6 +9823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11433954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9729,6 +9836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9745,6 +9853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9761,6 +9870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9776,6 +9886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11435252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9787,6 +9898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11435278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9799,6 +9911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9815,6 +9928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9830,6 +9944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11436062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9841,6 +9956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11436814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9852,6 +9968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11436874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9863,6 +9980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11437114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9874,6 +9992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11437486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9885,6 +10004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11437610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9896,6 +10016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11437952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9908,6 +10029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9923,6 +10045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11439036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9934,6 +10057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11439070
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9946,6 +10070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9962,6 +10087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9978,6 +10104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -9993,6 +10120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11440214
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10004,6 +10132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11440484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10015,6 +10144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d53b0427f6a141438a94860fc671961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _height: 0
+  _width: 0
+  PathVisualizerPrefab: {fileID: 141112, guid: 35f56ae70e6131c4cbedda9765aa4c48, type: 2}
 --- !u!114 &11440506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10027,6 +10159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10042,6 +10175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11441142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10053,6 +10187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11442828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10065,6 +10200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10080,6 +10216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11443076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10091,6 +10228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11443540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10102,6 +10240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11443696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10114,6 +10253,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10130,6 +10270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10145,6 +10286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11444272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10156,6 +10298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11444778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10168,6 +10311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10183,6 +10327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11445050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10194,6 +10339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11445820
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10206,6 +10352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10221,6 +10368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11445922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10233,6 +10381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10248,6 +10397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11446632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10260,6 +10410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10276,6 +10427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10291,6 +10443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11447492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10303,6 +10456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10318,6 +10472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11447856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10330,6 +10485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10346,6 +10502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10361,6 +10518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11448766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10373,6 +10531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10389,6 +10548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10405,6 +10565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10420,6 +10581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11449504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10431,6 +10593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11451182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10442,6 +10605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11451216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10453,6 +10617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11452782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10464,6 +10629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11453548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10475,6 +10641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11453956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10486,6 +10653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11454350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10498,6 +10666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10513,6 +10682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11454758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10524,6 +10694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11454844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10535,6 +10706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11455236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10546,6 +10718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11456086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10557,6 +10730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11457054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10569,6 +10743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10585,6 +10760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10601,6 +10777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10617,6 +10794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10633,6 +10811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10649,6 +10828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10664,6 +10844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11460270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10675,6 +10856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11460752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10686,6 +10868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11460840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10698,6 +10881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10714,6 +10898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10729,6 +10914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11463702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10740,6 +10926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11464944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10751,6 +10938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11465358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10763,6 +10951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10778,6 +10967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11465792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10790,6 +10980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10806,6 +10997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10821,6 +11013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11466384
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10833,6 +11026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10849,6 +11043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10865,6 +11060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10880,6 +11076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11468608
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10892,6 +11089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10908,6 +11106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10924,6 +11123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10939,6 +11139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11469996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10950,6 +11151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11470032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10962,6 +11164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10978,6 +11181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -10993,6 +11197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11470462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11004,6 +11209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11470930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11016,6 +11222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11032,6 +11239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11047,6 +11255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11472280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11059,6 +11268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11074,6 +11284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11474482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11085,6 +11296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11475808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11097,6 +11309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11112,6 +11325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11476548
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11123,6 +11337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11477582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11135,6 +11350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11150,6 +11366,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11477918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11162,6 +11379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11178,6 +11396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11194,6 +11413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11210,6 +11430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11226,6 +11447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11241,6 +11463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11480664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11253,6 +11476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11269,6 +11493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11285,6 +11510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11301,6 +11527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11317,6 +11544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11333,6 +11561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11348,6 +11577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11483620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11359,6 +11589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11484228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11371,6 +11602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11386,6 +11618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11486096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11397,6 +11630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11486308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11409,6 +11643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11424,6 +11659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11486924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11436,6 +11672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11451,6 +11688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11487258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11462,6 +11700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11487762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11473,6 +11712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11488580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11484,6 +11724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11488582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11496,6 +11737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11512,6 +11754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11527,6 +11770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11489408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11539,6 +11783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11555,6 +11800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11571,6 +11817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11587,6 +11834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11603,6 +11851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11618,6 +11867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11491272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11629,6 +11879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11491630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11641,6 +11892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11656,6 +11908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11491832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11668,6 +11921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11684,6 +11938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11699,6 +11954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11492886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11710,6 +11966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11493040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11722,6 +11979,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11737,6 +11995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11494648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11748,6 +12007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11495044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11759,6 +12019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11495354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11770,6 +12031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11495630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11782,6 +12044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11797,6 +12060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11496484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11808,6 +12072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11496582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11820,6 +12085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11836,6 +12102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11851,6 +12118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11496994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11863,6 +12131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11879,6 +12148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11895,6 +12165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11911,6 +12182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 0
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11927,6 +12199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11943,6 +12216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11958,6 +12232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11498784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11969,6 +12244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11498860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11981,6 +12257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -11996,6 +12273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!114 &11499414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12008,6 +12286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -12024,6 +12303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _passable: 1
+  _isObjective: 0
   UpPass: 1
   RightPass: 1
   DownPass: 1
@@ -12039,6 +12319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e385c7d488dcfb747b4b94cae864c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _entityInTile: {fileID: 0}
 --- !u!212 &21200336
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -15737,7 +16018,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: PathVisualizerPrefab
+      value: 
+      objectReference: {fileID: 141112, guid: 35f56ae70e6131c4cbedda9765aa4c48, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138894}

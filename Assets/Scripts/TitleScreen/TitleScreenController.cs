@@ -89,7 +89,6 @@ public class TitleScreenController : MonoBehaviour
 	private void LockUnpassedLevels()
 	{
 		GameObject[] LevelButtons = GameObject.FindGameObjectsWithTag("LevelButton");
-		print(LevelButtons.Length);
 
 		Dictionary<int, Level> Levels = LevelLibrary.Instance.GetLevelsDictionary();
 		foreach (GameObject levelButton in LevelButtons)

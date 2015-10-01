@@ -24737,6 +24737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _height: 40
   _width: 8
+  PathVisualizerPrefab: {fileID: 141112, guid: 35f56ae70e6131c4cbedda9765aa4c48, type: 2}
 --- !u!114 &11404012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -49403,7 +49404,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: PathVisualizerPrefab
+      value: 
+      objectReference: {fileID: 141112, guid: 35f56ae70e6131c4cbedda9765aa4c48, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114170}

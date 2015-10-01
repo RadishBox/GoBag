@@ -8,198 +8,231 @@ using System.Collections.Generic;
 public class MapController : MonoBehaviour
 {
 
-    [SerializeField]
-    private int _height;
-    [SerializeField]
-    private int _width;
+	[SerializeField]
+	private int _height;
+	[SerializeField]
+	private int _width;
 
-    private static MapController _instance;
-    public static MapController Instance
-    {
-        get { return _instance; }
-        set { _instance = value; }
-    }
+	public GameObject PathVisualizerPrefab;
 
-    // Use this for initialization
-    void Awake ()
-    {
-        Instance = this;
-    }
+	private static MapController _instance;
+	public static MapController Instance
+	{
+		get { return _instance; }
+		set { _instance = value; }
+	}
 
-    public virtual void GenerateMap()
-    {
+	// Use this for initialization
+	void Awake ()
+	{
+		Instance = this;
+	}
 
-    }
+	public virtual void GenerateMap()
+	{
 
-    /// <summary>
-    /// Gets a tile from the map, given its coordinates
-    /// </summary>
-    public MapTile GetTile(Vector2 coordinates)
-    {
-        MapTile tile = null;
+	}
 
-        string childName = coordinates.x + "," + coordinates.y;
+	/// <summary>
+	/// Gets a tile from the map, given its coordinates
+	/// </summary>
+	public MapTile GetTile(Vector2 coordinates)
+	{
+		MapTile tile = null;
 
-        Transform tileGO = transform.FindChild("Tiles").FindChild(childName);
+		string childName = coordinates.x + "," + coordinates.y;
 
-        if (tileGO)
-        {
-            tile = tileGO.gameObject.GetComponent<MapTile>();
-        }
+		Transform tileGO = transform.FindChild("Tiles").FindChild(childName);
 
-        return tile;
-    }
+		if (tileGO)
+		{
+			tile = tileGO.gameObject.GetComponent<MapTile>();
+		}
 
-    /// <summary>Returns a random tile from the map, which is passable.</summary>
-    public MapTile GetRandomTile(bool passable = true)
-    {
-        int x, y = 0;
-        bool validTile = false;
-        Vector2 targetCoords;
-        MapTile tile = null;
+		return tile;
+	}
 
-        // Get a random coord
-        while (!validTile)
-        {
-            x = Random.Range(0, Width);
-            y = Random.Range(0, Height);
+	/// <summary>Returns a random tile from the map, which is passable.</summary>
+	public MapTile GetRandomTile(bool passable = true)
+	{
+		int x, y = 0;
+		bool validTile = false;
+		Vector2 targetCoords;
+		MapTile tile = null;
 
-            targetCoords = new Vector2(x, y);
+		// Get a random coord
+		while (!validTile)
+		{
+			x = Random.Range(0, Width);
+			y = Random.Range(0, Height);
 
-            tile = GetTile(targetCoords);
+			targetCoords = new Vector2(x, y);
 
-            if (tile.Passable && !tile.Occupied && !tile.IsObjective) // Tile cant be an objective tile
-            {
-                validTile = true;
-            }
-        }
+			tile = GetTile(targetCoords);
 
-        return tile;
-    }
+			if (tile.Passable && !tile.Occupied && !tile.IsObjective) // Tile cant be an objective tile
+			{
+				validTile = true;
+			}
+		}
 
-    public List<MapTile> GetRow(int rowNumber)
-    {
-        List<MapTile> tiles = new List<MapTile>();
+		return tile;
+	}
 
-        for(int i = 0; i < Width; i++)
-        {
-            Vector2 coords = new Vector2(i, rowNumber);
-            MapTile tile = GetTile(coords);
-            tiles.Add(tile);
-        }        
+	public List<MapTile> GetRow(int rowNumber)
+	{
+		List<MapTile> tiles = new List<MapTile>();
 
-        return tiles;        
-    }
+		for (int i = 0; i < Width; i++)
+		{
+			Vector2 coords = new Vector2(i, rowNumber);
+			MapTile tile = GetTile(coords);
+			tiles.Add(tile);
+		}
 
-    // Path finding algorithm
+		return tiles;
+	}
 
-    /// <summary>Will return a set of tiles that make a path from one tile to another.</summary>
-    public List<MapTile> GetPath(MapTile fromTile, MapTile toTile)
-    { 
-    	List<MapTile> pathTiles = new List<MapTile>();
-    	List<MapTile> frontier = new List<MapTile>();
-    	Dictionary<string, MapTile> CameFrom = new Dictionary<string, MapTile>();
-    	Dictionary<string, float> CostSoFar = new Dictionary<string, float>();
+	// Path finding algorithm
 
-    	fromTile.Priority = 0;
-    	frontier.Add(fromTile);
-    	CameFrom.Add(fromTile.name, null);
-    	CostSoFar.Add(fromTile.name, 0);
+	/// <summary>Will return a set of tiles that make a path from one tile to another.</summary>
+	public List<MapTile> GetPath(MapTile fromTile, MapTile toTile)
+	{
+		List<MapTile> pathTiles = new List<MapTile>();
+		List<MapTile> frontier = new List<MapTile>();
+		Dictionary<string, MapTile> CameFrom = new Dictionary<string, MapTile>();
+		Dictionary<string, float> CostSoFar = new Dictionary<string, float>();
 
-    	MapTile current = null;
+		fromTile.Priority = 0;
+		frontier.Add(fromTile);
+		CameFrom.Add(fromTile.name, null);
+		CostSoFar.Add(fromTile.name, 0);
 
-    	while(frontier.Count > 0)
-    	{
-    		frontier.Sort();
-    		current = frontier[0]; // Get first element in list
-    		frontier.RemoveAt(0);
+		MapTile current = null;
 
-    		// Check if current is goal
-    		if(current.Position == toTile.Position)
-    			break;
+		while (frontier.Count > 0)
+		{
+			frontier.Sort();
+			current = frontier[0]; // Get first element in list
+			frontier.RemoveAt(0);
 
-    		// Iterate through each neighbor in current
-    		foreach (MapTile next in GetNeighbors(current)) 
-    		{
-    			float newCost = CostSoFar[current.name] + DistanceBetweenTiles(current, next);
-    			if((!CostSoFar.ContainsKey(next.name)) || newCost < CostSoFar[next.name] ) 
-    			{
-    				CostSoFar.Add(next.name, newCost);
-    				float priority = newCost + DistanceBetweenTiles(toTile, next);
-    				next.Priority = priority;
-    				frontier.Add(next);
-    				CameFrom.Add(next.name, current);
-    			}
-    		}
-    	}
+			// Check if current is goal
+			if (current.Position == toTile.Position)
+				break;
 
-    	// Get path taken
-    	print(current.Position);
+			// Iterate through each neighbor in current
+			foreach (MapTile next in GetNeighbors(current))
+			{
+				float newCost = CostSoFar[current.name] + DistanceBetweenTiles(current, next);
+				if ((!CostSoFar.ContainsKey(next.name)) || newCost < CostSoFar[next.name] )
+				{
+					if (CostSoFar.ContainsKey(next.name))
+					{
+						CostSoFar[next.name] = newCost;
+						CameFrom[next.name] = current;
+					}
+					else
+					{
+						CostSoFar.Add(next.name, newCost);						
+						CameFrom.Add(next.name, current);
+					}
+					float priority = newCost + DistanceBetweenTiles(toTile, next);
+					next.Priority = priority;
+					frontier.Add(next);
+				}
+			}
+		}
 
-    	return pathTiles;
-    }
+		// Get path taken
+		do
+		{
+			GameObject visualizer = Instantiate(PathVisualizerPrefab);
+			visualizer.transform.SetParent(current.transform, false);
 
-    private float Heuristic(MapTile fromTile, MapTile toTile)
-    {
+			current = CameFrom[current.name];
+		}
+		while (current != null);
 
-    	return 0;
-    }
+		return pathTiles;
+	}
 
-    private float DistanceBetweenTiles(MapTile fromTile, MapTile toTile)
-    {
-    	return Mathf.Abs(Vector2.Distance(fromTile.Position, toTile.Position));
-    }
+	private float Heuristic(MapTile fromTile, MapTile toTile)
+	{
 
-    /// <summary>The neighbors of a tile is all tiles around it.</summary>
-    private List<MapTile> GetNeighbors(MapTile fromTile)
-    {
-        List<MapTile> neighbors = new List<MapTile>();
-        
-        // Up
-        MapTile tile;
-        tile = GetTile(fromTile.Position + Vector2.up);
-        if(tile)
-            neighbors.Add(tile);
+		return 0;
+	}
 
-        // Down
-        tile = GetTile(fromTile.Position + Vector2.down);
-        if(tile)
-            neighbors.Add(tile);
+	private float DistanceBetweenTiles(MapTile fromTile, MapTile toTile)
+	{
+		return Mathf.Abs(Vector2.Distance(fromTile.Position, toTile.Position));
+	}
 
-        // Left
-        tile = GetTile(fromTile.Position + Vector2.left);
-        if(tile)
-            neighbors.Add(tile);
+	/// <summary>The neighbors of a tile is all tiles around it that are passable.</summary>
+	private List<MapTile> GetNeighbors(MapTile fromTile)
+	{
+		List<MapTile> neighbors = new List<MapTile>();
 
-        // Right
-        tile = GetTile(fromTile.Position + Vector2.right);
-        if(tile)
-            neighbors.Add(tile);
+		// Up
+		MapTile tile;
+		tile = GetTile(fromTile.Position + Vector2.up);
+		if (tile && tile.Passable)
+			neighbors.Add(tile);
 
-        return neighbors;
-    }
+		// Down
+		tile = GetTile(fromTile.Position + Vector2.down);
+		if (tile && tile.Passable)
+			neighbors.Add(tile);
 
-    private float Heuristic(MapTile tile)
-    {
-    	return 0;
-    }
+		// Left
+		tile = GetTile(fromTile.Position + Vector2.left);
+		if (tile && tile.Passable)
+			neighbors.Add(tile);
 
+		// Right
+		tile = GetTile(fromTile.Position + Vector2.right);
+		if (tile && tile.Passable)
+			neighbors.Add(tile);
 
+		return neighbors;
+	}
 
-    #region Properties
+	private float Heuristic(MapTile tile)
+	{
+		return 0;
+	}
 
-    public int Width
-    {
-        get { return _width; }
-        set { _width = value; }
-    }
+	public MapTile GetObjectiveTile(bool passable = true)
+	{
+		// Iterate through all tiles from top to bottom
+		for (int i = Height - 1; i > 0; i--)
+		{
+			for (int j = Width - 1; j > 0; j--)
+			{
+				MapTile tile = GetTile(new Vector2(j, i));
+				if (tile.IsObjective && tile.Passable)
+				{
+					return tile;
+				}
+			}
+		}
 
-    public int Height
-    {
-        get { return _height; }
-        set { _height = value; }
-    }
+		return null;
+	}
 
-    #endregion
+	#region Properties
+
+	public int Width
+	{
+		get { return _width; }
+		set { _width = value; }
+	}
+
+	public int Height
+	{
+		get { return _height; }
+		set { _height = value; }
+	}
+
+	#endregion
 
 }
