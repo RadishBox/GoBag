@@ -51,8 +51,6 @@ public class ExploreGameController : MonoBehaviour
 
         // Place objective
 
-        MapController.Instance.GetPath(MapController.Instance.GetTile(Player.transform.localPosition), MapController.Instance.GetObjectiveTile());
-
         // Place entities
         entities = new List<MapEntity>();
         PlaceEntities();
@@ -154,6 +152,9 @@ public class ExploreGameController : MonoBehaviour
                 }
             }
         }
+
+        // Clear any unmovable entities from path to objective
+        MapController.Instance.ClearPathToObjective(MapController.Instance.GetTile(Player.transform.localPosition));
     }
 
     private void PrepareScenarioEffects()

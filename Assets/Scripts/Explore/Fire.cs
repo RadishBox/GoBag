@@ -8,6 +8,7 @@ public class Fire : ScenarioEffect {
 
 	private int turnCount = 0;
 	public int startOnTurnNumber = 6;
+	private int rowToMoveTo = 0;
 
 	// Audio related to effect
     public AudioClip FireAmbience;
@@ -32,9 +33,10 @@ public class Fire : ScenarioEffect {
 	{
         turnCount++;
 
-        if(turnCount >= startOnTurnNumber)
+        if(turnCount >= startOnTurnNumber && (turnCount % 2 == 0))
         {
-        	SpawnFire(turnCount - startOnTurnNumber, entity);
+        	SpawnFire(rowToMoveTo, entity);        	
+        	rowToMoveTo++;
         }
 	}
 

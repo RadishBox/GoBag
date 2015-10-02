@@ -93,10 +93,29 @@ public class MapController : MonoBehaviour
 		return tiles;
 	}
 
-	// Path finding algorithm
+	public void ClearPathToObjective(MapTile fromTile)
+	{
+		List<MapTile> path = GetPath(fromTile, GetObjectiveTile());
+		ClearPath(path);
+	}
 
+	// Clears all impassable obstacles from a given path of tiles
+	public void ClearPath(List<MapTile> pathTiles)
+	{
+		foreach (MapTile tile in pathTiles) 
+		{
+			if ((tile.EntityInTile != null) && !(tile.EntityInTile is IMovable))
+			{
+				// Destroy that entity
+				ExploreGameController.Instance.Entities.Remove(tile.EntityInTile);
+				Destroy(tile.EntityInTile.gameObject);
+			}
+		}
+	}
+
+	// Path finding algorithm
 	/// <summary>Will return a set of tiles that make a path from one tile to another.</summary>
-	public List<MapTile> GetPath(MapTile fromTile, MapTile toTile)
+	public List<MapTile> GetPath(MapTile fromTile, MapTile toTile, bool visualize = false)
 	{
 		List<MapTile> pathTiles = new List<MapTile>();
 		List<MapTile> frontier = new List<MapTile>();
@@ -146,8 +165,12 @@ public class MapController : MonoBehaviour
 		// Get path taken
 		do
 		{
-			GameObject visualizer = Instantiate(PathVisualizerPrefab);
-			visualizer.transform.SetParent(current.transform, false);
+			if(visualize)
+			{
+				GameObject visualizer = Instantiate(PathVisualizerPrefab);
+				visualizer.transform.SetParent(current.transform, false);
+			}
+			pathTiles.Add(current);
 
 			current = CameFrom[current.name];
 		}
