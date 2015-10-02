@@ -162,7 +162,7 @@ public class CivilGuyController : MonoBehaviour
             TipsGroup.SetActive(true);
 
             // Change button listener
-            if (GameConfiguration.Instance.Level.IsClear)
+            if (GameConfiguration.Instance.Level.IsLocalClear)
             {
                 GameOverNextButton.onClick.AddListener(LoadTitle);
             }

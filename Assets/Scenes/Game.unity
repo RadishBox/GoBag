@@ -145,6 +145,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}
@@ -984,7 +985,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 164753109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 5, z: -3}
+  m_LocalPosition: {x: 3, y: 4.4000001, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1000,7 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3daa4500e826a024f878f96e77d8bb8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoundingLimits: {x: 2, y: 10, z: 5, w: 5}
+  BoundingLimits: {x: 2, y: 5, z: 5, w: 10}
 --- !u!1 &167708947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1220,7 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
+  uses: 1
   AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 59cab7edf62adf34ebd165b5e3d5e85d, type: 3}
@@ -1442,6 +1444,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
@@ -2769,6 +2772,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 4
   UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
@@ -3106,6 +3110,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 0}
   AnimationType: 0
   UseFX: {fileID: 0}
@@ -4336,7 +4341,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -932.391418}
+  m_AnchoredPosition: {x: 360, y: -932.121582}
   m_SizeDelta: {x: 500, y: 242}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &821741714
@@ -4561,6 +4566,7 @@ MonoBehaviour:
   _stringTiles:
   - 11
   _dragPivotCoords: {x: 1, y: 0}
+  uses: 1
   AnimationObject: {fileID: 0}
   AnimationType: 0
   UseFX: {fileID: 0}
@@ -4819,7 +4825,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -348.391418}
+  m_AnchoredPosition: {x: 360, y: -348.121582}
   m_SizeDelta: {x: 500, y: 242}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &863356510
@@ -4934,7 +4940,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -640.391418}
+  m_AnchoredPosition: {x: 360, y: -640.121582}
   m_SizeDelta: {x: 500, y: 242}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &869383841
@@ -5076,12 +5082,12 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
+  uses: 2
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 2
   UseFX: {fileID: 8300000, guid: 76f456338a03c074b80309760058de20, type: 3}
   EffectValue: 5
   TargetBar: 1
-  uses: 2
   UseSprites:
   - {fileID: 21300276, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
   - {fileID: 21300278, guid: 72a2bb8cbddb7434d8905e3fd881c3cf, type: 3}
@@ -5213,7 +5219,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -494.273926}
+  m_AnchoredPosition: {x: 360, y: -494.121582}
   m_SizeDelta: {x: 500, y: 242}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &940639273
@@ -5791,6 +5797,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
@@ -6162,6 +6169,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
@@ -6527,6 +6535,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
@@ -7622,6 +7631,7 @@ MonoBehaviour:
   - 1
   - 1
   _dragPivotCoords: {x: 0, y: 1}
+  uses: 1
   AnimationObject: {fileID: 0}
   AnimationType: 0
   UseFX: {fileID: 0}
@@ -8575,6 +8585,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 91df017d78c89f34e9633d7a6299b0c1, type: 3}
@@ -8708,7 +8719,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 360, y: -786.273926}
+  m_AnchoredPosition: {x: 360, y: -786.121582}
   m_SizeDelta: {x: 500, y: 242}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1687080948
@@ -8849,6 +8860,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 5
   UseFX: {fileID: 8300000, guid: 954993e47d9d56a4a832a0f7ac35df08, type: 3}
@@ -9421,6 +9433,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 3
   UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}
@@ -9824,6 +9837,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
@@ -10302,6 +10316,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 1
   UseFX: {fileID: 8300000, guid: c93aba2614865014fb3015dbdc140319, type: 3}
@@ -10799,6 +10814,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 149786, guid: 0838ad781465cfd49b14589588669e61, type: 2}
   AnimationType: 6
   UseFX: {fileID: 8300000, guid: 66f8b81ea35e9f74b92b1f2a53651a7c, type: 3}
@@ -10981,6 +10997,7 @@ MonoBehaviour:
   - 01
   - 11
   _dragPivotCoords: {x: 1, y: 1}
+  uses: 1
   AnimationObject: {fileID: 0}
   AnimationType: 0
   UseFX: {fileID: 0}
@@ -11137,6 +11154,7 @@ MonoBehaviour:
   _stringTiles:
   - 1
   _dragPivotCoords: {x: 0, y: 0}
+  uses: 1
   AnimationObject: {fileID: 168342, guid: 445024e53488e38429fe3e122deadccb, type: 2}
   AnimationType: 0
   UseFX: {fileID: 8300000, guid: 553a5203d5e4b4e4d9633fb0f781e397, type: 3}

@@ -15,6 +15,7 @@ public class Level {
     public bool isLocked = false;
     [SerializeField]
     private bool _isClear = false;
+    private bool _isLocalClear = false;
 
     public ScenarioLibrary.ScenarioType scenario;
 
@@ -49,6 +50,12 @@ public class Level {
     {
         get { return _isClear; }
         set { _isClear = value; }
+    }
+
+    public bool IsLocalClear
+    {
+        get { return _isLocalClear; }
+        set { _isLocalClear = value; }
     }
 
     public bool IsLocked

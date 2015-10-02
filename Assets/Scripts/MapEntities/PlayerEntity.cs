@@ -7,7 +7,8 @@ using DG.Tweening;
 /// Describes the player behaviour inside the map
 /// </summary>
 public enum PlayerBars { Health, Water, Energy }
-public class PlayerEntity : MapEntity, IMovable {
+public class PlayerEntity : MapEntity, IMovable
+{
 
     private int _healthPoints = 30;
     private int _waterPoints = 30;
@@ -57,7 +58,7 @@ public class PlayerEntity : MapEntity, IMovable {
     private static PlayerEntity _instance;
 
     void Awake()
-    {                
+    {
         _instance = this;
         DisableMoveButtons();
     }
@@ -92,56 +93,56 @@ public class PlayerEntity : MapEntity, IMovable {
         //}
 
         // Move
-        for (int i = 0; i < _movementNumber; i++) 
+        for (int i = 0; i < _movementNumber; i++)
         {
             UpdateMoveButtons();
             turnStatus = TurnStatus.WaitingMove;
-            while(turnStatus == TurnStatus.WaitingMove)
+            while (turnStatus == TurnStatus.WaitingMove)
             {
                 yield return null;
             }
-            
+
             //Move();
             while (turnStatus == TurnStatus.Moving)
             {
                 yield return null;
             }
             UpdateMoveButtons();
-        }        
+        }
 
         // Check winning condition
-        if(CheckVictory())
+        if (CheckVictory())
         {
             // Win
             Win(WinSprite, WinText);
         }
         else
-        {   
+        {
             // Check if GameOver
-            if(CheckGameOver())
+            if (CheckGameOver())
             {
                 // Die
                 Kill(NaturalDeathSprite, NaturalDeathText);
             }
             else
-            {   
+            {
                 // Check scenario effects
-                for(int i = 0; i < ExploreGameController.Instance.ScenarioEffects.Count; i++)
+                for (int i = 0; i < ExploreGameController.Instance.ScenarioEffects.Count; i++)
                 {
                     ExploreGameController.Instance.ScenarioEffects[i].ActivateEffect(this);
                 }
 
                 // Check sicknesses effects
-                for(int i = 0; i < Sicknesses.Count; i++)
+                for (int i = 0; i < Sicknesses.Count; i++)
                 {
                     Sicknesses[i].ActivateEffect(this);
                 }
-                
+
                 // Check for effects movement and ambient
 
                 InTurn = false;
             }
-        }        
+        }
     }
 
     /// <summary>
@@ -159,7 +160,7 @@ public class PlayerEntity : MapEntity, IMovable {
         bool victory = false;
 
         // Check if tile had entity
-        if(MapController.Instance.GetTile(Position).IsObjective)
+        if (MapController.Instance.GetTile(Position).IsObjective)
         {
             victory = true;
         }
@@ -172,24 +173,24 @@ public class PlayerEntity : MapEntity, IMovable {
     {
         bool gameOver = false;
 
-        if(Health <= 0)
+        if (Health <= 0)
         {
             gameOver = true;
             NaturalDeathText = HealthDeathText;
             Tips.Add(HealthDeathTip);
         }
-        if(Water <= 0)
+        if (Water <= 0)
         {
             gameOver = true;
             NaturalDeathText = WaterDeathText;
             Tips.Add(WaterDeathTip);
         }
-        if(Energy <= 0)
+        if (Energy <= 0)
         {
             gameOver = true;
             NaturalDeathText = EnergyDeathText;
             Tips.Add(EnergyDeathTip);
-        }        
+        }
 
         return gameOver;
     }
@@ -202,15 +203,15 @@ public class PlayerEntity : MapEntity, IMovable {
         DisableMoveButtons();
         ExploreGUI.Instance.StartGameOverSequence(deathSprite, deathText, CivilGuyState.Worried);
         AudioManager.Instance.Play(AudioManager.AudioType.FX, NaturalDeathFX);
-    }    
+    }
 
     /// <summary>
-    /// Player winning 
+    /// Player winning
     /// </summary>
     public void Win(Sprite winSprite, string winText)
     {
         DisableMoveButtons();
-        //GameConfiguration.Instance.Level.IsClear = true;
+        GameConfiguration.Instance.Level.IsLocalClear = true;
         LevelLibrary.Instance.ClearLevel(GameConfiguration.Instance.Level.Id);
         GameSave.Instance.UnlockedLevels = LevelLibrary.Instance.GetUnlockedLevelIds();
         GameSave.Instance.ClearedLevels = LevelLibrary.Instance.GetClearedLevelIds();
@@ -241,18 +242,18 @@ public class PlayerEntity : MapEntity, IMovable {
     {
         switch (bar)
         {
-            case PlayerBars.Health:
-                Health = Health + value;
-                ExploreGUI.Instance.AlterBar(value, PlayerBars.Health);
-                break;
-            case PlayerBars.Water:
-                Water = Water + value;
-                ExploreGUI.Instance.AlterBar(value, PlayerBars.Water);
-                break;
-            case PlayerBars.Energy:
-                Energy = Energy + value;
-                ExploreGUI.Instance.AlterBar(value, PlayerBars.Energy);
-                break;
+        case PlayerBars.Health:
+            Health = Health + value;
+            ExploreGUI.Instance.AlterBar(value, PlayerBars.Health);
+            break;
+        case PlayerBars.Water:
+            Water = Water + value;
+            ExploreGUI.Instance.AlterBar(value, PlayerBars.Water);
+            break;
+        case PlayerBars.Energy:
+            Energy = Energy + value;
+            ExploreGUI.Instance.AlterBar(value, PlayerBars.Energy);
+            break;
         }
     }
 
@@ -270,7 +271,7 @@ public class PlayerEntity : MapEntity, IMovable {
     /// <summary>Evolves given sickness for a new one.</summary>
     public void EvolveSickness(Sickness sickness, Sickness newSickness)
     {
-        if(Sicknesses.Exists(x => x.Name == sickness.Name))
+        if (Sicknesses.Exists(x => x.Name == sickness.Name))
         {
             Sicknesses.Remove(Sicknesses.Find(x => x.Name == sickness.Name));
             Sicknesses.Add(newSickness);
@@ -280,7 +281,7 @@ public class PlayerEntity : MapEntity, IMovable {
 
     public void CureSickness(Sickness sickness)
     {
-        if(Sicknesses.Exists(x => x.Name == sickness.Name))
+        if (Sicknesses.Exists(x => x.Name == sickness.Name))
         {
             Sicknesses.Remove(Sicknesses.Find(x => x.Name == sickness.Name));
             ExploreGUI.Instance.RemoveSickness(sickness);
@@ -308,7 +309,7 @@ public class PlayerEntity : MapEntity, IMovable {
         AlterBar(-1, PlayerBars.Water);
 
         // Check if tile had entity
-        if(MapController.Instance.GetTile(Position).Occupied)
+        if (MapController.Instance.GetTile(Position).Occupied)
         {
             // Activate entity effect
             MapController.Instance.GetTile(Position).EntityInTile.ActivateEffect(this);
@@ -327,7 +328,7 @@ public class PlayerEntity : MapEntity, IMovable {
 
         // Up
         tile = MapController.Instance.GetTile(Position + Vector2.up);
-        if(tile == null || !tile.Passable) // tile not found
+        if (tile == null || !tile.Passable) // tile not found
         {
             UpButton.SetActive(false);
         }

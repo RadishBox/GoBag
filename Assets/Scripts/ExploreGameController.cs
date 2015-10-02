@@ -48,7 +48,7 @@ public class ExploreGameController : MonoBehaviour
 
         // Set camera target
         MainCamera.GetComponent<CameraController>().Target = Player.transform;
-
+        MainCamera.GetComponent<CameraController>().Initialize();
         // Place objective
 
         // Place entities
