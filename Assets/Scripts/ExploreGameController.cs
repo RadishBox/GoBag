@@ -164,6 +164,11 @@ public class ExploreGameController : MonoBehaviour
         {
             GameObject ScenarioEffect = Instantiate(GameConfiguration.Instance.Level.CurrentScenario.ScenarioEffect);
             scenarioEffects.Add(ScenarioEffect.GetComponent<ScenarioEffect>());
+
+            if(ScenarioEffect.GetComponent<ScenarioEffect>().GetType() == typeof(Rain))
+            {
+                ScenarioEffect.transform.SetParent(MainCamera.transform, false);
+            }
         }
 
         // Get scenario decoration tiles

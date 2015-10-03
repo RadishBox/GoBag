@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
     public void Initialize()
     {
         yOffset = transform.position.y - Target.localPosition.y;
+        BoundingLimits.w = MapController.Instance.Height - 5;
     }
 
     // Update is called once per frame
@@ -47,13 +48,15 @@ public class CameraController : MonoBehaviour
         }
         else
         {            
-            //yValue = Target.position.y; 
-            yValue = Mathf.Lerp(yValue, Target.position.y, Time.deltaTime * 5);
+            yValue = Target.position.y; 
+            //yValue = Mathf.Lerp(yValue, Target.position.y, Time.deltaTime * 5);
         }
         
+        // Clamp xValue
 
-        //transform.position = Vector3.Lerp(transform.position, new Vector3(xValue, yValue, transform.position.z), Time.deltaTime * 5);
-        transform.position = new Vector3(xValue, yValue, transform.position.z);
+
+        transform.position = Vector3.Lerp(transform.position, new Vector3(Mathf.RoundToInt(xValue), Mathf.RoundToInt(yValue), transform.position.z), Time.deltaTime * 5);
+        //transform.position = new Vector3(xValue, yValue, transform.position.z);
 
         //transform.position = new Vector3(Target.position.x, Target.position.y, transform.position.z);
     }
