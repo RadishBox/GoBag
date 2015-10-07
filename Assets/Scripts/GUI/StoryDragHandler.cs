@@ -46,7 +46,7 @@ public class StoryDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, 
 		Vector2 inputDelta = data.delta;
 
 		// Check input has been big enough
-		if (Mathf.Abs(inputDelta.x) > 1)
+		if (Mathf.Abs(inputDelta.x) > 2)
 		{
 			if (inputDelta.x < 0)
 			{

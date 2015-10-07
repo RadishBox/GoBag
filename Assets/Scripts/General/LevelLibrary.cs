@@ -160,6 +160,11 @@ public class LevelLibrary : MonoBehaviour
             {
                 UnlockLevel(id);
             }
+
+            foreach (int id in TargetLevel.LevelsToClear) 
+            {
+                ClearLevel(id);
+            }
         }
     }
 

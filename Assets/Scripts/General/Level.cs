@@ -20,6 +20,7 @@ public class Level {
     public ScenarioLibrary.ScenarioType scenario;
 
     public int[] LevelsToUnlock;
+    public int[] LevelsToClear;
 
     private Item[] _availableItems;
 

@@ -74,9 +74,14 @@ public class TitleScreenController : MonoBehaviour
 		StageSelectionPanel.SetActive(value);
 	}
 
-	public void LoadLevel(int levelId)
+	public void LoadLevel(string levelIds)
 	{
-		Level selectedLevel = LevelLibrary.Instance.GetLevel(levelId);
+		string[] levels = levelIds.Split(',');
+		
+		// Choose a level randomly
+		int randomIndex = Random.Range(0, levels.Length);
+
+		Level selectedLevel = LevelLibrary.Instance.GetLevel(int.Parse(levels[randomIndex]));
 		GameConfiguration.Instance.Level = selectedLevel;
 
 		AudioManager.Instance.Fade(AudioManager.AudioType.BgMusic, 0.0f, 0.5f);

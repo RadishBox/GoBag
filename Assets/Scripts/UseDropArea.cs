@@ -9,6 +9,7 @@ public class UseDropArea : DropArea {
 
     public override void OnDrop(PointerEventData eventData)
     {
+        BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
         if (BagPrepController.Instance.DraggedItem)
         {
             BagPrepController.Instance.DragAreaGroupSlider.Slide(false);

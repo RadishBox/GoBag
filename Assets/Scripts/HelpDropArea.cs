@@ -8,6 +8,7 @@ public class HelpDropArea : DropArea {
 
     public override void OnDrop(PointerEventData eventData)
     {
+        BagPrepController.Instance.DragAreaGroupSlider.Slide(false);
         if (BagPrepController.Instance.DraggedItem)
         {
         	BagPrepController.Instance.DraggedItem.GetComponent<DragHandler>().AnimateBackToStartPosition(0.15f);
