@@ -1847,8 +1847,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -46}
-  m_SizeDelta: {x: 853, y: 64}
+  m_AnchoredPosition: {x: -.000457763672, y: -57.2900391}
+  m_SizeDelta: {x: 620, y: 145.419998}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &578627807
 MonoBehaviour:
@@ -1867,7 +1867,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: c5797dc2b860481468bfc46cf0905ada, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -1875,7 +1875,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Este videojuego es Open Source
+  m_Text: "\xA1Ponte Trucha!  Copyright (C) 2015  RadishBox\n    Este software es
+    libre, y usted es bienvenido a distribuirlo bajo las condiciones del GNU General
+    Public License."
 --- !u!222 &578627808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3281,7 +3283,7 @@ MonoBehaviour:
   m_MinWidth: -1
   m_MinHeight: -1
   m_PreferredWidth: -1
-  m_PreferredHeight: 124.150002
+  m_PreferredHeight: 226.839996
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
 --- !u!1 &1599731997
